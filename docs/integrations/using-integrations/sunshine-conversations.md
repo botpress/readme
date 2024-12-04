@@ -14,8 +14,8 @@ next:
 
 # Prerequisites
 
-- A [Smooch app](https://app.smooch.io) with a channel configured
-- A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
+* A [Smooch app](https://app.smooch.io) with a channel configured
+* A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
 
 <br />
 
@@ -26,12 +26,12 @@ next:
 
 The Sunshine Conversations integration has the following settings:
 
-- **Enabled**: Whether Botpress will communicate with this channel
-- **Webhook URL**: The URL for receiving data in Botpress
-- **App Id**: The App Id of your bot in Azure
-- **Key Id**: The Key Id of your bot in Azure
-- **Key Secret**: The Key Secret of your bot in Azure
-- **Webhook Secret**: The Webhook Secret of your bot in Azure
+* **Enabled**: Whether Botpress will communicate with this channel
+* **Webhook URL**: The URL for receiving data in Botpress
+* **App Id**: The App Id of your bot in Azure
+* **Key Id**: The Key Id of your bot in Azure
+* **Key Secret**: The Key Secret of your bot in Azure
+* **Webhook Secret**: The Webhook Secret of your bot in Azure
 
 <br />
 
