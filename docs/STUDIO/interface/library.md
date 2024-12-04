@@ -20,9 +20,9 @@ Intents are the backbone of understanding in a chatbot. They represent the purpo
 
 For example, an "Ordering a coffee" intent could include utterances like:
 
-"I want coffee"  
-"I'd like some coffee, please"  
-"Do you have a decaf espresso?"  
+"I want coffee"\
+"I'd like some coffee, please"\
+"Do you have a decaf espresso?"\
 "Hi. I'd like to order a latte, please.
 
 The chatbot compares user messages against these utterances to match them to the correct intent with the highest confidence score.
@@ -56,8 +56,8 @@ Inline intents are specialized intents that can be defined directly on transitio
 
 To use inline intents:
 
-- Define them directly on a transition within your flow
-- Add relevant utterances
+* Define them directly on a transition within your flow
+* Add relevant utterances
 
 <br />
 
@@ -66,15 +66,15 @@ To use inline intents:
 Entities are data points or parameters that provide additional context within an intent. They allow your chatbot to extract and normalize specific details from a user's message, such as a date, time, color, or any other relevant piece of information.
 
 > 📝 Example
-> 
+>
 > The place-order intent contains the following entities:
-> 
+>
 > **caffeine** that specifies if the coffee is caffeinated or decaffeinated. 
-> 
+>
 > **size** for a single or a double shot. 
-> 
+>
 > **drink** that specifies the kind of drink asked for. 
-> 
+>
 > Attached to NLU extraction, you will find an entities property which is an array of System and Custom entities.
 
 ## Custom Entities
@@ -105,4 +105,4 @@ Pattern or Regular Expression Extraction allows you to extract information prese
 
 Example: 
 
-Given a Pattern Entity definition with [A-Z]{3}-[0-9]{4}-[A-Z]{3} as a pattern: Extraction will go like this: User said Type Value Find product BHZ-1234-UYT SKU BHZ-1234-UYT
+Given a Pattern Entity definition with [A-Z]\{3}-\[0-9]\{4}-[A-Z]\{3} as a pattern: Extraction will go like this: User said Type Value Find product BHZ-1234-UYT SKU BHZ-1234-UYT
