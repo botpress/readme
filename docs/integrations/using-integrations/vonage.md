@@ -14,9 +14,9 @@ next:
 
 # Prerequisites
 
-- A [Vonage Account](https://dashboard.nexmo.com/sign-up)
-- A [Vonage Application](https://dashboard.nexmo.com/applications/new)
-- A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
+* A [Vonage Account](https://dashboard.nexmo.com/sign-up)
+* A [Vonage Application](https://dashboard.nexmo.com/applications/new)
+* A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
 
 <br />
 
