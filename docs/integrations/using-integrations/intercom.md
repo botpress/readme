@@ -20,8 +20,8 @@ Intercom is a Conversational Relationship Platform (CRP) that helps businesses b
 
 # Prerequisites
 
-- An [Intercom account](https://www.intercom.com/)
-- Administrator or Developer access to a Intercom workspace 
+* An [Intercom account](https://www.intercom.com/)
+* Administrator or Developer access to a Intercom workspace 
 
 <br />
 
@@ -32,21 +32,21 @@ Intercom is a Conversational Relationship Platform (CRP) that helps businesses b
 
 The Intercom integration has the following settings:
 
-- **Enabled**: Whether Botpress will communicate with Intercom
-- **Webhook URL**: The URL for receiving data in Botpress
-- **Access Token**: The access token for the Intercom app
-- **Admin Id**: The admin id for the Intercom app
+* **Enabled**: Whether Botpress will communicate with Intercom
+* **Webhook URL**: The URL for receiving data in Botpress
+* **Access Token**: The access token for the Intercom app
+* **Admin Id**: The admin id for the Intercom app
 
 <br />
 
 # Setting up Intercom
 
 > 📘 Info
-> 
+>
 > In this tutorial we are going to be using a standard production workspace, but you can also create a Test workspace to test the integration before deploying it to production.
-> 
+>
 > To do that, open the Settings of a production workspace, go to the General settings tab and look for the "Enable a test workspace" and click "Save". Now you just need to use this workspace in the steps below. Learn more about test workspace [here](https://www.intercom.com/help/en/articles/188-create-a-test-workspace-in-intercom).
-> 
+>
 > After verifying that the integration works, you will need to repeat the steps below using the production workspace! Don't create the app again, just go to the app settings (Test and publish > Your workspaces) and install it to the production workspace.
 
 ## Creating an App
@@ -62,21 +62,7 @@ In order to communicate with Botpress, you need to create a developer app in Int
 1. Open Intercom and hover over your avatar in the bottom left corner, then click your avatar again to see your profile
 2. Copy the last number in the URL (as shown below), this is your Admin Id. Paste it in the Botpress integration settings
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/428e56f-image.png",
-        null,
-        ""
-      ],
-      "align": "left"
-    }
-  ]
-}
-[/block]
-
+<Image align="left" src="https://files.readme.io/428e56f-image.png" />
 
 <br />
 
@@ -127,7 +113,7 @@ await axios.post('https://api.intercom.io/contacts/search', {
     }
   }, {
     headers: {
-      Authorization: `Bearer ${intercomToken}`
+      Authorization: `Bearer $\{intercomToken}`
     }
   })
   .then((response) => {
@@ -142,18 +128,16 @@ await axios.post('https://api.intercom.io/contacts/search', {
 
 To unassign a conversation in Intercom (i.e., make it "unassigned"):
 
-```const intercomApiUrl = ``https://api.intercom.io/conversations/${intercomConvoId}/parts``;
+`const intercomApiUrl = ``https://api.intercom.io/conversations/${intercomConvoId}/parts``;
 const headers = {
   Authorization: ``Bearer ${intercomApiToken}``,
   'Content-Type': 'application/json'
 };
 await axios.post(
-  intercomApiUrl,
-  {
+  intercomApiUrl,   {
     admin_id: {adminId},
     type: 'admin',
     assignee_id: '0',
     message_type: 'assignment'
-  },
-  { headers }
-);```
+  },   { headers }
+);`
