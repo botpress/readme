@@ -22,13 +22,13 @@ The `console.log()` function is used to log information to the Botpress logs.
 
 To add logging to your bot, follow these steps:
 
-- In a new or existing Execute Code card, add the following code:
+* In a new or existing Execute Code card, add the following code:
 
 ```typescript
 console.log("Some text");
 ```
 
-- Replace the text with the information you wish to log, or the statement you'd like to print to the console.
+* Replace the text with the information you wish to log, or the statement you'd like to print to the console.
 
 Once you've saved and published your changes, your bot will print that statement to its logs every time the Execute Code card is triggered as part of a workflow.
 
