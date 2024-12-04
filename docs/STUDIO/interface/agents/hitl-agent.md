@@ -45,11 +45,11 @@ You can customize this to include whatever pieces of information are necessary f
 
 In these sections, you can customize what message your bot sends in various steps of the HITL process. These include:
 
-- while the end user is waiting to speak to an agent
-- when an agent is assigned to an end user
-- when the human agent ends the interaction
-- when the end user cancels the request
-- when the agent request times out
+* while the end user is waiting to speak to an agent
+* when an agent is assigned to an end user
+* when the human agent ends the interaction
+* when the end user cancels the request
+* when the agent request times out
 
 # Exposed Variables
 
