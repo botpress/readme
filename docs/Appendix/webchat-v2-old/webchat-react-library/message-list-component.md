@@ -35,4 +35,4 @@ const App = () => {
 }
 ```
 
- [Demo Example](https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-react-message-list?embed=1&hideNavigation=1&view=both&file=src%2FApp.tsx)
+ [Demo Example](https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-react-message-list?embed=1\&hideNavigation=1\&view=both\&file=src%2FApp.tsx)
