@@ -15,37 +15,37 @@ next:
 A Workspace is a collaborative environment where users can create, manage, and deploy chatbots. It provides a centralized location for managing all aspects of a chatbot project.
 
 > 📘 Info
-> 
+>
 > **Free Plan (Self-Serve)**
-> 
-> - Ideal for individuals exploring AI chatbot capabilities.
-> - Includes 5 bots, 2,000 messages per month, 3 collaborators, 5,000 table rows, 100MB vector DB storage, and $5 AI credit monthly.
-> - Community support is available, and no credit card is required to start.
-> 
+>
+> * Ideal for individuals exploring AI chatbot capabilities.
+> * Includes 5 bots, 2,000 messages per month, 3 collaborators, 5,000 table rows, 100MB vector DB storage, and $5 AI credit monthly.
+> * Community support is available, and no credit card is required to start.
+>
 > ***
-> 
+>
 > **Pay-as-You-Go Plan (Self-Serve)**
-> 
-> - Perfect for bot-building enthusiasts and individual developers.
-> - Start with the Free Plan features and customize by adding bots, messages, collaborators, etc., at an additional cost.
-> - Charges are at cost for AI tokens used, with a $5 monthly AI credit provided.
-> 
+>
+> * Perfect for bot-building enthusiasts and individual developers.
+> * Start with the Free Plan features and customize by adding bots, messages, collaborators, etc., at an additional cost.
+> * Charges are at cost for AI tokens used, with a $5 monthly AI credit provided.
+>
 > ***
-> 
+>
 > **Team Plan**
-> 
-> - Suited for teams with mature chatbot projects aiming for savings on limit increases.
-> - Offers 20 bots, 250,000 messages per month, 5 collaborators, 1,000,000 table rows, and 2GB vector DB storage.
-> - Includes live-chat support and represents a `$1000` monthly value for $495 USD/month.
-> 
+>
+> * Suited for teams with mature chatbot projects aiming for savings on limit increases.
+> * Offers 20 bots, 250,000 messages per month, 5 collaborators, 1,000,000 table rows, and 2GB vector DB storage.
+> * Includes live-chat support and represents a `$1000` monthly value for $495 USD/month.
+>
 > ***
-> 
+>
 > **Enterprise Plan**
-> 
-> - Tailored for businesses that require advanced features and enterprise security.
-> - Provides custom numbers of bots, messages, storage, table rows, and collaborators, along with volume discounts, custom payment terms, and dedicated support.
-> - To get this plan, direct contact with Botpress is necessary for a custom quote. [Get in touch](https://botpress.com/contact-us).
-> 
+>
+> * Tailored for businesses that require advanced features and enterprise security.
+> * Provides custom numbers of bots, messages, storage, table rows, and collaborators, along with volume discounts, custom payment terms, and dedicated support.
+> * To get this plan, direct contact with Botpress is necessary for a custom quote. [Get in touch](https://botpress.com/contact-us).
+>
 > ***
 
 ## Collaborators
@@ -62,7 +62,7 @@ You can manage users in a workspace by accessing the Collaborators tab on the da
 The user who creates a workspace automatically becomes the owner of the workspace.
 
 > ❗️ **Workspace Ownership**
-> 
+>
 > Workspace ownership can't be moved or assigned to someone else.
 
 <br />
@@ -102,11 +102,11 @@ Track your usage of third-party AI services here. Botpress integrates with OpenA
 1. If you are on the Free plan, you can upgrade to the Team plan by clicking on the **Manage Subscription** button in the Usage & Subscriptions section of Workspace Settings. 
 2. Select the Team plan and add features you want to include in your plan.
 3. With the Team Plan chosen, you can enhance your plan by adding extra features, if necessary. Available additions include:
-   - Bot: Add bots for **$1** each.
-   - Table Rows: Increase your table row limit by **100,000** for **$25**.
-   - Vector DB Storage: Add **1GB** of vector database storage for **$10**.
-   - Collaborators: Add seats for collaborators at **$25** each.
-   - Adjust the quantities of these features by using the **+** and **-** buttons, and the total cost will be updated accordingly.
+   * Bot: Add bots for **$1** each.
+   * Table Rows: Increase your table row limit by **100,000** for **$25**.
+   * Vector DB Storage: Add **1GB** of vector database storage for **$10**.
+   * Collaborators: Add seats for collaborators at **$25** each.
+   * Adjust the quantities of these features by using the **+** and **-** buttons, and the total cost will be updated accordingly.
 4. Proceed to the **Checkout** button to complete the process after reviewing your features and total cost.
 5. After completing the Checkout process, your plan will be activated, and you can utilize the features as per the limits of the Team Plan. 
 
@@ -120,7 +120,7 @@ Botpress offers both Community and Business plans, and you can view your billing
 
 ### Current Plan
 
-In the billing section, you can see your current plan, whether it is the Community or Business plan. If you are on the Business plan, you will also see the pricing for it. You can find more information about the pricing plans on the Botpress website: <https://botpress.com/pricing>.
+In the billing section, you can see your current plan, whether it is the Community or Business plan. If you are on the Business plan, you will also see the pricing for it. You can find more information about the pricing plans on the Botpress website: [https://botpress.com/pricing](https://botpress.com/pricing).
 
 ### Current Monthly Bill and Next Payment Date
 
@@ -179,7 +179,7 @@ The Billing Plan section displays the current billing plan of your workspace. To
 The Delete Workspace section allows you to delete your workspace permanently. You must be the owner of the Workspace to do so.
 
 > ❗️ **Deleting a Workspace**
-> 
+>
 > This is an irreversible process and will permanently erase all data associated with your workspace, including bots, conversations, and analytics.
 
 To proceed with the deletion, click on the **Delete Workspace** button and confirm your decision.
