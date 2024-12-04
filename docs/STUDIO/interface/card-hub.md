@@ -26,8 +26,8 @@ Use the search bar to look for specific functions, like 'message delay' or 'NPS 
 
 When you've found a workflow or integration you want to install, click on the 'Install' button.
 
-- Workflows will be added for use to your card tray
-- Integrations will usually make a set of cards available in a dedicated section of your card tray.
+* Workflows will be added for use to your card tray
+* Integrations will usually make a set of cards available in a dedicated section of your card tray.
 
 Both workflows and integrations usually require some configuration before they can be used.
 
