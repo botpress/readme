@@ -25,5 +25,5 @@ The actual condition is a Javascript expression (that must return true for the t
 ## Tips
 
 > 📘 Info
-> 
+>
 > Create good descriptions for your workflow variables and table columns because they are taken into consideration by the AI when generating the expressions and [Code](..docs/generate-code-using-ai).
