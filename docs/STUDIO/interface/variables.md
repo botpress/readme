@@ -33,37 +33,101 @@ Once the Variable is established, employ `{{workflow.variablename}}` or `@workfl
 
 Botpress variables are typed, meaning they are limited in what data they can hold. Not only are these data types important to ensure the code behind Botpress runs smoothly, but these types also help AI tasks generate better results. Here are the different data types available for Botpress variables:
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "Type",
-    "h-1": "Description",
-    "0-0": "String",
-    "0-1": "Values that are treated as text. Strings can contain any amount of letters, numbers, or special characters. <br/> <br/> Example uses: Storing a user's name, storing an AI task's generated message.",
-    "1-0": "Boolean",
-    "1-1": "Variables can be true or false, with a lowercase 't' or 'f'. <br/> <br/>Example uses: Storing if a user is a returning customer, storing whether the bot has greeted the user or not",
-    "2-0": "Number",
-    "2-1": "Variables that are numeric, either with or without decimal places. <br/> <br/>Example uses: Storing a user's phone number, storing an address's area code",
-    "3-0": "Date",
-    "3-1": "Variables that are a single date or date and time. Botpress uses ISO 8601 date/time format, such as `20220921T10:34:14` for `21 September 2023 at 10:34 AM` (with 14 seconds). <br/> <br/>Example uses: Storing when the user starts a chat, storing a user's appointment date",
-    "4-0": "Object",
-    "4-1": "Variable that is a collection of key-value pairs. Useful when dealing with code and written like `{key: value}`. <br/> <br/>Example uses: Storing a user's profile, storing the results of an API call",
-    "5-0": "Array",
-    "5-1": "Variable that is a collection of other, similar variables. Arrays can contain strings, like `[“a”, “b”, “c”]`, or Objects like `[{key:value},{key:value}]`. <br/> <br/>Example uses: Storing a user's past messages, storing options for the user to choose from",
-    "6-0": "Enum",
-    "6-1": "Variable that can be one of a set number of choices. <br/> <br/>Example uses: Storing days of the week, storing items available from a food menu",
-    "7-0": "Pattern",
-    "7-1": "Variable that uses Regular Expressions/Regex to store a special pattern. This pattern can match certain words or numbers.<br/> <br/>Example uses: Storing account numbers, storing flight numbers"
-  },
-  "cols": 2,
-  "rows": 8,
-  "align": [
-    null,
-    null
-  ]
-}
-[/block]
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Type
+      </th>
 
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        String
+      </td>
+
+      <td>
+        Values that are treated as text. Strings can contain any amount of letters, numbers, or special characters. <br/> <br/> Example uses: Storing a user's name, storing an AI task's generated message.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Boolean
+      </td>
+
+      <td>
+        Variables can be true or false, with a lowercase 't' or 'f'. <br/> <br/>Example uses: Storing if a user is a returning customer, storing whether the bot has greeted the user or not
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Number
+      </td>
+
+      <td>
+        Variables that are numeric, either with or without decimal places. <br/> <br/>Example uses: Storing a user's phone number, storing an address's area code
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Date
+      </td>
+
+      <td>
+        Variables that are a single date or date and time. Botpress uses ISO 8601 date/time format, such as `20220921T10:34:14` for `21 September 2023 at 10:34 AM` (with 14 seconds). <br/> <br/>Example uses: Storing when the user starts a chat, storing a user's appointment date
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Object
+      </td>
+
+      <td>
+        Variable that is a collection of key-value pairs. Useful when dealing with code and written like `{key: value}`. <br/> <br/>Example uses: Storing a user's profile, storing the results of an API call
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Array
+      </td>
+
+      <td>
+        Variable that is a collection of other, similar variables. Arrays can contain strings, like `[“a”, “b”, “c”]`, or Objects like `[{key:value},{key:value}]`. <br/> <br/>Example uses: Storing a user's past messages, storing options for the user to choose from
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Enum
+      </td>
+
+      <td>
+        Variable that can be one of a set number of choices. <br/> <br/>Example uses: Storing days of the week, storing items available from a food menu
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Pattern
+      </td>
+
+      <td>
+        Variable that uses Regular Expressions/Regex to store a special pattern. This pattern can match certain words or numbers.<br/> <br/>Example uses: Storing account numbers, storing flight numbers
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 <br />
 
@@ -77,7 +141,7 @@ Workflow Variables are created and used only within a single workflow. These var
 4. Saving flags or tags that track the conversation
 
 > 📘 Info
-> 
+>
 > Workflow variables are not accessible in any workflow other than the one they were created in. For example, a workflow Variable created in a separate workflow will not be accessible in **Main**.
 
 ### Creating a Workflow Variable
@@ -109,7 +173,7 @@ Workflows can have inputs and outputs to help pass information throughout the bo
 
 ## User Variables
 
-User Variables are variables that follow a user between conversations. For example, if a user speaks with your bot on Monday and Wednesday, any user variables set on Monday will still be accessible on Wednesday. User variables are great for storing data that doesn't change very often, such as:  
+User Variables are variables that follow a user between conversations. For example, if a user speaks with your bot on Monday and Wednesday, any user variables set on Monday will still be accessible on Wednesday. User variables are great for storing data that doesn't change very often, such as:\
 Storing users' personal details or id numbers
 
 1. Collecting tags or notes from past conversations
@@ -172,16 +236,16 @@ To use a Session Variable in a text or other card, enclose it in double curly br
 
 Configuration variables are a special kind of secure bot Variable. They can also be managed from the Cloud Dashboard without opening the bot. Configuration variables can store secrets like:
 
-- API Tokens
-- Private IP Addresses
-- Database usernames and passwords
+* API Tokens
+* Private IP Addresses
+* Database usernames and passwords
 
 ### Creating a Configuration Variable (or Environment Variable)
 
 1. Click the Botpress icon in the upper-left corner and select **Chatbot Settings**
 2. Scroll down and click on the button to add a Configuration Variable. Fill in the Variable's name and value and click **Done**.
 
-You can use **env.key** in your code to get the value of the Configuration Variable. To use it in an Execute Code Card, you can write env.key to access its value.  
+You can use **env.key** in your code to get the value of the Configuration Variable. To use it in an Execute Code Card, you can write env.key to access its value.\
 Once a configuration Variable is created, you can access and manage it from the cloud admin dashboard. Just select your bot and then click on the tab for **Configuration Variables.**
 
 <br />
