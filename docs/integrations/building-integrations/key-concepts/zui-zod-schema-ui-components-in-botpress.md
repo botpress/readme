@@ -16,41 +16,11 @@ For instance, if you want to have a user select from a list, you can have `z.enu
 
 For example, a schema like this : 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/96b5589-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "200px"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="200px" src="https://files.readme.io/96b5589-image.png" />
 
 Would allow you to have this as an input in a workflow:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c3f7d28-image.png",
-        null,
-        ""
-      ],
-      "align": "center",
-      "sizing": "200px"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="200px" src="https://files.readme.io/c3f7d28-image.png" />
 
 <br />
 
@@ -66,51 +36,51 @@ And use intellisense in your code editor to see the implemented methods.
 
 **variable**
 
-- Parameters: `type`, `params`
-- Type Options: `any`, `string`, `number`, `boolean`, `object`, `pattern`, `date`, `array`, `target`, `time`, `enum` 
-- (You can use any one of these like this : `z.string()`)
+* Parameters: `type`, `params`
+* Type Options: `any`, `string`, `number`, `boolean`, `object`, `pattern`, `date`, `array`, `target`, `time`, `enum` 
+* (You can use any one of these like this : `z.string()`)
 
 **conversation**
 
-- Parameters: `params`
+* Parameters: `params`
 
 **user**
 
-- Parameters: `params`
+* Parameters: `params`
 
 **message**
 
-- Parameters: `params`
+* Parameters: `params`
 
 **agent**
 
-- Parameters: `params`
+* Parameters: `params`
 
 **event**
 
-- Parameters: `params`
+* Parameters: `params`
 
 **table**
 
-- Parameters: `params`
+* Parameters: `params`
 
 **tablerow**
 
-- Parameters: `params`
+* Parameters: `params`
 
 **intent**
 
-- Parameters: `params`
+* Parameters: `params`
 
 **datasource**
 
-- Parameters: `horizontal`
+* Parameters: `horizontal`
 
 **knowledgebase**
 
-- Parameters: `horizontal`
+* Parameters: `horizontal`
 
-You can find the current list of zui components here <https://github.com/botpress/packages/blob/9b43dcd96f1fd7d059ee4dd0f4749f5b8bfd0dba/zui/src/z/extensions.ts> .
+You can find the current list of zui components here [https://github.com/botpress/packages/blob/9b43dcd96f1fd7d059ee4dd0f4749f5b8bfd0dba/zui/src/z/extensions.ts](https://github.com/botpress/packages/blob/9b43dcd96f1fd7d059ee4dd0f4749f5b8bfd0dba/zui/src/z/extensions.ts) .
 
 <br />
 
@@ -118,6 +88,6 @@ You can find the current list of zui components here <https://github.com/botpres
 
 Current implementation in Studio:
 
-- Integrations configuration 
-- Integration actions input
-- Workflow Inputs using Botpress Schemas - Basic types like string, array, object, boolean
+* Integrations configuration 
+* Integration actions input
+* Workflow Inputs using Botpress Schemas - Basic types like string, array, object, boolean
