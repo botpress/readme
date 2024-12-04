@@ -12,7 +12,7 @@ next:
 ---
 # Introduction:
 
-Start with a brief overview of Botpress, what it is used for, and the importance of understanding its architecture.  
+Start with a brief overview of Botpress, what it is used for, and the importance of understanding its architecture.\
 In this documentation, we want to discuss the architecture of the integrations in Botpress. That should help you understand better how the integration works, and that should make it easier for you to develop it.
 
 <br />
@@ -79,39 +79,39 @@ This flowchart describes the steps taken when a message is passed from a user to
 
 1.0 The external system (e.g., Slack) receives a message from the user.
 
-- A user interacts with the bot through the external system.
+* A user interacts with the bot through the external system.
 
   1.1 The external system calls the Botpress webhook and sends the respective information to the Botpress Handler.
 
-- The external system triggers a webhook to pass the message to Botpress.
+* The external system triggers a webhook to pass the message to Botpress.
 
   2.0 The integration handler defined in the integration code is called.
 
-- The Botpress Handler gets the message and triggers the appropriate integration handler.
+* The Botpress Handler gets the message and triggers the appropriate integration handler.
 
   3.0 After the handler code is executed, the transformed information is sent to the platform API.
 
-- The message is processed and translated into a format that Botpress can understand and then sent to the platform API.
+* The message is processed and translated into a format that Botpress can understand and then sent to the platform API.
 
   4.0 This information is then directed to the respective bot for processing.
 
-- The Botpress platform directs the message to the appropriate bot for processing.
+* The Botpress platform directs the message to the appropriate bot for processing.
 
   5.0 After processing the message, the output is sent back to the Platform API.
 
-- The bot generates a response which is then sent back to the Botpress platform.
+* The bot generates a response which is then sent back to the Botpress platform.
 
   6.0 This output is transformed by the integration code into a format the external systems can understand.
 
-- The response is translated back into a format that the external system can understand.
+* The response is translated back into a format that the external system can understand.
 
   7.0 The transformed message is sent to the External System.
 
-- The response is sent back to the external system.
+* The response is sent back to the external system.
 
   7.1 The External System forwards the message to the user.
 
-- Finally, the external system delivers the bot's response to the user.
+* Finally, the external system delivers the bot's response to the user.
 
 ## Event Flow Diagram
 
@@ -121,20 +121,20 @@ This flowchart describes the steps taken when an event is detected in the extern
 
 1.0 The external system (e.g., Slack) matches an event/trigger conditions.
 
-- An event or trigger condition is met in the external system.
+* An event or trigger condition is met in the external system.
 
   1.1 The external system calls the Botpress webhook and sends the respective information to the Botpress Handler.
 
-- The external system triggers a webhook to inform Botpress about the event.
+* The external system triggers a webhook to inform Botpress about the event.
 
   2.0 The respective integration event defined in the integration code is called.
 
-- The Botpress Handler gets the event information and triggers the appropriate event handler in the integration.
+* The Botpress Handler gets the event information and triggers the appropriate event handler in the integration.
 
   3.0 After the event code is executed, the transformed information is sent to the platform API.
 
-- The event information is processed and translated into a format that Botpress can understand and then sent to the platform API.
+* The event information is processed and translated into a format that Botpress can understand and then sent to the platform API.
 
   4.0 The event is then sent to the bot for processing.
 
-- The Botpress platform directs the event information to the appropriate bot for further processing.
+* The Botpress platform directs the event information to the appropriate bot for further processing.
