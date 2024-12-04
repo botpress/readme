@@ -25,7 +25,7 @@ This type of transition allows you to check user input, user variables, workflow
 You can use a combination of these checks to create complex conditions that will determine which node the bot will transition to next.
 
 > 📘 **Generative AI Transitions**
-> 
+>
 > You can use generative AI to generate your conditions using plain text. In order to achieve what you exactly want, here are some examples that should guide you, but you are not limited to it:
 
 <br />
@@ -44,8 +44,8 @@ You can also add an Expression card by creating an `Expression Transition` with 
 
 An Intent transition allows you to create an inline intent (or node-specific intent). Only if this intent is elected will the condition be met.
 
-This type of transition is useful when you want to create a specific response for a particular intent. You can create an  
+This type of transition is useful when you want to create a specific response for a particular intent. You can create an\
 intent for a specific node, and the bot will transition to that node only if that intent is detected in the user's message.
 
-For example, if a user says "I want to book a hotel room," the bot can transition to a node that is specific to handling  
+For example, if a user says "I want to book a hotel room," the bot can transition to a node that is specific to handling\
 hotel room bookings.
