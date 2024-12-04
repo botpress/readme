@@ -10,9 +10,10 @@ metadata:
 next:
   description: ''
 ---
+```mdx
 # Overview
 
-Flow Logic Cards are essential tools that help control the flow and decision-making within your chatbot's conversation. They enable you to add logic and structure to your bot’s behavior, making it possible to guide the conversation based on user input, bot state, or external factors. 
+Flow Logic Cards are essential tools that help control the flow and decision-making within your chatbot's conversation. They enable you to add logic and structure to your bot’s behavior, making it possible to guide the conversation based on user input, bot state, or external factors.
 
 These Cards allow you to create dynamic, interactive, and context-aware bots that respond intelligently to different scenarios.
 
@@ -52,23 +53,29 @@ There are two ways to define conditions for transition:
   <Tr>
     <Td>User Variable</Td>
     <Td>
-To retrieve a value from the user variable, you can use **`user.{variable name}`** <br/>
-Example: *user language is <u>English</u>*
+      To retrieve a value from the user variable, you can use **`user.{variable name}`** <br/>
+      Example: *user language is <u>English</u>*
     </Td>
   </Tr>
   <Tr>
     <Td>Workflow Variable</Td>
-    <Td>To check a workflows variable, you can use **`workflow.{variable name}`**<br/>
-    Example: *workflow variable supportEmail contains Botpress*</Td>
+    <Td>
+      To check a workflows variable, you can use **`workflow.{variable name}`**<br/>
+      Example: *workflow variable supportEmail contains Botpress*
+    </Td>
   </Tr>
   <Tr>
     <Td>Intents</Td>
-    <Td>You can combine multiple checks together, for example you can check if an intent is of type "affirmative", and its confidence is more than 50%. <br/>
-      Example: *intent is affirmative and intent confidence is 50%* </Td>
+    <Td>
+      You can combine multiple checks together, for example you can check if an intent is of type "affirmative", and its confidence is more than 50%. <br/>
+      Example: *intent is affirmative and intent confidence is 50%*
+    </Td>
   </Tr>
   <Tr>
     <Td>Advanced</Td>
     <Td>
       You can use an advanced javascript expression to move from one node to the next when the expression satisfies the condition.
     </Td>
-</Tr>
+  </Tr>
+</Table>
+```
