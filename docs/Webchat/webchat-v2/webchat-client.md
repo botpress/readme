@@ -19,7 +19,7 @@ next:
 The JavaScript client enables seamless interaction with the Webchat API directly from your web application. Specifically designed for browser environments, this client allows you to send and receive messages from the bot and subscribe to various events, such as incoming messages.
 
 > 📘 This is for advanced use cases where you want to build your own front-end or listen to particular events.
-> 
+>
 > We recommend most people start with the Embedded Webchat or React Components.
 
 # Quickstart
@@ -47,21 +47,7 @@ To integrate Botpress Webchat Client into your application, you need to obtain y
 3. Access **Advanced Settings**
 4. Copy the **Client ID**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c4b8059-Screenshot_2024-08-15_at_9.05.51_AM.png",
-        "",
-        "Botpress interface"
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/c4b8059-Screenshot_2024-08-15_at_9.05.51_AM.png" />
 
 ## 3. Add the code
 
@@ -114,16 +100,4 @@ These are the available properties and methods:
 
 # Live Demo
 
-[block:embed]
-{
-  "html": false,
-  "url": "https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-client?embed=1&hideNavigation=1&view=both&file=src%2Fmain.ts",
-  "title": "iframe",
-  "provider": "stackblitz.com",
-  "href": "https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-client?embed=1&hideNavigation=1&view=both&file=src%2Fmain.ts",
-  "typeOfEmbed": "iframe",
-  "height": "500px",
-  "width": "100%",
-  "iframe": true
-}
-[/block]
+<Embed url="https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-client?embed=1&hideNavigation=1&view=both&file=src%2Fmain.ts" title="iframe" provider="stackblitz.com" href="https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-client?embed=1&hideNavigation=1&view=both&file=src%2Fmain.ts" typeOfEmbed="iframe" height="500px" width="100%" iframe="true" />
