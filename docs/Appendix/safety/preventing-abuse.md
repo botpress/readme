@@ -31,5 +31,5 @@ To provide an additional layer of protection, you have the ability to set monthl
 In summary, our abuse prevention strategy combines rate limits, WAF protection, and billing limits to keep your chatbots safe and efficient. This multi-faceted approach is designed to mitigate potential abuse scenarios and maintain the integrity of your bot's operation.
 
 > 📘 Info
-> 
+>
 > You can watch the [Usage tab](https://botpress.com/docs/cloud/admin-dashboard/usage/) in the Admin Dashboard to continuously verify the usage of Botpress computational resources by your bot, ensuring that it is operating within the expected limits.
