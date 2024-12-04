@@ -12,19 +12,7 @@ next:
 ---
 # What are Botpress Integrations?
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F67Bzbqh4B0w%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D67Bzbqh4B0w&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F67Bzbqh4B0w%2Fhqdefault.jpg&key=7788cb384c9f4d5dbbdbeffd9fe4b92f&type=text%2Fhtml&schema=youtube\" width=\"640\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/embed/67Bzbqh4B0w",
-  "title": "What are Botpress Integrations?",
-  "favicon": "https://www.youtube.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/67Bzbqh4B0w/hqdefault.jpg",
-  "provider": "youtube.com",
-  "href": "https://www.youtube.com/embed/67Bzbqh4B0w",
-  "typeOfEmbed": "youtube"
-}
-[/block]
-
+<Embed url="https://www.youtube.com/embed/67Bzbqh4B0w" title="What are Botpress Integrations?" favicon="https://www.youtube.com/favicon.ico" image="https://i.ytimg.com/vi/67Bzbqh4B0w/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/embed/67Bzbqh4B0w" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252F67Bzbqh4B0w%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253D67Bzbqh4B0w%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252F67Bzbqh4B0w%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22640%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 Integrations in Botpress are an easy and powerful way to extend Botpress channels, or improve the bot building experience. 
 
@@ -42,8 +30,8 @@ You can simply follow the instructions below.
 
 ## Prerequisites
 
-- a workspace with a bot in Botpress Cloud
-- your workspace handle must be set. You can do so by going to your [your workspace](https://app.botpress.cloud/workspaces/), clicking "Settings", and setting your workspace handle.
+* a workspace with a bot in Botpress Cloud
+* your workspace handle must be set. You can do so by going to your [your workspace](https://app.botpress.cloud/workspaces/), clicking "Settings", and setting your workspace handle.
 
 ## Installing the integration to your workspace
 
@@ -99,26 +87,11 @@ Now you can start developing your integration.
 npm run dev-local
 ```
 
-6. When your integration is fully developed and tested, you can use the `npx bp login`, then `npx bp deploy` and finally reset the _Self hosted integration's url_ in the settings section of your integration. This will allow the integration to run on Botpress infrastructure. Once deployed you will be able to see logs in you workspace in Botpress Cloud, under the integration, then the **logs** tab. 
+6. When your integration is fully developed and tested, you can use the `npx bp login`, then `npx bp deploy` and finally reset the *Self hosted integration's url* in the settings section of your integration. This will allow the integration to run on Botpress infrastructure. Once deployed you will be able to see logs in you workspace in Botpress Cloud, under the integration, then the **logs** tab. 
 
-   The bp login command also asks you to select a workspace to deploy the integration to. Go to your workspaces and fetch the workspace_id you'd like to deploy to.
+   The bp login command also asks you to select a workspace to deploy the integration to. Go to your workspaces and fetch the workspace\_id you'd like to deploy to.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3a5c04394ae5fb156fcbe21f099b79780cfb550412d8612c77121138b4175446-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "80% "
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="80% " src="https://files.readme.io/3a5c04394ae5fb156fcbe21f099b79780cfb550412d8612c77121138b4175446-image.png" />
 
 <br />
 
@@ -142,5 +115,5 @@ To see the logs of your integration,
 
 Now that you have your integration running and installed on your bot, you can start adding capabilities to it.
 
-- [Adding Messaging Channel Capabilities](../docs/adding-messaging-channel-capabilities)
-- [Adding Actions & Triggers to Botpress Studio](doc:adding-actions-triggers-to-botpress-studio)
+* [Adding Messaging Channel Capabilities](../docs/adding-messaging-channel-capabilities)
+* [Adding Actions & Triggers to Botpress Studio](doc:adding-actions-triggers-to-botpress-studio)
