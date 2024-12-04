@@ -12,9 +12,9 @@ next:
 ---
 ## Prerequisites
 
-- A [Meta developer app](https://developers.facebook.com/apps) that will serve as the primary platform for managing connection between Instagram and Botpress, including the configuration of webhooks and access tokens.
-- A [Facebook page](https://www.facebook.com/pages/create) in which you have the administrator or developer roles. Instagram accounts must be linked to a Facebook page to use the Facebook Graph API.
-- An [Instagram Professional account](https://business.instagram.com/), necessary to use features specific to Instagram professional accounts.
+* A [Meta developer app](https://developers.facebook.com/apps) that will serve as the primary platform for managing connection between Instagram and Botpress, including the configuration of webhooks and access tokens.
+* A [Facebook page](https://www.facebook.com/pages/create) in which you have the administrator or developer roles. Instagram accounts must be linked to a Facebook page to use the Facebook Graph API.
+* An [Instagram Professional account](https://business.instagram.com/), necessary to use features specific to Instagram professional accounts.
 
 <br />
 
@@ -25,13 +25,13 @@ next:
 
 The Instagram integration has the following settings:
 
-- **Enabled**: Whether Botpress will communicate with Instagram
-- **Webhook URL**: The URL for receiving data in Botpress
-- **App ID**: The ID of your Meta app
-- **App Secret**: The secret of your Meta app
-- **Verify Token**: The token used to verify the webhook requests
-- **Page ID**: The ID of your Facebook page
-- **Access Token**: The access token
+* **Enabled**: Whether Botpress will communicate with Instagram
+* **Webhook URL**: The URL for receiving data in Botpress
+* **App ID**: The ID of your Meta app
+* **App Secret**: The secret of your Meta app
+* **Verify Token**: The token used to verify the webhook requests
+* **Page ID**: The ID of your Facebook page
+* **Access Token**: The access token
 
 <br />
 
