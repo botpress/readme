@@ -5,7 +5,7 @@ api:
   file: botpress-api.json
   operationId: deleteWorkflow
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
