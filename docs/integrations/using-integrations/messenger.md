@@ -12,25 +12,13 @@ next:
 ---
 ![](https://files.readme.io/281dbea-image.png)
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FpOIrLMpZZqc%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DpOIrLMpZZqc&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FpOIrLMpZZqc%2Fhqdefault.jpg&key=7788cb384c9f4d5dbbdbeffd9fe4b92f&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=pOIrLMpZZqc",
-  "title": "How to Connect your Chatbot to Facebook Messenger",
-  "favicon": "https://www.google.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/pOIrLMpZZqc/hqdefault.jpg",
-  "provider": "youtube.com",
-  "href": "https://www.youtube.com/watch?v=pOIrLMpZZqc",
-  "typeOfEmbed": "youtube"
-}
-[/block]
-
+<Embed url="https://www.youtube.com/watch?v=pOIrLMpZZqc" title="How to Connect your Chatbot to Facebook Messenger" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/pOIrLMpZZqc/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=pOIrLMpZZqc" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FpOIrLMpZZqc%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DpOIrLMpZZqc%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FpOIrLMpZZqc%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 # Prerequisites
 
-- A [Meta developer app](https://developers.facebook.com/apps/create/) that will serve as the primary platform for managing connection between Messenger and Botpress, including the configuration of webhooks and access tokens.
-- A [Facebook page](https://www.facebook.com/pages/create/) that you own or has the developer role, this is needed to use the Messenger API.
-- A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
+* A [Meta developer app](https://developers.facebook.com/apps/create/) that will serve as the primary platform for managing connection between Messenger and Botpress, including the configuration of webhooks and access tokens.
+* A [Facebook page](https://www.facebook.com/pages/create/) that you own or has the developer role, this is needed to use the Messenger API.
+* A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
 
 <br />
 
@@ -41,13 +29,13 @@ next:
 
 The Messenger integration has the following settings:
 
-- **Enabled**: Whether Botpress will communicate with Messenger
-- **Webhook URL**: The URL for receiving data in Botpress
-- **App Id**: The id of your Meta App
-- **App Secret**: The secret of your Meta App
-- **Verify Token**: The token used to verify the webhook requests
-- **Page Id**: The id of your Facebook page
-- **Access Token**: The access token used to send messages to the Messenger API
+* **Enabled**: Whether Botpress will communicate with Messenger
+* **Webhook URL**: The URL for receiving data in Botpress
+* **App Id**: The id of your Meta App
+* **App Secret**: The secret of your Meta App
+* **Verify Token**: The token used to verify the webhook requests
+* **Page Id**: The id of your Facebook page
+* **Access Token**: The access token used to send messages to the Messenger API
 
 <br />
 
