@@ -12,7 +12,7 @@ next:
 ---
 The Botpress Knowledge Base is a powerful tool that allows users to manage and access organizational knowledge in one central location.
 
-It has been designed to replace the traditional Q&A system and enable users to upload various sources of information, including PDFs, Text Document, and website URLs.
+It has been designed to replace the traditional Q\&A system and enable users to upload various sources of information, including PDFs, Text Document, and website URLs.
 
 # Enabling the Knowledge Base Agent
 
@@ -38,7 +38,7 @@ Let's say you work at a company that sells different types of home appliances, s
 
 When creating the Knowledge Base, you would provide a brief description that outlines the purpose and scope of the Knowledge Base.
 
-For example,  
+For example,\
 **"This Knowledge Base provides information and support for our home appliances product line, including troubleshooting tips, user manuals, and frequently asked questions."**
 
 This description helps the NLU engine understand the focus of the Knowledge Base and identify the relevant sources of information to answer customer queries, such as **"How do I clean the filter in my washing machine?"** or **"What should I do if my oven is not heating up properly?"**
@@ -59,13 +59,13 @@ For instance, if a user searches for **"How to calibrate the XYZ device,"** Botp
 
 ## Supported File Formats
 
-- **PDF documents** are commonly used for manuals, guides, and other types of documentation. With Botpress, you can upload PDFs to your Knowledge Base, making it easy for employees to search for and access the information they need.
-- **HTML documents** are used for web pages and other online content. By uploading HTML documents to Botpress, you can make this web content accessible to employees who may not have internet access.
-- **TXT files** are Text Document documents, similar to the ones supported by the Text Document Knowledge Base. However, TXT files can contain more complex formatting, such as tables and images. By uploading TXT files to Botpress, you can make this type of content searchable and easily accessible.
-- **DOC** and **DOCX** files are commonly used for word processing documents, such as memos and reports. By uploading these files to Botpress, you can make them searchable and easily accessible to employees.
+* **PDF documents** are commonly used for manuals, guides, and other types of documentation. With Botpress, you can upload PDFs to your Knowledge Base, making it easy for employees to search for and access the information they need.
+* **HTML documents** are used for web pages and other online content. By uploading HTML documents to Botpress, you can make this web content accessible to employees who may not have internet access.
+* **TXT files** are Text Document documents, similar to the ones supported by the Text Document Knowledge Base. However, TXT files can contain more complex formatting, such as tables and images. By uploading TXT files to Botpress, you can make this type of content searchable and easily accessible.
+* **DOC** and **DOCX** files are commonly used for word processing documents, such as memos and reports. By uploading these files to Botpress, you can make them searchable and easily accessible to employees.
 
 > 📘 File Limits
-> 
+>
 > You can upload upto **100** documents to the Knowledge Base, with a size limit of **50MB** per document. This feature is designed for optimal utilization.
 
 <br />
@@ -90,9 +90,9 @@ When using the Web Search Knowledge Base Source, you have the ability to specify
 
 ### On which websites should we search on?
 
-- **Search on specific websites**: You can provide a list of website domains that you want the Botpress NLU engine to include in its search. For example, if you want to focus on retrieving information from trusted sources within your organization, you can include domains and subdirectories like "yourcompany.com" or "internalknowledgebase.com/specific-section". This ensures that the search is targeted to specific websites relevant to your Knowledge Base.
-- **Search the entire web**: If you select this option, the Botpress NLU engine will conduct searches across the entire web. This is useful when you want to gather information from a wide range of sources, including external websites and online communities. It enables you to access a broader set of information that may be helpful to your Knowledge Base.
-- **Exclude specific websites from the search**: Sometimes, you may want to exclude certain websites from the search results. This option allows you to specify a list of website domains that should be excluded from the search. For example, if you want to filter out unreliable sources or competitor websites, you can exclude their domains from the search. This ensures that the search focuses on credible and relevant information.
+* **Search on specific websites**: You can provide a list of website domains that you want the Botpress NLU engine to include in its search. For example, if you want to focus on retrieving information from trusted sources within your organization, you can include domains and subdirectories like "yourcompany.com" or "internalknowledgebase.com/specific-section". This ensures that the search is targeted to specific websites relevant to your Knowledge Base.
+* **Search the entire web**: If you select this option, the Botpress NLU engine will conduct searches across the entire web. This is useful when you want to gather information from a wide range of sources, including external websites and online communities. It enables you to access a broader set of information that may be helpful to your Knowledge Base.
+* **Exclude specific websites from the search**: Sometimes, you may want to exclude certain websites from the search results. This option allows you to specify a list of website domains that should be excluded from the search. For example, if you want to filter out unreliable sources or competitor websites, you can exclude their domains from the search. This ensures that the search focuses on credible and relevant information.
 
 ### Filter search results by time period
 
@@ -100,10 +100,10 @@ When utilizing the Web Search Knowledge Base Source, you can further enhance you
 
 To enhance your web search capabilities and filter search results by time period, you can utilize the following options:
 
-- **Do not filter based on time**: Selecting this option ensures that the search results are not filtered based on a specific time period. It includes all available information without any time restrictions.
-- **Pages discovered in the last 24 hours**: By choosing this option, the search results will focus on web pages that have been discovered or indexed within the past 24 hours. This allows you to access the most recent information available on the web.
-- **Pages discovered in the last 7 days**: Selecting this option narrows down the search results to web pages that have been discovered or indexed within the past 7 days. It helps you stay updated with recent developments and information.
-- **Pages discovered in the last 30 days**: This option filters the search results to include web pages that have been discovered or indexed within the past 30 days. It provides a slightly broader time range for retrieving recent information.
+* **Do not filter based on time**: Selecting this option ensures that the search results are not filtered based on a specific time period. It includes all available information without any time restrictions.
+* **Pages discovered in the last 24 hours**: By choosing this option, the search results will focus on web pages that have been discovered or indexed within the past 24 hours. This allows you to access the most recent information available on the web.
+* **Pages discovered in the last 7 days**: Selecting this option narrows down the search results to web pages that have been discovered or indexed within the past 7 days. It helps you stay updated with recent developments and information.
+* **Pages discovered in the last 30 days**: This option filters the search results to include web pages that have been discovered or indexed within the past 30 days. It provides a slightly broader time range for retrieving recent information.
 
 By utilizing these options, you can tailor the time period for your web search and ensure that the search results align with your Knowledge Base requirements. Whether you prefer real-time updates or a broader range of recent information, these options help you refine your search results accordingly.
 
@@ -111,7 +111,7 @@ By utilizing these options, you can tailor the time period for your web search a
 
 ## 4. Text Document
 
-The Text Document KB Source allows users to create/add plain textual information, such as FAQs, guides, and manuals. This Knowledge Base replaces Botpress's old Q&A system and is designed to provide users with quick access to information on various topics.
+The Text Document KB Source allows users to create/add plain textual information, such as FAQs, guides, and manuals. This Knowledge Base replaces Botpress's old Q\&A system and is designed to provide users with quick access to information on various topics.
 
 Here's an example of how the Text Document Knowledge Base could be used in a company that sells different types of home appliances, such as **refrigerators**, **washing machines**, and **ovens**:
 
@@ -146,16 +146,16 @@ The `Searchable` property can be enabled either during the creation of a column 
 
 If you have a table of organized data, users can ask questions like:
 
-- "How many X are there?"
-- "What is the Y of X?"
-- "Show me X that have Y."
-- "How X is Y?"
+* "How many X are there?"
+* "What is the Y of X?"
+* "Show me X that have Y."
+* "How X is Y?"
 
 For instance, if you're running a chair e-shop, users can get product information by asking:
 
-- "How many chairs are there?"
-- "What is the price of your red velvet chair?"
-- "Show me products priced at $20."
+* "How many chairs are there?"
+* "What is the price of your red velvet chair?"
+* "Show me products priced at $20."
 
 **Manual Answer Option**
 
@@ -163,7 +163,7 @@ If you prefer to review and curate answers before they get sent, you can toggle 
 
 **Limitations**
 
-Keep in mind that the feature may not provide accurate counts for "How many [products / items / rows]"-type questions. Internally, the Knowledge Base runs a search before delivering answers, and since not all results are returned, the actual counts might be off.
+Keep in mind that the feature may not provide accurate counts for "How many \[products / items / rows]"-type questions. Internally, the Knowledge Base runs a search before delivering answers, and since not all results are returned, the actual counts might be off.
 
 ## Storage Quota
 
@@ -172,7 +172,7 @@ The Knowledge Base feature in Botpress is designed to provide users with quick a
 The storage quota is the maximum amount of data that can be stored in the Knowledge Base.
 
 > 📘 Limit
-> 
+>
 > All chatbots have a limit of **5000** vectors - which is the equivalent to approximately 200 blog articles or 1000 PDF pages.
 
 <br />
@@ -187,7 +187,7 @@ To enable the Knowledge Base on a Capture Information Card:
 2. In the Inspector panel, look for the option called **Knowledge Base**.
 3. In the "Search all KBs" field, you can choose either specific KBs to search in, or you can choose "Disable Search"
 
-By enabling this option, you allow the Knowledge Base to provide answers during the interaction when the user is asked for a response. If the user's input is relevant to the information stored in the Knowledge Base, Botpress's Natural Language Understanding (NLU) will retrieve the corresponding answer from the Knowledge Base and display it to the user. The conversation then proceeds to the next step of capturing information.  
+By enabling this option, you allow the Knowledge Base to provide answers during the interaction when the user is asked for a response. If the user's input is relevant to the information stored in the Knowledge Base, Botpress's Natural Language Understanding (NLU) will retrieve the corresponding answer from the Knowledge Base and display it to the user. The conversation then proceeds to the next step of capturing information.\
 This feature helps to enhance the user experience by providing quick and accurate answers sourced from the Knowledge Base when appropriate.
 
 If you disable the Knowledge Base feature on the Capture Info action in Botpress, the system **will not** utilize the Knowledge Base to provide answers during the interaction.
@@ -248,7 +248,7 @@ Then, input `@kbAnswerWithoutRef` into your text or capture card. Make sure to c
 
 You can scope the Knowledge Base by folders to limit the search to specific folders. This allows you to focus on a particular area of interest and retrieve relevant information from the Knowledge Base.
 
-~~Learn more about [Scoping the Knowledge Base with Folders](<>)~~
+~~Learn more about [Scoping the Knowledge Base with Folders]()~~
 
 <br />
 
@@ -260,7 +260,7 @@ If no answer is found in the KB, you want to add a default message to handle tha
 !event.state.agentVariables.KnowledgeAgent.turn.answer
 ```
 
-This will make the bot check if there is a value in the "answer" field; if not, then this transition/expression card will be fired.  
+This will make the bot check if there is a value in the "answer" field; if not, then this transition/expression card will be fired.\
 Connect this card to a node with the message you want to show.
 
 <br />
