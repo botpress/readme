@@ -14,7 +14,7 @@ next:
 
 ## Overall Product Specifications
 
-<Table align={["left","left"]}>
+<table align={["left","left"]}>
   <thead>
     <tr>
       <th style={{ textAlign: "left" }}>
@@ -208,49 +208,49 @@ next:
       </td>
     </tr>
   </tbody>
-</Table>
+</table>
 
 ## Enterprise-Specific Features​
 
-<Table>
-  <Tr>
-    <Td>**Feature**</Td>
-    <Td>**Description**</Td>
-  </Tr>
-  <Tr>
-    <Td>Enhanced Enterprise Security for Chatbot users</Td>
-    <Td>Identity transmission - securely transmit the user identity to the webchat from the host web page</Td>
-  </Tr>
-  <Tr>
-    <Td>Role-based access control (RBAC)</Td>
-    <Td>
+<table>
+  <tr>
+    <td>**Feature**</td>
+    <td>**Description**</td>
+  </tr>
+  <tr>
+    <td>Enhanced Enterprise Security for Chatbot users</td>
+    <td>Identity transmission - securely transmit the user identity to the webchat from the host web page</td>
+  </tr>
+  <tr>
+    <td>Role-based access control (RBAC)</td>
+    <td>
       RBAC - Users can be assigned roles, and permissions can be managed with regards to these roles in terms of giving
       users read and/or write access to specific features
-    </Td>
-  </Tr>
-  <Tr>
-    <Td>Single-Sign On (SSO)</Td>
-    <Td>
+    </td>
+  </tr>
+  <tr>
+    <td>Single-Sign On (SSO)</td>
+    <td>
       Seamlessly link Botpress to your identity provider, OAuth2 for Google, Github, Azure
       <br />
       Talk to sales for more information
-    </Td>
-  </Tr>
-  <Tr>
-    <Td>Scalability</Td>
-    <Td>Botpress has you covered: your chatbot solution adapts instantaneously as your user base grows</Td>
-  </Tr>
-  <Tr>
-    <Td>Monitoring</Td>
-    <Td>
+    </td>
+  </tr>
+  <tr>
+    <td>Scalability</td>
+    <td>Botpress has you covered: your chatbot solution adapts instantaneously as your user base grows</td>
+  </tr>
+  <tr>
+    <td>Monitoring</td>
+    <td>
       Directly monitor messages left on your community plan
       <br />
       Set up alerts for messages and keep an eye on your monthly message traffic
-    </Td>
-  </Tr>
-  <Tr>
-    <Td>Enterprise Support</Td>
-    <Td>
+    </td>
+  </tr>
+  <tr>
+    <td>Enterprise Support</td>
+    <td>
       Advanced Botpress technical support
       <br />
       Standard: EST business hours
@@ -258,21 +258,21 @@ next:
       Premium: 24/7
       <br />
       SLA
-    </Td>
-  </Tr>
-  <Tr>
-    <Td>Integrations</Td>
-    <Td>For a full list of integrations check out our [integration hub](https://botpress.com/hub)</Td>
-  </Tr>
-  <Tr>
-    <Td>Collaboration</Td>
-    <Td>
+    </td>
+  </tr>
+  <tr>
+    <td>Integrations</td>
+    <td>For a full list of integrations check out our [integration hub](https://botpress.com/hub)</td>
+  </tr>
+  <tr>
+    <td>Collaboration</td>
+    <td>
       Real-time collaboration, with workspaces to organize both chatbots and developer work
       <br />
       Realtime collaborative interface (with lock management)
       <br />
       Workspaces - logical unit that groups up your conversational assistants based on the purpose of the chatbots or
       for something more granular such as for a specific task, etc.
-    </Td>
-  </Tr>
-</Table>
+    </td>
+  </tr>
+</table>
