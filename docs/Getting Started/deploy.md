@@ -12,7 +12,7 @@ next:
 ---
 ## Publishing your bot
 
-When you're ready to share your bot with end users, click on the **Publish** button located at the top of the <<glossary:Studio>>.
+When you're ready to share your bot with end users, click on the **Publish** button located at the top of the <Glossary>Studio</Glossary>.
 
 Your users will now be able to interact with the version of the bot you most recently published. Any changes you make before publishing again will not reflect in your bot until you publish again.
 
