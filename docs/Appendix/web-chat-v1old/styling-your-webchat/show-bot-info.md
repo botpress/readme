@@ -10,13 +10,11 @@ metadata:
 next:
   description: ''
 ---
-[block:image]{"images":[{"image":["https://files.readme.io/1bcb4a6-image.png",null,"Terms and Conditions"],"align":"center","caption":""}]}[/block]
-
-
+<Image align="center" src="https://files.readme.io/1bcb4a6-image.png" />
 
 You can Customize the Chatbot's Information Page using below CSS
 
-To show bot information page, you will need to add **showBotInfoPage : true** in  
+To show bot information page, you will need to add **showBotInfoPage : true** in\
 your webchat init object
 
 ```typescript
