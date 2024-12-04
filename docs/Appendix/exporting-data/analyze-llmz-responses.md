@@ -18,7 +18,7 @@ next:
   description: ''
 ---
 > 📘 Note
-> 
+>
 > If you are looking to simply understand a response in the emulator, you can use the inspect button to get information about the Autonomous nodes thinking. But for other use cases, Botpress allows you to create a javascript hook that allows you do something with the data programatically.
 
 # Using LLMz hooks
@@ -44,8 +44,8 @@ To set up this hook:
 
 This hook function provides access to two key parameters:
 
-- `event`: The [Event object](https://botpress.com/docs/event) with details about the interaction.
-- `execution`: An object containing data on the LLMz execution, including details of each iteration and response content. More information on the `execution` object structure is provided [below](#the-execution-object).
+* `event`: The [Event object](https://botpress.com/docs/event) with details about the interaction.
+* `execution`: An object containing data on the LLMz execution, including details of each iteration and response content. More information on the `execution` object structure is provided [below](#the-execution-object).
 
 ## Example Code for the After LLMz Execution Hook
 
@@ -101,34 +101,34 @@ The `execution` object provides detailed information about the actions taken by 
 
 ### Structure of `execution` Object
 
-- **status**: String indicating the overall status of the execution, e.g., `"success"`, `"partial"`, `"failure"`.
+* **status**: String indicating the overall status of the execution, e.g., `"success"`, `"partial"`, `"failure"`.
 
-- **iterations**: Array of objects, each representing a step or interaction in the Autonomous Node’s execution. Each iteration contains:
-  - **message**: The text response generated at this stage.
-  - **code**: Code executed during this iteration, often in response to specific queries.
-  - **variables**: Object holding variables used within the iteration.
-  - **status**: Status of the individual iteration, e.g., `"partial"`, `"success"`.
-  - **signal**: Information on any signals received, often in the form of structured `ThinkSignal` or other signals, detailing contextual reasoning.
-  - **started_ts**: Timestamp (in milliseconds) indicating when the iteration started.
-  - **ended_ts**: Timestamp (in milliseconds) when the iteration concluded.
-  - **llm**: Object detailing the large language model used, including its version and parameters.
-  - **mutations**: Array of any mutations or transformations applied to variables.
-  - **traces**: Trace data related to the LLM's decisions and actions.
-  - **messages**: Messages used or processed within this step.
-  - **notebook**: Object representing any generated or stored notebook content for reference.
+* **iterations**: Array of objects, each representing a step or interaction in the Autonomous Node’s execution. Each iteration contains:
+  * **message**: The text response generated at this stage.
+  * **code**: Code executed during this iteration, often in response to specific queries.
+  * **variables**: Object holding variables used within the iteration.
+  * **status**: Status of the individual iteration, e.g., `"partial"`, `"success"`.
+  * **signal**: Information on any signals received, often in the form of structured `ThinkSignal` or other signals, detailing contextual reasoning.
+  * **started\_ts**: Timestamp (in milliseconds) indicating when the iteration started.
+  * **ended\_ts**: Timestamp (in milliseconds) when the iteration concluded.
+  * **llm**: Object detailing the large language model used, including its version and parameters.
+  * **mutations**: Array of any mutations or transformations applied to variables.
+  * **traces**: Trace data related to the LLM's decisions and actions.
+  * **messages**: Messages used or processed within this step.
+  * **notebook**: Object representing any generated or stored notebook content for reference.
 
-- **context**: Contains settings, variables, and tools relevant to the execution:
-  - **\_\_options**: Execution settings such as the model version, number of loops, temperature, and specific instructions.
-  - **transcript**: Transcript of messages exchanged, with each entry detailing user and bot interactions.
-  - **getMessages**: Function for retrieving messages, typically used internally for processing.
-  - **partialExecutionMessages**: Array holding messages generated if the execution is paused or partially completed.
-  - **tool_names**: Names of tools used in the execution, e.g., APIs or functions.
-  - **iteration**: Current iteration count in the execution loop.
-  - **injectedVariables**: Variables introduced during execution, such as results from knowledge base queries.
+* **context**: Contains settings, variables, and tools relevant to the execution:
+  * **\_\_options**: Execution settings such as the model version, number of loops, temperature, and specific instructions.
+  * **transcript**: Transcript of messages exchanged, with each entry detailing user and bot interactions.
+  * **getMessages**: Function for retrieving messages, typically used internally for processing.
+  * **partialExecutionMessages**: Array holding messages generated if the execution is paused or partially completed.
+  * **tool\_names**: Names of tools used in the execution, e.g., APIs or functions.
+  * **iteration**: Current iteration count in the execution loop.
+  * **injectedVariables**: Variables introduced during execution, such as results from knowledge base queries.
 
-- **location**: Provides information about the Autonomous Node’s current position in the workflow:
-  - **type**: Indicates if it's a workflow or standalone operation.
-  - **workflowId**: Unique identifier for the workflow.
-  - **workflowName**: Name of the workflow where the execution takes place.
-  - **nodeId**: Identifier for the specific node within the workflow.
-  - **nodeName**: Name of the node, e.g., `"AutonomousNode"`.
+* **location**: Provides information about the Autonomous Node’s current position in the workflow:
+  * **type**: Indicates if it's a workflow or standalone operation.
+  * **workflowId**: Unique identifier for the workflow.
+  * **workflowName**: Name of the workflow where the execution takes place.
+  * **nodeId**: Identifier for the specific node within the workflow.
+  * **nodeName**: Name of the node, e.g., `"AutonomousNode"`.
