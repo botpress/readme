@@ -100,5 +100,5 @@ await axios.post(
 ```
 
 > 📘 Note
-> 
+>
 > Now every time a user or the bot sends a message, Mixpanel will be notified with the event data. You can use this data to create funnels, analyze user behavior and understand the paths they take when interacting with the bot.
