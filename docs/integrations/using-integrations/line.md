@@ -14,8 +14,8 @@ next:
 
 # Prerequisites
 
-- A channel created on the [LINE Developers Console](https://developers.line.biz/).
-- The same channel added to your LINE official account
+* A channel created on the [LINE Developers Console](https://developers.line.biz/).
+* The same channel added to your LINE official account
 
 <br />
 
@@ -26,10 +26,10 @@ next:
 
 The LINE integration has the following settings:
 
-- **Enabled**: Whether Botpress will communicate with LINE
-- **Webhook URL**: The URL for receiving data in Botpress
-- **Channel Access Token**: The token used to authenticate the channel
-- **Channel Secret**: The secret used to verify the signature between LINE and Botpress
+* **Enabled**: Whether Botpress will communicate with LINE
+* **Webhook URL**: The URL for receiving data in Botpress
+* **Channel Access Token**: The token used to authenticate the channel
+* **Channel Secret**: The secret used to verify the signature between LINE and Botpress
 
 <br />
 
@@ -63,29 +63,29 @@ That's it, you may now start chatting with your bot on LINE!
 
 ## From Botpress to LINE
 
-- **Text** is mapped to [Text Object](https://developers.line.biz/en/docs/messaging-api/message-types/#text-messages)
+* **Text** is mapped to [Text Object](https://developers.line.biz/en/docs/messaging-api/message-types/#text-messages)
 
-- Text with **Markdown** is mapped to [Text Object](https://developers.line.biz/en/docs/messaging-api/message-types/#text-messages)
+* Text with **Markdown** is mapped to [Text Object](https://developers.line.biz/en/docs/messaging-api/message-types/#text-messages)
 
-- **Image** is mapped to [Image Object](https://developers.line.biz/en/docs/messaging-api/message-types/#image-messages)
+* **Image** is mapped to [Image Object](https://developers.line.biz/en/docs/messaging-api/message-types/#image-messages)
 
-- **Audio** is mapped to [Audio Object](https://developers.line.biz/en/docs/messaging-api/message-types/#audio-messages)
+* **Audio** is mapped to [Audio Object](https://developers.line.biz/en/docs/messaging-api/message-types/#audio-messages)
 
-- **Video** is mapped to [Video Object](https://developers.line.biz/en/docs/messaging-api/message-types/#video-messages)
+* **Video** is mapped to [Video Object](https://developers.line.biz/en/docs/messaging-api/message-types/#video-messages)
 
-- **File** is **NOT** supported in LINE [Message Types](https://developers.line.biz/en/docs/messaging-api/message-types/)
+* **File** is **NOT** supported in LINE [Message Types](https://developers.line.biz/en/docs/messaging-api/message-types/)
 
-- **Location** is mapped to [Location Object](https://developers.line.biz/en/docs/messaging-api/message-types/#location-messages)
+* **Location** is mapped to [Location Object](https://developers.line.biz/en/docs/messaging-api/message-types/#location-messages)
 
-- **Carousel** is mapped to [Flex Object](https://developers.line.biz/en/docs/messaging-api/message-types/#flex-messages)
+* **Carousel** is mapped to [Flex Object](https://developers.line.biz/en/docs/messaging-api/message-types/#flex-messages)
 
-- **Card** is mapped to [Flex Object](https://developers.line.biz/en/docs/messaging-api/message-types/#flex-messages)
+* **Card** is mapped to [Flex Object](https://developers.line.biz/en/docs/messaging-api/message-types/#flex-messages)
 
-- **Dropdown** is mapped to [Flex Object](https://developers.line.biz/en/docs/messaging-api/message-types/#flex-messages)
+* **Dropdown** is mapped to [Flex Object](https://developers.line.biz/en/docs/messaging-api/message-types/#flex-messages)
 
-- **Choice** is mapped to [Flex Object](https://developers.line.biz/en/docs/messaging-api/message-types/#flex-messages)
+* **Choice** is mapped to [Flex Object](https://developers.line.biz/en/docs/messaging-api/message-types/#flex-messages)
 
 ## From LINE to Botpress
 
-- **Text** is mapped to **Text Object**
-- The rest of the types are not currently processed by Botpress
+* **Text** is mapped to **Text Object**
+* The rest of the types are not currently processed by Botpress
