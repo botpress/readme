@@ -25,7 +25,7 @@ You can search for integrations to third-party services by name here, like Whats
 Clicking on an integration from a search result will open a menu that allows you to install that integration to your bot. From this menu, you can also see information like prerequisites, installation instructions, and the Botpress user responsible for contributing the integration to the hub.
 
 > ✅ Verification
-> 
+>
 > Integrations with a checkmark icon next to the name have been verified and confirmed as trusted integrations for safety and function by the Botpress team.
 
 ## Configure
