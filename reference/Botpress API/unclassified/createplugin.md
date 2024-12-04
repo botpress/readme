@@ -5,7 +5,7 @@ api:
   file: botpress-api.json
   operationId: createPlugin
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
