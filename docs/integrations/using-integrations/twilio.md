@@ -14,11 +14,9 @@ next:
 
 # Prerequisites
 
-- A [Twilio](https://www.twilio.com/) account
-- A Twilio phone number. Check out [this article](https://support.twilio.com/hc/en-us/articles/223135247-How-to-Search-for-and-Buy-a-Twilio-Phone-Number-from-Console) to learn how to get one.
-- A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
-
-
+* A [Twilio](https://www.twilio.com/) account
+* A Twilio phone number. Check out [this article](https://support.twilio.com/hc/en-us/articles/223135247-How-to-Search-for-and-Buy-a-Twilio-Phone-Number-from-Console) to learn how to get one.
+* A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
 
 # Setting up the Twilio integration in Botpress
 
@@ -27,15 +25,13 @@ next:
 
 The Twilio integration has the following settings:
 
-- **Enabled**: Whether Botpress will communicate with Twilio
+* **Enabled**: Whether Botpress will communicate with Twilio
 
-- **Webhook URL**: The URL for receiving data in Botpress
+* **Webhook URL**: The URL for receiving data in Botpress
 
-- **Account SID**: Your Twilio Account SID
+* **Account SID**: Your Twilio Account SID
 
-- **Auth Token**: Your Twilio Auth Token
-
-
+* **Auth Token**: Your Twilio Auth Token
 
 # Setting up Twilio
 
@@ -47,8 +43,6 @@ The Twilio integration has the following settings:
 ## Save Configuration
 
 Channel configuration is complete, you can now click **Save**
-
-
 
 # Webhook Configuration
 
