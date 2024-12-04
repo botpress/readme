@@ -24,7 +24,7 @@ This includes parameters like API keys, access tokens, server URLs, etc., depend
 
 The schema is defined in the **configuration** object, where each key corresponds to a configuration parameter.
 
-Each parameter must specify a **type**, such as **string**, **number**, **boolean**, etc.  
+Each parameter must specify a **type**, such as **string**, **number**, **boolean**, etc.\
 Some parameters might be marked as **required** if they are necessary for the integration to function.
 
 <br />
