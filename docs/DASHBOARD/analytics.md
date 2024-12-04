@@ -17,7 +17,7 @@ next:
 Using the Analytics tab in your bot's dashboard, you can visualize your bot's recent activity as well as monitor the health of your chatbot project.
 
 > 📘 Note
-> 
+>
 > Some features in the Analytics tab, like selecting custom time periods or creating and saving additional custom displays, are only available to Team plan subscribers. [Learn more](https://botpress.com/pricing)
 
 ## Default Layout
@@ -36,13 +36,13 @@ When customizing a board, you can select from a list of pre-configured time peri
 
 When choosing what data your Analytics tab will display, you can choose from a list of conversation-related events. These include:
 
-- total, new, and returning users
-- sessions
-- bot, user, and total messages
-- average messages sent by your bot per session
-- average messages sent by users per session
-- average number of sessions per user
-- the custom botready, botpulished, state_expired, and conversationStarted events.
+* total, new, and returning users
+* sessions
+* bot, user, and total messages
+* average messages sent by your bot per session
+* average messages sent by users per session
+* average number of sessions per user
+* the custom botready, botpulished, state\_expired, and conversationStarted events.
 
 ## Chart Types
 
