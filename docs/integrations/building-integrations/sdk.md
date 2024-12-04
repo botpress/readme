@@ -70,13 +70,13 @@ The Bot's constructor is what we call its definition. It contains information su
 
 The Bot's definition is described by the following fields:
 
-- `tags`
+* `tags`
 
   This field is used to specify the Tags used by the **Bot**.
 
   **Tags** are strings that allow to filter messages, conversations or users when querying the API.
 
-- `states`
+* `states`
 
   This field is used to specify the **States** used by the **Bot**.
 
@@ -86,34 +86,34 @@ The Bot's definition is described by the following fields:
 
   **States** have a schema, meaning that only the data that matches the schema can be persisted and retrieved.
 
-- `integrations`
+* `integrations`
 
   This field is used to specify the **Integrations** installed in the **Bot**.
 
   **Integrations** are used to connect a **Bot** to external services.
 
-  Disabled **Integrations** are not used by the **_Bot_**. They can however be enabled later in the [CDM](https://app.Botpress.cloud) or through the [API](https://botpress.com/docs/api/).
+  Disabled **Integrations** are not used by the ***Bot***. They can however be enabled later in the [CDM](https://app.Botpress.cloud) or through the [API](https://botpress.com/docs/api/).
 
   Setting an **Integration** in the **Bot**'s definition does two things:
 
-  - it allows the **Integration** to call your **Bot** with events and messages.
-  - it allows your **Bot** to call the **Integration** with actions.
+  * it allows the **Integration** to call your **Bot** with events and messages.
+  * it allows your **Bot** to call the **Integration** with actions.
 
-- `configuration`
+* `configuration`
 
   This field is used to specify the schema of the **Configuration** provided to the **Bot** when it's called.
 
   The actual **Configuration** is provided by the user when deploying the **Bot**.
 
-- `events`
+* `events`
 
   This field is used to specify the schema of the **Events** that can be sent to the **Bot** by **Integrations**.
 
   **Events** are just like messages, only they have a more general purpose, a custom schema and a wider use case.
 
-- `recurringEvents`
+* `recurringEvents`
 
-  This field is used to specify **Recurring Events**.  
+  This field is used to specify **Recurring Events**.\
   **Recurring Events** are events that are sent to the **Bot** following a certain cron schedule.
 
 Here's an example of a more complete Bot's definition:
@@ -343,61 +343,61 @@ export default new sdk.Integration({
 
 The Integration's definition is described by the following fields:
 
-- `name`
+* `name`
 
   The name of the Integration. It must be unique accross all Integrations.
 
-- `version`
+* `version`
 
   The version of the Integration. It must be unique accross all versions of the same Integration.
 
   Currently, only the version `0.2.0` is allowed for public Integrations and `0.0.1` for private Integrations. This is a temporary limitation that will be lifted in a near future.
 
-- `public`
+* `public`
 
   Whether the Integration is public or not. A public Integration can be installed by any Bot, while a private Integration can only be installed by Bots in the same workspace.
 
-- `title`
+* `title`
 
   Display name of the Integration.
 
-- `description`
+* `description`
 
   A description of the Integration.
 
-- `icon`
+* `icon`
 
   Path to an SVG file containing the Integration's icon. This path can either be absolute or relative to the Integration's working directory.
 
-- `readme`
+* `readme`
 
   Path to a Markdown file containing the Integration's documentation. This path can either be absolute or relative to the Integration's working directory.
 
-- `tags`
+* `tags`
 
   A list of tags that can be used to filter users when querying the API.
 
-- `configuration`
+* `configuration`
 
   The configuration schema of the Integration. The actual configuration is provided by the bot when installing the Integration.
 
-- `events`
+* `events`
 
   A map of events that can be emitted by the Integration. Events can be used to trigger handlers in the Bot.
 
-- `actions`
+* `actions`
 
   A map of actions that can be called by the Bot. Actions can be used to trigger handlers in the Integration. Actions are defined by their input and output schemas.
 
-- `channels`
+* `channels`
 
   A map of communication channels that can be used by the Bot send a message to the external service. Channels are defined by their messages types. The SDK provides a set of default messages types that can be used to send text, images, videos, etc.
 
-- `states`
+* `states`
 
   Just like for Bots, Integrations can define states that can be used to store data. States are defined by their schema.
 
-- `user`
+* `user`
 
   Allows the Integration to proactively create a user. This is usefull if the Integration needs to send a message to a user that has not yet interacted with the Bot.
 
