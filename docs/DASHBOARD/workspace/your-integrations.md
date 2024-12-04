@@ -15,11 +15,11 @@ This tab lists integrations your Workspace has contributed to the Botpress Hub.
 <br />
 
 > 🖥️ About the Botpress Hub
-> 
+>
 > The Botpress Hub is a public repository of integrations you can use to extend your Botpress bot's functionalities and options for deployment.
-> 
+>
 > It is open to the public, so you can make contributions to it, share integrations with colleagues or bot builders across the world, and download integrations developed by Botpress and other builders.
-> 
+>
 > Learn more here.
 
 <br />
