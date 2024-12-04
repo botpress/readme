@@ -13,11 +13,11 @@ next:
 The Botpress API allows you to access your bot's conversations from an external service. This is very useful if you need to manage or analyze the conversations somehow. In this tutorial we give steps to use the API for this purpose and steps to format the response data. Let's get started!
 
 > 📘 Note
-> 
+>
 > Access the API documentation to verify the schema/structure of the [Conversations](https://botpress.com/docs/api-documentation/#schema_conversation) and the [Messages](https://botpress.com/docs/api-documentation/#schema_message) and see if the data is useful for your use case.
 
 > 📘 Note
-> 
+>
 > You can find your personal access token in your [Admin Dashboard](https://app.botpress.cloud/). You can find your bot ID in the URL of your bot's dashboard, it's the letters and numbers right after `chatbots/`
 
 <br />
@@ -75,7 +75,7 @@ allConversations.push(getConversations.conversations)
 ```
 
 > 📘 Info
-> 
+>
 > The API returns a maximum of 20 conversations per request. You will need to use the `nextToken` property to fetch the next batch of conversations. The `nextToken` property is returned in the `meta` object of the response.
 
 <br />
@@ -104,7 +104,7 @@ async function loadConversations(paginationToken) {
 
 ## Getting all conversations
 
-Use a loop to fetch all conversations at once using the above logic. This is not recommended for bots with a large number of conversations as it may take a long time to complete and may cause timeouts. The use of a library like  
+Use a loop to fetch all conversations at once using the above logic. This is not recommended for bots with a large number of conversations as it may take a long time to complete and may cause timeouts. The use of a library like\
 [p-retry](https://www.npmjs.com/package/p-retry) to retry requests automatically is recommended.
 
 ```js
@@ -149,7 +149,7 @@ const getMessages = await client.listMessages({
 allMessages.push(getMessages.messages)
 ```
 
-You might create a loader function or a finite loop as shown above to get all the messages.  
+You might create a loader function or a finite loop as shown above to get all the messages.\
 This is how the `allMessages` array is gonna look like:
 
 ```json
@@ -208,7 +208,7 @@ This is how the `allMessages` array is gonna look like:
 ```
 
 > 📘 Note
-> 
+>
 > In this example the bot sends a Multiple Choice card, then the user answers by clicking one of the options, and then the bot sends an Image card. Notice how the message payload changes according to the message type, so be mindful of that when reading the `payload` property.
 
 <br />
@@ -257,5 +257,5 @@ at 24/10/2023, 5:21:09 PM
 ```
 
 > 📘 Note
-> 
+>
 > You can customize the `formatMessage` function to have different formatting or to return more information of the messages.  Now use the `history` variable however you like - send it via email, add it to a Google Sheets document, send it to Botpress to do further processing, etc.
