@@ -43,7 +43,7 @@ const file = await client.uploadFile({
 
 Once the code above runs, the URL to download the file will be available in the `file.url` property.
 
-By default the file URL returned will be temporary and change on each request to this endpoint, and will expire after a short period of time and thus should not be stored long-term, but if the file was created with a 'public_content' access policy then this URL will be permanent and can be stored long-term.
+By default the file URL returned will be temporary and change on each request to this endpoint, and will expire after a short period of time and thus should not be stored long-term, but if the file was created with a 'public\_content' access policy then this URL will be permanent and can be stored long-term.
 
 ### Uploading from an existing URL
 
@@ -221,9 +221,9 @@ The following file formats are supported for indexing:
 
 ### Notes on indexing:
 
-- The file it will initially have a status of "indexing_pending" and will be indexed asynchronously. The time it takes to index the file will depend on the file size and the current load on the system.
-- You can check the status of the file by calling the [Get File](../docs/api-documentation/#get-file) endpoint and checking that the `file.status` property has changed to "indexing_completed".
-- If the indexing failed the status will be set to "indexing_failed" and the reason of the failure will be available in the `failedStatusReason` property of the file.
+* The file it will initially have a status of "indexing\_pending" and will be indexed asynchronously. The time it takes to index the file will depend on the file size and the current load on the system.
+* You can check the status of the file by calling the [Get File](../docs/api-documentation/#get-file) endpoint and checking that the `file.status` property has changed to "indexing\_completed".
+* If the indexing failed the status will be set to "indexing\_failed" and the reason of the failure will be available in the `failedStatusReason` property of the file.
 
 <br />
 
@@ -298,7 +298,7 @@ const result = await fetch('https://api.botpress.cloud/v1/files?tags=' + encodeU
 ```
 
 > 📘 Calling the API Directly
-> 
+>
 > If you're making the HTTP request directly to the API please note that you'll need to pass the tags parameter as a JSON-serialized, URL-encoded string (the Botpress Client handles this automatically for you).
 
 ### Pagination
@@ -477,8 +477,8 @@ const answer = await openai.chat.completions.create({
 
 A file can have a list of special access policies:
 
-- `public_content`: Unauthenticated users can read contents (but not metadata) of the file through a unique permanent URL provided by the API for each file. Without this policy the file URL returned by the API will be temporary and will expire after a short period of time.
-- `integrations`: Grants read, search, list access to all integrations of the bot that owns the file.
+* `public_content`: Unauthenticated users can read contents (but not metadata) of the file through a unique permanent URL provided by the API for each file. Without this policy the file URL returned by the API will be temporary and will expire after a short period of time.
+* `integrations`: Grants read, search, list access to all integrations of the bot that owns the file.
 
 <br />
 
@@ -494,7 +494,7 @@ A file can have a list of special access policies:
 | Billing Manager workspace member                     | No permissions on files.                                                                                                  |
 
 > 📘 Note
-> 
+>
 > The [List Files](../docs/api-documentation/#list-files) API endpoint will filter out files that are not accessible to the user calling that API endpoint.
 
 <br />
@@ -509,10 +509,10 @@ For full details on pricing please check our [Pricing page](https://botpress.com
 
 # Quotas/Limits
 
-- Maximum file size: 100 MB
-- Rate limits: [same as all other endpoints](../docs/preventing-abuse) of our public API
-- Tags
-  - As defined in the [Limits and Quotas of Botpress Cloud](../docs/limits-and-quotas-of-botpress-cloud)
-- Search
-  - Query: 1 KB maximum
-  - Maximum number of results: 50
+* Maximum file size: 100 MB
+* Rate limits: [same as all other endpoints](../docs/preventing-abuse) of our public API
+* Tags
+  * As defined in the [Limits and Quotas of Botpress Cloud](../docs/limits-and-quotas-of-botpress-cloud)
+* Search
+  * Query: 1 KB maximum
+  * Maximum number of results: 50
