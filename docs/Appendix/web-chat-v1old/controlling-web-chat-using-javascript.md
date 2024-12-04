@@ -57,7 +57,7 @@ You can find information on the configuration parameters [here](#configurable-sc
 
 # Send user data from your website to Botpress
 
-You can send data from your website to the webchat using the `init` function. Important : the `mergeConfig` doesn't allow you to pass user data.  
+You can send data from your website to the webchat using the `init` function. Important : the `mergeConfig` doesn't allow you to pass user data.\
 To send information, submit a flat (without nested objects) object to the `userData` property.
 
 ```js
@@ -118,7 +118,7 @@ You can see examples of all of the message types you can send to the chatbot [he
 
 # Listening to Widget Events
 
-This function lets you listen for certain events happening in the chat and then do something when they happen. It's like setting up a watch for specific actions.  
+This function lets you listen for certain events happening in the chat and then do something when they happen. It's like setting up a watch for specific actions.\
 You can find the list of events [here](../docs/events-1#webchat-lifecycle-and-events).
 
 ```js
@@ -134,6 +134,6 @@ window.botpressWebChat.onEvent(
 
 # Next Steps
 
-- [Styling your Webchat](https://styler.botpress.app)
-- [Embedding your Webchat on React App](../docs/react-app)
-- [Embedding your Webchat on Webflow Site](../docs/webflow)
+* [Styling your Webchat](https://styler.botpress.app)
+* [Embedding your Webchat on React App](../docs/react-app)
+* [Embedding your Webchat on Webflow Site](../docs/webflow)
