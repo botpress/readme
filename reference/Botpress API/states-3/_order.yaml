@@ -1,3 +1,4 @@
 - setstateexpiry
 - getstate
 - setstate
+- patchstate
