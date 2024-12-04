@@ -158,35 +158,36 @@ next:
 
 <br />
 
-3. Menu items. (Use these values in the init object)<Table>
-     <Tr>
-       <Td>**Customization Variable**</Td>
-       <Td>**Variable type**</Td>
-       <Td>**Default value**</Td>
-       <Td>**Description**</Td>
-     </Tr>
-     <Tr>
-       <Td>`showConversationsButton`</Td>
-       <Td>boolean</Td>
-       <Td>`true`</Td>
-       <Td>If false, will hide the conversation list pane</Td>
-     </Tr>
-     <Tr>
-       <Td>`enableTranscriptDownload`</Td>
-       <Td>boolean</Td>
-       <Td>`true`</Td>
-       <Td>Allows the user to download the conversation history</Td>
-     </Tr>
-     <Tr>
-       <Td>`enableConversationDeletion`</Td>
-       <Td>boolean</Td>
-       <Td>`false`</Td>
-       <Td>Allows the user to delete its conversation history</Td>
-     </Tr>
-     <Tr>
-       <Td>`showCloseButton`</Td>
-       <Td>boolean</Td>
-       <Td>`true`</Td>
-       <Td>Display's the web chat close button when the web chat is opened</Td>
-     </Tr>
-   </Table>
+3. Menu items. (Use these values in the init object)
+<table>
+     <tr>
+       <td>**Customization Variable**</td>
+       <td>**Variable type**</td>
+       <td>**Default value**</td>
+       <td>**Description**</td>
+     </tr>
+     <tr>
+       <td>`showConversationsButton`</td>
+       <td>boolean</td>
+       <td>`true`</td>
+       <td>If false, will hide the conversation list pane</td>
+     </tr>
+     <tr>
+       <td>`enableTranscriptDownload`</td>
+       <td>boolean</td>
+       <td>`true`</td>
+       <td>Allows the user to download the conversation history</td>
+     </tr>
+     <tr>
+       <td>`enableConversationDeletion`</td>
+       <td>boolean</td>
+       <td>`false`</td>
+       <td>Allows the user to delete its conversation history</td>
+     </tr>
+     <tr>
+       <td>`showCloseButton`</td>
+       <td>boolean</td>
+       <td>`true`</td>
+       <td>Display's the web chat close button when the web chat is opened</td>
+     </tr>
+   </table>
