@@ -14,8 +14,8 @@ next:
 
 The Botpress SDK supports two types of packages:
 
-- **Integration Packages**
-- **Interface Packages**
+* **Integration Packages**
+* **Interface Packages**
 
 ## Installing Packages
 
@@ -26,21 +26,26 @@ npx bp add [--package-type <type>] <package-name>[@version]
 ```
 
 ### Installing Interface Packages
+
 To install an interface package, use the **--package-type** interface flag:
+
 ```bash
 # Install HITL interface version 0.0.1
 npx bp add --package-type interface hitl@0.0.1
 ```
 
 ### Installing Integration Packages
+
 Integration packages can be installed directly from the Botpress Hub:
+
 ```bash
 # Install Github integration
 npx bp add github
 ```
 
 ## Using Installed Packages
-After installation, packages are available in the **bp_modules** folder. Here's how to import and use them:
+
+After installation, packages are available in the **bp\_modules** folder. Here's how to import and use them:
 
 ```typescript
 // Import the package
