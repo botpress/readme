@@ -14,10 +14,8 @@ next:
 
 # Prerequisites
 
-- A [Slack App](https://api.slack.com/apps) to connect your bot to Slack.
-- A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
-
-
+* A [Slack App](https://api.slack.com/apps) to connect your bot to Slack.
+* A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
 
 # Create a Slack App
 
@@ -31,8 +29,6 @@ If you don't have a Slack app already, follow the steps below to create one:
 
 Et voilà! You have created a Slack app.
 
-
-
 # Setting up the Slack integration in Botpress
 
 1. Go to the [Integration Hub](https://app.botpress.cloud/hub) in Botpress Cloud (if you don't have the integration installed yet).
@@ -40,14 +36,12 @@ Et voilà! You have created a Slack app.
 
 The Slack integration has the following settings:
 
-- **Enabled**: Whether Botpress will communicate with Slack
-- **Webhook URL**: The URL for receiving data in Botpress
-- **Bot Token**: The token used to authenticate requests made to Slack
-- **Signing Secret**: The secret used to verify the requests
-- **Bot Name**: The name of the bot that will be displayed in Slack
-- **Bot Avatar URL**: The URL to the bot's avatar that will be displayed in Slack
-
-
+* **Enabled**: Whether Botpress will communicate with Slack
+* **Webhook URL**: The URL for receiving data in Botpress
+* **Bot Token**: The token used to authenticate requests made to Slack
+* **Signing Secret**: The secret used to verify the requests
+* **Bot Name**: The name of the bot that will be displayed in Slack
+* **Bot Avatar URL**: The URL to the bot's avatar that will be displayed in Slack
 
 # Setting up Slack
 
@@ -97,8 +91,6 @@ Slack sends "interactive" events such as reactions to message to the interactivi
 3. Copy paste the webhook url provided in the channel configuration UI to the **Request URL** field
 4. Click the **Save Changes** button
 
-
-
 # Install App
 
 ## Add App to Workspace
@@ -111,23 +103,19 @@ Your Slack app needs to be added to your workspace to allow Slack users to commu
 
 That's it, you may now start chatting with your bot on Slack!
 
-
-
 # Tips
 
-- To get the Slack conversation ID, you can read the following variable:  
+* To get the Slack conversation ID, you can read the following variable:\
   `{{ event.tags.conversation["slack:id"] }}`.
 
-- To get the Slack conversation thread ID (if it is a thread), you can read the following variable:  
+* To get the Slack conversation thread ID (if it is a thread), you can read the following variable:\
   `{{ event.tags.conversation["slack:thread"] }}`.
 
-- To get the Slack user ID, you can read the following variable:  
+* To get the Slack user ID, you can read the following variable:\
   `{{ event.tags.user["slack:id"] }}`.
 
-- To get the Slack message ID, you can read the following variable:  
+* To get the Slack message ID, you can read the following variable:\
   `{{ event.tags.message["slack:id"] }}`.
-
-
 
 # Slack actions in Botpress Studio
 
