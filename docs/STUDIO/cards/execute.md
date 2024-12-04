@@ -13,9 +13,9 @@ next:
 Execute Cards  allow you to run custom JavaScript code within your bot’s workflow, providing a powerful way to extend the functionality of your bot beyond the built-in actions and logic. These Cards enable you to perform complex calculations, manipulate data, call external APIs, or execute any other custom logic directly within the bot flow.
 
 > 🪄 Generate code with AI
-> 
+>
 > The Execute Code card allows you to generate code using AI, so you don't have to write it all from scratch. At the top of the code editor, place the prompt for which you'd like to generate code, like fetching data from an API or manipulating a certain user input, and AI will generate code for you.
-> 
+>
 > You're then free to edit this code further, or ask AI to make revisions to it.
 
 # Execute Cards Overview
@@ -45,7 +45,7 @@ Implement custom error handling within your code to manage exceptions, ensure ro
 Execute cards also allow you to perform operations on the data you have stored in a Table.
 
 > 📘 Info
-> 
+>
 > Table cards do not directly display their result. You'll need to first save the data in variables to be able to use them in the conversation.
 
 ## Get Record
@@ -87,7 +87,7 @@ The Delete Record operation enables you to remove a specific record from a table
 4. You're done, once the conversation goes through this card, the record will be deleted from the table.
 
 > 🚧 Reminder
-> 
+>
 > Be careful when using this card. Ensure you are deleting the correct record and that you no longer need it. Deleted records cannot be recovered!
 
 ## Find Records
@@ -101,5 +101,5 @@ The Find Records operation allows you to search for and fetch multiple records t
 5. Now you can use the variable in subsequent cards to access the records data.
 
 > 👍 Tip
-> 
+>
 > Tables provide a robust way to manage data within your chatbot, offering flexibility to handle a wide variety of scenarios that involve data persistence, retrieval, and manipulation.
