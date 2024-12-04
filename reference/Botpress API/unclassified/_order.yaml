@@ -5,3 +5,4 @@
 - deleteworkflow
 - getorcreateworkflow
 - createplugin
+- listplugins
