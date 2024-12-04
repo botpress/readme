@@ -22,10 +22,10 @@ Botpress provides a comprehensive system for managing and inspecting events that
 
 The Events page allows you to filter events by the following criteria:
 
-- **Event**: The type of event that occurred.
-- **Conversation**: The conversation to which the event belongs. You can filter by conversation ID.
-- **User**: The user who triggered the event. You can filter by user ID.
-- **Message**: The message content. You can filter by message ID.
+* **Event**: The type of event that occurred.
+* **Conversation**: The conversation to which the event belongs. You can filter by conversation ID.
+* **User**: The user who triggered the event. You can filter by user ID.
+* **Message**: The message content. You can filter by message ID.
 
 Each event in Botpress has a specific type and status. These characteristics provide detailed information about what the event represents and the state of its processing.
 
@@ -33,14 +33,14 @@ Each event in Botpress has a specific type and status. These characteristics pro
 
 ### Types of Events
 
-- `message_created`: Generated when a new message is created by a user.
-- `state_expired`: Indicates that a conversation state has expired.
-- `task_update`: Reflects changes in the status of a task.
-- `webhook:event`: Triggered by a webhook event.
-- `webchat:conversationStarted`: Marks the beginning of a new conversation.
-- `webchat:trigger`: Indicates that a trigger has been activated.
-- `botready`: Signifies that the bot is ready to receive messages.
-- `botpublished`: Occurs when the bot is published.
+* `message_created`: Generated when a new message is created by a user.
+* `state_expired`: Indicates that a conversation state has expired.
+* `task_update`: Reflects changes in the status of a task.
+* `webhook:event`: Triggered by a webhook event.
+* `webchat:conversationStarted`: Marks the beginning of a new conversation.
+* `webchat:trigger`: Indicates that a trigger has been activated.
+* `botready`: Signifies that the bot is ready to receive messages.
+* `botpublished`: Occurs when the bot is published.
 
 <br />
 
@@ -48,7 +48,7 @@ Each event in Botpress has a specific type and status. These characteristics pro
 
 Events can have one of the following statuses:
 
-- `Processed`: The event has been successfully handled by the bot.
-- `Failed`: The bot encountered an error while processing the event.
-- `Pending`: The event is in the queue, awaiting processing.
-- `Ignored`: The event has been deliberately ignored, usually by design.
+* `Processed`: The event has been successfully handled by the bot.
+* `Failed`: The bot encountered an error while processing the event.
+* `Pending`: The event is in the queue, awaiting processing.
+* `Ignored`: The event has been deliberately ignored, usually by design.
