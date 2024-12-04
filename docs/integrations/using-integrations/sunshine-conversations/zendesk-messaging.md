@@ -19,8 +19,8 @@ next:
 
 # Prerequisites
 
-- A [Zendesk Support Professional plan account](https://www.zendesk.com.br/pricing/support) with Zendesk Messaging enabled to the desired channels
-- A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
+* A [Zendesk Support Professional plan account](https://www.zendesk.com.br/pricing/support) with Zendesk Messaging enabled to the desired channels
+* A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
 
 # Setting up the Sunshine Conversations integration in Botpress
 
@@ -29,12 +29,12 @@ next:
 
 The Sunshine Conversations integration has the following settings:
 
-- **Enabled**: Whether Botpress will communicate with this channel
-- **Webhook URL**: The URL for receiving data in Botpress (Copy this)
-- **App Id**: The App Id of your Zendesk Conversation API Credentials
-- **Key Id**: The Key Id of your Zendesk Conversation API Credentials
-- **Key Secret**: The Key Secret of your Zendesk Conversation API Credentials
-- **Webhook Secret**: The Webhook Secret of your Zendesk Conversation Integration Webhook
+* **Enabled**: Whether Botpress will communicate with this channel
+* **Webhook URL**: The URL for receiving data in Botpress (Copy this)
+* **App Id**: The App Id of your Zendesk Conversation API Credentials
+* **Key Id**: The Key Id of your Zendesk Conversation API Credentials
+* **Key Secret**: The Key Secret of your Zendesk Conversation API Credentials
+* **Webhook Secret**: The Webhook Secret of your Zendesk Conversation Integration Webhook
 
 ![](https://files.readme.io/2db5af00e37419217754e57db2fc1298a76e02be869639df446a7030574b342c-image.png)
 
