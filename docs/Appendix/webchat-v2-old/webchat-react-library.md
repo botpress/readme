@@ -51,7 +51,7 @@ const App = () => {
 }
 ```
 
-[Demo Example](https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-react-demo?embed=1&hideNavigation=1&view=both&file=src%2FApp.tsx)
+[Demo Example](https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-react-demo?embed=1\&hideNavigation=1\&view=both\&file=src%2FApp.tsx)
 
 This is the simplest way to get started with the Webchat React library. After this, we'll get into more advanced topics like advance components, custom messages components, and more.
 
