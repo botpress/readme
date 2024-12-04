@@ -43,9 +43,9 @@ The **Error Flow** is designed to handle unexpected failures that may occur duri
 For example, if you have an Execute Code card with invalid Javascript code like `workflow. = 'some value'`, or custom choices for Captures or Carousels in the wrong format, the Error flow shall be triggered.'
 
 > 📘 Info
-> 
+>
 > To improve the user experience, you can add a Capture card of type Confirmation that asks the user if they want to resume the conversation. If the user says yes, you can redirect them to the Main flow (remember to reset the state to avoid entering an error loop), otherwise you can flow to the End node which will end the conversation.
-> 
+>
 > It's also recommended to save these occurrences somehow so you can troubleshoot them later. You could use [Tables](../docs/tables) to create a database of these occurrences, containing the conversation history provided by the [Summary Agent](../docs/agents#summary-agent) and other relevant information.
 
 ## Timeout
@@ -57,11 +57,11 @@ This can happen if the user gets distracted with something else or if there is a
 The Timeout Flow is important because it helps prevent the chatbot from appearing unresponsive or disconnected, which can lead to user frustration and disengagement. Learn more about the [Inactivity Timeout setting](../docs/chatbot-settings#inactivity-timeout-minutes).
 
 > 📘 Info
-> 
+>
 > To improve the user experience, you can add a Text card in this flow that lets the user know the conversation is ending, alternatively add a Confirmation card asking if the user wants to continue the conversation. The timeout will then be reset and start counting down again. If the user says yes, you can redirect them to the Main flow (there is no way to know the previous flow), otherwise you can flow to the End node which will end the conversation.
 
 > 📘 Note
-> 
+>
 > The default timeout is 30 minutes. So if the user doesn't respond for 30 minutes, this flow will be triggered.
 
 ## Conversation End
@@ -73,7 +73,7 @@ Depending on the context and purpose of the chatbot, this may involve thanking t
 The Conversation End Flow is an important part of the chatbot design, as it helps create a positive user experience and encourages users to return in the future.
 
 > 🚧 Please note
-> 
+>
 > The bot will only enter the End flow if the conversation explicitly transitions to an End node. If the conversation ends because there are no valid transitions in a node it won't trigger the End flow.
 
 <br />
@@ -88,11 +88,11 @@ Creating custom workflows allows you to tailor the behavior of your chatbot acco
 
 Here are some key benefits and possibilities of creating custom workflows:
 
-- **Designing Conversational Flows**: Workflows enable you to design conversational flows that guide the interaction between the chatbot and users. You can define the sequence of messages, questions, and responses to create engaging and meaningful conversations.
-- **Implementing Business Logic**: Custom workflows empower you to incorporate complex business logic into your chatbot. You can define conditions, triggers, and actions based on user inputs or specific events to provide dynamic and context-aware responses.
-- **Integration with External Systems**: Workflows allow you to integrate your chatbot with external systems and APIs. You can utilize custom workflows to fetch data from databases, invoke web services, or perform any other necessary operations to enrich the user experience and provide relevant information.
-- **Handling User Input**: With custom workflows, you can capture and process user input in a structured manner. You can define prompts, validate input, and handle different scenarios based on user responses, ensuring a smooth and interactive conversation flow.
-- **Implementing Advanced Features**: Custom workflows enable you to implement advanced features such as user authentication, session management, context preservation, and more. These features enhance the functionality and capabilities of your chatbot, allowing for a more sophisticated user experience.
+* **Designing Conversational Flows**: Workflows enable you to design conversational flows that guide the interaction between the chatbot and users. You can define the sequence of messages, questions, and responses to create engaging and meaningful conversations.
+* **Implementing Business Logic**: Custom workflows empower you to incorporate complex business logic into your chatbot. You can define conditions, triggers, and actions based on user inputs or specific events to provide dynamic and context-aware responses.
+* **Integration with External Systems**: Workflows allow you to integrate your chatbot with external systems and APIs. You can utilize custom workflows to fetch data from databases, invoke web services, or perform any other necessary operations to enrich the user experience and provide relevant information.
+* **Handling User Input**: With custom workflows, you can capture and process user input in a structured manner. You can define prompts, validate input, and handle different scenarios based on user responses, ensuring a smooth and interactive conversation flow.
+* **Implementing Advanced Features**: Custom workflows enable you to implement advanced features such as user authentication, session management, context preservation, and more. These features enhance the functionality and capabilities of your chatbot, allowing for a more sophisticated user experience.
 
 <br />
 
