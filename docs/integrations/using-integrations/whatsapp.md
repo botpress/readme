@@ -11,15 +11,15 @@ next:
   description: ''
 ---
 > ❗️ Business Verification
-> 
+>
 > To deploy a chatbot on WhatsApp, your business must first undergo a verification process by Meta, the parent company of WhatsApp. This verification, typically conducted through the Facebook Business Manager, confirms the identity and eligibility of your business to use Meta's platforms. Checking the official Meta for Developers website or WhatsApp Business API documentation is advisable.
 
 # Setup
 
 ## Prerequisites
 
-- A [WhatsApp Business Platform Account](https://business.whatsapp.com/products/business-platform) to be your bot's interface on WhatsApp
-- A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
+* A [WhatsApp Business Platform Account](https://business.whatsapp.com/products/business-platform) to be your bot's interface on WhatsApp
+* A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
 
 ## Installing the integration
 
@@ -35,13 +35,13 @@ next:
 
 ## From Botpress to WhatsApp
 
-- Text is mapped to [Text Object](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#text-object)
-- Text with Markdown is mapped to [Text Object](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#text-object)
-- Image is mapped to [Media Image Object](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#media-object)
-- Audio is mapped to [Media Audio Object](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#media-object)
-- Video is mapped to [Media Video Object](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#media-object)
-- File is mapped to [Media File Object](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#media-object)
-- Location is mapped to [Location Object](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#location-object)
+* Text is mapped to [Text Object](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#text-object)
+* Text with Markdown is mapped to [Text Object](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#text-object)
+* Image is mapped to [Media Image Object](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#media-object)
+* Audio is mapped to [Media Audio Object](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#media-object)
+* Video is mapped to [Media Video Object](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#media-object)
+* File is mapped to [Media File Object](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#media-object)
+* Location is mapped to [Location Object](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#location-object)
 
 ## Special behaviors to consider
 
@@ -51,23 +51,23 @@ This comes with a few restrictions and behaviors specific to WhatsApp:
 
 ### Choices (buttons) and Dropdowns
 
-- When there are 3 or fewer choices as buttons or in a dropdown, they will be rendered as buttons.
-- When there are more than 3 choices as buttons or in a dropdown, they will be rendered as a dropdown.
-- If there are more than 10 choices in a dropdown, the multiple dropdown messages will be sent with up to 10 choices in each messsage.
-  - For example, if your bot has a dropdown with 10 choices, the user will receive two messages: the first message will have a dropdown with 10 choices, and the second messge will have a dropdown with two choices.
-- Each dropdown requires a label but the Studio currently doesn’t support specifying one, so the label _“Choose…”_ is used for all dropdowns by default.
-- Button labels are limited to 20 characters, and dropdown labels are limited to 24 characters.
-  - Labels exceeding these limits are automatically truncated. For example, the label "This button label is very long" would become "This button label i…" on a button and "This button label is ve…" on a dropdown.
+* When there are 3 or fewer choices as buttons or in a dropdown, they will be rendered as buttons.
+* When there are more than 3 choices as buttons or in a dropdown, they will be rendered as a dropdown.
+* If there are more than 10 choices in a dropdown, the multiple dropdown messages will be sent with up to 10 choices in each messsage.
+  * For example, if your bot has a dropdown with 10 choices, the user will receive two messages: the first message will have a dropdown with 10 choices, and the second messge will have a dropdown with two choices.
+* Each dropdown requires a label but the Studio currently doesn’t support specifying one, so the label *“Choose…”* is used for all dropdowns by default.
+* Button labels are limited to 20 characters, and dropdown labels are limited to 24 characters.
+  * Labels exceeding these limits are automatically truncated. For example, the label "This button label is very long" would become "This button label i…" on a button and "This button label is ve…" on a dropdown.
 
 ### Cards and Carousels
 
-- WhatsApp only supports one link (label and URL) on a card, so multiple links will be split into separate empty cards.
-- WhatsApp imposes a limit of 3 "reply" action buttons on a card, so if a card has more than these, the buttons will be split into multiple cards.
-- WhatsApp doesn't natively support carousels, so each card in a carousel will be sent individually.
+* WhatsApp only supports one link (label and URL) on a card, so multiple links will be split into separate empty cards.
+* WhatsApp imposes a limit of 3 "reply" action buttons on a card, so if a card has more than these, the buttons will be split into multiple cards.
+* WhatsApp doesn't natively support carousels, so each card in a carousel will be sent individually.
 
 ### Files
 
-- When files are sent over Whatsapp, the Studio doesn't store the original filename (for security reasons) but only the file extension, so the file will be sent with a generic filename ("file") followed by the extension of the file. For example, if you send a PNG file, it will be sent as "file.png".
+* When files are sent over Whatsapp, the Studio doesn't store the original filename (for security reasons) but only the file extension, so the file will be sent with a generic filename ("file") followed by the extension of the file. For example, if you send a PNG file, it will be sent as "file.png".
 
 ## From WhatsApp to Botpress
 
@@ -79,18 +79,18 @@ Text messages are directly mapped to Botpress text messages, and readable throug
 
 Use a “Wait for User Input” card on your bot, check that `event.type` equals `"location"`, and then read `event.payload` which will contain the following properties:
 
-- `latitude`
-- `longitude`
-- `address` (not always provided)
-- `title` (not always provided)
+* `latitude`
+* `longitude`
+* `address` (not always provided)
+* `title` (not always provided)
 
 ### Media (images, audio, documents)
 
 Use a “Wait for User Input” card on your bot, check that `event.type` equals `"image"`, `"audio"` or `"document"`, and then read `event.payload` which will have the following structure depending on the event type:
 
-- For an image: `{"imageUrl": "https://lookaside.fbsbx.com/...."}`
-- For audio: `{"audioUrl": "https://lookaside.fbsbx.com/...."}`
-- For a document: `{"documentUrl": "https://lookaside.fbsbx.com/....", "filename": "the-filename.pdf"}`
+* For an image: `{"imageUrl": "https://lookaside.fbsbx.com/...."}`
+* For audio: `{"audioUrl": "https://lookaside.fbsbx.com/...."}`
+* For a document: `{"documentUrl": "https://lookaside.fbsbx.com/....", "filename": "the-filename.pdf"}`
 
 Then, you can retrieve the raw file content from WhatsApp by making a `GET` HTTP request to the URL provided in the payload while passing your WhatsApp access token as a `Bearer` token in the `Authorization` HTTP header.
 
@@ -121,28 +121,28 @@ For further information, please check the [WhatsApp documentation](https://devel
 
 ## Other message types
 
-- Buttons and interactive replies from a list or button are mapped to a plain text response from the user, so you can use `event.preview` to get the value.
-- Botpress does not currently support other Whatsapp message types.
+* Buttons and interactive replies from a list or button are mapped to a plain text response from the user, so you can use `event.preview` to get the value.
+* Botpress does not currently support other Whatsapp message types.
 
 <br />
 
 # Tips
 
-- To get the phone number of the user you can read the following variable:
+* To get the phone number of the user you can read the following variable:
 
   `{{ event.tags.conversation['whatsapp:userPhone'] }}`.
 
   This number also contains the country code and has no spaces, dashes or signs.
 
-- To get the Whatsapp Phone Number ID of your bot that the user is interacting with _(useful when pointing multiple Phone Number IDs to the same bot)_:
+* To get the Whatsapp Phone Number ID of your bot that the user is interacting with *(useful when pointing multiple Phone Number IDs to the same bot)*:
 
   `{{ event.tags.conversation['whatsapp:phoneNumberId'] }}`
 
 ## Example:
 
-- [Text card]\: `Where are you? Please use Whatsapp's "Send Location" feature.`
-- [Wait for Message card]
-- [Text card]\: `Thank you! You are located at {{event.payload.title}}, {{event.payload.address}} with longitude {{event.payload.longitude}} and latitude {{event.payload.latitude}}.`
+* [Text card]\: `Where are you? Please use Whatsapp's "Send Location" feature.`
+* [Wait for Message card]
+* [Text card]\: `Thank you! You are located at {{event.payload.title}}, {{event.payload.address}} with longitude {{event.payload.longitude}} and latitude {{event.payload.latitude}}.`
 
 <br />
 
@@ -158,9 +158,9 @@ Then you just need to pass the following fields to proactively start a Whatsapp 
 
 1. **User Phone**: The phone number of the user, including the country code (e.g. `+1 123 456 7890`).
 2. **Template Name**: The name of your WhatsApp message template to use for the first message of the conversation. The template should be already approved by WhatsApp in order to use it.
-3. **Template Language** _(optional)_: The language code of your WhatsApp message template ([see below](../docs/whatsapp#template-language) for more details).
-4. **Template Variables JSON** _(optional)_: The values of the variables for your WhatsApp message template, specified as a JSON array representing the list of values ([see below](../docs/whatsapp#template-variables) for more details).
-5. **Sender Phone Number ID** _(optional)_: The Whatsapp Phone Number ID you want to use as sender of the message if you have multiple phone numbers available in your Meta Developers dashboard. If you don't specify this field, the Default Phone Number ID specified in the Whatsapp configuration of your bot in your Botpress Cloud dashboard will be used by default.
+3. **Template Language** *(optional)*: The language code of your WhatsApp message template ([see below](../docs/whatsapp#template-language) for more details).
+4. **Template Variables JSON** *(optional)*: The values of the variables for your WhatsApp message template, specified as a JSON array representing the list of values ([see below](../docs/whatsapp#template-variables) for more details).
+5. **Sender Phone Number ID** *(optional)*: The Whatsapp Phone Number ID you want to use as sender of the message if you have multiple phone numbers available in your Meta Developers dashboard. If you don't specify this field, the Default Phone Number ID specified in the Whatsapp configuration of your bot in your Botpress Cloud dashboard will be used by default.
 
 ![](https://files.readme.io/5f52ceb-image.png)
 
@@ -172,15 +172,15 @@ If the language you selected for your template in the Whatsapp Manager dashboard
 
 For example:
 
-- If you selected the "English (US)" option for the language of your Message Template in Whatsapp Manager, then the value you need to enter for "Template Language" in Botpress is `en_US`.
-- If you selected the "English (UK)" option, then the value you need to enter is `en_GB`.
-- If you selected the "French" option, which doesn't have a country qualifier, then the value you need to enter is just `fr`.
+* If you selected the "English (US)" option for the language of your Message Template in Whatsapp Manager, then the value you need to enter for "Template Language" in Botpress is `en_US`.
+* If you selected the "English (UK)" option, then the value you need to enter is `en_GB`.
+* If you selected the "French" option, which doesn't have a country qualifier, then the value you need to enter is just `fr`.
 
 ## Template Variables
 
 Template variables need to be passed as a JSON array of string or numeric values representing the list of variable values, as Whatsapp only allows referring to them by their position in your message template (e.g. `{{1}}` for the first variable, `{{2}}` for the second variable, and so on).
 
-For example, if your Message Template expects a first variable (_referred to as `{{1}}` in the template_) with the person's first name and then a second variable (_`{{2}}` in the template_) with an account number, then you would pass the following JSON array as the value for the "Template Variables" field:
+For example, if your Message Template expects a first variable (*referred to as`{{1}}` in the template*) with the person's first name and then a second variable ( *`{{2}}`in the template*) with an account number, then you would pass the following JSON array as the value for the "Template Variables" field:
 
 ```json
 ["John", "12345"]
