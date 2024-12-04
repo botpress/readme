@@ -19,7 +19,7 @@ These actions are defined within the 'actions' object of your integration. They 
 We will be using our Botpress implementation for the Shopify [Retrieve a list of products](https://shopify.dev/docs/api/admin-rest/2023-01/resources/product#get-products?ids=632910392,921728736) as our examples.
 
 > 📘 Action Concept
-> 
+>
 > You can find more about the [Actions Concept](../docs/actions) here.
 
 <br />
@@ -44,15 +44,15 @@ The `description` is a string that provides more detailed information about what
 
 The `input` parameter is an object that defines the data that the action requires to run. It's made up of a `schema` and a `ui`:
 
-- `schema`: This uses the Zod library to define the structure and type of the input data. In the Shopify example, it defines the fields `ids`, `limit`, `title`, and `product_type`, each of which have their own rules and descriptions.
+* `schema`: This uses the Zod library to define the structure and type of the input data. In the Shopify example, it defines the fields `ids`, `limit`, `title`, and `product_type`, each of which have their own rules and descriptions.
 
-- `ui`: This part of the input defines the user interface. It includes information that is helpful for the users when they are inputting data. For example, in the Shopify example, it gives a human-readable title and examples for each input field.
+* `ui`: This part of the input defines the user interface. It includes information that is helpful for the users when they are inputting data. For example, in the Shopify example, it gives a human-readable title and examples for each input field.
 
 ### `output`
 
 The `output` parameter defines the data that the action will return. It's made up of a `schema`:
 
-- `schema`: Just like the input schema, the output schema also uses the Zod library to define the structure and type of the output data. This defines what the data returned by the action will look like. In the Shopify example, the action returns an array of products in the `products_list`.
+* `schema`: Just like the input schema, the output schema also uses the Zod library to define the structure and type of the output data. This defines what the data returned by the action will look like. In the Shopify example, the action returns an array of products in the `products_list`.
 
 ## Example of Action Definition:
 
