@@ -15,7 +15,7 @@ Tables are an essential feature in the explorer, functioning as a local database
 They are particularly useful for storing information that needs to be persisted across multiple sessions, such as user profiles, transaction histories, and other types of data that need to be retrieved and updated over time.
 
 > 📘 Note
-> 
+>
 > You can create up to **10 tables** with **20 columns** and **10,000 rows** in the **Free Plan**. [Get in touch](https://botpress.com/contact-us) if you want to increase the limits. However, the 20 columns per table is a hard limit that can't be increased.
 
 <br />
@@ -35,7 +35,7 @@ You can make a field searchable by checking the `Searchable` checkbox. This will
 There are several types of fields you can add to a table. Each field type has a specific purpose and can only store certain types of data. These are the field types you can choose from: `String`, `Number`, `Boolean`, `Date`, and `Object`.
 
 > 🚧 Warning
-> 
+>
 > The number of columns has a hard limit of **20 columns** per table.
 
 <br />
@@ -46,28 +46,28 @@ Table filters are a powerful feature that allows you to refine and display only 
 
 ## Logical Operators
 
-- **AND**: Use the AND operator when you want all conditions to be true for a record to be displayed. For example, filtering by `createdAt` AND `status` will only show records that match both conditions.
+* **AND**: Use the AND operator when you want all conditions to be true for a record to be displayed. For example, filtering by `createdAt` AND `status` will only show records that match both conditions.
 
-- **OR**: Use the OR operator to display records that match any one of multiple conditions. For example, filtering by `createdAt` OR `updatedAt` will show records that match either one of the conditions.
+* **OR**: Use the OR operator to display records that match any one of multiple conditions. For example, filtering by `createdAt` OR `updatedAt` will show records that match either one of the conditions.
 
 ## Types of Rules
 
 Rules define the individual conditions applied to each column of data.
 
-- `is equal to`: Shows records where the field is equal to the specified value.
-- `is not equal to`: Shows records where the field is not equal to the specified value.
-- `less than`: Shows records where the field is less than the specified value.
-- `less than or equal to`: Shows records where the field is less than or equal to the specified value.
-- `greater than`: Shows records where the field is greater than the specified value.
-- `greater than or equal to`: Shows records where the field is greater than or equal to the specified value.
-- `in`: Shows records where the field matches any of the specified values.
-- `not in`: Shows records where the field does not match any of the specified values.
-- `is null`: Shows records where the field is empty.
-- `is not null`: Shows records where the field is not empty.
+* `is equal to`: Shows records where the field is equal to the specified value.
+* `is not equal to`: Shows records where the field is not equal to the specified value.
+* `less than`: Shows records where the field is less than the specified value.
+* `less than or equal to`: Shows records where the field is less than or equal to the specified value.
+* `greater than`: Shows records where the field is greater than the specified value.
+* `greater than or equal to`: Shows records where the field is greater than or equal to the specified value.
+* `in`: Shows records where the field matches any of the specified values.
+* `not in`: Shows records where the field does not match any of the specified values.
+* `is null`: Shows records where the field is empty.
+* `is not null`: Shows records where the field is not empty.
 
 ## Rule Groups
 
-- **Group**: A group is a collection of rules combined by a logical operator (AND/OR). You can nest groups to create complex filters.
+* **Group**: A group is a collection of rules combined by a logical operator (AND/OR). You can nest groups to create complex filters.
 
 ## Creating a Filter
 
@@ -199,19 +199,208 @@ const count = rows[0]['nameCount']
 const uniqueValues = rows[0]['nameUnique']
 ```
 
-| Column    | Type   | Key | Count | Sum | Avg | Max | Min | Unique |
-| :-------- | :----- | :-: | :---: | :-: | :-: | :-: | :-: | :----: |
-| id        | number |  ✔️ |   ✔️  |  ✔️ |  ✔️ |  ✔️ |  ✔️ |   ✔️   |
-| createdAt | date   |  ✔️ |       |     |     |  ✔️ |  ✔️ |   ✔️   |
-| updatedAt | date   |  ✔️ |       |     |     |  ✔️ |  ✔️ |   ✔️   |
-| name      | string |  ✔️ |       |     |     |  ✔️ |  ✔️ |   ✔️   |
+<Table align={["left","left","center","center","center","center","center","center","center"]}>
+  <thead>
+    <tr>
+      <th style={{ textAlign: "left" }}>
+        Column
+      </th>
 
-**Key**: Projections are grouped by keys (ex: date)  
-**Count**: Returns the total number of non-null values  
-**sum**: Returns the sum of all values  
-**Avg**: Returns the average of all values  
-**Max**: Returns the maximum value  
-**Min**: Returns the minimum value  
+      <th style={{ textAlign: "left" }}>
+        Type
+      </th>
+
+      <th style={{ textAlign: "center" }}>
+        Key
+      </th>
+
+      <th style={{ textAlign: "center" }}>
+        Count
+      </th>
+
+      <th style={{ textAlign: "center" }}>
+        Sum
+      </th>
+
+      <th style={{ textAlign: "center" }}>
+        Avg
+      </th>
+
+      <th style={{ textAlign: "center" }}>
+        Max
+      </th>
+
+      <th style={{ textAlign: "center" }}>
+        Min
+      </th>
+
+      <th style={{ textAlign: "center" }}>
+        Unique
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        id
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        number
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+        ✔️
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+        ✔️
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+        ✔️
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+        ✔️
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+        ✔️
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+        ✔️
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+        ✔️
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        createdAt
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        date
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+        ✔️
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+        ✔️
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+        ✔️
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+        ✔️
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        updatedAt
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        date
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+        ✔️
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+        ✔️
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+        ✔️
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+        ✔️
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        name
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        string
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+        ✔️
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+        ✔️
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+        ✔️
+      </td>
+
+      <td style={{ textAlign: "center" }}>
+        ✔️
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+**Key**: Projections are grouped by keys (ex: date)\
+**Count**: Returns the total number of non-null values\
+**sum**: Returns the sum of all values\
+**Avg**: Returns the average of all values\
+**Max**: Returns the maximum value\
+**Min**: Returns the minimum value\
 **Unique**: Returns a list of unique values 
 
 Providing one or multiple keys yields more specific results.
@@ -251,8 +440,8 @@ const { rows, errors, warnings } = await client.updateTableRows({
 
 Rows can be deleted from a table in three distinct manners, each mutually exclusive.
 
-By specifying row IDs  
-By applying a filter  
+By specifying row IDs\
+By applying a filter\
 By removing all rows
 
 ```javascript
@@ -393,19 +582,7 @@ const { table } = await client.deleteTable({ table: 'Data1Table' })
 
 To create a new record in a table, use the `createRecord` function. You can specify the values for each field in the record. This function can be particularly useful when you need to store new information, such as a new user's details or a newly completed transaction.
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FM0S3r-7FiVk%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DM0S3r-7FiVk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FM0S3r-7FiVk%2Fhqdefault.jpg&key=7788cb384c9f4d5dbbdbeffd9fe4b92f&type=text%2Fhtml&schema=youtube\" width=\"640\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=M0S3r-7FiVk",
-  "title": "createrecord",
-  "favicon": "https://www.google.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/M0S3r-7FiVk/hqdefault.jpg",
-  "provider": "https://www.youtube.com/",
-  "href": "https://www.youtube.com/watch?v=M0S3r-7FiVk",
-  "typeOfEmbed": "youtube"
-}
-[/block]
-
+<Embed url="https://www.youtube.com/watch?v=M0S3r-7FiVk" title="createrecord" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/M0S3r-7FiVk/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=M0S3r-7FiVk" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FM0S3r-7FiVk%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DM0S3r-7FiVk%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FM0S3r-7FiVk%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22640%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 ```javascript
 // Create a record in the table
@@ -416,19 +593,7 @@ await Data1Table.createRecord({ Age: 25, Name: 'Tom', Occupation: 'Student' })
 
 To create multiple records in a table, use the `createRecords` function. You can specify the values for each field in the record. Useful for creating multiple records at once.
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FAAUO9p6zniw%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DAAUO9p6zniw&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FAAUO9p6zniw%2Fhqdefault.jpg&key=7788cb384c9f4d5dbbdbeffd9fe4b92f&type=text%2Fhtml&schema=youtube\" width=\"640\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=AAUO9p6zniw",
-  "title": "createrecords",
-  "favicon": "https://www.google.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/AAUO9p6zniw/hqdefault.jpg",
-  "provider": "https://www.youtube.com/",
-  "href": "https://www.youtube.com/watch?v=AAUO9p6zniw",
-  "typeOfEmbed": "youtube"
-}
-[/block]
-
+<Embed url="https://www.youtube.com/watch?v=AAUO9p6zniw" title="createrecords" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/AAUO9p6zniw/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=AAUO9p6zniw" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FAAUO9p6zniw%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DAAUO9p6zniw%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FAAUO9p6zniw%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22640%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 ```Text Javascript
 // Creating two records in the table  
@@ -442,19 +607,7 @@ await Data1Table.createRecords([
 
 To delete a record in a table, use the `deleteRecord` function. You need to specify the record ID of the record you want to delete.
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F8zoqG07tulY%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D8zoqG07tulY&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F8zoqG07tulY%2Fhqdefault.jpg&key=7788cb384c9f4d5dbbdbeffd9fe4b92f&type=text%2Fhtml&schema=youtube\" width=\"640\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=8zoqG07tulY",
-  "title": "deleterecord",
-  "favicon": "https://www.google.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/8zoqG07tulY/hqdefault.jpg",
-  "provider": "https://www.youtube.com/",
-  "href": "https://www.youtube.com/watch?v=8zoqG07tulY",
-  "typeOfEmbed": "youtube"
-}
-[/block]
-
+<Embed url="https://www.youtube.com/watch?v=8zoqG07tulY" title="deleterecord" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/8zoqG07tulY/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=8zoqG07tulY" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252F8zoqG07tulY%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253D8zoqG07tulY%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252F8zoqG07tulY%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22640%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 <br />
 
@@ -467,19 +620,7 @@ await Data1Table.deleteRecord(7)
 
 To delete multiple records in a table, use the `deleteRecords` function. You need to specify the record IDs of the records you want to delete in an array.
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FTsUPf2FwrFY%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DTsUPf2FwrFY&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FTsUPf2FwrFY%2Fhqdefault.jpg&key=7788cb384c9f4d5dbbdbeffd9fe4b92f&type=text%2Fhtml&schema=youtube\" width=\"640\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=TsUPf2FwrFY",
-  "title": "deleterecords",
-  "favicon": "https://www.google.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/TsUPf2FwrFY/hqdefault.jpg",
-  "provider": "https://www.youtube.com/",
-  "href": "https://www.youtube.com/watch?v=TsUPf2FwrFY",
-  "typeOfEmbed": "youtube"
-}
-[/block]
-
+<Embed url="https://www.youtube.com/watch?v=TsUPf2FwrFY" title="deleterecords" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/TsUPf2FwrFY/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=TsUPf2FwrFY" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FTsUPf2FwrFY%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DTsUPf2FwrFY%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FTsUPf2FwrFY%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22640%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 ```Text Javascript
  // Delete records in the table at record IDs 7, 8, 9  
@@ -541,74 +682,74 @@ Don't want to deal with code? Skip to the [next section](#using-ai-to-generate-f
 
 Primitive filters are easy and simple to use, allowing you to match the exact values you are looking for. Here are some of the primitives you can use:
 
-- `$eq`: Matches values that are equal to a specified value.
+* `$eq`: Matches values that are equal to a specified value.
   ```
   { "name": { "$eq": "John" } }
   ```
 
-- `$gt`: Matches values that are greater than a specified value.
+* `$gt`: Matches values that are greater than a specified value.
 
   ```
   { "age": { "$gt": 20 } }
   ```
 
-- `$gte`: Matches values that are greater than or equal to a specified value.
+* `$gte`: Matches values that are greater than or equal to a specified value.
 
   ```
   { "age": { "$gte": 20 } }
   ```
 
-- `$lt`: Matches values that are less than a specified value.
+* `$lt`: Matches values that are less than a specified value.
 
   ```
   { "age": { "$lt": 20 } }
   ```
 
-- `$lte`: Matches values that are less than or equal to a specified value.
+* `$lte`: Matches values that are less than or equal to a specified value.
 
   ```
   { "age": { "$lte": 20 } }
   ```
 
-- `$ne`: Matches all values that are not equal to a specified value.
+* `$ne`: Matches all values that are not equal to a specified value.
   ```
   { "name": { "$ne": "John" } }
   ```
 
-- `$in`: Matches any of the values specified in an array.
+* `$in`: Matches any of the values specified in an array.
 
   ```
   { "name": { "$in": ["Alice", "Bob", "John"] } }
   ```
 
-- `$nin`: Matches none of the values specified in an array.
+* `$nin`: Matches none of the values specified in an array.
   ```
   { "name": { "$nin": ["Alice", "Bob", "John"] } }
   ```
 
-- `$exists`: Matches documents that have the specified field.
+* `$exists`: Matches documents that have the specified field.
 
   ```
   { "name": { "$exists": true } }
   ```
 
-- `$mod`: Performs modulo operation on the value of field and matches documents where field % divisor equals the specified remainder.
+* `$mod`: Performs modulo operation on the value of field and matches documents where field % divisor equals the specified remainder.
 
   ```
   { "qty": { "$mod": [4, 0] } }
   ```
 
-- `$size`: Matches any document where an array field contains a specified number of elements.
+* `$size`: Matches any document where an array field contains a specified number of elements.
   ```
   { "tags": { "$size": 3 } }
   ```
 
-- `$regex`: Provides regular expression capabilities for pattern matching strings in queries. It uses a placeholder to prevent SQL injections.
+* `$regex`: Provides regular expression capabilities for pattern matching strings in queries. It uses a placeholder to prevent SQL injections.
   ```
   { "name": { "$regex": "[a-z]" } }
   ```
 
-- `$options`: Modifies the `$regex` operator to enable options. Currently, there are two options, 'i' for case insensitive and 'c' for case sensitive.
+* `$options`: Modifies the `$regex` operator to enable options. Currently, there are two options, 'i' for case insensitive and 'c' for case sensitive.
 
   ```
   { "name": { "$regex": "[a-z]", "$options": 'i' } } // case insensitive
@@ -620,19 +761,19 @@ Primitive filters are easy and simple to use, allowing you to match the exact va
 
 Logical operators allow you to connect more filtering clauses.
 
-- `$and`: Joins query clauses with a logical AND. Returns all documents that match the conditions of both clauses.
+* `$and`: Joins query clauses with a logical AND. Returns all documents that match the conditions of both clauses.
 
   ```
   { "$and": [{ "price": { "$ne": 1.99 } }, { "price": { "$exists": true } }] }
   ```
 
-- `$or`: Joins query clauses with a logical OR. Returns all documents that match the conditions of either clause.
+* `$or`: Joins query clauses with a logical OR. Returns all documents that match the conditions of either clause.
 
   ```
   { "$or": [{ "price": { "$eq": 1.99 } }, { "price": { "$exists": false } }] }
   ```
 
-- `$not`: Inverts the effect of a query expression and returns documents that do not match the query expression.
+* `$not`: Inverts the effect of a query expression and returns documents that do not match the query expression.
   ```
   { "$not": { "price": { "$eq": 1.99 } } }
   ```
@@ -678,19 +819,7 @@ For example, you might use the query selector "People with age greater than 18" 
 2. Add query as `People with age greater than 18`
 3. use below code to find records and save it in a variable called `adults`
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FwYpsx6cvT5Q%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DwYpsx6cvT5Q&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FwYpsx6cvT5Q%2Fhqdefault.jpg&key=7788cb384c9f4d5dbbdbeffd9fe4b92f&type=text%2Fhtml&schema=youtube\" width=\"640\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=wYpsx6cvT5Q",
-  "title": "reusing filters",
-  "favicon": "https://www.google.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/wYpsx6cvT5Q/hqdefault.jpg",
-  "provider": "https://www.youtube.com/",
-  "href": "https://www.youtube.com/watch?v=wYpsx6cvT5Q",
-  "typeOfEmbed": "youtube"
-}
-[/block]
-
+<Embed url="https://www.youtube.com/watch?v=wYpsx6cvT5Q" title="reusing filters" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/wYpsx6cvT5Q/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=wYpsx6cvT5Q" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FwYpsx6cvT5Q%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DwYpsx6cvT5Q%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FwYpsx6cvT5Q%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22640%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 ```javascript
 // Find records in the table
@@ -710,19 +839,7 @@ Although the AI Filter is not primarily designed for exact string hunting, it's 
 
 You can use the `getRecord` function to retrieve a specific record from a table based on a unique identifier. For example, you might use the `getRecord` function to retrieve a user's profile information based on their unique user ID.
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FzbcTGK8T1PQ%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DzbcTGK8T1PQ&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FzbcTGK8T1PQ%2Fhqdefault.jpg&key=7788cb384c9f4d5dbbdbeffd9fe4b92f&type=text%2Fhtml&schema=youtube\" width=\"640\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=zbcTGK8T1PQ",
-  "title": "getrecord",
-  "favicon": "https://www.google.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/zbcTGK8T1PQ/hqdefault.jpg",
-  "provider": "https://www.youtube.com/",
-  "href": "https://www.youtube.com/watch?v=zbcTGK8T1PQ",
-  "typeOfEmbed": "youtube"
-}
-[/block]
-
+<Embed url="https://www.youtube.com/watch?v=zbcTGK8T1PQ" title="getrecord" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/zbcTGK8T1PQ/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=zbcTGK8T1PQ" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FzbcTGK8T1PQ%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DzbcTGK8T1PQ%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FzbcTGK8T1PQ%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22640%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 ```Text Javascript
 // 1 is the record ID and User is the variable name
@@ -762,49 +879,19 @@ Columns can be marked as "Computed" which allows the bot builder to observe chan
 
 To use computed columns, simply create a column and toggle the **Computed** field as shown below. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9e0fcf39902935effd54aada7fbd08541413a97524fd4bfddbfba14767682abc-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "400px"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="400px" src="https://files.readme.io/9e0fcf39902935effd54aada7fbd08541413a97524fd4bfddbfba14767682abc-image.png" />
 
 ## Selecting the basis of computation
 
 To compute columns, you must select what information you will base your computed columns on. To do so, click the **Dependencies** field and select all column names that you will use.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d12ec2ef7bca25fcf93d352f21a6c04367cdcc698e94c1ef075e312a7d44b250-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "400px"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="400px" src="https://files.readme.io/d12ec2ef7bca25fcf93d352f21a6c04367cdcc698e94c1ef075e312a7d44b250-image.png" />
 
 In the above example, we selected a column called **number**.
 
 ## AI-based computed columns
 
-You can perform AI text generation tasks by filling the prompt and including rows like this {{propertyName}}. 
+You can perform AI text generation tasks by filling the prompt and including rows like this \{\{propertyName}}. 
 
 ```
 Come up with the title for a story like the three little pigs for the number {{number}}
@@ -816,41 +903,11 @@ In the above example, for the number 3, you might get "The Three Clever Squirrel
 
 To run arbitrary code, select the **Execute code** tab. Then, click **Edit Code**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b242c110986b59376f21e75c4599101299641fd90e353e75a1e6bff1b1e06681-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "400px"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="400px" src="https://files.readme.io/b242c110986b59376f21e75c4599101299641fd90e353e75a1e6bff1b1e06681-image.png" />
 
 You will see a window with a code editor.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/24d2a3f6ef6fed42ddce8db549e1f5c59c9f74a18659f9cc59b3e4473ce2384c-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "400px"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="400px" src="https://files.readme.io/24d2a3f6ef6fed42ddce8db549e1f5c59c9f74a18659f9cc59b3e4473ce2384c-image.png" />
 
 Simply add your code above. The proper syntax for accessing columns you've identified as dependencies is row[propertyName], and what is displayed as the cell value is what is returned by this function. You can call asynchronous functions within the function, and have the **axios** library available to perform HTTP requests.
 
@@ -877,41 +934,11 @@ There is currently an execution timeout of 2 minutes these.
 
 To ensure computed values are always kept up to date, we recommend **Auto-compute** be toggled on.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9706d5aa10d2d152d1292bc92b1ef9c2c46a8ba6083b71290da5d8cacf487ec7-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "400px"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="400px" src="https://files.readme.io/9706d5aa10d2d152d1292bc92b1ef9c2c46a8ba6083b71290da5d8cacf487ec7-image.png" />
 
 If you do not have **Auto-compute** enabled, a grey icon will appear next to stale table cells. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/916133b27eee9a61ee3ffda42e0cc26cb14e193706e12c36e078d6b4e800fff1-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "400px"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="400px" src="https://files.readme.io/916133b27eee9a61ee3ffda42e0cc26cb14e193706e12c36e078d6b4e800fff1-image.png" />
 
 To update the stale data, simply re-activate **Auto-compute**.
 
@@ -926,9 +953,9 @@ You can import a table from a CSV file. Click on the `Import Table` button above
 Click on the `Export Table` button to export the table. This will download the table as a CSV file to your computer.
 
 > 🚧 Reminder
-> 
+>
 > Don't edit the CSV file directly to avoid data loss and import errors. Instead, make the changes in Botpress Studio and then export the updated table again.
 
 > 📘 Note
-> 
+>
 > When you export a bot the tables are exported as well so there is no need to export them separately unless you want to use them in another bot.
