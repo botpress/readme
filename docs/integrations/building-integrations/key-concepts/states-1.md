@@ -61,7 +61,7 @@ const integration = {
 
 In these examples, each method accepts the context **ctx**, which is used for storing and retrieving application-level data.
 
-**userId** and **conversationId** identify the user and conversation whose state is to be retrieved or updated, respectively.  
+**userId** and **conversationId** identify the user and conversation whose state is to be retrieved or updated, respectively.\
 **newState** represents the updated state data.
 
 Remember that state management is crucial for ensuring that your chatbot can provide contextually appropriate responses and maintain a coherent and engaging conversation with users.
