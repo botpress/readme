@@ -24,65 +24,263 @@ A Prompt Field is a type of input field that is used to capture information from
 
 The Prompt Field also includes validation messages and code validation, which helps ensure that the user inputs the correct type of information. This means that if the user inputs an invalid value, they will be notified with an error message and prompted to re-enter the correct information.
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "**Prompt Fields**",
-    "h-1": "**Description & Extracted Information**",
-    "0-0": "[SingleChoice](../docs/capture-information#single-choice)",
-    "0-1": "Extracts a Single Choice from a finite list of possible Values  \nVariable Type: String",
-    "1-0": "[MultipleChoice](../docs/capture-information#multi-choice) ",
-    "1-1": "Extracts one or multiple choices from a finite list of possible Values  \nVariable Type: String",
-    "2-0": "[Boolean](../docs/capture-information#boolean) ",
-    "2-1": "Extract a Boolean (On/Off) from the Query  \nVariable Type: Boolean",
-    "3-0": "[Confirmation](../docs/capture-information#confirmation) ",
-    "3-1": "Confirm a Yes/No question with a Boolean from the Query  \nVariable Type: Boolean",
-    "4-0": "[Number](../docs/capture-information#number) ",
-    "4-1": "Extracts a Number from the Query  \nVariable Type: Number",
-    "5-0": "[EmailAddress](../docs/capture-information#email-address) ",
-    "5-1": "Extracts a full Email Address from the Query  \nVariable Type: String",
-    "6-0": "[PhoneNumber](../docs/capture-information#phone-number) ",
-    "6-1": "Extracts a Telephone Number and optionally the Country Code from the Query  \nVariable Type: String",
-    "7-0": "[FullAddress](../docs/capture-information#fulladdress) ",
-    "7-1": "Extract the Full Address from the Query  \nVariable Type: Object",
-    "8-0": "[Price](https://botpress.com/docs/cloud/toolbox/capture-information/#price) ",
-    "8-1": "Extracts a Price from the Query  \nVariable Type: Number",
-    "9-0": "[RawInput](../docs/capture-information#raw-input) ",
-    "9-1": "Extract the Input provided by the User, without any processing  \nVariable Type: String",
-    "10-0": "[Percentage](../docs/capture-information#percentage) ",
-    "10-1": "Extracts a Percentage from the Query  \nVariable Type: Number",
-    "11-0": "[Quantity](../docs/capture-information#quantity) ",
-    "11-1": "Extract a Quantity from a Query  \nVariable Type: Number",
-    "12-0": "[Color](../docs/capture-information#color) ",
-    "12-1": "Extracts a Color as both HEX and RGB codes from the Query  \nVariable Type: Object",
-    "13-0": "[TimeMeasurement](../docs/capture-information#time-measurement) ",
-    "13-1": "Extracts a time measurement as (ns, mu, ms, s, min, h, d, week, month, year) Units  \nVariable Type: Number",
-    "14-0": "[WeightMeasurement](../docs/capture-information#weight-measurement) ",
-    "14-1": "Extracts a Weight Measurement as (mcg, mg, g, kg, oz, lb, mt, t) Units  \nVariable Type: Number",
-    "15-0": "[CronSchedule](../docs/capture-information#cron-schedule) ",
-    "15-1": "Extracts a one-time or recurring schedule as a CRON Expression from the Query  \nVariable Type: Object",
-    "16-0": "[OperatingSystem](../docs/capture-information#operating-system) ",
-    "16-1": "Extracts the name of an Operating System (Windows, OSX, IOS, Android, Linux)  \nVariable Type: Object",
-    "17-0": "[QuantityofPeople](../docs/capture-information#quantity-of-people) ",
-    "17-1": "Extracts the Number of People in a Query  \nVariable Type: Number",
-    "18-0": "[VolumeMeasurement](../docs/capture-information#volume-measurement) ",
-    "18-1": "Extracts a volume measurement as (mm3, cm3, ml, l, kl, m3, km3, tsp, Tbs, in3, fl-oz, cup, pnt, qt, gal, ft3, yd3) Units  \nVariable Type: Number",
-    "19-0": "[TemperatureMeasurement](../docs/capture-information#temperature-measurement) ",
-    "19-1": "Extracts a Temperature Measurement as (C, K, F) Units  \nVariable Type: Number",
-    "20-0": "[Person](../docs/capture-information#person) ",
-    "20-1": "Extracts the name of a person(first and last names)  \nVariable Type: Object",
-    "21-0": "[DateTime](../docs/capture-information#datetime) ",
-    "21-1": "Extracts date and time relative to the current date  \nVariable Type: Date"
-  },
-  "cols": 2,
-  "rows": 22,
-  "align": [
-    "left",
-    "left"
-  ]
-}
-[/block]
+<Table align={["left","left"]}>
+  <thead>
+    <tr>
+      <th style={{ textAlign: "left" }}>
+        **Prompt Fields**
+      </th>
 
+      <th style={{ textAlign: "left" }}>
+        **Description & Extracted Information**
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [SingleChoice](../docs/capture-information#single-choice)
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Extracts a Single Choice from a finite list of possible Values\
+        Variable Type: String
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [MultipleChoice](../docs/capture-information#multi-choice) 
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Extracts one or multiple choices from a finite list of possible Values\
+        Variable Type: String
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [Boolean](../docs/capture-information#boolean) 
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Extract a Boolean (On/Off) from the Query\
+        Variable Type: Boolean
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [Confirmation](../docs/capture-information#confirmation) 
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Confirm a Yes/No question with a Boolean from the Query\
+        Variable Type: Boolean
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [Number](../docs/capture-information#number) 
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Extracts a Number from the Query\
+        Variable Type: Number
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [EmailAddress](../docs/capture-information#email-address) 
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Extracts a full Email Address from the Query\
+        Variable Type: String
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [PhoneNumber](../docs/capture-information#phone-number) 
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Extracts a Telephone Number and optionally the Country Code from the Query\
+        Variable Type: String
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [FullAddress](../docs/capture-information#fulladdress) 
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Extract the Full Address from the Query\
+        Variable Type: Object
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [Price](https://botpress.com/docs/cloud/toolbox/capture-information/#price) 
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Extracts a Price from the Query\
+        Variable Type: Number
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [RawInput](../docs/capture-information#raw-input) 
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Extract the Input provided by the User, without any processing\
+        Variable Type: String
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [Percentage](../docs/capture-information#percentage) 
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Extracts a Percentage from the Query\
+        Variable Type: Number
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [Quantity](../docs/capture-information#quantity) 
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Extract a Quantity from a Query\
+        Variable Type: Number
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [Color](../docs/capture-information#color) 
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Extracts a Color as both HEX and RGB codes from the Query\
+        Variable Type: Object
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [TimeMeasurement](../docs/capture-information#time-measurement) 
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Extracts a time measurement as (ns, mu, ms, s, min, h, d, week, month, year) Units\
+        Variable Type: Number
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [WeightMeasurement](../docs/capture-information#weight-measurement) 
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Extracts a Weight Measurement as (mcg, mg, g, kg, oz, lb, mt, t) Units\
+        Variable Type: Number
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [CronSchedule](../docs/capture-information#cron-schedule) 
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Extracts a one-time or recurring schedule as a CRON Expression from the Query\
+        Variable Type: Object
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [OperatingSystem](../docs/capture-information#operating-system) 
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Extracts the name of an Operating System (Windows, OSX, IOS, Android, Linux)\
+        Variable Type: Object
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [QuantityofPeople](../docs/capture-information#quantity-of-people) 
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Extracts the Number of People in a Query\
+        Variable Type: Number
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [VolumeMeasurement](../docs/capture-information#volume-measurement) 
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Extracts a volume measurement as (mm3, cm3, ml, l, kl, m3, km3, tsp, Tbs, in3, fl-oz, cup, pnt, qt, gal, ft3, yd3) Units\
+        Variable Type: Number
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [TemperatureMeasurement](../docs/capture-information#temperature-measurement) 
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Extracts a Temperature Measurement as (C, K, F) Units\
+        Variable Type: Number
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [Person](../docs/capture-information#person) 
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Extracts the name of a person(first and last names)\
+        Variable Type: Object
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        [DateTime](../docs/capture-information#datetime) 
+      </td>
+
+      <td style={{ textAlign: "left" }}>
+        Extracts date and time relative to the current date\
+        Variable Type: Date
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 <br />
 
@@ -91,7 +289,7 @@ The Prompt Field also includes validation messages and code validation, which he
 The **Single Choice** is a type of input field that presents the user with a list of options to choose from. The user can only select **one** option from the list, and their choice is then stored as a value in a variable. This variable can be used later in your workflow for further processing.
 
 > 👍 Tip
-> 
+>
 > If the user enters text instead of clicking a button, the AI will search their text for any of the button options, and, if there is an option the user's text will be treated as if they clicked the button.
 
 An example of Single Choice would be a survey question with multiple options, where the user selects one answer from the list.
@@ -544,15 +742,15 @@ Once the card is used, it will automatically extract the date/duration value fro
 
 The following formats are available for the extracted time measurement value:
 
-ns (nanoseconds)  
-mu (microseconds)  
-ms (milliseconds)  
-s (seconds)  
-min (minutes)  
-h (hours)  
-d (days)  
-week (weeks)  
-month (months)  
+ns (nanoseconds)\
+mu (microseconds)\
+ms (milliseconds)\
+s (seconds)\
+min (minutes)\
+h (hours)\
+d (days)\
+week (weeks)\
+month (months)\
 year (years)
 
 You can choose any of these formats based on your requirement.
@@ -786,7 +984,7 @@ Prompt message: What is the volume of liquid you want to order? Please enter a n
 
 The **Volume Measurement** type extracts the volume value and save it in the **liquidVolume** workflow variable as a number value. The value will be converted to the format specified by the user. You can then use this variable in other parts of your workflow to perform calculations or use the value in responses to the user.
 
-For example, you could use the **liquidVolume** variable to calculate the price of the liquid based on the volume and price per unit of volume, or you could use it in response to the user like **Thank you for ordering **`{{workflow.liquidVolume}}`** ml of liquid.** Your order will be delivered soon.
+For example, you could use the **liquidVolume** variable to calculate the price of the liquid based on the volume and price per unit of volume, or you could use it in response to the user like **Thank you for ordering** `{{workflow.liquidVolume}}` **ml of liquid.** Your order will be delivered soon.
 
 ## Temperature Measurement
 
@@ -939,14 +1137,14 @@ The **File Upload** type allows users to upload a file through the chatbot inter
 #### Configuration Steps:
 
 1. **Enable File Upload in Webchat Settings**:
-   - Navigate to the **Webchat** settings in Botpress Studio.
-   - Under the **General** tab, find the option labeled **Allow user file upload**.
-   - Toggle the setting to **Enabled**.
+   * Navigate to the **Webchat** settings in Botpress Studio.
+   * Under the **General** tab, find the option labeled **Allow user file upload**.
+   * Toggle the setting to **Enabled**.
 
 2. **Set Up the Capture Information Card**:
-   - In the **Capture Information** card, select **File** as the **Type of value to extract**.
-   - Define the **Question to ask the user**, such as "Please upload the file you want to share."
-   - Specify the variable in **Store result in** where the file URL will be stored (e.g., `workflow.filePath`).
+   * In the **Capture Information** card, select **File** as the **Type of value to extract**.
+   * Define the **Question to ask the user**, such as "Please upload the file you want to share."
+   * Specify the variable in **Store result in** where the file URL will be stored (e.g., `workflow.filePath`).
 
 #### Example:
 
@@ -971,7 +1169,7 @@ Once the card is used, it will automatically extract the information that matche
 
 **Example**
 
-Let's say you want to ask the user for their credit card number. You can create a new entity with a regular expression that matches the pattern of a credit card number, such as **/(\\d{4}-){3}\\d{4}/** for a 16-digit credit card number in the format **XXXX-XXXX-XXXX-XXXX**. You can then create a new capture information card with the following properties:
+Let's say you want to ask the user for their credit card number. You can create a new entity with a regular expression that matches the pattern of a credit card number, such as **/(\\d\{4}-)\{3}\\d\{4}/** for a 16-digit credit card number in the format **XXXX-XXXX-XXXX-XXXX**. You can then create a new capture information card with the following properties:
 
 ```
 Type: Entity Regex
@@ -1003,9 +1201,9 @@ Once the card is used, it will automatically extract the information that matche
 
 Botpress offers three options for fuzzy matching:
 
-- **Strict**: No errors allowed.
-- **Medium**: Tolerates up to one error in words of four characters or more.
-- **Loose**: Tolerates up to two errors in words of four characters or more.
+* **Strict**: No errors allowed.
+* **Medium**: Tolerates up to one error in words of four characters or more.
+* **Loose**: Tolerates up to two errors in words of four characters or more.
 
 This means that even if the user makes a typo or a slight error, the system can still match the input with an entry in the entity list.
 
@@ -1173,11 +1371,11 @@ You could add fixed options or add variables to each choice to make them dynamic
 ```
 
 > 🚧 Limit
-> 
-> If you add more than 5 choices, they will be rendered as a Dropdown/List instead of buttons. This number may vary by channel.{' '} The choices labels should not be longer than 20 characters otherwise they will get cut in some channels.
+>
+> If you add more than 5 choices, they will be rendered as a Dropdown/List instead of buttons. This number may vary by channel.\{' '} The choices labels should not be longer than 20 characters otherwise they will get cut in some channels.
 
 > 📘 Note
-> 
+>
 > Choices are only available for **Single Choice**, **Multiple Choice**, **Boolean**, **Confirmation** and **Raw Input**Capture cards.
 
 **Example**
