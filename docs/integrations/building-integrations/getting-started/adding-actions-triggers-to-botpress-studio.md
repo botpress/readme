@@ -14,19 +14,7 @@ When you install an integration in your bot in Botpress Studio, you can add cust
 
 For this tutorial, we will add the capability for a bot to create a trackable URL that notifies the creator when it is used. You can follow the instructions below or follow along the video.
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F5-vQGSOC2EE%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D5-vQGSOC2EE&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F5-vQGSOC2EE%2Fhqdefault.jpg&key=02466f963b9b4bb8845a05b53d3235d7&type=text%2Fhtml&schema=youtube\" width=\"640\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/embed/5-vQGSOC2EE",
-  "title": "Extending Botpress Studio - Actions and Triggers cards",
-  "favicon": "https://www.youtube.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/5-vQGSOC2EE/hqdefault.jpg",
-  "provider": "https://www.youtube.com/",
-  "href": "https://www.youtube.com/embed/5-vQGSOC2EE",
-  "typeOfEmbed": "youtube"
-}
-[/block]
-
+<Embed url="https://www.youtube.com/embed/5-vQGSOC2EE" title="Extending Botpress Studio - Actions and Triggers cards" favicon="https://www.youtube.com/favicon.ico" image="https://i.ytimg.com/vi/5-vQGSOC2EE/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/embed/5-vQGSOC2EE" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252F5-vQGSOC2EE%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253D5-vQGSOC2EE%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252F5-vQGSOC2EE%252Fhqdefault.jpg%26key%3D02466f963b9b4bb8845a05b53d3235d7%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22640%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 <br />
 
@@ -121,7 +109,7 @@ export default new Integration({
 });
 ```
 
-This allows a user to add a "createTrackableLink" card in Botpress Studio, which takes a conversation ID and an original link as input. The output is saved to a variable, which contains the trackable link.  
+This allows a user to add a "createTrackableLink" card in Botpress Studio, which takes a conversation ID and an original link as input. The output is saved to a variable, which contains the trackable link.\
 We are using the btoa function to obfuscate the conversation ID and original link in the URL. We'll use in the next step to decode this information.
 
 ## Step 4: Implement Event Handler Logic
@@ -162,7 +150,7 @@ export default new Integration({
 });
 ```
 
-The handler function allows you to catch any http requests sent to the webhook URL and its sub paths. We use the if statement to catch relevant requests and allow other requests to be handled by other functions.  
+The handler function allows you to catch any http requests sent to the webhook URL and its sub paths. We use the if statement to catch relevant requests and allow other requests to be handled by other functions.\
 The `createTrackableLink` action encodes the conversation ID and original link into a base64 string and creates a trackable link. The `handler` function decodes this information when the link is clicked, triggers the `clickedLink` event, and redirects the user to the original link.
 
 <br />
@@ -174,26 +162,26 @@ Now, let's create and test the action in Botpress Studio.
 ## Step 5: Create the Action in Botpress Studio
 
 1. **Create an Action:**
-   - In Botpress Studio, create an action card.
-   - Provide the URL as a string in the input and the current conversation ID like this: `"{{event.conversationId}}"`.
-   - Save the output to a variable called `output`.
-   - Create a text card with the text: `"This is the shareable URL: {{workflow.output.trackableLink}}"`.
+   * In Botpress Studio, create an action card.
+   * Provide the URL as a string in the input and the current conversation ID like this: `"{{event.conversationId}}"`.
+   * Save the output to a variable called `output`.
+   * Create a text card with the text: `"This is the shareable URL: {{workflow.output.trackableLink}}"`.
 
 2. **Create a Trigger:**
-   - Right-click the workflow, click "Trigger", then select the `clickedLink` event.
-   - In the created node, click it, then "Advanced settings", and put `{{event.payload.conversationId}}` in the conversation ID field.
-   - Create a text card connected to the trigger node, and add `"A user has clicked your tracked link to {{event.payload.originalLink}}"`.
+   * Right-click the workflow, click "Trigger", then select the `clickedLink` event.
+   * In the created node, click it, then "Advanced settings", and put `{{event.payload.conversationId}}` in the conversation ID field.
+   * Create a text card connected to the trigger node, and add `"A user has clicked your tracked link to {{event.payload.originalLink}}"`.
 
 ## Step 6: Test the Action and Trigger
 
 To test the action and trigger, you must use a published bot outside the emulator:
 
 1. **Publish the Bot:**
-   - Ensure your bot is published and accessible.
+   * Ensure your bot is published and accessible.
 
 2. **Test the Trackable Link:**
-   - Interact with the bot to generate the trackable link.
-   - Use the generated link.
-   - Verify that the bot notifies the creator when the link is clicked.
+   * Interact with the bot to generate the trackable link.
+   * Use the generated link.
+   * Verify that the bot notifies the creator when the link is clicked.
 
 Congratulations! You've successfully added and tested custom actions and triggers in Botpress Studio. Now, your bot can create trackable links and notify users when those links are clicked.
