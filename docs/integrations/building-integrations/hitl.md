@@ -24,32 +24,17 @@ This documentation will guide you through setting up and implementing a Human-In
 
 In Botpress, the Human-In-The-Loop (HITL) functionality is powered by the HITL Agent. This agent consumes integrations that correctly implement the HITL interface, turning agent hand-off on and off.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a11417252c75c4771500955f4b4e6faff70b921c56efb9e292128189c2a57928-Screenshot_2024-09-16_at_10.45.05_AM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "250px"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="250px" src="https://files.readme.io/a11417252c75c4771500955f4b4e6faff70b921c56efb9e292128189c2a57928-Screenshot_2024-09-16_at_10.45.05_AM.png" />
 
 Here is an overview of the HITL workflow in Botpress:
 
-- **When a conversation is escalated to a live agent:**
+* **When a conversation is escalated to a live agent:**
   1. A user is created on both Botpress and the third-party live chat platform. The link between the two users can be done on both sides, but we recommend doing it on Botpress's end using user [tags](#tags).
   2. A conversation is initiated on Botpress, and a corresponding ticket is created on the agent handoff platform. The link between the two conversations can be done on both sides, but we recommend doing it on Botpress's end using conversation [tags](#tags).
 
-- **When the end user sends a message to a live agent:** The message is forwarded to the agent handoff platform through the "hitl" channel.
+* **When the end user sends a message to a live agent:** The message is forwarded to the agent handoff platform through the "hitl" channel.
 
-- **When the live agent sends a message to the end user:** The agent handoff platform calls the integration webhook, which then forwards the message to the end user.
+* **When the live agent sends a message to the end user:** The agent handoff platform calls the integration webhook, which then forwards the message to the end user.
 
 This guide will teach you how to make your integration compatible with the HITL agent.
 
@@ -125,9 +110,9 @@ export default new bp.Integration({});
 
 These methods are part of the integration's lifecycle.
 
-- **register:** This method is executed every time the integration configuration is saved. We use it to set a webhook that will be triggered when a live agent sends a message. If you manually set the webhook on the third-party platform, this step can be skipped.
+* **register:** This method is executed every time the integration configuration is saved. We use it to set a webhook that will be triggered when a live agent sends a message. If you manually set the webhook on the third-party platform, this step can be skipped.
 
-- **unregister:** This method is executed when the integration is uninstalled. We use it to remove the Botpress webhook from the third-party platform. If the webhook was set manually, this step can be skipped.
+* **unregister:** This method is executed when the integration is uninstalled. We use it to remove the Botpress webhook from the third-party platform. If the webhook was set manually, this step can be skipped.
 
 ```javascript index.ts
 import * as sdk from "@botpress/sdk";
@@ -154,11 +139,11 @@ When extending the HITL interface, you need to implement a set of predefined met
 
 Here are the actions you need to implement:
 
-- **createUser:** Creates a user in both Botpress and the third-party platform and maps them together. Then, the action returns the user ID of the created Botpress user. The mapping between the two users can be done on both sides, but we recommend doing it on Botpress's end using conversation [tags](#tags).
+* **createUser:** Creates a user in both Botpress and the third-party platform and maps them together. Then, the action returns the user ID of the created Botpress user. The mapping between the two users can be done on both sides, but we recommend doing it on Botpress's end using conversation [tags](#tags).
 
-- **startHitl:** Creates a conversation in Botpress and a corresponding conversation (often called a ticket) on the third-party platform and maps them together. This action must return the ID of the created Botpress conversation. The mapping between the two conversations can be done on both sides, but we recommend doing it on Botpress's end using conversation [tags](#tags).
+* **startHitl:** Creates a conversation in Botpress and a corresponding conversation (often called a ticket) on the third-party platform and maps them together. This action must return the ID of the created Botpress conversation. The mapping between the two conversations can be done on both sides, but we recommend doing it on Botpress's end using conversation [tags](#tags).
 
-- **stopHitl:** Deletes a conversation on the third-party platform.
+* **stopHitl:** Deletes a conversation on the third-party platform.
 
 Here’s how you can implement these actions:
 
@@ -281,7 +266,7 @@ export default new bp.Integration({
 We suggest starting with the text message type and adding more as needed. 
 
 > 🚧 Watch out!
-> 
+>
 > `payload.userId` is the user id of the chat-user as seen from the HITL conversation. `user.id` is the id of the bot. If you want the agent to know who he's talking to, you must use `payload.userId`.
 
 ## 4. Send Messages from Live Agent to End User
@@ -329,7 +314,7 @@ export default new bp.Integration({
 In the above example, we don't check the route, or method, but we can do that with the `req` parameter of the handler, which returns an express.js-like request object. You can add `if` conditions to route different actions you'd like, such as assigning agents, or releasing the user back to the bot.
 
 > 📘 Why do I keep seeing getOrCreate?
-> 
+>
 > We don't actually want to create users or conversations at this point. Its simply a matter of the `get` methods not supporting finding by tags, while the `getOrCreate` methods do.
 
 <br />
@@ -338,7 +323,7 @@ In the above example, we don't check the route, or method, but we can do that wi
 
 We need to emit two events to inform the bot about the status of the Human-In-The-Loop (HITL) process:
 
-**hitlAssigned**: Tells the bot that the conversation has been successfully escalated to a live agent.  
+**hitlAssigned**: Tells the bot that the conversation has been successfully escalated to a live agent.\
 **hitlStopped**: Tells the bot that the conversation with the live agent has ended.
 
 ```coffeescript index.ts
