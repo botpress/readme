@@ -23,7 +23,7 @@ export default new IntegrationDefinition({
 })
 ```
 
-In this example, the secrets property is an array that contains three secret names: **api_key**, **token**, and **password**. When configuring the integration, the user will be prompted to provide values for these secrets.
+In this example, the secrets property is an array that contains three secret names: **api\_key**, **token**, and **password**. When configuring the integration, the user will be prompted to provide values for these secrets.
 
 To access the values of the secrets within the integration code, the **ctx.secrets** object can be used. The **ctx.secrets** object provides a secure way to retrieve the values of the secrets by their names. Here's an example:
 
