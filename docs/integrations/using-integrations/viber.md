@@ -14,8 +14,8 @@ next:
 
 # Prerequisites
 
-- A [Viber account](https://www.viber.com/)
-- A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
+* A [Viber account](https://www.viber.com/)
+* A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
 
 <br />
 
@@ -26,11 +26,11 @@ next:
 
 The Viber integration has the following settings:
 
-- **Enabled**: Whether Botpress will communicate with Viber.
-- **Webhook URL**: The URL for receiving data in Botpress. (You shall not be using it)
-- **Auth Token**: The authentication token of your Viber bot.
-- **Bot Name**: The name of your Viber bot.
-- **Bot Avatar URL**: The URL of the avatar of your Viber bot.
+* **Enabled**: Whether Botpress will communicate with Viber.
+* **Webhook URL**: The URL for receiving data in Botpress. (You shall not be using it)
+* **Auth Token**: The authentication token of your Viber bot.
+* **Bot Name**: The name of your Viber bot.
+* **Bot Avatar URL**: The URL of the avatar of your Viber bot.
 
 <br />
 
