@@ -32,39 +32,39 @@ A cron expression is a string representing a schedule. It consists of five field
 
 Here are some examples of cron expressions:
 
-- `0 0 12 * * ?` - This expression triggers an event every day at 12:00 PM.
-- `0 0 12 ? * MON-FRI` - This expression triggers an event every weekday at 12:00 PM.
-- `0 0 12 1/1 * ? *` - This expression triggers an event every minute.
+* `0 0 12 * * ?` - This expression triggers an event every day at 12:00 PM.
+* `0 0 12 ? * MON-FRI` - This expression triggers an event every weekday at 12:00 PM.
+* `0 0 12 1/1 * ? *` - This expression triggers an event every minute.
 
 #### Preview Run
 
 You can preview the next 10 runs of the cron expression by clicking on the "Preview Run" button. This will show you the next time the event will be triggered based on the cron expression.
 
-You can use any website to visualize your cron expression. For example, check <https://crontab.guru/>
+You can use any website to visualize your cron expression. For example, check [https://crontab.guru/](https://crontab.guru/)
 
 # Webchat Triggers
 
 When you enable the webchat, you can access Webchat Triggers. These are specific types of events that you can use for your benefit. Here are the types of Webchat Triggers:
 
-- Trigger:  
+* Trigger:\
   Activated when a custom event is sent from the user's browser.
 
-- Conversation Started:  
+* Conversation Started:\
   Activated when the user opens the bot, useful for showing a welcome message before the user sends a message.
 
-- Message In Channel:  
+* Message In Channel:\
   Used to start a conversation or listen to events on external systems. For example, if there's a new lead in Salesforce, you can send a message to the sales team in Slack, or start the webchat when a visitor is on Page X.
 
 ## Using Triggers
 
 To use a trigger, add it to the studio editor. Here's what you need to remember when using triggers:
 
-- Conversation triggers can only be used once.
-- You can add conditions for firing the trigger using the Edit Filter.
-- To test your trigger, click 'Discover Events', choose the event you want to repeat, click 'save', then 'close'. Select it from the dropdown list named "Select an event to trigger". Now you can click "Trigger this event" to repeat the payload in the emulator.
+* Conversation triggers can only be used once.
+* You can add conditions for firing the trigger using the Edit Filter.
+* To test your trigger, click 'Discover Events', choose the event you want to repeat, click 'save', then 'close'. Select it from the dropdown list named "Select an event to trigger". Now you can click "Trigger this event" to repeat the payload in the emulator.
 
 > 🚧 Using Filters
-> 
+>
 > Please note: filters are evaluated from the first trigger card created to the last one created. Make sure your conditions are written in consequence.
 
 ## Advanced Options - Conversation ID
@@ -76,7 +76,7 @@ The conversation ID is a unique identifier for each conversation. It can be used
 To make the bot send a welcome message, add a trigger to your flow, then choose the "Conversation Started" type. This would make the bot send a message even if the user didn't.
 
 > 🚧 Welcome Message
-> 
+>
 > Welcome Messages can be tested only after publishing the chatbot and can be tested mainly from the web chat screen. Like in the shareable link, the chat from the chatbot dashboard or the embedded web chat component.
 
 ## Sending Custom Information
@@ -113,7 +113,7 @@ These are specific stages in the lifecycle of the bot's interaction with the use
 | `USER.CONNECTED`   | Indicates a user has connected.                                      |
 
 > 👍 Tip
-> 
+>
 > Whether 'UI.RESIZE' and 'UI.SET-CLASS' are necessary depends on the specific needs of your bot interface and how you want to handle different UI events.
 
 ## Webchat Integration
