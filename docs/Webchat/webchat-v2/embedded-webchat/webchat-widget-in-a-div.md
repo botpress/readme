@@ -47,7 +47,7 @@ The first is adding code between the script tags to inject logic to open the web
 <br />
 
 > 🚧 Pitfall prevention
-> 
+>
 > You must make sure the added code is found between the two script tags.
 
 Broken down, this is the javascript to add:
