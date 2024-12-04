@@ -36,22 +36,7 @@ Using the embedded webchat is a great way to provide a seamless experience for y
 
 ## Voilà!
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5f7d7ed-image.png",
-        null,
-        null
-      ],
-      "align": "right",
-      "sizing": "40% "
-    }
-  ]
-}
-[/block]
-
+<Image align="right" width="40% " src="https://files.readme.io/5f7d7ed-image.png" />
 
 You've integrated the webchat with your website or application.
 
