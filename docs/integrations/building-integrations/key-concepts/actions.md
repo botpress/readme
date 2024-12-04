@@ -18,7 +18,7 @@ Here's how you might document the **addReaction** action for a Slack integration
 
 # addReaction
 
-This action allows the bot to add a reaction (emoji) to a specific message in a Slack conversation. It can be used to acknowledge a user's message, show approval, or convey any other sentiment that can be represented by an emoji.  
+This action allows the bot to add a reaction (emoji) to a specific message in a Slack conversation. It can be used to acknowledge a user's message, show approval, or convey any other sentiment that can be represented by an emoji.\
 In the implementation, this function should make a request to the Slack API to add the specified reaction to the message. The function accepts the context **ctx**, a **conversationId** and **messageId** to identify the message to react to, and a reaction parameter specifying the emoji to use.
 
 Here's a simple example of what the addReaction action might look like in your Slack integration:
