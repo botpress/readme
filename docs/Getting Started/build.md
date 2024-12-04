@@ -18,7 +18,7 @@ Creating a chatbot with Botpress is a simple and intuitive process that can be a
 2. Click **+ New bot** and enter the Studio
 3. Get creative!
 
-In Botpress, each bot belongs to a <<glossary:Workspace>>. When you connect to Botpress Cloud for the first time, a default Workspace will be automatically created for you.
+In Botpress, each bot belongs to a <Glossary>Workspace</Glossary>. When you connect to Botpress Cloud for the first time, a default Workspace will be automatically created for you.
 
 <br />
 
@@ -36,11 +36,11 @@ When you enter Botpress Studio after creating a new bot, you'll be prompted to s
 
 To access templates on an existing bot:
 
-- In Botpress Studio, click on the Botpress icon located at the top-left corner, and select **Explore Bot Templates**.
-- Choose the template you would like to use.
+* In Botpress Studio, click on the Botpress icon located at the top-left corner, and select **Explore Bot Templates**.
+* Choose the template you would like to use.
 
 > 🚧 Warning: Overriding Template
-> 
+>
 > If you override an existing bot with a bot template, all the previous content and configurations of your bot will be erased and replaced with the new template.
 
 <br />
