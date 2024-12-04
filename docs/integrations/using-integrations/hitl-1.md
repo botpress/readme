@@ -39,34 +39,18 @@ HITL is a critical component of Botpress’s commitment to providing flexible, p
 # Usage
 
 > 💼 Note
-> 
+>
 > HITL through the Botpress dashboard is only available to Team and Enterprise subscribers.
 
 To get started with HITL, enable the HITL integration from the integration hub. Make sure you've also enabled the HITL agent.
 
-At this point, the 'Escalate to a Human' card will be available for use in the <<glossary:card tray>>.
+At this point, the 'Escalate to a Human' card will be available for use in the <Glossary>card tray</Glossary>.
 
 Dragging this into a node will stop the flow of the conversation and escalate the conversation to the 'HITL' tab of the bot's dashboard.
 
-Once the conversation appears in the HITL tab, it can be assigned to a user in the <<glossary:Workspace>>. You can also assign a conversation to yourself.
+Once the conversation appears in the HITL tab, it can be assigned to a user in the <Glossary>Workspace</Glossary>. You can also assign a conversation to yourself.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5780659b5819fd48cc3558e93721c525bc256bb98b240055297c7ea1cf76d3a6-Screenshot_2024-09-11_at_2.21.21_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "600px",
-      "border": true
-    }
-  ]
-}
-[/block]
-
+<Image align="center" className="border" width="600px" border={true} src="https://files.readme.io/5780659b5819fd48cc3558e93721c525bc256bb98b240055297c7ea1cf76d3a6-Screenshot_2024-09-11_at_2.21.21_PM.png" />
 
 From this tab, the agent can view the conversation history prior to the escalation, as well as participate in the conversation by using the 'Live Chat' tab.
 
