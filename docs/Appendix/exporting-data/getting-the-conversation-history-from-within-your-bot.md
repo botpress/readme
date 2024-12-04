@@ -18,8 +18,8 @@ Botpress Cloud provides you with several different ways to export a conversation
 
 The [Summary Agent](../docs/agents#summary-agent) listens to all new messages in the conversation to build a summary and a transcript.
 
-- The summary is available at `conversation.SummaryAgent.summary` and contains an explanation of what happened in conversation, like "The user asked for the opening hours and the bot answered by saying the business works 24/7". You can choose how detailed the summary is by setting the max tokens in the Agent settings.
-- The transcript is available at `conversation.SummaryAgent.transcript` and contains the history of the conversation going back a certain amount of turns. You can set that amount of turns in the Summary Agent settings. If you set it to 0, the transcript will contain all messages.
+* The summary is available at `conversation.SummaryAgent.summary` and contains an explanation of what happened in conversation, like "The user asked for the opening hours and the bot answered by saying the business works 24/7". You can choose how detailed the summary is by setting the max tokens in the Agent settings.
+* The transcript is available at `conversation.SummaryAgent.transcript` and contains the history of the conversation going back a certain amount of turns. You can set that amount of turns in the Summary Agent settings. If you set it to 0, the transcript will contain all messages.
 
 ## Advantages
 
@@ -27,7 +27,7 @@ The `summary` variable is useful if you don't need to have many details about th
 
 ## Disadvantages
 
-The disadvantage of using the Summary Agent for exporting conversations is that after the amount of messages surpasses the max amount of turns for the transcript, you won't have the full conversation anymore (You can mitigate this by setting the max amount to 0). Another disadvantage is that the Agent only has access to the  
+The disadvantage of using the Summary Agent for exporting conversations is that after the amount of messages surpasses the max amount of turns for the transcript, you won't have the full conversation anymore (You can mitigate this by setting the max amount to 0). Another disadvantage is that the Agent only has access to the\
 current session, so if the user is resuming a conversation, you won't have the previous messages in the history. To get the whole conversation at any moment, use the [API method for exporting conversations](../docs/exporting-raw-conversations-with-the-botpress-api)
 
 <br />
@@ -42,7 +42,7 @@ This solution is useful if you need to have all details about the conversation. 
 
 ## Disadvantages
 
-The disadvantage of using Hooks is that it requires some work to set up and you only have access to the current session, so if the user is resuming a conversation, you  
+The disadvantage of using Hooks is that it requires some work to set up and you only have access to the current session, so if the user is resuming a conversation, you\
 won't have the previous messages in the history. To get the whole conversation at any moment, use the [API method for exporting conversations](../docs/exporting-raw-conversations-with-the-botpress-api)  
 
 ## Setting up the Hooks
@@ -80,5 +80,5 @@ await axios.post('https://my-api-url.com', {
 ```
 
 > 📘 Info
-> 
+>
 > You could add this card to the [Conversation End](../studio/workflows/#conversation-end) workflow so that the full session is sent when the conversation ends. (The bot will only enter the End flow if there's a explicit Transition to an End node)
