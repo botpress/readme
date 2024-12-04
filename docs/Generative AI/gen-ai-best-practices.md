@@ -18,17 +18,17 @@ In general, the AI Task, Execute Code, and the transition don't know what is hap
 
 ## Do's - Use Effective phrasing:
 
-- "What is the capital of France?"
-- "Can you tell me about the history of the Great Wall of China?"
-- "Please provide a definition of the word 'algorithm.'"
-- Use absolutes, words like: “ignore”, “add”, “extract”, “use”, “store”, etc.
+* "What is the capital of France?"
+* "Can you tell me about the history of the Great Wall of China?"
+* "Please provide a definition of the word 'algorithm.'"
+* Use absolutes, words like: “ignore”, “add”, “extract”, “use”, “store”, etc.
 
 ## Dont's - Use Ineffective phrasing:
 
-- "Don't tell me the wrong answer."
-- "I'm not interested in hearing your opinion."
-- "You wouldn't happen to know what I'm talking about, would you?"
-- Don't use hedge words like: “maybe”, “try”, "potentially", "avoid", etc.
+* "Don't tell me the wrong answer."
+* "I'm not interested in hearing your opinion."
+* "You wouldn't happen to know what I'm talking about, would you?"
+* Don't use hedge words like: “maybe”, “try”, "potentially", "avoid", etc.
 
 <br />
 
@@ -143,7 +143,7 @@ You can also pass the past answers from the AI and direct it to **Use new answer
 
 The current limitation is 5000 characters, and we are working to increase it.
 
-You can find more information here: <https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them>
+You can find more information here: [https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them)
 
 ## Understanding Limitation
 
@@ -153,7 +153,7 @@ There are limitations to what the AI can understand, such as complex or nuanced 
 
 Since the AI is based on ChatGPT models, you must know that ChatGPT is not connected to the internet, and it can occasionally produce incorrect answers. It has limited knowledge of the world and events that happened after 2021 and may also occasionally produce harmful instructions or biased content.
 
-You can find more information here: <https://help.openai.com/en/articles/6783457-chatgpt-general-faq>
+You can find more information here: [https://help.openai.com/en/articles/6783457-chatgpt-general-faq](https://help.openai.com/en/articles/6783457-chatgpt-general-faq)
 
 <br />
 
