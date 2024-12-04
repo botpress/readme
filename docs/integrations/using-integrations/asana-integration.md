@@ -14,8 +14,8 @@ Asana Integration allows you to seamlessly connect your Botpress and Asana, a we
 
 ## Prerequisites
 
-- An [Asana account](https://asana.com/)
-- Access to an existing Asana workspace.
+* An [Asana account](https://asana.com/)
+* Access to an existing Asana workspace.
 
 ## Setting up the Asana integration in Botpress
 
@@ -24,10 +24,10 @@ Asana Integration allows you to seamlessly connect your Botpress and Asana, a we
 
 The Asana integration has the following settings:
 
-- **Enabled**: Whether Botpress will communicate with Asana
-- **Webhook URL**: The URL for receiving data in Botpress. (You shall not be using it)
-- **API Token**: The API token generated from Asana
-- **Workspace Gid**: The workspace ID obtained from Asana
+* **Enabled**: Whether Botpress will communicate with Asana
+* **Webhook URL**: The URL for receiving data in Botpress. (You shall not be using it)
+* **API Token**: The API token generated from Asana
+* **Workspace Gid**: The workspace ID obtained from Asana
 
 ## Setting up Asana
 
@@ -37,7 +37,7 @@ The Asana integration has the following settings:
 That's it! Now the Asana integration is operational and ready for use within your bot.
 
 > 🚧 Note
-> 
+>
 > The Asana API rate limits are applicable. Also, note that certain advanced Asana features tied to paid plans may not be accessible.
 
 <br />
@@ -54,13 +54,13 @@ Here's a breakdown of the Cards / functions provided by Asana Integration and th
 
 This function is used to create a new task in Asana. The input fields include:
 
-- **name**: The name of the task.
-- **notes**: The description of the task (optional).
-- **assignee**: The ID of the user who will be assigned to the task or "me" to assign to the current user (optional).
-- **projects**: The project IDs should be strings separated by commas (optional).
-- **parent**: The ID of the parent task (optional).
-- **start_on**: The start date of the task in `YYYY-MM-DD` format (optional).
-- **due_on**: The due date of the task without a specific time in `YYYY-MM-DD` format (optional).
+* **name**: The name of the task.
+* **notes**: The description of the task (optional).
+* **assignee**: The ID of the user who will be assigned to the task or "me" to assign to the current user (optional).
+* **projects**: The project IDs should be strings separated by commas (optional).
+* **parent**: The ID of the parent task (optional).
+* **start\_on**: The start date of the task in `YYYY-MM-DD` format (optional).
+* **due\_on**: The due date of the task without a specific time in `YYYY-MM-DD` format (optional).
 
 You can store the output of this to a variable to access the permalink.
 
@@ -68,23 +68,23 @@ You can store the output of this to a variable to access the permalink.
 
 This function is used to update an existing task in Asana. The input fields include:
 
-- **taskId**: The ID of the task to update.
-- **name**: The name of the task (optional).
-- **assignee**: The ID of the user who will be assigned to the task or "me" to assign to the current user (optional).
-- **completed**: If the task is completed, enter "true" (without quotes), otherwise, it will keep its previous status (optional).
+* **taskId**: The ID of the task to update.
+* **name**: The name of the task (optional).
+* **assignee**: The ID of the user who will be assigned to the task or "me" to assign to the current user (optional).
+* **completed**: If the task is completed, enter "true" (without quotes), otherwise, it will keep its previous status (optional).
 
 #### Find user
 
 This function is used to find a user, and all their associated metadata in Asana. The input field is:
 
-- **userId**: The email of the user.
+* **userId**: The email of the user.
 
 #### Add comment to task
 
 This function is used to add a comment to a task in Asana. The input fields include:
 
-- **taskId**: The ID of the task to comment.
-- **comment**: The content of the comment to be added.
+* **taskId**: The ID of the task to comment.
+* **comment**: The content of the comment to be added.
 
 ***
 
