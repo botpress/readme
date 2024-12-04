@@ -18,9 +18,9 @@ next:
 
 ## Prerequisites
 
-- A [Zapier](https://zapier.com/) account
-- BETA access to the Botpress app in Zapier [request here](https://zapier.com/developer/public-invite/179950/2d89a44be6d7ddcae4ae23df0be19b3c/)
-- A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](../docs/create-publish-your-chatbot)
+* A [Zapier](https://zapier.com/) account
+* BETA access to the Botpress app in Zapier [request here](https://zapier.com/developer/public-invite/179950/2d89a44be6d7ddcae4ae23df0be19b3c/)
+* A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](../docs/create-publish-your-chatbot)
 
 ## Setting up the Zapier integration in Botpress
 
@@ -53,7 +53,9 @@ next:
 
 3. To receive data from Zapier in your bot, you can use the "Event from Zapier" trigger in the Studio:
 
-   [block:image]{"images":[{"image":["https://files.readme.io/c29313a-image.png",null,"\"Event from Zapier\" event in the Studio card tray"],"align":"center","caption":"\"Event from Zapier\" event in the Studio card tray"}]}[/block]
+   <Image alt="&#x22;Event from Zapier&#x22; event in the Studio card tray" align="center" src="https://files.readme.io/c29313a-image.png">
+     "Event from Zapier" event in the Studio card tray
+   </Image>
 
 4. Then add an Execute Code card with the following code assuming you sent your data in JSON format:
 
@@ -65,41 +67,15 @@ next:
 
 ### Testing your Zapier integration
 
-You can create an "echo" zap in Zapier to test if everything works well. For example, you can create a zap that triggers when you send a message to your bot and then sends the same message back to your bot.  
+You can create an "echo" zap in Zapier to test if everything works well. For example, you can create a zap that triggers when you send a message to your bot and then sends the same message back to your bot.\
 Here's what a simple echo zap would look like:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a506cbb-image.png",
-        null,
-        "Screenshot of a sample \"echo\" zap"
-      ],
-      "align": "center",
-      "sizing": "60% ",
-      "caption": "Screenshot of a sample \"echo\" zap"
-    }
-  ]
-}
-[/block]
-
+<Image alt="Screenshot of a sample &#x22;echo&#x22; zap" align="center" width="60% " src="https://files.readme.io/a506cbb-image.png">
+  Screenshot of a sample "echo" zap
+</Image>
 
 The first action receives an event from the bot, and the second one sends the same event back to the bot. You can see the events you receive on the "Discover Events" button on the node containing "Events from Zapier" card.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7d2c325-image.png",
-        null,
-        "Screenshot of what the \"echo\" looks like in the Studio"
-      ],
-      "align": "center",
-      "caption": "Screenshot of what the \"echo\" looks like in the Studio"
-    }
-  ]
-}
-[/block]
+<Image alt="Screenshot of what the &#x22;echo&#x22; looks like in the Studio" align="center" src="https://files.readme.io/7d2c325-image.png">
+  Screenshot of what the "echo" looks like in the Studio
+</Image>
