@@ -2,3 +2,4 @@
 - updateaccount
 - listpersonalaccesstokens
 - createpersonalaccesstoken
+- deletepersonalaccesstoken
