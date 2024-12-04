@@ -14,7 +14,7 @@ The Find function in Botpress Studio is a powerful tool that helps you quickly s
 
 # Key Features of the Find Function
 
-- **Quick Search:** Instantly locate items like specific nodes, cards. actions, intents, or text within your flows and content.
-- **Contextual Results:** Provides contextual search results, showing where the found items are located within the bot’s structure.
-- **Navigation:** Click on a search result to jump directly to that element within the Botpress Studio.
-- **Keyword Highlighting:** Highlights occurrences of your search term in the workflows, helping you see exactly where changes are needed.
+* **Quick Search:** Instantly locate items like specific nodes, cards. actions, intents, or text within your flows and content.
+* **Contextual Results:** Provides contextual search results, showing where the found items are located within the bot’s structure.
+* **Navigation:** Click on a search result to jump directly to that element within the Botpress Studio.
+* **Keyword Highlighting:** Highlights occurrences of your search term in the workflows, helping you see exactly where changes are needed.
