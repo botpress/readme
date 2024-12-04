@@ -6,3 +6,4 @@
 - deleteworkspace
 - listworkspaceusages
 - breakdownworkspaceusagebybot
+- getworkspacequota
