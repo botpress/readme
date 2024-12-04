@@ -8,7 +8,7 @@ api:
   file: botpress-api.json
   operationId: listWorkflows
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
