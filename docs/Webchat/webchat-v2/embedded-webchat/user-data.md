@@ -18,34 +18,17 @@ The Embedded Webchat allows you to add custom data to the user. With this `user 
 
 You might want to add user data during initialization so that your bot can deliver a more personalized conversation experience right from the start. 
 
-This assumes you install the widget using the _Embed code_ found in the Webchat Share section as shown below.
+This assumes you install the widget using the *Embed code* found in the Webchat Share section as shown below.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9c32280b4d18ba913d93ad0487908eb5f307abda353faec4a4b715575561e1d5-image.png",
-        null,
-        null
-      ],
-      "align": "center",
-      "sizing": "400px"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="400px" src="https://files.readme.io/9c32280b4d18ba913d93ad0487908eb5f307abda353faec4a4b715575561e1d5-image.png" />
 
 To add data during initialization, you will need to remove and modify the second script:
 
-1. **Remove the Auto-Initialization Script**  
-   Locate and remove the second `<script>` tag that we added previously in your `.html` file. The script is responsible for calling `window.botpress.init`automatically, which we will now call manually.  
-   Example of the script to remove: `<script src="https://files.bpcontent.cloud/2024/11/29/21/23331129444466-WDDD1UHW.js"></script>`  
-   <br />
-2. **Copy the Content of the Script**  
-   Visit the URL in the script tag we just removed and copy its contents. It should look like the following  
-   <br />
+1. **Remove the Auto-Initialization Script**\
+   Locate and remove the second `<script>` tag that we added previously in your `.html` file. The script is responsible for calling `window.botpress.init`automatically, which we will now call manually.\
+   Example of the script to remove: `<script src="https://files.bpcontent.cloud/2024/11/29/21/23331129444466-WDDD1UHW.js"></script>`\ <br />
+2. **Copy the Content of the Script**\
+   Visit the URL in the script tag we just removed and copy its contents. It should look like the following\ <br />
    ```javascript
    window.botpress.init({
      "botId": "d3aea06d-0f04-4701-bec3-b457caf79902",
@@ -65,9 +48,8 @@ To add data during initialization, you will need to remove and modify the second
    });
    ```
    <br />
-3. **Add the Custom Initialization Script to your project**  
-   Add the copied JavaScript code in your project, and add the user property to include personalized user data. The updated code should look like this:  
-   <br />
+3. **Add the Custom Initialization Script to your project**\
+   Add the copied JavaScript code in your project, and add the user property to include personalized user data. The updated code should look like this:\ <br />
    ```javascript
    window.botpress.init({
      "botId": "d3aea06d-0f04-4701-bec3-b457caf79902",
@@ -124,16 +106,4 @@ Once you have sent the data to Botpress, you can use the `Get User Data` card in
 
 ### User Data Demo
 
-[block:embed]
-{
-  "html": false,
-  "url": "https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-embed-user-data?embed=1&hideNavigation=1&view=both&file=index.html&ajs_aid=%24device%3A190bbf803c1598-009fa1707e1dbe8-42272e3d-384000-190bbf803c1598",
-  "title": "iframe",
-  "provider": "stackblitz.com",
-  "href": "https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-embed-user-data?embed=1&hideNavigation=1&view=both&file=index.html&ajs_aid=%24device%3A190bbf803c1598-009fa1707e1dbe8-42272e3d-384000-190bbf803c1598",
-  "typeOfEmbed": "iframe",
-  "height": "500px",
-  "width": "100%",
-  "iframe": true
-}
-[/block]
+<Embed url="https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-embed-user-data?embed=1&hideNavigation=1&view=both&file=index.html&ajs_aid=%24device%3A190bbf803c1598-009fa1707e1dbe8-42272e3d-384000-190bbf803c1598" title="iframe" provider="stackblitz.com" href="https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-embed-user-data?embed=1&hideNavigation=1&view=both&file=index.html&ajs_aid=%24device%3A190bbf803c1598-009fa1707e1dbe8-42272e3d-384000-190bbf803c1598" typeOfEmbed="iframe" height="500px" width="100%" iframe="true" />
