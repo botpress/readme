@@ -14,10 +14,10 @@ next:
 
 Botpress allows you to easily integrate your chatbot with various messaging channels, so that you can reach your users on their preferred platforms. Here are the steps to integrate your chatbot with a messaging channel:
 
-- Publish your Chatbot from the Botpress Studio for enabling your bot to be able to connect with different messaging channels.
-- Navigate to the Channels tab in your Botpress Admin's Chatbot Settings.
-- Select the Messaging Channel that you want to integrate with from the list of available options. For example, if you want to integrate with Facebook Messenger, click on the Messenger.
-- Follow the instructions provided for the selected channel to set up the integration. This will typically involve creating an account on the channel's platform, generating an access token or API key, and configuring the integration settings in Botpress.
+* Publish your Chatbot from the Botpress Studio for enabling your bot to be able to connect with different messaging channels.
+* Navigate to the Channels tab in your Botpress Admin's Chatbot Settings.
+* Select the Messaging Channel that you want to integrate with from the list of available options. For example, if you want to integrate with Facebook Messenger, click on the Messenger.
+* Follow the instructions provided for the selected channel to set up the integration. This will typically involve creating an account on the channel's platform, generating an access token or API key, and configuring the integration settings in Botpress.
 
 Click on the following links to know more about each channel integration.
 
