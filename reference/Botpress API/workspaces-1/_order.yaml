@@ -13,3 +13,4 @@
 - listworkspacemembers
 - createworkspacemember
 - getworkspacemember
+- deleteworkspacemember
