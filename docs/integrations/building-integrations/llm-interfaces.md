@@ -51,7 +51,7 @@ In Botpress Studio, you can fine-tune your LLM’s performance based on real-wor
 Owning and customizing your LLM allows you to differentiate your product from competitors using standard models. A unique LLM strategy can become a key value proposition, offering enhanced user experiences or capabilities that are not easily replicated.
 
 > 💳 For LLM providers
-> 
+>
 > If you're interested in monetizing your own LLM by making it available for use on Botpress, [contact us.](https://botpress.com/contact-us)
 
 ## Instructions
@@ -159,22 +159,7 @@ Now you can choose your LLM when configuring AI-related tasks. It will show up i
 
 In the above example, **My LLM 1** and **My LLM 2** appear with the corresponding tags.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6311471c2d53aa45e62cec732ec1a0b1a2961bc87c06fbfcdbe4bdc9fa5680d0-Screenshot_2024-08-30_at_9.44.34_AM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "200px"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="200px" src="https://files.readme.io/6311471c2d53aa45e62cec732ec1a0b1a2961bc87c06fbfcdbe4bdc9fa5680d0-Screenshot_2024-08-30_at_9.44.34_AM.png" />
 
 By integrating your own LLM with Botpress, you gain full control over AI outputs, privacy, and security, while also opening up potential monetization opportunities. Follow the outlined steps to configure your integration, implement the LLM logic, and seamlessly deploy it in Botpress Studio for a customized AI experience.
 
