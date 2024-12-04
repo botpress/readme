@@ -14,10 +14,10 @@ A schema is a blueprint that defines the structure, required fields, data types,
 
 Schemas are useful for:
 
-- **Data Validation**: Preventing errors by ensuring that data adheres to the expected format.
-- **Consistency**: Enforcing a consistent structure for data across different components.
-- **Error Reduction**: Reducing the likelihood of runtime errors caused by unexpected or malformed data.
-- **Ease of Maintenance**: Making it easier to understand and manage data flow within your Botpress application.
+* **Data Validation**: Preventing errors by ensuring that data adheres to the expected format.
+* **Consistency**: Enforcing a consistent structure for data across different components.
+* **Error Reduction**: Reducing the likelihood of runtime errors caused by unexpected or malformed data.
+* **Ease of Maintenance**: Making it easier to understand and manage data flow within your Botpress application.
 
 # Creating and Using Schemas
 
@@ -27,10 +27,10 @@ Botpress uses JSON Schema, a standard for describing the structure and validatio
 
 A JSON Schema can define:
 
-- **Types**: The type of data (e.g., string, number, object, array).
-- **Required Fields**: Fields that must be present in the data.
-- **Enum Values**: Specific allowed values for a field.
-- **Nested Structures**: Complex data structures with multiple levels.
+* **Types**: The type of data (e.g., string, number, object, array).
+* **Required Fields**: Fields that must be present in the data.
+* **Enum Values**: Specific allowed values for a field.
+* **Nested Structures**: Complex data structures with multiple levels.
 
 ## Creating a schema
 
@@ -62,17 +62,17 @@ zui.object({
 ```
 
 2. Create a Variable of the user schema type and name it `UserInformation`.
-3. [optionally] you can use these variables as inputs for workflows, allowing the user to fill in the schema as though it were a form.
+3. \[optionally] you can use these variables as inputs for workflows, allowing the user to fill in the schema as though it were a form.
 
 ## Usage in AI Task
 
-- Task Instructions:
+* Task Instructions:
 
 ```
 Fetch name, age, email and address from the provided input
 ```
 
-- AI Task Input:
+* AI Task Input:
 
 ```
 Rohan Kokkula, 26, at rohan@email.com, received a mysterious parcel at his doorstep: 
@@ -81,7 +81,7 @@ Inside, a map beckoned him to a hidden world beneath Mumbai's bustling streets,
 where history and magic intertwined.
 ```
 
-- Store result in variables: Select the Variable we created above.
+* Store result in variables: Select the Variable we created above.
 
 <br />
 
@@ -92,41 +92,13 @@ We'll show you how to use discriminated unions in Zod to conditionally include f
 1. Changing the type of a variable based on user input.
 2. Conditionally showing an extra setting when an "Advanced Setting" toggle is activated.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4015772fa59ea2e70290e5c00ed8a78cde7aa3c0d229d5ead1543671f73a90e7-image.png",
-        null,
-        "selecting input type text, with no advanced settings"
-      ],
-      "align": "center",
-      "sizing": "200px",
-      "caption": "selecting input type text, with no advanced settings"
-    }
-  ]
-}
-[/block]
+<Image alt="selecting input type text, with no advanced settings" align="center" width="200px" src="https://files.readme.io/4015772fa59ea2e70290e5c00ed8a78cde7aa3c0d229d5ead1543671f73a90e7-image.png">
+  selecting input type text, with no advanced settings
+</Image>
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/71423052c8b254a3d97bc8f02b00b488f5996817d0313c862d62548b7a8cc27b-image.png",
-        null,
-        "selecting input type number, with advanced settings"
-      ],
-      "align": "center",
-      "sizing": "200px",
-      "caption": "selecting input type number, with advanced settings"
-    }
-  ]
-}
-[/block]
-
+<Image alt="selecting input type number, with advanced settings" align="center" width="200px" src="https://files.readme.io/71423052c8b254a3d97bc8f02b00b488f5996817d0313c862d62548b7a8cc27b-image.png">
+  selecting input type number, with advanced settings
+</Image>
 
 <br />
 
@@ -153,10 +125,10 @@ z.object({
 
 #### How It Works
 
-- **`inputType`**: Acts as the discriminator that determines the type of the `value` field.
-- **Discriminated Union**:
-  - If `inputType` is `"Text"`, the schema expects `value` to be a string.
-  - If `inputType` is `"Number"`, the schema expects `value` to be a number.
+* **`inputType`**: Acts as the discriminator that determines the type of the `value` field.
+* **Discriminated Union**:
+  * If `inputType` is `"Text"`, the schema expects `value` to be a string.
+  * If `inputType` is `"Number"`, the schema expects `value` to be a number.
 
 This approach is useful when you want to change the type of a variable based on a user's selection.
 
@@ -188,10 +160,10 @@ z.object({
 
 #### How It Works
 
-- **`advancedSetting`**: Acts as the discriminator that determines whether to include the `extraSetting` field.
-- **Discriminated Union**:
-  - If `advancedSetting` is `"No"`, the schema does not include `extraSetting`.
-  - If `advancedSetting` is `"Yes"`, the schema requires `extraSetting` to be provided.
+* **`advancedSetting`**: Acts as the discriminator that determines whether to include the `extraSetting` field.
+* **Discriminated Union**:
+  * If `advancedSetting` is `"No"`, the schema does not include `extraSetting`.
+  * If `advancedSetting` is `"Yes"`, the schema requires `extraSetting` to be provided.
 
 This pattern is useful when you want to include additional settings only when an "Advanced Setting" option is enabled.
 
@@ -208,8 +180,8 @@ Trying it out is very easy!
 
 ### Summary
 
-- **Discriminated Unions** in Zod allow you to conditionally change the shape of an object.
-- They are useful for:
+* **Discriminated Unions** in Zod allow you to conditionally change the shape of an object.
+* They are useful for:
   1. Changing the type of a variable based on user input.
   2. Conditionally including fields based on a toggle or option.
 
