@@ -20,8 +20,8 @@ Enhance your workflows and experience a streamlined interaction between Botpress
 
 # Prerequisites
 
-- A [Notion Account](https://www.notion.so/signup) and a [Notion Workspace](https://www.notion.so/onboarding)
-- A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
+* A [Notion Account](https://www.notion.so/signup) and a [Notion Workspace](https://www.notion.so/onboarding)
+* A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
 
 <br />
 
@@ -32,9 +32,9 @@ Enhance your workflows and experience a streamlined interaction between Botpress
 
 The Notion integration has the following settings:
 
-- **Enabled**: Whether Botpress will communicate with Telegram
-- **Webhook URL**: The URL for receiving data in Botpress
-- **Auth Token**: The token for authenticating requests from Notion
+* **Enabled**: Whether Botpress will communicate with Telegram
+* **Webhook URL**: The URL for receiving data in Botpress
+* **Auth Token**: The token for authenticating requests from Notion
 
 <br />
 
@@ -53,7 +53,7 @@ The Notion integration has the following settings:
    That's it! Now the Notion integration is operational and ready for use within your bot.
 
 > 📘 Info
-> 
+>
 > To execute certain actions, identification of Notion entities like pages or databases is essential. These IDs can be derived from the URL while viewing the entity or by choosing "Copy Link" from the options menu. For more details, refer to [Get a Database Id - NotionDevelopers](https://developers.notion.com/docs/create-a-notion-integration#step-3-save-the-database-id)  .
 
 <br />
@@ -68,10 +68,10 @@ The integration offers various actions encapsulated in cards, providing an inter
 
 Allows the bot to append a comment to an existing discussion in Notion.
 
-| Input             | Description                                                                                                                        |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| **Discussion ID** | To get the Discussion ID, look for the `d` parameter in the URL. The format is notion.so/pageTitle-pageID?d=**DiscussionID**&pvs=4 |
-| **Comment Body**  | The comment body can be a simple text that you want to add as a comment.                                                           |
+| Input             | Description                                                                                                                         |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **Discussion ID** | To get the Discussion ID, look for the `d` parameter in the URL. The format is notion.so/pageTitle-pageID?d=**DiscussionID**\&pvs=4 |
+| **Comment Body**  | The comment body can be a simple text that you want to add as a comment.                                                            |
 
 ### Add Comment to a Page
 
