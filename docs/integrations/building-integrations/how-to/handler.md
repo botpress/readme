@@ -174,4 +174,4 @@ export const handler: botpress.IntegrationProps['handler'] = async ({ req, ctx, 
 }
 ```
 
-In this handler function implementation, it handles a variety of tasks like OAuth requests, parsing and responding to interactive requests, handling different types of events ('message' and 'reaction_added'), as well as dealing with a 'url_verification' type event. It demonstrates the handler's ability to manage diverse tasks and flow control in the context of a Slack integration.
+In this handler function implementation, it handles a variety of tasks like OAuth requests, parsing and responding to interactive requests, handling different types of events ('message' and 'reaction\_added'), as well as dealing with a 'url\_verification' type event. It demonstrates the handler's ability to manage diverse tasks and flow control in the context of a Slack integration.
