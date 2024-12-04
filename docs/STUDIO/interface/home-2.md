@@ -13,9 +13,9 @@ next:
   description: ''
 ---
 > 📘 Home display
-> 
+>
 > The homepage only appears when your Start node is connected to an Autonomous Node.
-> 
+>
 > It's meant to be used alongside the Autonomous Node to manage its behaviour, global settings, and what resources or channels it has access to.
 
 From the Home menu located in the Studio, you can configure your agent's global settings. These are broken down into the following categories:
