@@ -10,21 +10,7 @@ metadata:
 next:
   description: ''
 ---
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/38b71ad-image.png",
-        null,
-        null
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/38b71ad-image.png" />
 
 <br />
 
@@ -47,4 +33,4 @@ const App = () => {
 }
 ```
 
-[Demo Example](https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-react-fab?embed=1&hideNavigation=1&view=both&file=src%2FApp.tsx)
+[Demo Example](https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-react-fab?embed=1\&hideNavigation=1\&view=both\&file=src%2FApp.tsx)
