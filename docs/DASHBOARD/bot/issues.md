@@ -21,5 +21,5 @@ The Issues tab is a critical feature for monitoring and improving the quality an
 <br />
 
 > ⌨️ Resolve issues
-> 
+>
 > The Issues tab is a critical feature for monitoring and improving the quality and reliability of your bot. It serves as a centralized hub for identifying, tracking, and resolving problems or errors that occur during chatbot interactions. It's essential for maintaining the operational integrity of your bot, ensuring that problems are quickly identified and resolved.
