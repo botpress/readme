@@ -17,16 +17,16 @@ States in Botpress provide a way to store and manage conversational context with
 The state is defined within the `states` object in your integration.
 
 > 📘 States Concept
-> 
+>
 > You can find more about the [States Concept](../docs/states-1) here.
 
 # State Definition
 
 The state definition includes `type` and `schema`:
 
-- `type`: It indicates the scope of the state. It could be 'integration' for global scope, 'conversation' for conversation-level scope or 'user' for user-level scope.
+* `type`: It indicates the scope of the state. It could be 'integration' for global scope, 'conversation' for conversation-level scope or 'user' for user-level scope.
 
-- `schema`: This uses the Zod library to define the structure and type of the state data. It represents the data that the state will hold.
+* `schema`: This uses the Zod library to define the structure and type of the state data. It represents the data that the state will hold.
 
 <br />
 
