@@ -10,6 +10,7 @@ metadata:
 next:
   description: ''
 ---
+```mdx
 # AI Task Overview
 
 The AI Task is a tool for generating content using AI and can be used to automate a wide range of tasks. By providing clear instructions, specific inputs, and well-named variables, users can leverage the full capabilities of this tool to improve their workflows and boost their productivity.
@@ -20,7 +21,7 @@ To accomplish a generative task using the **AI Task Card**, users will need to p
 
 Users should provide a clear and detailed description of the task they want the AI engine to perform, including any relevant constraints or guidelines that should be followed.
 
- There is a certain date beyond which the information is not available to the AI model. You can find that date on the model you use (for example [GPT-3-5](https://platform.openai.com/docs/models/gpt-3-5)). If you want to get around this, please use a Knowledge Base and add its answer as an input to give context to the AI Task.
+There is a certain date beyond which the information is not available to the AI model. You can find that date on the model you use (for example [GPT-3-5](https://platform.openai.com/docs/models/gpt-3-5)). If you want to get around this, please use a Knowledge Base and add its answer as an input to give context to the AI Task.
 
 ## AI Task Input
 
@@ -40,18 +41,19 @@ This is the input that will be sent to the Generative AI Engine. Think of it as 
   <Tr>
     <Td>`{{workflow.variableName}}`</Td>
     <Td>
-where the variableName is a variable you have previously defined in this workflow and you want to use as an input to the AI Task.
+      where the variableName is a variable you have previously defined in this workflow and you want to use as an input to the AI Task.
     </Td>
   </Tr>
   <Tr>
     <Td>`{{user.propertyName}}`</Td>
-    <Td>where the propertyName is the user property we want to use as an input to the AI Task.
-In addition to free text, depending on your use case and what you are trying to achieve.</Td>
+    <Td>
+      where the propertyName is the user property we want to use as an input to the AI Task. In addition to free text, depending on your use case and what you are trying to achieve.
+    </Td>
   </Tr>
 </Table>
 
 <br/>
-To make your AI task take into account the current date, you need to include it in the input by using this code snippet that shows the current date in javascript format: `Today's date: {{ new Date().toLocaleString()}}`
+To make your AI task take into account the current date, you need to include it in the input by using this code snippet that shows the current date in javascript format: `Today's date: {{ new Date().toLocaleString() }}`
 <br/>
 
 ## Storing result in variables
@@ -62,7 +64,7 @@ This allows users to specify the variables where the extracted information will 
 
 ## Example Input
 
-By providing clear and realistic examples, you can help the AI better understand its task and be used  
+By providing clear and realistic examples, you can help the AI better understand its task and be used\
 to solve real-world problems and generate useful content. This can ultimately lead to a more successful and productive experience for users who are targeting the power of artificial intelligence in their workflows.
 
 ## Displaying result (optional)
@@ -84,3 +86,4 @@ In simpler terms, temperature is a way to control how much "imagination" the AI 
 ## Add transition to handle failure
 
 You can enable this option to have your bot transition to another node when an issue happens with the AI Task. The possible issues are: Request Timeout (when the AI can't answer in a timely manner), Token Overflow (when the input or the output of the task exceeds the limit) and others.
+```
