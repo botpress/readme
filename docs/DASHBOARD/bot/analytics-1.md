@@ -15,7 +15,7 @@ next:
 Using the Analytics tab in your bot's dashboard, you can visualize your bot's recent activity as well as monitor the health of your bot project.
 
 > 📘 Note
-> 
+>
 > Some features in the Analytics tab, like selecting custom time periods or creating and saving additional custom displays, are only available to Team plan subscribers. [Learn more](https://botpress.com/pricing)
 
 <br />
@@ -40,14 +40,14 @@ When customizing a board, you can select from a list of pre-configured time peri
 
 When choosing what data your Analytics tab will display, you can choose from a list of conversation-related events. These include:
 
-- total, new, and returning users
-- sessions
-- bot, user, and total messages
-- average messages sent by your bot per session
-- average messages sent by users per session
-- average number of sessions per user
-- the custom botready, botpulished, state_expired, and conversationStarted events.
-- <br />
+* total, new, and returning users
+* sessions
+* bot, user, and total messages
+* average messages sent by your bot per session
+* average messages sent by users per session
+* average number of sessions per user
+* the custom botready, botpulished, state\_expired, and conversationStarted events.
+* <br />
 
 # Chart Types
 
@@ -58,7 +58,7 @@ You can visualize data in the analytics tab with the following charts: area, don
 # Analytics Agent
 
 > 📘 Note
-> 
+>
 > The Analytics Agent is only available to Team Plan subscribers.
 
 Once you've enabled the Analytics Agent from your bot's Agents menu, you can designate custom events that your bot will track. These events can be selected from the list of trackable events, or "Event Types."
@@ -75,5 +75,5 @@ Follow these steps to track custom events:
 Once you've successfully created a custom event, your bot will track each event as the card is executed in a given node. For example, your bot can track how many times a conversation successfully reaches a specific node, or how often users flow through a certain node.
 
 > 🚧 Warning
-> 
+>
 > After creating a custom event, it can take up to an hour before the data is available to be visualized in your Analytics tab.
