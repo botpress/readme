@@ -10,4 +10,6 @@ metadata:
 next:
   description: ''
 ---
+```mdx
 <ComingSoon />
+```
