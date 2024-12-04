@@ -36,9 +36,9 @@ Authorization: Bearer {ACCESS_TOKEN}
 
 #### Identity Token
 
-- Personal Access Token (PAT): Can be generated in the Profile Settings section of your [Botpress Cloud account](https://app.botpress.cloud/).
-- Bot Token: This will be provided to the bot (once deployed) in the `BP_TOKEN` environment variable.
-- Integration Token: This will be provided to the integration (once deployed) in the `BP_TOKEN` environment variable.
+* Personal Access Token (PAT): Can be generated in the Profile Settings section of your [Botpress Cloud account](https://app.botpress.cloud/).
+* Bot Token: This will be provided to the bot (once deployed) in the `BP_TOKEN` environment variable.
+* Integration Token: This will be provided to the integration (once deployed) in the `BP_TOKEN` environment variable.
 
 ## Pagination[](https://botpress.com/docs/api-documentation/#pagination)
 
