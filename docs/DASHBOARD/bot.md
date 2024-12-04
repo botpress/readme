@@ -31,7 +31,7 @@ An AI agent is a more advanced software application that uses artificial intelli
 <br />
 
 > 📘 The choice is yours!
-> 
+>
 > Botpress allows you to build chatbots, AI agents, or combine the two depending on what task you're looking to accomplish.
-> 
+>
 > You can combine the predictable, rule-based logic of traditional chatbots with the flexible autonomy of LLM-driven AI agents to customize a bot to your specific need.
