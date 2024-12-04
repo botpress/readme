@@ -61,7 +61,7 @@ createUser: async ({ client, tags, ctx }) => {
 
 # Messages
 
-Messages are the fundamental building blocks of any conversation. They carry the content that is exchanged between users and the bot during a conversation. In the context of a chatbot integration, understanding and properly handling messages is essential for maintaining a coherent dialogue.  
+Messages are the fundamental building blocks of any conversation. They carry the content that is exchanged between users and the bot during a conversation. In the context of a chatbot integration, understanding and properly handling messages is essential for maintaining a coherent dialogue.\
 In your integration, the messages object plays a critical role in managing the communication flow between the chatbot and the external platform. It provides methods for sending, receiving, and processing messages.
 
 Here are key methods typically found under the messages object:
@@ -113,5 +113,5 @@ const integration = {
 
 In this example, each method accepts the context **ctx**, which is used for storing and retrieving application-level data.
 
-**sendMessage** also accepts a **conversationId** and a **message**,  
+**sendMessage** also accepts a **conversationId** and a **message**,\
 **processIncomingMessage** accepts an **incomingMessage**, and **processOutgoingMessage** accepts an **outgoingMessage**.
