@@ -20,10 +20,10 @@ The AI Transition card is a specific type of AI Task that helps you classify tex
 
 You have three fields in the AI Transition card:
 
-- Text to categorize: the text input you want to process, you can use variables here (like `{{event.preview}}` to get the last user message)
-- Categories: the list of categories you want to use to classify the text.
-- Store result in variable (Optional): allows you to select a variable to store the resulting category in. This is useful if you want to use the category later in the conversation.
+* Text to categorize: the text input you want to process, you can use variables here (like `{{event.preview}}` to get the last user message)
+* Categories: the list of categories you want to use to classify the text.
+* Store result in variable (Optional): allows you to select a variable to store the resulting category in. This is useful if you want to use the category later in the conversation.
 
 > 📘 Info
-> 
+>
 > You can use the AI Transition card to replace Intents. You just need to create a category for each intent you want to replace, and use the AI Transition card instead of adding multiple inline or Library intents.
