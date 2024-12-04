@@ -1,0 +1,86 @@
+---
+title: CLI
+excerpt: ''
+deprecated: false
+hidden: false
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+---
+# Introduction
+
+The Botpress Command Line Interface (CLI) is a powerful tool for developers to manage their Botpress projects efficiently. From your command line, you can handle various tasks such as bot creation, integration management, project initialization, and deployment to the Botpress Cloud.
+
+The CLI is distributed as an npm package, meaning it can easily be integrated into your Node.js environment, with support for yarn and pnpm package managers.
+
+This guide will help you install and utilize the Botpress CLI, demonstrating its extensive range of commands and how it can simplify your bot development process.
+
+# Installation
+
+The CLI is available as an npm package. It can be installed globally or locally.
+
+```
+npm install -g @botpress/cli # for npm
+yarn global add @botpress/cli # for yarn
+pnpm install -g @botpress/cli # for pnpm
+```
+
+# Usage
+
+Here's the result of running `bp --help`:
+
+```
+bp <command>
+
+Commands:
+  bp login                 Login to Botpress Cloud
+  bp logout                Logout of Botpress Cloud
+  bp bots                  Bot related commands
+  bp integrations          Integration related commands
+  bp init                  Initialize a new project
+  bp generate              Generate typings for intellisense      [aliases: gen]
+  bp bundle                Bundle a botpress project
+  bp build                 Generate typings and bundle a botpress project
+  bp serve                 Serve your project locally
+  bp deploy                Deploy your project to the cloud
+  bp add <integrationRef>  Install an integration in your bot
+
+Options:
+  --help  Show help                                                    [boolean]
+```
+
+Since the `bp bots` and `bp integrations` commands are nested, you can run `bp bots --help` and `bp integrations --help` to see their respective subcommands.
+
+This is the result of running `bp bots --help`:
+
+```
+Bot related commands
+
+Commands:
+  bp bots create           Create new bot                         [aliases: new]
+  bp bots get <botRef>     Get bot
+  bp bots delete <botRef>  Delete bot
+  bp bots list             List bots                               [aliases: ls]
+
+Options:
+  --help  Show help                                                    [boolean]
+```
+
+This is the result of running `bp integrations --help`:
+
+```
+bp integrations
+
+Integration related commands
+
+Commands:
+  bp integrations get <integrationRef>     Get integration
+  bp integrations delete <integrationRef>  Delete integration
+  bp integrations list                     List integrations       [aliases: ls]
+
+Options:
+  --help  Show help                                                    [boolean]
+```
