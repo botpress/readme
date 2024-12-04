@@ -19,21 +19,9 @@ For more complex use cases, you can use your own Meta app with our integration.
 
 ## Prerequisites
 
-- A [Meta developer app](https://developers.facebook.com/apps/create/). Check out [this article](https://developers.facebook.com/docs/whatsapp/cloud-api/get-started#set-up-developer-assets) to learn more about the setup.
+* A [Meta developer app](https://developers.facebook.com/apps/create/). Check out [this article](https://developers.facebook.com/docs/whatsapp/cloud-api/get-started#set-up-developer-assets) to learn more about the setup.
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FLQd1iGJLj58%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DLQd1iGJLj58&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FLQd1iGJLj58%2Fhqdefault.jpg&key=7788cb384c9f4d5dbbdbeffd9fe4b92f&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=LQd1iGJLj58",
-  "title": "How to Connect your Chatbot to WhatsApp",
-  "favicon": "https://www.google.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/LQd1iGJLj58/hqdefault.jpg",
-  "provider": "https://www.youtube.com/",
-  "href": "https://www.youtube.com/watch?v=LQd1iGJLj58",
-  "typeOfEmbed": "youtube"
-}
-[/block]
-
+<Embed url="https://www.youtube.com/watch?v=LQd1iGJLj58" title="How to Connect your Chatbot to WhatsApp" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/LQd1iGJLj58/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=LQd1iGJLj58" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FLQd1iGJLj58%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DLQd1iGJLj58%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FLQd1iGJLj58%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 ## Enable Manual Configuration
 
@@ -45,7 +33,7 @@ The WhatsApp integration will have the following settings:
 
 ### 1. Verify Token
 
-The **Verify Token** is used by Meta to verify that you are the real owner of the provided webhook.  
+The **Verify Token** is used by Meta to verify that you are the real owner of the provided webhook.\
 You can generate any random alphanumeric string for this configuration. Paste it in your **Verify Token** channel configuration.
 
 ### 2. Phone Number ID
@@ -79,7 +67,7 @@ The **Phone Number ID** and **Access Token** are used to send and receive messag
 8. Copy and save your token.
 
 > 📘 Fix for Unexpected Messaging Behavior
-> 
+>
 > Experiencing replies from the wrong numbers? **Disable** the advanced permission for `whatsapp_business_management`. This adjustment is crucial because advanced permissions can interfere with how messages are routed, leading to responses from multiple numbers instead of the intended one. Reverting to basic permission settings ensures messages are directed correctly, solving this issue.
 
 ## Finalizing Channel Configuration
@@ -94,4 +82,4 @@ Now we can go back to Step (3) & Step (4) in this [article](https://developers.f
 
 #### We need to subscribe to the webhook fields below
 
-- Messages: For the chat to work properly, you need to subscribe to the **messages** webhook field.
+* Messages: For the chat to work properly, you need to subscribe to the **messages** webhook field.
