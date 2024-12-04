@@ -15,9 +15,9 @@ This tab lists all of the members who have access to the Workspace.
 From here, you can adjust what permissions and roles users have.
 
 > 💼 Premium Feature
-> 
+>
 > Only Team and Enterprise plan customers have access to dedicated RBAC (Role-Based Access Control).
-> 
+>
 > PAYG users can add and remove users to their Workspace.
 
 <br />
@@ -51,5 +51,5 @@ The user who creates a Workspace is automatically its owner, and has the privile
 <br />
 
 > 🚧 Workspace ownership
-> 
+>
 > Workspace ownership cannot be moved or assigned to another user.
