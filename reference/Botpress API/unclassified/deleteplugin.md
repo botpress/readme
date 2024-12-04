@@ -5,7 +5,7 @@ api:
   file: botpress-api.json
   operationId: deletePlugin
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
