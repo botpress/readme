@@ -14,8 +14,8 @@ next:
 
 # Prerequisites
 
-- A [Microsoft 365 Business account](https://www.microsoft.com/en-us/microsoft-365/business/)
-- A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
+* A [Microsoft 365 Business account](https://www.microsoft.com/en-us/microsoft-365/business/)
+* A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
 
 <br />
 
@@ -26,10 +26,10 @@ next:
 
 The Microsoft Teams integration has the following settings:
 
-- **Enabled**: Whether Botpress will communicate with Microsoft Teams
-- **Webhook URL**: The URL for receiving data in Botpress.
-- **App Id**: The App Id of your bot in Azure
-- **App Password**: The App Secret of your bot in Azure
+* **Enabled**: Whether Botpress will communicate with Microsoft Teams
+* **Webhook URL**: The URL for receiving data in Botpress.
+* **App Id**: The App Id of your bot in Azure
+* **App Password**: The App Secret of your bot in Azure
 
 ## Setting up Microsoft Teams
 
@@ -66,7 +66,7 @@ The Microsoft Teams integration has the following settings:
 
 That's it, you may now start chatting with your bot on Microsoft Teams!
 
-> 📘  The bot will only be available to you if you have a Microsoft 365 Business account and if you are logged in to MS Teams with that account.
+> 📘 The bot will only be available to you if you have a Microsoft 365 Business account and if you are logged in to MS Teams with that account.
 
 ## Making the bot available in your Organization
 
@@ -94,11 +94,11 @@ That's it, you may now start chatting with your bot on Microsoft Teams!
 8. The bot is now available in the **App** section to all members of your organization!
 
 > 📘 Info
-> 
+>
 > In order to update your bot's behavior, just **Publish** the new version in Botpress. The changes will then be reflected in MS Teams, there's no need to change any settings in the Microsoft apps.
 
 > 📘 Note
-> 
+>
 > Botpress verifies the signature of the requests coming to the Webhook URL so that only Microsoft Teams can send data to your bot. Requests made from Postman or any other means will be rejected.
 
 <br />
@@ -107,5 +107,5 @@ That's it, you may now start chatting with your bot on Microsoft Teams!
 
 ![](https://files.readme.io/72c6394-image.png)
 
-If you're unable to send message to the bot (App), make sure you've enabled the policy to upload custom apps.  
+If you're unable to send message to the bot (App), make sure you've enabled the policy to upload custom apps.\
 Go to Setup Policies -> Turn on **Upload custom apps**
