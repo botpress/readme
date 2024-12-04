@@ -15,7 +15,7 @@ next:
 Configuration Variables are containers that store essential information such as API keys and database credentials, and allow chatbot developers to easily access and modify them as needed. They provide a central location for configuration settings, which helps developers ensure that the chatbot functions correctly and stays up-to-date. Configuration variables also provide a level of security by keeping sensitive information separate from the codebase, reducing the risk of data exposure.
 
 > 📘 **Note**
-> 
+>
 > Configuration Values set in Botpress Studio are for Development environment and Values set in Cloud Dashboard are for Production environment.
 
 <br />
