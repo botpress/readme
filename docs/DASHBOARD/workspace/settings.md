@@ -17,7 +17,7 @@ From the Details menu in this tab, you can adjust the Workspace name and handle.
 You can also adjust the public profile of your Workspace and add social media profiles that link to your business or agency. From this menu, you also have the option to delete a Workspace.
 
 > 🚧 Deleting a Workspace is irreversible
-> 
+>
 > Note that deleting a Workspace is an irreversible process, and we are unable to restore the contents of any Workspace that has been deleted.
 
 <br />
