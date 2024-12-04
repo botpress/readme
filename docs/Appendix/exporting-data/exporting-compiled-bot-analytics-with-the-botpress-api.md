@@ -19,7 +19,7 @@ While this interface is great for understanding reach and engagement in a glance
 Send a `GET` request to `https://api.botpress.cloud/v1/admin/bots/<your-bot-id>/analytics` adding the following header: `Authorization: Bearer <your-personal-access-token>`.
 
 > 📘 Note
-> 
+>
 > You can find your personal access token in your [Botpress Dashboard](https://app.botpress.cloud/). Click your avatar and select "Personal Access Tokens". Generate a new one and copy it.
 
 This is how the request would look like using Axios in a Javascript application:
@@ -58,7 +58,7 @@ If you were to print the analytics (available at `getAnalytics.data.records`), t
 ```
 
 > 📘 Note
-> 
+>
 > It's a list of records containing the start and end date of the period, the number of returning users, new users, sessions and messages. With this information you can create your own charts and dashboards in your internal systems or favorite BI tool.
 
 If you need advanced analytics about user behavior and the paths they take when interacting with the bot, you can use the [Hooks method](../docs/hooks) to export the data in real-time to a third-party service like Mixpanel, Hotjar, Segment or Amplitude.
