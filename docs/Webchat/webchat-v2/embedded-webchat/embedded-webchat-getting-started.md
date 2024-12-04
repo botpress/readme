@@ -21,21 +21,7 @@ The Embedded Webchat allows you to integrate chatbot functionality directly into
 3. Click **Advanced Settings** to expand the section.
 4. Copy the provided **Embed Code**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a1f223e-Screenshot_2024-08-16_at_3.08.38_PM.png",
-        "",
-        "The image shows the \"Webchat\" tab of the Botpress interface, highlighting the \"General\" and \"Share\" sections. It includes a shareable link for testing the bot and an embed code for adding the webchat to a webpage. The left-hand menu lists \"General,\" \"Share,\" \"Advanced Settings,\" and \"Styles.\""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/a1f223e-Screenshot_2024-08-16_at_3.08.38_PM.png" />
 
 ## 2. Add the code
 
@@ -65,21 +51,7 @@ Paste the copied code to your HTML.
 3. Click **Styles** to expand the section.
 4. Add your custom CSS. You can style the components using our pre-defined [CSS classes](https://botpress.com/docs/custom-css-reference)
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/673eb94-style.png",
-        "",
-        "The image shows the \"Styles\" section of the Botpress web interface. Users can add custom CSS to style the webchat, with examples displayed for changing the title color to red and adding a green border to buttons. The left-hand menu includes \"General,\" \"Share,\" \"Advanced Settings,\" and \"Styles.\""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/673eb94-style.png" />
 
 ***
 
@@ -123,39 +95,13 @@ When you embed Botpress Webchat into your website, a `botpress` object becomes a
 
 The `on` method on the `botpress` object is used to register event listeners for various webchat events, allowing you to execute custom JavaScript code in response to those events. It takes two arguments: the event name (as a string) and a callback function that gets executed when the specified event occurs.
 
-[block:embed]
-{
-  "html": false,
-  "url": "https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-embed-event?embed=1&hideNavigation=1&view=both&file=index.html",
-  "title": "iframe",
-  "provider": "stackblitz.com",
-  "href": "https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-embed-event?embed=1&hideNavigation=1&view=both&file=index.html",
-  "typeOfEmbed": "iframe",
-  "height": "500px",
-  "width": "100%",
-  "iframe": true
-}
-[/block]
-
+<Embed url="https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-embed-event?embed=1&hideNavigation=1&view=both&file=index.html" title="iframe" provider="stackblitz.com" href="https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-embed-event?embed=1&hideNavigation=1&view=both&file=index.html" typeOfEmbed="iframe" height="500px" width="100%" iframe="true" />
 
 ***
 
 # Live Demo
 
-[block:embed]
-{
-  "html": false,
-  "url": "https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-embed-controls?embed=1&hideNavigation=1&view=both&file=index.html&ajs_aid=%24device%3A190bbf803c1598-009fa1707e1dbe8-42272e3d-384000-190bbf803c1598",
-  "title": "iframe",
-  "provider": "stackblitz.com",
-  "href": "https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-embed-controls?embed=1&hideNavigation=1&view=both&file=index.html&ajs_aid=%24device%3A190bbf803c1598-009fa1707e1dbe8-42272e3d-384000-190bbf803c1598",
-  "typeOfEmbed": "iframe",
-  "height": "500px",
-  "width": "100%",
-  "iframe": true
-}
-[/block]
-
+<Embed url="https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-embed-controls?embed=1&hideNavigation=1&view=both&file=index.html&ajs_aid=%24device%3A190bbf803c1598-009fa1707e1dbe8-42272e3d-384000-190bbf803c1598" title="iframe" provider="stackblitz.com" href="https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-embed-controls?embed=1&hideNavigation=1&view=both&file=index.html&ajs_aid=%24device%3A190bbf803c1598-009fa1707e1dbe8-42272e3d-384000-190bbf803c1598" typeOfEmbed="iframe" height="500px" width="100%" iframe="true" />
 
 <br />
 
