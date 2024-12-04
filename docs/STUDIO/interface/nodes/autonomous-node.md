@@ -60,19 +60,19 @@ Each tool performs a specific action – understanding when and how to use these
 
 ### Commonly-used Tools
 
-- global.think: Allows the node to process or pause briefly.
-- browser.webSearch: Enables the agent to search the web for answers.
-- knowledgeAgent.knowledgequery: Queries an internal knowledge base for relevant information.
-- clock.setReminder: Sets a reminder for future tasks or responses.
-- workflow.transition: Executes a workflow transition, moving from one part of the conversation to another based on user input.
-- chat.sendText: Sends a text message to the user as a response.
-- chat.waitForUserInput: Pauses execution and waits for further input from the user.
+* global.think: Allows the node to process or pause briefly.
+* browser.webSearch: Enables the agent to search the web for answers.
+* knowledgeAgent.knowledgequery: Queries an internal knowledge base for relevant information.
+* clock.setReminder: Sets a reminder for future tasks or responses.
+* workflow\.transition: Executes a workflow transition, moving from one part of the conversation to another based on user input.
+* chat.sendText: Sends a text message to the user as a response.
+* chat.waitForUserInput: Pauses execution and waits for further input from the user.
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXd3jgdaZY9mCCkRvE54JYgLYZ2_oTbM7KG1LONpL_xsOyZOMSxMUxPrks7LYLMhV0ckjcbOEdCzoKcnT7fs-SpHJuQb7biJdCB_UHnev4mwIVkodN4SleGARFqGXR_W_S1LsHbEaxJmScnKp5EYMb7b1To?key=tcM6xVfTehWnyG265C5blA)
 
 By specifying which tool to use in response to user actions, you can control the flow and outcomes of the conversation.
 
-For example, you can instruct the LLM to always perform certain actions when specific conditions are met: “When the user says ‘1’, use the ‘workflow.transition’ tool to move to the next step.”
+For example, you can instruct the LLM to always perform certain actions when specific conditions are met: “When the user says ‘1’, use the ‘workflow\.transition’ tool to move to the next step.”
 
 Or: “If the user asks a question, first try to answer it using the ‘knowledgeAgent.knowledgequery’ tool.”
 
@@ -128,9 +128,9 @@ Example: “If the knowledge base cannot answer, transition to a search query us
 
 You can find more information at the following links:
 
-- [Best practices for prompt engineering with the OpenAI API](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api)
-- [Building Systems with the ChatGPT API](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
-- [ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
+* [Best practices for prompt engineering with the OpenAI API](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api)
+* [Building Systems with the ChatGPT API](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/)
+* [ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
 
 ## Markdown Syntax
 
@@ -150,9 +150,9 @@ To ensure the Autonomous Node differentiates between support questions and other
 
 **IMPORTANT General Process**
 
-- `The knowledgeAgent.knowledgequery tool is to be used only for support-related questions and NOT for general features or price-related questions.`
+* `The knowledgeAgent.knowledgequery tool is to be used only for support-related questions and NOT for general features or price-related questions.`
 
-- `The browser.websearch tool is to be used only for support questions, and it should not be used for general features or price-related questions.`
+* `The browser.websearch tool is to be used only for support questions, and it should not be used for general features or price-related questions.`
 
 This prompt ensures the LLM will stick to using specific tools only in the context of support-related queries, maintaining control over the kind of information it retrieves.
 
@@ -166,7 +166,7 @@ In that case, you might need the bot to move out of the Autonomous Node loop and
 
 `When the user wants more information about an email, go to the transition tool.`
 
-This instruction tells the node to invoke the workflow.transition tool whenever the user asks for more details about emails, directing the conversation flow accordingly.
+This instruction tells the node to invoke the workflow\.transition tool whenever the user asks for more details about emails, directing the conversation flow accordingly.
 
 ### Filling a Variable and Performing an Action
 
@@ -206,9 +206,9 @@ The Botpress Studio offers a suite of tools you can use to understand how your A
 
 The "Inspect" window surfaces information about the Autonomous Node's process, reasoning, and functions. In it, you'll see:
 
-- What instructions the node is prioritizing
-- How it interprets your prompt
-- Whether it is adhering to the constraints and instructions you provided
+* What instructions the node is prioritizing
+* How it interprets your prompt
+* Whether it is adhering to the constraints and instructions you provided
 
 If you notice that the node isn’t responding correctly or seems to ignore certain instructions, inspecting will reveal whether it has misunderstood the prompt or failed to execute a specific tool.
 
@@ -216,8 +216,8 @@ If you notice that the node isn’t responding correctly or seems to ignore cert
 
 The Tools section displays all available tools that the Autonomous Node has access to. Each time you add a new card or make a change in the node configuration, the Tools list is updated.
 
-- Ensure that the tools listed match what you expect to be available in the node’s decision-making process.
-- Ensure that the tool names are spelled correctly in your prompt to ensure the node can correctly execute the specified action.
+* Ensure that the tools listed match what you expect to be available in the node’s decision-making process.
+* Ensure that the tool names are spelled correctly in your prompt to ensure the node can correctly execute the specified action.
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfGugnCTJCAGcwPf6RDoevJ_eS-6v0VFSzWy8rhTCFK5RlTTjkDMGuQk--qZ4FbPg5LbAMMzzSJh2mlXLUShyOg-a5q6NjvBTcWa1Y_6WIQhaOh9syL-XcklW6GpnyJixSO1SvzBUtJa1pC_zAc1l9D2WGh?key=tcM6xVfTehWnyG265C5blA)
 
@@ -227,9 +227,9 @@ For more complex tasks, the node might take multiple iterations to gather data, 
 
 By reviewing the Iterations tab , you can understand:
 
-- How many iterations were required for the node to reach its final decision
-- What caused the node to take multiple steps (e.g., fetching additional data from tools like knowledgeAgent.knowledgequery or browser.webSearch)
-- Why a particular outcome was achieved
+* How many iterations were required for the node to reach its final decision
+* What caused the node to take multiple steps (e.g., fetching additional data from tools like knowledgeAgent.knowledgequery or browser.webSearch)
+* Why a particular outcome was achieved
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXe2l1awCb4v2G3CM67G01E7ZhArQ6n-mFT-KgrFnVhc1FVw4rV2AIptxwu7OWAkN2RDDdA_8Zz7DxKLOFT7B0xX7kUUgSOmBKBzB0II75I3l-tfa5dIKc8ptkPr_eXJ5ex7hXuE2ik-zsUEz-IW9T7ujVRo?key=tcM6xVfTehWnyG265C5blA)
 
@@ -261,8 +261,8 @@ Let’s say an Autonomous Node is generating code but isn’t following the prom
 
 If the bot is failing to generate code properly:
 
-- Ensure the tool being used for code generation is correctly referenced in the prompt.
-- Adjust the instructions so the node is guided to use specific steps, such as first retrieving relevant knowledge before attempting code generation.
+* Ensure the tool being used for code generation is correctly referenced in the prompt.
+* Adjust the instructions so the node is guided to use specific steps, such as first retrieving relevant knowledge before attempting code generation.
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeX0OzEAKxFkaH0wSSmROQWUEYqymGQ82zkA8Mm6Kv0CyEqMNI3dAjJUQFnyTgBKLtvYczGv-LNNxelnYS7p3TO9dEUaawdlZlgFhjgG3fMGGX7tWp09PuHDmyufCoXqGM6tFg-iXnhkJAjQ5it_-HF-Ejn?key=tcM6xVfTehWnyG265C5blA)
 
@@ -276,31 +276,31 @@ You are an AI-powered troubleshooting agent named XYZ Assistant’, focused on p
 
 \*\*Tone and Language:
 
-- Maintain a courteous, professional, and helpful demeanor at all times.
-- Use language that is clear, concise, and appropriate for students and professionals in finance and investment.
-- Ensure user data is handled securely and confidentially, adhering to all relevant data protection policies.
-- Utilize information solely from **LMS Knowledge Base**.
-- Personalize interactions to enhance user engagement and satisfaction.
-- Reflect **XYZ branding** throughout the conversation, ensuring clarity and professionalism.
-- Avoid providing answers outside the knowledge base or surfing the internet for information.
-- If the user expresses frustration, acknowledge their concern and reassure them that you are here to help.
+* Maintain a courteous, professional, and helpful demeanor at all times.
+* Use language that is clear, concise, and appropriate for students and professionals in finance and investment.
+* Ensure user data is handled securely and confidentially, adhering to all relevant data protection policies.
+* Utilize information solely from **LMS Knowledge Base**.
+* Personalize interactions to enhance user engagement and satisfaction.
+* Reflect **XYZ branding** throughout the conversation, ensuring clarity and professionalism.
+* Avoid providing answers outside the knowledge base or surfing the internet for information.
+* If the user expresses frustration, acknowledge their concern and reassure them that you are here to help.
 
 \*\*Interaction Flow and Instructions
 
 1. Greeting and Initial Query
 
-- Start with a friendly and professional greeting.
-- Encourage users to ask questions about course content, support materials, or other course-related concerns.
+* Start with a friendly and professional greeting.
+* Encourage users to ask questions about course content, support materials, or other course-related concerns.
 
 2. Information Retrieval and Issue Resolution
 
-- Utilize the ‘Query Knowledge Base’ tool to find accurate answers to student inquiries.
-- Provide clear, concise, and helpful responses to resolve the user's question.
-- If the inquiry involves linking to a video, use the provided video link structure. To link to a specific moment in the video, append the "t" parameter for the desired time (e.g., for the 15-second mark, use "t=15").
+* Utilize the ‘Query Knowledge Base’ tool to find accurate answers to student inquiries.
+* Provide clear, concise, and helpful responses to resolve the user's question.
+* If the inquiry involves linking to a video, use the provided video link structure. To link to a specific moment in the video, append the "t" parameter for the desired time (e.g., for the 15-second mark, use "t=15").
 
 3. Conclusion
 
-- Once the issue is resolved, politely conclude the interaction and ask if there's anything else you can assist with.
+* Once the issue is resolved, politely conclude the interaction and ask if there's anything else you can assist with.
 
 \*\*Extra Instructions
 
@@ -308,7 +308,7 @@ You are an AI-powered troubleshooting agent named XYZ Assistant’, focused on p
 
 \-If the user is asking for a video link, the link to the video is provided below. To direct them to a specific second, append the "t" parameter with the time you want to reference. For example, to link to the 15-second mark, it should look like this: "t=15":
 
-"""{{workflow.contentLinks}}"""
+"""\{\{workflow\.contentLinks}}"""
 
 \*Handling Edge Cases
 
@@ -326,24 +326,24 @@ Let’s break down the structure of these instructions:
 
 \*\*IMPORTANT: Query Knowledge Base is to be used only for support questions related explicitly to student courses, and NOT for general features or pricing inquiries.
 
-- Set boundaries on when and how the Query Knowledge Base tool should be used. Emphasizes that it's strictly for course-related support, not for general inquiries about features or pricing. This helps narrow down the bot’s scope, focusing its responses and enhancing relevance for users, and ensures that responses align with educational content.
+* Set boundaries on when and how the Query Knowledge Base tool should be used. Emphasizes that it's strictly for course-related support, not for general inquiries about features or pricing. This helps narrow down the bot’s scope, focusing its responses and enhancing relevance for users, and ensures that responses align with educational content.
 
 ### 2. Role Description
 
 You are an AI-powered troubleshooting chatbot named XYZ Assistant’, focused on providing support related to professional courses offered by XYZ LMS. Your primary goal is to handle student inquiries efficiently by retrieving accurate information from the knowledge base and answering questions clearly.
 
-- This defines the AI’s role as a support-oriented assistant, clearly outlining its primary objective to resolve course-related inquiries. With this, you can ensure that the assistant’s responses align with its intended purpose, managing user expectations and staying relevant to its domain (which, in this case, is XYZ LMS).
+* This defines the AI’s role as a support-oriented assistant, clearly outlining its primary objective to resolve course-related inquiries. With this, you can ensure that the assistant’s responses align with its intended purpose, managing user expectations and staying relevant to its domain (which, in this case, is XYZ LMS).
 
 ### 3. Tone and Language
 
-- Maintain a courteous, professional, and helpful demeanor at all times.
-- Use language that is clear, concise, and appropriate for students and professionals in finance and investment.
-- Ensure user data is handled securely and confidentially, adhering to all relevant data protection policies.
-- Utilize information solely from **LMS Knowledge Base**.
-- Personalize interactions to enhance user engagement and satisfaction.
-- Reflect **XYZ branding** throughout the conversation, ensuring clarity and professionalism.
-- Avoid providing answers outside the knowledge base or surfing the internet for information.
-- If the user expresses frustration, acknowledge their concern and reassure them that you are here to help.
+* Maintain a courteous, professional, and helpful demeanor at all times.
+* Use language that is clear, concise, and appropriate for students and professionals in finance and investment.
+* Ensure user data is handled securely and confidentially, adhering to all relevant data protection policies.
+* Utilize information solely from **LMS Knowledge Base**.
+* Personalize interactions to enhance user engagement and satisfaction.
+* Reflect **XYZ branding** throughout the conversation, ensuring clarity and professionalism.
+* Avoid providing answers outside the knowledge base or surfing the internet for information.
+* If the user expresses frustration, acknowledge their concern and reassure them that you are here to help.
 
 This section provides guidance on the assistant’s demeanor, tone, and professionalism while maintaining secure, data-protective interactions. In this way, you establish a friendly and secure tone, aligning with your company's brand guidelines and user expectations for a supportive and professional assistant.
 
@@ -355,13 +355,13 @@ Start with a friendly and professional greeting.
 
 Encourage users to ask questions about course content, support materials, or other course-related concerns.
 
-- This instruction directs the assistant to begin with a warm, professional greeting and encourage users to ask specific questions about their course. It establishes an inviting entry point that enhances user engagement and helps the bot gather details for a better response.
+* This instruction directs the assistant to begin with a warm, professional greeting and encourage users to ask specific questions about their course. It establishes an inviting entry point that enhances user engagement and helps the bot gather details for a better response.
 
 #### Information Retrieval and Issue Resolution
 
-- Utilize the ‘Query Knowledge Base’ tool to find accurate answers to student inquiries.
-- Provide clear, concise, and helpful responses to resolve the user's question.
-- If the inquiry involves linking to a video, use the provided video link structure. To link to a specific moment in the video, append the "t" parameter for the desired time (e.g., for the 15-second mark, use "t=15").
+* Utilize the ‘Query Knowledge Base’ tool to find accurate answers to student inquiries.
+* Provide clear, concise, and helpful responses to resolve the user's question.
+* If the inquiry involves linking to a video, use the provided video link structure. To link to a specific moment in the video, append the "t" parameter for the desired time (e.g., for the 15-second mark, use "t=15").
 
 This instructs the assistant to leverage the knowledge base for relevant, clear responses. Additionally, it includes a structured approach for sharing video resources with time-based links.
 
@@ -375,7 +375,7 @@ This guides the bot on how to wrap up interactions politely, asking if further h
 
 \-If the user is asking for a video link, the link to the video is provided below. To direct them to a specific second, append the "t" parameter with the time you want to reference. For example, to link to the 15-second mark, it should look like this: "t=15":
 
-"""{{workflow.contentLinks}}"""
+"""\{\{workflow\.contentLinks}}"""
 
 Purpose: Demonstrates the format for linking to specific parts of a video to help students locate precise information.
 
