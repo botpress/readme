@@ -77,7 +77,7 @@ This function is used to update an existing task in Asana. The input fields incl
 
 This function is used to find a user, and all their associated metadata in Asana. The input field is:
 
-* **userId**: The email of the user.
+* **userId**: You should use the email of the user here.
 
 #### Add comment to task
 
