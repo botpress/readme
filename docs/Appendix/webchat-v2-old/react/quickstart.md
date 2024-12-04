@@ -40,21 +40,7 @@ To integrate Botpress Webchat into your application, you need to obtain your bot
 3. Access Advanced Settings
 4. Copy the Client ID
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c4b8059-Screenshot_2024-08-15_at_9.05.51_AM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/c4b8059-Screenshot_2024-08-15_at_9.05.51_AM.png" />
 
 ## Add the code
 
