@@ -1,3 +1,4 @@
 - configureintegration
 - listintegrationapikeys
 - createintegrationapikey
+- deleteintegrationapikey
