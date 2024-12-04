@@ -28,11 +28,11 @@ Then, make sure to go to your bot configuration page, and enable the integration
 
 The Chat Integration has no required configuration. You can use it as is. But it does expose a few options:
 
-- **Encryption Key:** This key is entirely optional. If you are just starting with the Chat API, you should probably leave it empty. This key is used to verify incoming requests. If you set it, you are then responsible for signing the `x-user-key` header yourself. See the Authentication section for more information.
+* **Encryption Key:** This key is entirely optional. If you are just starting with the Chat API, you should probably leave it empty. This key is used to verify incoming requests. If you set it, you are then responsible for signing the `x-user-key` header yourself. See the Authentication section for more information.
 
-- **Webhook URL:** This URL is entirely optional. If you are just starting with the Chat API, you should probably leave it empty. This URL will be called by the Chat API to notify you of chat-related events. It is optional because the standard way of listening to Chat API events is by opening an SSE stream. If you set this URL, you will receive events both on the SSE stream and on the webhook. See the Realtime section for more information.
+* **Webhook URL:** This URL is entirely optional. If you are just starting with the Chat API, you should probably leave it empty. This URL will be called by the Chat API to notify you of chat-related events. It is optional because the standard way of listening to Chat API events is by opening an SSE stream. If you set this URL, you will receive events both on the SSE stream and on the webhook. See the Realtime section for more information.
 
-- **Webhook Secret:** This secret is only used if you set a webhook URL. It will be included in requests sent to your webhook so you ensure that requests made to your webhook are indeed coming from the Chat API.
+* **Webhook Secret:** This secret is only used if you set a webhook URL. It will be included in requests sent to your webhook so you ensure that requests made to your webhook are indeed coming from the Chat API.
 
 ## Getting Started
 
@@ -40,22 +40,9 @@ Here's how to use the Chat API:
 
 1. Find your webhook ID. You can find it in the Chat Integration's configuration page. The webhook id is found in the webhook URL: 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e243b37-image.png",
-        null,
-        "in this case, the webhook id start with **90** and ends with **51**"
-      ],
-      "align": "center",
-      "caption": "in this case, the webhook id start with **90** and ends with **51**"
-    }
-  ]
-}
-[/block]
-
+<Image alt="in this case, the webhook id start with **90** and ends with **51**" align="center" src="https://files.readme.io/e243b37-image.png">
+  in this case, the webhook id start with **90** and ends with **51**
+</Image>
 
 1. Check if you can reach the API by doing a GET request on `https://chat.botpress.cloud/$YOUR_WEBHOOK_ID/hello`.
 2. Create a chat user (this is not the same as a user in your Botpress Dashboard) by calling the [createUser](https://botpress.com/reference/createuser-1) operation.
@@ -115,6 +102,6 @@ There is an official JavaScript client for the Chat API. It is by far the most c
 
 Features:
 
-- Strongly typed operation inputs and outputs.
-- Handled manual authentication if you pass an encryption key and user ID.
-- Uses an SSE client to listen to conversation events.
+* Strongly typed operation inputs and outputs.
+* Handled manual authentication if you pass an encryption key and user ID.
+* Uses an SSE client to listen to conversation events.
