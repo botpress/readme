@@ -28,4 +28,4 @@ await client.connect();
 await client.sendMessage("Hello, Botpress!"); // Send a message to the bot
 ```
 
-[Demo Example](https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-client?embed=1&hideNavigation=1&view=both&file=src%2Fmain.ts)
+[Demo Example](https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-client?embed=1\&hideNavigation=1\&view=both\&file=src%2Fmain.ts)
