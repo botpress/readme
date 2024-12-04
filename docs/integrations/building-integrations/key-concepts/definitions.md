@@ -53,37 +53,37 @@ Several components are defined:
 5. **events**: covers non-conversational events, such as the creation of a new issue.
 6. **user**: provides a mapping between the integration channel and Botpress.
 
-Each component is imported from the **definitions** module, which contains separate files for each component.  
+Each component is imported from the **definitions** module, which contains separate files for each component.\
 As a developer, it is crucial to ensure all the components needed for your integration are properly defined in the definitions module. Then they will be available for import in the main integration definition file.
 
 Remember, the Botpress platform relies on these **definitions** to ensure the correct functioning of your integration, making them a pivotal part of your development process.
 
 # Integration components
 
-- **name**: The name of the integration. It can be a string or a constant representing the integration's unique identifier.
+* **name**: The name of the integration. It can be a string or a constant representing the integration's unique identifier.
 
-- **title**: The title or display name of the integration. It provides a human-readable name for the integration.
+* **title**: The title or display name of the integration. It provides a human-readable name for the integration.
 
-- **description**: A brief description of the integration, explaining its purpose and functionality.
+* **description**: A brief description of the integration, explaining its purpose and functionality.
 
-- **version**: The version number of the integration. It helps track and manage updates to the integration over time.
+* **version**: The version number of the integration. It helps track and manage updates to the integration over time.
 
-- **icon**: The path or filename of the icon file associated with the integration. It represents the visual identity of the integration.
+* **icon**: The path or filename of the icon file associated with the integration. It represents the visual identity of the integration.
 
-- **readme**: The path or filename of the README file for the integration. It typically provides detailed instructions, documentation, or guidelines for using the integration.
+* **readme**: The path or filename of the README file for the integration. It typically provides detailed instructions, documentation, or guidelines for using the integration.
 
-- **configuration**: The configuration schema for the integration. It defines the required parameters and their types that need to be provided when configuring the integration. This includes sensitive data such as API keys or access tokens.
+* **configuration**: The configuration schema for the integration. It defines the required parameters and their types that need to be provided when configuring the integration. This includes sensitive data such as API keys or access tokens.
 
-- **states**: The definitions of different states that the bot can enter during a conversation. States help manage and maintain context throughout a conversation.
+* **states**: The definitions of different states that the bot can enter during a conversation. States help manage and maintain context throughout a conversation.
 
-- **channels**: The channels supported by the integration. It defines the channels (e.g., Slack, Telegram, Facebook Messenger) that the bot can interact with through the integration.
+* **channels**: The channels supported by the integration. It defines the channels (e.g., Slack, Telegram, Facebook Messenger) that the bot can interact with through the integration.
 
-- **actions**: The actions that the bot can perform through the integration. Actions represent specific tasks or behaviors that the bot can execute, such as sending a message, retrieving data, or performing external operations.
+* **actions**: The actions that the bot can perform through the integration. Actions represent specific tasks or behaviors that the bot can execute, such as sending a message, retrieving data, or performing external operations.
 
-- **events**: The non-conversational events that the integration can handle. These events are triggered by external factors or actions and can be used to perform specific actions or respond to certain events.
+* **events**: The non-conversational events that the integration can handle. These events are triggered by external factors or actions and can be used to perform specific actions or respond to certain events.
 
-- **secrets**: The names of the secrets required for the integration. Secrets are sensitive information, such as API keys or access tokens, that need to be securely stored and accessed within the integration.
+* **secrets**: The names of the secrets required for the integration. Secrets are sensitive information, such as API keys or access tokens, that need to be securely stored and accessed within the integration.
 
-- **user**: The mapping between the integration channel and Botpress. It defines how the user is identified or associated with the integration, allowing the integration to perform actions on behalf of the user.
+* **user**: The mapping between the integration channel and Botpress. It defines how the user is identified or associated with the integration, allowing the integration to perform actions on behalf of the user.
 
 Each of these properties plays a crucial role in defining and configuring the integration, enabling smooth interaction between the bot and the desired platform (in this case, Slack).
