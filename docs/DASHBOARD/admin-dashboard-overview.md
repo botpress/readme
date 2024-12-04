@@ -43,5 +43,5 @@ Date when you last published your chatbot. When you publish your chatbot, it mea
 The Delete Chatbot button allows you to delete your chatbot permanently. This option is useful if you no longer need your chatbot and want to free up space for new chatbots on your workspace.
 
 > ❗️ Delete Chatbot
-> 
+>
 > This action is irreversible, and all data associated with the chatbot will be erased.
