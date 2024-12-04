@@ -16,21 +16,7 @@ We're thrilled you want to publish your integration on the Botpress Hub! There i
 2. Whenever you integration is private, you'll see a blue banner with a **Make Public** button, just click on it.
 3. Accept the hub terms and conditions and you're good to go.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f3ec409-Screenshot_2024-08-08_at_3.21.15_PM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/f3ec409-Screenshot_2024-08-08_at_3.21.15_PM.png" />
 
 # Getting your integration Verified :white_check_mark:
 
@@ -42,19 +28,7 @@ To ensure the quality of contributions on the Botpress Hub, we've come up with t
 4. Prepare an example bot with your integration configured an
 5. Send it for approval
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FQJbqatyXfwI%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DQJbqatyXfwI&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FQJbqatyXfwI%2Fhqdefault.jpg&key=02466f963b9b4bb8845a05b53d3235d7&type=text%2Fhtml&schema=youtube\" width=\"640\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/embed/QJbqatyXfwI",
-  "title": "How to publish to Botpress Hub",
-  "favicon": "https://www.youtube.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/QJbqatyXfwI/hqdefault.jpg",
-  "provider": "https://www.youtube.com/",
-  "href": "https://www.youtube.com/embed/QJbqatyXfwI",
-  "typeOfEmbed": "youtube"
-}
-[/block]
-
+<Embed url="https://www.youtube.com/embed/QJbqatyXfwI" title="How to publish to Botpress Hub" favicon="https://www.youtube.com/favicon.ico" image="https://i.ytimg.com/vi/QJbqatyXfwI/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/embed/QJbqatyXfwI" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FQJbqatyXfwI%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DQJbqatyXfwI%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FQJbqatyXfwI%252Fhqdefault.jpg%26key%3D02466f963b9b4bb8845a05b53d3235d7%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22640%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 <br />
 
@@ -62,10 +36,10 @@ To ensure the quality of contributions on the Botpress Hub, we've come up with t
 
 When a user installs your app, your workspace information will be viewable by the user. Please ensure:
 
-- [ ]  Your Workspace has a url handle that represents you.
-- [ ]  You have a way for users to contact you, like an email or a website.
-- [ ]  Introduce yourself in the Workspace description (optional). This is the place for self-promotion.
-- [ ]  Add an icon to your Workspace that represents you (optional). 
+* [ ]  Your Workspace has a url handle that represents you.
+* [ ]  You have a way for users to contact you, like an email or a website.
+* [ ]  Introduce yourself in the Workspace description (optional). This is the place for self-promotion.
+* [ ]  Add an icon to your Workspace that represents you (optional). 
 
 We suggest you create a Workspace specifically for publishing integrations, as this will make it easier to add collaborators to your workspace, and keep your production and dev environments separate.
 
@@ -75,22 +49,22 @@ Now we need to ensure the integration has all the assets and information it need
 
 Your integration's integration.definition.ts file should contain:
 
-- [ ]  **title**: the display title of your integration for the hub. Do not include “Botpress”.
-- [ ]  **name**: your_workspace_handle/integration_handle
-- [ ]  **description**: a succinct description of what your integration does.
-- [ ]  **icon**: set this to 'icon.svg'.
-- [ ]  **readme**: set this to 'hub.md'.
+* [ ]  **title**: the display title of your integration for the hub. Do not include “Botpress”.
+* [ ]  **name**: your\_workspace\_handle/integration\_handle
+* [ ]  **description**: a succinct description of what your integration does.
+* [ ]  **icon**: set this to 'icon.svg'.
+* [ ]  **readme**: set this to 'hub.md'.
 
 Make sure to have these two files in the root of your integration folder:
 
-- [ ] icon.svg :  Use a pertinent icon related to the problem you are solving. Do not use the Botpress Icon.
-- [ ] hub.md :  It should contain an explanation of what the integration is, and how to use it. Self-promotion is not allowed here. Please also add a link to git repo if your integration is open source, this drastically increase your chances of getting approved.
+* [ ] icon.svg :  Use a pertinent icon related to the problem you are solving. Do not use the Botpress Icon.
+* [ ] hub.md :  It should contain an explanation of what the integration is, and how to use it. Self-promotion is not allowed here. Please also add a link to git repo if your integration is open source, this drastically increase your chances of getting approved.
 
 ## Your integration's logic
 
 Finally, we need to ensure your integration is robust and user-friendly.
 
-- [ ]  If your integration requires parameters to be configured: it should validate the parameters in the register method, and throw a RuntimeError if there is an issue.
+* [ ]  If your integration requires parameters to be configured: it should validate the parameters in the register method, and throw a RuntimeError if there is an issue.
 
 ```
 import * as bpclient from "@botpress/client";
@@ -108,25 +82,11 @@ This RuntimeError will be shown to the user in the Botpress Studio when they try
 
 When you're done with above, we'd like to test your integration to ensure it works as expected, and that everything is in order. Whenever you're ready , just click the "Request Verification" button on the banner.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3b20967-Screenshot_2024-08-08_at_3.30.44_PM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/3b20967-Screenshot_2024-08-08_at_3.30.44_PM.png" />
 
 To speed up the process, you can do the following proactively
 
-- [ ]  In your workspace, create a demonstration bot and configure your integration for it. We'll use this to try out the integration.
-- [ ]  Add `hub-applications@botpress.com` to your workspace with Admin privileges.
+* [ ]  In your workspace, create a demonstration bot and configure your integration for it. We'll use this to try out the integration.
+* [ ]  Add `hub-applications@botpress.com` to your workspace with Admin privileges.
 
 If you have any questions whatsoever, please don't hesitate to reach out to us at [hub-applications@botpress.com](mailto:hub-applications@botpress.com)!
