@@ -44,21 +44,7 @@ To integrate Botpress Webchat into your application, you need to obtain your bot
 3. Access Advanced Settings
 4. Copy the Client ID
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c4b8059-Screenshot_2024-08-15_at_9.05.51_AM.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/c4b8059-Screenshot_2024-08-15_at_9.05.51_AM.png" />
 
 ## Add the code
 
@@ -188,21 +174,7 @@ export default function App() {
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/61cf345-38b71ad-image.png",
-        "",
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/61cf345-38b71ad-image.png" />
 
 `FAB` component is a UI element designed to to open or toggle the visibility of the webchat interface.
 
@@ -221,22 +193,7 @@ import { Fab } from "@botpress/webchat";
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/628a9b7-Screenshot_2024-08-19_at_3.28.07_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "250px"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="250px" src="https://files.readme.io/628a9b7-Screenshot_2024-08-19_at_3.28.07_PM.png" />
 
 `WebChat` component serves as the main container for the chat interface. It provides a complete chat experience by rendering a header, a list of messages, and an input area where users can compose and send messages. 
 
@@ -265,43 +222,13 @@ import { Container, Header, MessageList, Composer, ComposerInput, ComposerButton
 
 ## Header
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e0b68c4-Screenshot_2024-08-19_at_4.22.41_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "300px"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="300px" src="https://files.readme.io/e0b68c4-Screenshot_2024-08-19_at_4.22.41_PM.png" />
 
 `Header` component sits at the top of the Webchat, providing clear bot identification and quick access to functions like refreshing or closing the chat.
 
 ## MessageList
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d9e5473-Screenshot_2024-08-19_at_4.33.19_PM.png",
-        "",
-        ""
-      ],
-      "align": "center",
-      "sizing": "200px"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" width="200px" src="https://files.readme.io/d9e5473-Screenshot_2024-08-19_at_4.33.19_PM.png" />
 
 `MessageList` component displays the ongoing conversation between the user and the bot within the Botpress Webchat.
 
