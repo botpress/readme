@@ -44,4 +44,4 @@ export default function App() {
 
 # Demo
 
-<https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-theme-generator?embed=1&hideNavigation=1&view=both&file=src%2FApp.tsx>
+[https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-theme-generator?embed=1\&hideNavigation=1\&view=both\&file=src%2FApp.tsx](https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-theme-generator?embed=1\&hideNavigation=1\&view=both\&file=src%2FApp.tsx)
