@@ -24,7 +24,7 @@ A Prompt Field is a type of input field that is used to capture information from
 
 The Prompt Field also includes validation messages and code validation, which helps ensure that the user inputs the correct type of information. This means that if the user inputs an invalid value, they will be notified with an error message and prompted to re-enter the correct information.
 
-<Table align={["left","left"]}>
+<table align={["left","left"]}>
   <thead>
     <tr>
       <th style={{ textAlign: "left" }}>
@@ -280,7 +280,7 @@ The Prompt Field also includes validation messages and code validation, which he
       </td>
     </tr>
   </tbody>
-</Table>
+</table>
 
 <br />
 
@@ -788,20 +788,20 @@ Once the card is used, it will automatically extract the weight information from
 
 The available weight measurement formats are:
 
-<Table>
-  <Tr>
-    <Td>mcg (microgram)</Td>
-    <Td>mg (milligram)</Td>
-    <Td>g (gram)</Td>
-    <Td>kg (kilogram)</Td>
-  </Tr>
-  <Tr>
-    <Td>mt (metric ton)</Td>
-    <Td>oz (ounce)</Td>
-    <Td>lb (pound)</Td>
-    <Td>t (ton)</Td>
-  </Tr>
-</Table>
+<table>
+  <tr>
+    <td>mcg (microgram)</td>
+    <td>mg (milligram)</td>
+    <td>g (gram)</td>
+    <td>kg (kilogram)</td>
+  </tr>
+  <tr>
+    <td>mt (metric ton)</td>
+    <td>oz (ounce)</td>
+    <td>lb (pound)</td>
+    <td>t (ton)</td>
+  </tr>
+</table>
 
 **Example**
 
@@ -925,52 +925,52 @@ Once the card is used, it will automatically extract the volume value from the u
 
 The following volume formats are available for conversion:
 
-<Table>
-  <Tr>
-    <Td>
+<table>
+  <tr>
+    <td>
       Cubic millimeters (mm<sup>3</sup>)
-    </Td>
-    <Td>
+    </td>
+    <td>
       Cubic centimeters (cm<sup>3</sup>)
-    </Td>
-    <Td>Milliliters (ml)</Td>
-    <Td>Centiliters (cl)</Td>
-  </Tr>
-  <Tr>
-    <Td>Deciliters (dl)</Td>
-    <Td>Liters (l)</Td>
-    <Td>Kiloliters (kl)</Td>
-    <Td>
+    </td>
+    <td>Milliliters (ml)</td>
+    <td>Centiliters (cl)</td>
+  </tr>
+  <tr>
+    <td>Deciliters (dl)</td>
+    <td>Liters (l)</td>
+    <td>Kiloliters (kl)</td>
+    <td>
       Cubic meters (m<sup>3</sup>)
-    </Td>
-  </Tr>
-  <Tr>
-    <Td>
+    </td>
+  </tr>
+  <tr>
+    <td>
       Cubic kilometers (km<sup>3</sup>)
-    </Td>
-    <Td>Teaspoons (tsp)</Td>
-    <Td>Tablespoons (Tbs)</Td>
-    <Td>
+    </td>
+    <td>Teaspoons (tsp)</td>
+    <td>Tablespoons (Tbs)</td>
+    <td>
       Cubic inches (in<sup>3</sup>)
-    </Td>
-  </Tr>
-  <Tr>
-    <Td>Fluid ounces (fl-oz)</Td>
-    <Td>Cups (cup)</Td>
-    <Td>Pints (pnt)</Td>
-    <Td>Quarts (qt)</Td>
-  </Tr>
-  <Tr>
-    <Td>Gallons (gal)</Td>
-    <Td>
+    </td>
+  </tr>
+  <tr>
+    <td>Fluid ounces (fl-oz)</td>
+    <td>Cups (cup)</td>
+    <td>Pints (pnt)</td>
+    <td>Quarts (qt)</td>
+  </tr>
+  <tr>
+    <td>Gallons (gal)</td>
+    <td>
       Cubic feet (ft<sup>3</sup>)
-    </Td>
-    <Td>
+    </td>
+    <td>
       Cubic yards (yd<sup>3</sup>)
-    </Td>
-    <Td></Td>
-  </Tr>
-</Table>
+    </td>
+    <td></td>
+  </tr>
+</table>
 
 **Example**
 
