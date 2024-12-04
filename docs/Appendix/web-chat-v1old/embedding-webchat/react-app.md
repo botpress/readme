@@ -18,8 +18,8 @@ You can use the web chat in a React app by creating a component that will add th
 
 # Prerequisites
 
-- A React app
-- A bot deployed on Botpress Cloud
+* A React app
+* A bot deployed on Botpress Cloud
 
 ```jsx
 import React, { useEffect } from 'react'
