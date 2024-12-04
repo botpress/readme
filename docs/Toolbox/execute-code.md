@@ -13,7 +13,7 @@ next:
 The Execute Code card allows you to run custom code (in javascript) in the context of the current workflow. This code can also be generated automatically using AI. This is useful for making API calls, performing calculations, or any other custom logic you may need.
 
 > 👍 Generative AI
-> 
+>
 > Using this natural language feature you can instruct AI to generate the different pieces of code your bot needs to run, and it's contextual, considers your variables and your conversation flow.
 
 <br />
@@ -22,9 +22,9 @@ The Execute Code card allows you to run custom code (in javascript) in the conte
 
 The below packages are already imported and available for use in the Execute Code card.
 
-- [Axios](https://axios-http.com/docs/api_intro)
-- [Lodash](https://lodash.com/docs/4.17.15)
-- [Moment Luxon](https://moment.github.io/luxon/#/?id=luxon)
+* [Axios](https://axios-http.com/docs/api_intro)
+* [Lodash](https://lodash.com/docs/4.17.15)
+* [Moment Luxon](https://moment.github.io/luxon/#/?id=luxon)
 
 <br />
 
