@@ -5,3 +5,4 @@
 - createintegration
 - listintegrations
 - updateintegration
+- getintegration
