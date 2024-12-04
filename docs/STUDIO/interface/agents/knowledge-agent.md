@@ -40,7 +40,7 @@ This is the model used to extract questions from a conversation. Generally, you 
 
 ## Chunks Count
 
-This is the number of <<glossary:chunks>> that Botpress will elect to send from the Knowledge Base to a model to generate an answer. A larger number of chunks will send more information to the model, generally resulting in more accurate answers, with longer generation times and a higher token cost.
+This is the number of <Glossary>chunks</Glossary> that Botpress will elect to send from the Knowledge Base to a model to generate an answer. A larger number of chunks will send more information to the model, generally resulting in more accurate answers, with longer generation times and a higher token cost.
 
 ## Exposed Variables
 
