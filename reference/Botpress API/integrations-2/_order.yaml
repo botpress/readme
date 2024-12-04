@@ -4,3 +4,4 @@
 - deleteintegrationapikey
 - createintegration
 - listintegrations
+- updateintegration
