@@ -34,7 +34,7 @@ From the Versions menu, you can revert to a previous version by clicking into it
 Botpress cannot restore lost or overwritten bot Versions.
 
 > 📘 Note
-> 
+>
 > Pay-as-you-go users have access to 3 saved Versions.
-> 
+>
 > Team Plan subscribers have access to 15 saved Versions.
