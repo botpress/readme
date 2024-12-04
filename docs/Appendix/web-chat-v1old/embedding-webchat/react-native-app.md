@@ -43,21 +43,21 @@ npm run start
 
 This component is responsible for rendering the Botpress chat widget in your application. It takes a `botConfig` prop, which is an object containing the configuration for your bot. The `botConfig` object should include the following properties:
 
-- `botId`: The ID of your bot.
-- `hostUrl`: The URL where your bot is hosted.
-- `messagingUrl`: The URL for your bot's messaging service.
-- `clientId`: The client ID for your bot.
+* `botId`: The ID of your bot.
+* `hostUrl`: The URL where your bot is hosted.
+* `messagingUrl`: The URL for your bot's messaging service.
+* `clientId`: The client ID for your bot.
 
 The `BpWidget` component also takes a `onMessage` prop, which is a function that will be called whenever a message is received from the bot.
 
 **Props**:
 
-- `botConfig` (Object): Configuration for your bot.
-  - `botId` (String): The ID of your bot.
-  - `hostUrl` (String): The URL where your bot is hosted.
-  - `messagingUrl` (String): The URL for your bot's messaging service.
-  - `clientId` (String): The client ID for your bot.
-- `onMessage` (Function): Callback function for when a message is received from the bot.
+* `botConfig` (Object): Configuration for your bot.
+  * `botId` (String): The ID of your bot.
+  * `hostUrl` (String): The URL where your bot is hosted.
+  * `messagingUrl` (String): The URL for your bot's messaging service.
+  * `clientId` (String): The client ID for your bot.
+* `onMessage` (Function): Callback function for when a message is received from the bot.
 
 # BpIncomingMessagesListener
 
@@ -65,8 +65,8 @@ This component listens for incoming messages from the bot and can be used from a
 
 **Props**:
 
-- `botConfig` (Object): Same configuration object as `BpWidget`.
-- `onMessage` (Function): Callback function for when a message is received from the bot.
+* `botConfig` (Object): Same configuration object as `BpWidget`.
+* `onMessage` (Function): Callback function for when a message is received from the bot.
 
 # Usage
 
@@ -100,9 +100,9 @@ function App() {
 
 The `BpWidget` component exposes three methods that you can use to interact with the bot:
 
-- `sendEvent(event)`: Sends an event to the bot. The `event` parameter should be an object containing the event data.
-- `sendPayload(payload)`: Sends a payload to the bot. The `payload` parameter should be an object containing the payload data.
-- `mergeConfig(config)`: Merges the given `config` object with the current bot configuration.
+* `sendEvent(event)`: Sends an event to the bot. The `event` parameter should be an object containing the event data.
+* `sendPayload(payload)`: Sends a payload to the bot. The `payload` parameter should be an object containing the payload data.
+* `mergeConfig(config)`: Merges the given `config` object with the current bot configuration.
 
 You can call these methods using a ref to the `BpWidget` component:
 
