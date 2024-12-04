@@ -16,25 +16,57 @@ Botpress Cloud allows you to create, manage, and deploy chatbots with little to 
 
 This section covers some of the most important use cases for extracting bot data to third-parties software.
 
-[block:parameters]
-{
-  "data": {
-    "h-0": "**Action**",
-    "h-1": "**Methods**",
-    "h-2": "**Use Cases**",
-    "0-0": "Exporting conversations",
-    "0-1": "[Using the Botpress API](./exporting-conversations/with-the-api)  [Using Hooks](./exporting-conversations/from-the-bot)",
-    "0-2": "Data Analysis  \nCompliance and Auditing  \nBackup and Historical Record  \nDebugging",
-    "1-0": "Exporting analytics",
-    "1-1": "[Using Hooks](./exporting-analytics/from-the-bot)  \n[Using the Botpress API](./exporting-analytics/with-the-api)",
-    "1-2": "Performance Monitoring and Evaluation  \nUser Tracking and Behavior Analysis  \nProduct Management  \nDebugging"
-  },
-  "cols": 3,
-  "rows": 2,
-  "align": [
-    "left",
-    "right",
-    null
-  ]
-}
-[/block]
+<Table align={["left","right",null]}>
+  <thead>
+    <tr>
+      <th style={{ textAlign: "left" }}>
+        **Action**
+      </th>
+
+      <th style={{ textAlign: "right" }}>
+        **Methods**
+      </th>
+
+      <th>
+        **Use Cases**
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        Exporting conversations
+      </td>
+
+      <td style={{ textAlign: "right" }}>
+        [Using the Botpress API](./exporting-conversations/with-the-api)  [Using Hooks](./exporting-conversations/from-the-bot)
+      </td>
+
+      <td>
+        Data Analysis\
+        Compliance and Auditing\
+        Backup and Historical Record\
+        Debugging
+      </td>
+    </tr>
+
+    <tr>
+      <td style={{ textAlign: "left" }}>
+        Exporting analytics
+      </td>
+
+      <td style={{ textAlign: "right" }}>
+        [Using Hooks](./exporting-analytics/from-the-bot)\
+        [Using the Botpress API](./exporting-analytics/with-the-api)
+      </td>
+
+      <td>
+        Performance Monitoring and Evaluation\
+        User Tracking and Behavior Analysis\
+        Product Management\
+        Debugging
+      </td>
+    </tr>
+  </tbody>
+</Table>
