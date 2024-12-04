@@ -11,10 +11,10 @@ next:
   description: ''
 ---
 > 📘 Read this first!
-> 
-> - If you are looking to use the built-in agent-handoff feature, read the [HITL](doc:hitl-1) guides.
-> - Otherwise, if you are comfortable with Javascript or typescript, you should use Botpress's HITL Interface: [Connect a live agent platform with Botpress](doc:revised-hitl). 
-> - This is for developers who want to use an external platform, and who do not wish to use javascript or typescript to build a connector.
+>
+> * If you are looking to use the built-in agent-handoff feature, read the [HITL](doc:hitl-1) guides.
+> * Otherwise, if you are comfortable with Javascript or typescript, you should use Botpress's HITL Interface: [Connect a live agent platform with Botpress](doc:revised-hitl). 
+> * This is for developers who want to use an external platform, and who do not wish to use javascript or typescript to build a connector.
 
 The  ([Human in the Loop API integration](https://app.botpress.cloud/hub/integrations/intver_01J804C5W78Y5FWHHNVWMR5VM3)) serves two purposes.
 
@@ -37,35 +37,10 @@ The  ([Human in the Loop API integration](https://app.botpress.cloud/hub/integra
 
 <br />
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5130dae22c15bc1503db06b18023c6257e86c3ce345def3d103ef3cace3d5916-image.png",
-        null,
-        "This is the integration that allows communication via API for non js/ts devs"
-      ],
-      "align": "center",
-      "caption": "This is the integration that allows communication via API for non js/ts devs"
-    }
-  ]
-}
-[/block]
+<Image alt="This is the integration that allows communication via API for non js/ts devs" align="center" src="https://files.readme.io/5130dae22c15bc1503db06b18023c6257e86c3ce345def3d103ef3cace3d5916-image.png">
+  This is the integration that allows communication via API for non js/ts devs
+</Image>
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6894784c708ced81502a31fa0e368c36a2a640ee43d0b2a8e5aefd4ecf2afb29-image.png",
-        null,
-        "This is the no-code integration that allows Botpress users to act as live agents"
-      ],
-      "align": "center",
-      "caption": "This is the no-code integration that allows Botpress users to act as live agents"
-    }
-  ]
-}
-[/block]
+<Image alt="This is the no-code integration that allows Botpress users to act as live agents" align="center" src="https://files.readme.io/6894784c708ced81502a31fa0e368c36a2a640ee43d0b2a8e5aefd4ecf2afb29-image.png">
+  This is the no-code integration that allows Botpress users to act as live agents
+</Image>
