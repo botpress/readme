@@ -15,7 +15,7 @@ The Analytics Agent collects and analyzes data on bot interactions to provide in
 # Configuration
 
 > 💼 Note
-> 
+>
 > The Analytics Agent is only available to Team and Enterprise subscribers.
 
 Once you've enabled the Analytics Agent from your bot's Agents menu, you can designate custom events that your bot will track. These events can be selected from the list of trackable events, or "Event Types."
@@ -30,5 +30,5 @@ Follow these steps to track custom events:
 Once you've successfully created a custom event, your bot will track each event as the card is executed in a given node. For example, your bot can track how many times a conversation successfully reaches a specific node, or how often users flow through a certain node.
 
 > 🚧 Warning
-> 
+>
 > After creating a custom event, it can take up to an hour before the data is available to be visualized in your Analytics tab.
