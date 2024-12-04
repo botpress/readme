@@ -11,3 +11,4 @@
 - createtablerows
 - updatetablerows
 - deletetablerows
+- upserttablerows
