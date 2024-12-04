@@ -18,19 +18,7 @@ Turn Botpress chats into Zendesk tickets, with a handy link added to the convers
 
 In this guide, we will demonstrate how to set up the Zendesk integration to facilitate live interactions through the bot.
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FKR87xwsh33Y%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DKR87xwsh33Y&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FKR87xwsh33Y%2Fhqdefault.jpg&key=7788cb384c9f4d5dbbdbeffd9fe4b92f&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/watch?v=KR87xwsh33Y",
-  "title": "How to Set Up Live Agent Handoff for Zendesk | Botpress",
-  "favicon": "https://www.google.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/KR87xwsh33Y/hqdefault.jpg",
-  "provider": "https://www.youtube.com/",
-  "href": "https://www.youtube.com/watch?v=KR87xwsh33Y",
-  "typeOfEmbed": "youtube"
-}
-[/block]
-
+<Embed url="https://www.youtube.com/watch?v=KR87xwsh33Y" title="How to Set Up Live Agent Handoff for Zendesk | Botpress" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/KR87xwsh33Y/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=KR87xwsh33Y" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FKR87xwsh33Y%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DKR87xwsh33Y%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FKR87xwsh33Y%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 ## Step 1: Add Zendesk Integration
 
@@ -54,7 +42,7 @@ Create a 'user.name' and a 'user.email' variable on the bottom-left variables pa
 
 From the "Agents" menu of the bot in Botpress Studio, click on the "HITL Agent" option, and then turn on the "Enable Agent" option.
 
-This menu will allow you to configure options such as choosing Zendesk as the desired integration. Also, you have the capability to design an 'end_conversation' intent that permits the user to opt out of speaking to a live agent. To do so, pick a global intent from the dropdown, for instance "Cancel".
+This menu will allow you to configure options such as choosing Zendesk as the desired integration. Also, you have the capability to design an 'end\_conversation' intent that permits the user to opt out of speaking to a live agent. To do so, pick a global intent from the dropdown, for instance "Cancel".
 
 Most settings are default, you may choose to modify them to your preference.
 
@@ -69,7 +57,7 @@ The card will automatically summarize the conversation and provide a transcript 
 Now that everything has been configured accordingly, publish your bot and open the Web Chat. 
 
 > 📘 Note
-> 
+>
 > This integration does not work in the emulator. Try it in other channels such as Web Chat.
 
 <br />
@@ -80,9 +68,9 @@ Now that everything has been configured accordingly, publish your bot and open t
 
 Retrieves details about a specific support ticket in Zendesk.
 
-- **Input**:  
-  - `Ticket ID`: The ID of the ticket from the ticket URL. <br/>(e.g., `https://companyname.zendesk.com/agent/tickets/1` for `Ticket ID` `1`).
-- **Returns**: Real-time updates on the status and details of the ticket.
+* **Input**:  
+  * `Ticket ID`: The ID of the ticket from the ticket URL. <br/>(e.g., `https://companyname.zendesk.com/agent/tickets/1` for `Ticket ID` `1`).
+* **Returns**: Real-time updates on the status and details of the ticket.
 
 ```javascript
 // Return object example
@@ -106,12 +94,12 @@ Retrieves details about a specific support ticket in Zendesk.
 
 Creates a new support ticket in Zendesk.
 
-- **Inputs**:
-  - `Ticket subject`: Title of the ticket.
-  - `Ticket comment`: Initial message for the support agent.
-  - `Requester name`: Name of the user needing support.
-  - `Requester email`: Email of the user needing support.
-- **Returns**: Confirmation of ticket creation with details.
+* **Inputs**:
+  * `Ticket subject`: Title of the ticket.
+  * `Ticket comment`: Initial message for the support agent.
+  * `Requester name`: Name of the user needing support.
+  * `Requester email`: Email of the user needing support.
+* **Returns**: Confirmation of ticket creation with details.
 
 ```javascript
 // Return object example
@@ -136,10 +124,10 @@ Creates a new support ticket in Zendesk.
 
 Closes the ticket of the provided Ticket ID in Zendesk.
 
-- **Input**: 
-  - `Ticket ID`: The ID of the ticket from the ticket URL. <br/>(e.g., `https://companyname.zendesk.com/agent/tickets/1` for `Ticket ID` `1`).
-- **Optional**: `Closing Comment` for resolution summary or thanks.
-- **Returns**: Confirmation that the ticket is closed with optional comment.
+* **Input**: 
+  * `Ticket ID`: The ID of the ticket from the ticket URL. <br/>(e.g., `https://companyname.zendesk.com/agent/tickets/1` for `Ticket ID` `1`).
+* **Optional**: `Closing Comment` for resolution summary or thanks.
+* **Returns**: Confirmation that the ticket is closed with optional comment.
 
 ```javascript
 // Return object example
@@ -164,9 +152,9 @@ Closes the ticket of the provided Ticket ID in Zendesk.
 
 Fetches the conversation ID of the provided Ticket ID in Zendesk.
 
-- **Input**: 
-  - `Ticket ID`: The ID of the ticket from the ticket URL. <br/>(e.g., `https://companyname.zendesk.com/agent/tickets/1` for `Ticket ID` `1`).
-- **Returns**: Latest updates or responses from support agents on the ticket.
+* **Input**: 
+  * `Ticket ID`: The ID of the ticket from the ticket URL. <br/>(e.g., `https://companyname.zendesk.com/agent/tickets/1` for `Ticket ID` `1`).
+* **Returns**: Latest updates or responses from support agents on the ticket.
 
 ```javascript
 // Return object example
@@ -181,9 +169,9 @@ Fetches the conversation ID of the provided Ticket ID in Zendesk.
 
 Finds a customer in Zendesk based on the provided search query.
 
-- **Input**: 
-  - `Search Query`: You can search by name, email, or phone number of the customer.
-- **Returns**: A list of matching customers and their details.
+* **Input**: 
+  * `Search Query`: You can search by name, email, or phone number of the customer.
+* **Returns**: A list of matching customers and their details.
 
 ```javascript
 // Return object example
@@ -206,9 +194,9 @@ Finds a customer in Zendesk based on the provided search query.
 
 Provides a list of available support agents in Zendesk. 
 
-- **Input**: 
-  - `Is Online`: Select this option to filter the list of agents by online status.
-- **Returns**: List of agents, optionally filtered by online status.
+* **Input**: 
+  * `Is Online`: Select this option to filter the list of agents by online status.
+* **Returns**: List of agents, optionally filtered by online status.
 
 ```javascript
 // Return object example
@@ -231,10 +219,10 @@ Provides a list of available support agents in Zendesk.
 
 Changes the requester of a ticket conversation in Zendesk.
 
-- **Inputs**:
-  - `Conversation ID`: Get this from the `Get Ticket Conversation` card.
-  - `Requester ID`: Get this from the requester's profile URL in Zendesk (e.g., `https://companyname.zendesk.com/agent/users/1` for `Requester ID` `1`).
-- **Returns**: None. Does not return anything.
+* **Inputs**:
+  * `Conversation ID`: Get this from the `Get Ticket Conversation` card.
+  * `Requester ID`: Get this from the requester's profile URL in Zendesk (e.g., `https://companyname.zendesk.com/agent/users/1` for `Requester ID` `1`).
+* **Returns**: None. Does not return anything.
 
 ## Trigger - Assigned Ticket
 
@@ -245,5 +233,5 @@ This trigger is fired when a ticket is assigned to an agent. This can be used to
 This trigger is fired when a ticket is marked as solved. This can be used to notify the user that their issue has been resolved.
 
 > 📘 Note
-> 
+>
 > You can add a message after these triggers to send a notification to the agent. For example, you can use the `Send Message`card to send a message to the agent.
