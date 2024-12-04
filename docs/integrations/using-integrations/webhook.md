@@ -16,7 +16,7 @@ Webhooks provide a powerful way to integrate Botpress with other services. This 
 
 # Prerequisites
 
-- A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
+* A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
 
 <br />
 
@@ -27,9 +27,9 @@ Webhooks provide a powerful way to integrate Botpress with other services. This 
 
 The Webhook integration will have the following settings:
 
-- **Enabled**: Whether Botpress will communicate with the Webhook.
-- **Webhook URL**: The URL that you will use to send data to your bot.
-- **Secret**: A secret password that you can use to secure your webhook. It can be any string you want, but make it random and hard to guess.
+* **Enabled**: Whether Botpress will communicate with the Webhook.
+* **Webhook URL**: The URL that you will use to send data to your bot.
+* **Secret**: A secret password that you can use to secure your webhook. It can be any string you want, but make it random and hard to guess.
 
 That's it! Now the Webhook integration is operational and ready for use within your bot.
 
@@ -91,7 +91,7 @@ await axios.post(webhookUrl, data, header)
 # Using the Webhook Event data in your bot
 
 1. Go to the Botpress Studio and right-click the editor to add a Trigger node, that triggers on `Webhook Event`.
-   - This is where the conversation will start when the webhook received data, instead of following the regular path of beginning with the `Start` node.
+   * This is where the conversation will start when the webhook received data, instead of following the regular path of beginning with the `Start` node.
 2. Connect the Trigger node to the rest of you conversation.
 3. Click on `Discover Events` button to see the events that were received. You can choose an event and save it as an example to trigger the conversation for testing.
 4. You can access the data from the request using the `event.payload` variable.
@@ -102,26 +102,26 @@ await axios.post(webhookUrl, data, header)
 
 Webhook requests make available four properties that you can read in your bot:
 
-- `event.payload.body`: The body of the request - it is usually a JSON object
-- `event.payload.query`: A JSON object containing the URL params of the request
-  - For example if you make a request to `https://your-webhook.url/?param1=hello&param2=world` the query object will look like this: `{ param1: 'hello', param2: 'world' }`
-  - Then you can access the params using this notation: `event.payload.query.param1`
-- `event.payload.method`: The HTTP method of the request - usually `POST`
-- `event.payload.path`: The path of the request - usually `/`
+* `event.payload.body`: The body of the request - it is usually a JSON object
+* `event.payload.query`: A JSON object containing the URL params of the request
+  * For example if you make a request to `https://your-webhook.url/?param1=hello&param2=world` the query object will look like this: `{ param1: 'hello', param2: 'world' }`
+  * Then you can access the params using this notation: `event.payload.query.param1`
+* `event.payload.method`: The HTTP method of the request - usually `POST`
+* `event.payload.path`: The path of the request - usually `/`
 
 <br />
 
 # Additional Information
 
-- You can create filters to manage when the trigger will be actually activated and also create alternative flows by using Expressions that consider the request data.
-- For example, you can add a filter that checks if the request path is new-comment (`event.payload.path === '/new-comment'`), in which case the conversation will only start if the request is made to this url - `https://your-webhook.url/new-comment`
-- You could also add Expression cards that transition to different nodes or workflows based on the data. For example, the `event.payload.body.category === 'Business'` condition could transition to a different flow that handles business articles.
+* You can create filters to manage when the trigger will be actually activated and also create alternative flows by using Expressions that consider the request data.
+* For example, you can add a filter that checks if the request path is new-comment (`event.payload.path === '/new-comment'`), in which case the conversation will only start if the request is made to this url - `https://your-webhook.url/new-comment`
+* You could also add Expression cards that transition to different nodes or workflows based on the data. For example, the `event.payload.body.category === 'Business'` condition could transition to a different flow that handles business articles.
 
 > 📘 Note
-> 
+>
 > Remember that the contents of the `event.payload` property received via Webhook will be replaced as soon as the bot or the user sends a new message. So you should save important information in workflow variables if you want to use it later in the conversation.
 
-- You can also add `/user` or any other path to the WebhookURL to record events specific to this URL.
-- You can then add a filter to the Webhook Event to only receive events from this URL.
-  - For example, if you want to receive only the events that have a `type` equal to `text` and a `user.id` equal to `user-id`, you can use the following filter:
-  - `event.payload.body.type === 'text' && event.payload.body.user.id === 'user-id'`
+* You can also add `/user` or any other path to the WebhookURL to record events specific to this URL.
+* You can then add a filter to the Webhook Event to only receive events from this URL.
+  * For example, if you want to receive only the events that have a `type` equal to `text` and a `user.id` equal to `user-id`, you can use the following filter:
+  * `event.payload.body.type === 'text' && event.payload.body.user.id === 'user-id'`
