@@ -13,7 +13,7 @@ next:
 You can debug your bot conversation using the built-in Emulator in the right-side panel.
 
 > 📘 Note
-> 
+>
 > To visualize the actual user experience, use the Share button to have a hosted easily shareable version of the [Web Chat](..docs/webchat) (this is the production bot already, conversations will be saved) or ideally test the bot in the channel you intend to deploy it on. Conversations in the Emulator won't be saved and the [bot invocations](../docs/usage-1)  won't be counted against your usage quota, but AI operations will.
 
 # Shortcuts
@@ -27,7 +27,7 @@ Press cmd/ctrl + e to toggle the Emulator open or closed.
 Pressing ↑ or ↓ on your keyboard in the text input allows you to navigate and resend previously sent messages quickly.
 
 > 📘 Info
-> 
+>
 > The last 20 messages sent are persistently stored in your browser storage.
 
 <br />
@@ -54,38 +54,38 @@ The Emulator shows the status of the conversation and the different steps that a
 
 ## Bot-events
 
-- Conversation started: The user has started the conversation by sending a message or a [Trigger](../docs/events-1) Event has been triggered.
-- Conversation ended: The conversation flowed to an End node and has gone through the [Conversation End workflow](../docs/workflows#conversation-end), or it has ended by not having possible transitions.
-- Error ocurred: An irrecoverable error has ocurred and the conversation has flowed to the [Error](../docs/workflows#error) . The error message is visible by hovering the status.
-- Waiting for user input: The bot is waiting for the user to send a message in order to proceed with the conversation flow.
+* Conversation started: The user has started the conversation by sending a message or a [Trigger](../docs/events-1) Event has been triggered.
+* Conversation ended: The conversation flowed to an End node and has gone through the [Conversation End workflow](../docs/workflows#conversation-end), or it has ended by not having possible transitions.
+* Error ocurred: An irrecoverable error has ocurred and the conversation has flowed to the [Error](../docs/workflows#error) . The error message is visible by hovering the status.
+* Waiting for user input: The bot is waiting for the user to send a message in order to proceed with the conversation flow.
 
 ## Card-processing results
 
 ### Knowledge Base
 
-- Answer found in Knowledge Base: The bot has gone through the [Knowledge Bases](../docs/knowledge-base) and found an answer to the user's question. Clicking it will take you to the [Logs tab](../docs/debugger-logs-json) where you can see in details what was sent to the AI and the raw output.
-- Knowledge disabled on that node: The bot won't try to find an answer in the Knowledge Base because this node doesn't expect or accept Knowledge questions.
-- No content matched the query: There is no content in the Knowledge Base that matches the user message. May accompany the previous status.
-- Knowledge Base answer: Text displayed automatically after a question without the need of a Text card. It will contain the citations to help you [debug the answers](../docs/knowledge-base#debugging).
+* Answer found in Knowledge Base: The bot has gone through the [Knowledge Bases](../docs/knowledge-base) and found an answer to the user's question. Clicking it will take you to the [Logs tab](../docs/debugger-logs-json) where you can see in details what was sent to the AI and the raw output.
+* Knowledge disabled on that node: The bot won't try to find an answer in the Knowledge Base because this node doesn't expect or accept Knowledge questions.
+* No content matched the query: There is no content in the Knowledge Base that matches the user message. May accompany the previous status.
+* Knowledge Base answer: Text displayed automatically after a question without the need of a Text card. It will contain the citations to help you [debug the answers](../docs/knowledge-base#debugging).
 
 ### Execute
 
-- Executing code: The bot is executing some custom code from an [Execute Code card](../docs/execute-code).
-- Executed code: The bot has finished executing the code. It is mentioned how many milliseconds it took to run.
+* Executing code: The bot is executing some custom code from an [Execute Code card](../docs/execute-code).
+* Executed code: The bot has finished executing the code. It is mentioned how many milliseconds it took to run.
 
 ### AI
 
-- AI Task Running: The bot is running an AI Task. This involves making a request to the selected LLM model, getting a response and then processing it.
-- AI Task Completed: The bot has finished running the AI Task. It is mentioned how many milliseconds it took to run.
+* AI Task Running: The bot is running an AI Task. This involves making a request to the selected LLM model, getting a response and then processing it.
+* AI Task Completed: The bot has finished running the AI Task. It is mentioned how many milliseconds it took to run.
 
 ### Flow Logic
 
-- Entered Workflow - The conversation has flowed to a different workflow. The workflow name is mentioned.
-- Transitioned: The conversation has flowed to another workflow or node. It is mentioned the name of the workflow and the node it transitioned to. Clicking it will lead you to the exact node.
-- Restarting from node: The conversation is being restarted from a specific node by user request. It is mentioned the name of the node it is restarting from.
+* Entered Workflow - The conversation has flowed to a different workflow. The workflow name is mentioned.
+* Transitioned: The conversation has flowed to another workflow or node. It is mentioned the name of the workflow and the node it transitioned to. Clicking it will lead you to the exact node.
+* Restarting from node: The conversation is being restarted from a specific node by user request. It is mentioned the name of the node it is restarting from.
 
 ### Capture Information
 
-- Capturing Variable: The bot is currently trying to extract information from the user message with a [Capture card](../docs/capture-information) to optionally save it in a [variable](../docs/variables).
-- Captured variable: The bot has successfully extracted information from the user message and saved it in a variable.
-- Capture variable failed: The bot wasn't able to extract information and has reached the limit of [retries](../docs/capture-information#retries).
+* Capturing Variable: The bot is currently trying to extract information from the user message with a [Capture card](../docs/capture-information) to optionally save it in a [variable](../docs/variables).
+* Captured variable: The bot has successfully extracted information from the user message and saved it in a variable.
+* Capture variable failed: The bot wasn't able to extract information and has reached the limit of [retries](../docs/capture-information#retries).
