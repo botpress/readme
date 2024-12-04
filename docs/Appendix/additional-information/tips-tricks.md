@@ -10,21 +10,7 @@ metadata:
 next:
   description: ''
 ---
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/696c9d8-image.png",
-        null,
-        ""
-      ],
-      "align": "center"
-    }
-  ]
-}
-[/block]
-
+<Image align="center" src="https://files.readme.io/696c9d8-image.png" />
 
 # Using Markdown in Botpress
 
@@ -44,7 +30,7 @@ Markdown is a lightweight markup language that you can use to add formatting ele
 | Horizontal line | `---`                                                                  |
 
 > 📘 Info: **Supported Integrations**
-> 
+>
 > Markdown is supported only in Webchat Integration
 
 <br />
@@ -110,16 +96,16 @@ Response:
 
 You can choose any other provider, like Gmail, Microsoft, etc. But you will need to change the code based on the provider you want to integrate with.
 
-1. **Create a free SendGrid [account](https://sendgrid.com/pricing/ "account")**: For trial purposes.
+1. **Create a free SendGrid[account](https://sendgrid.com/pricing/ "account")**: For trial purposes.
 2. **Navigate to Email API**: After logging into your new account, click on **Email API** in the menu, then select **Integration Guide**.
 3. **Create an Identity**: Provide your details when prompted and click **Create**. Verify your identity through the verification email you receive.
-4. **Create an [API Key](https://app.sendgrid.com/settings/api_keys "API Key")**: Click on **Create API Key** at the top right corner and name the key for your reference.
+4. **Create an[API Key](https://app.sendgrid.com/settings/api_keys "API Key")**: Click on **Create API Key** at the top right corner and name the key for your reference.
 5. **Save the API Key**: After creating the key, copy the key value for later use. Remember to keep it safe.
 6. **Configure Botpress**: Open your bot in Botpress, and add an **Execute Code** card. Ensure to disable the generative AI within the card.
 7. **Paste the Code**: Adjust the following variables in the code and paste it into the card:
-   - `sendgrid_api_key`: This is the API key generated in the SendGrid [API Key](https://app.sendgrid.com/settings/api_keys "API Key").
-   - `from_email`: This is the email you configured as the sender.
-   - `to_email`: This is the email to which you are sending.
+   * `sendgrid_api_key`: This is the API key generated in the SendGrid [API Key](https://app.sendgrid.com/settings/api_keys "API Key").
+   * `from_email`: This is the email you configured as the sender.
+   * `to_email`: This is the email to which you are sending.
 
 ```typescript
 const sendgrid_api_key = *********
@@ -150,8 +136,8 @@ const response = await axios.post(
 )
 ```
 
-After successfully integrating the SendGrid API into Botpress, it's time to test it.  
-For more information: <https://docs.sendgrid.com/for-developers/sending-email/api-getting-started>
+After successfully integrating the SendGrid API into Botpress, it's time to test it.\
+For more information: [https://docs.sendgrid.com/for-developers/sending-email/api-getting-started](https://docs.sendgrid.com/for-developers/sending-email/api-getting-started)
 
 ## Use ChatGPT API in Execute Code
 
@@ -176,5 +162,5 @@ Make sure to replace **`<OpenAI's APIKey>`** with your actual OpenAI API key, an
 Step 3: Test your chatbot in the Botpress Emulator to see if it's generating AI-powered responses.
 
 > 📘 Note
-> 
+>
 > It's important to note that using this method, ChatGPT does not preserve the context of the messages that you've sent. However, it's a great way to get started with integrating AI-powered responses into your chatbot without needing any technical knowledge.
