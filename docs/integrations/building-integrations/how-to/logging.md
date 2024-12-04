@@ -28,7 +28,7 @@ The integration logger is readily available in the properties received from the 
 }
 ```
 
-Example: Calling it in the Channel Integration  
+Example: Calling it in the Channel Integration\
 Here is an example of using the logger within a channel integration:
 
 ```javascript
