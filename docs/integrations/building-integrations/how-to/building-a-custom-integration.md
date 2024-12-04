@@ -14,9 +14,9 @@ next:
 
 Are you keen to leverage the powerful capabilities of Botpress combined with your favorite applications? You're in the right place. This step-by-step guide will take you through the procedure of crafting a customized integration in Botpress. Integrations like these can supercharge your business operations, streamlining tasks, automating workflows, and enhancing productivity. For instance, you could:
 
-- Integrate your customer relationship management system to effectively manage users and conversations via Botpress.
-- Connect your e-commerce platform to optimize order tracking, customer communication, and invoice processing via your bots.
-- Use analytics tools to track bot performance and user engagement in real-time.
+* Integrate your customer relationship management system to effectively manage users and conversations via Botpress.
+* Connect your e-commerce platform to optimize order tracking, customer communication, and invoice processing via your bots.
+* Use analytics tools to track bot performance and user engagement in real-time.
 
 This guide will primarily focus on integrating with ClickUp, a highly-respected project management tool. By creating this integration, you can automate task assignments, boost team collaboration, and streamline project management in your organization. If you're ready to unlock a whole new level of productivity, let's dive in!
 
@@ -26,11 +26,11 @@ This guide will primarily focus on integrating with ClickUp, a highly-respected 
 
 To follow this guide and build your own integration, ensure you have the following:
 
-- A Botpress account
-- A ClickUp account
-- A code editor, such as Visual Studio Code or Sublime Text
-- Node.js Package Manager (npm) installed. Please use Node version `18`. You can check your Node version by running `node --version` in your terminal.
-- Ensure pnpm is installed and is on version 8. Check with `pnpm --version`. If not, install it following [these instructions](https://pnpm.io/installation).
+* A Botpress account
+* A ClickUp account
+* A code editor, such as Visual Studio Code or Sublime Text
+* Node.js Package Manager (npm) installed. Please use Node version `18`. You can check your Node version by running `node --version` in your terminal.
+* Ensure pnpm is installed and is on version 8. Check with `pnpm --version`. If not, install it following [these instructions](https://pnpm.io/installation).
 
 ## Setup
 
@@ -59,8 +59,8 @@ Building an integration with Botpress is a straightforward process. It involves 
 
 There are two files you will work with.
 
-- The main logic of your application lies in `index.ts`. This will be used to handle the creation of tasks, registration, and unregistration of the integration, webhook handling, and sending messages to ClickUp.
-- The second important file is `integration.definition.ts`. This will be used to define the integration's name, version, configuration, events, actions, channels, messages, and user tags. This allows bot builders to have code completion within the Botpress Studio. 
+* The main logic of your application lies in `index.ts`. This will be used to handle the creation of tasks, registration, and unregistration of the integration, webhook handling, and sending messages to ClickUp.
+* The second important file is `integration.definition.ts`. This will be used to define the integration's name, version, configuration, events, actions, channels, messages, and user tags. This allows bot builders to have code completion within the Botpress Studio. 
 
 ### The Blueprint: integration.definition.ts
 
@@ -329,10 +329,10 @@ And that's it! You've now set up the main files required for a Botpress integrat
 
 ## Important CLI Commands
 
-- `pnpm dlx @botpress/cli build` - Use this to build the integration
-- `pnpm run deploy` - Use this to deploy the integration. 
-- `pnpm run deploy -y` - Use this to deploy the integration without confirmation.
-- `pnpm dlx @botpress/cli login`  - Use this to login to your botpress account. You will need to generate a personal access token from your botpress account. Go to Admin Dashboard → Profile → Personal Access Token. Generate a new one and paste it in the CLI.
+* `pnpm dlx @botpress/cli build` - Use this to build the integration
+* `pnpm run deploy` - Use this to deploy the integration. 
+* `pnpm run deploy -y` - Use this to deploy the integration without confirmation.
+* `pnpm dlx @botpress/cli login`  - Use this to login to your botpress account. You will need to generate a personal access token from your botpress account. Go to Admin Dashboard → Profile → Personal Access Token. Generate a new one and paste it in the CLI.
 
 <br />
 
@@ -346,19 +346,7 @@ Kickstart your journey by watching our comprehensive video series on building a 
 
 In the first part of this series, we delve deep into the process of laying the groundwork for a successful ClickUp-Botpress integration. Learn how to properly set up your environment, define your channels, messages, and tags, as well as generate the required code using the intuitive Botpress Command Line Interface (CLI).
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FuXRQuBl1r2U%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DuXRQuBl1r2U&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FuXRQuBl1r2U%2Fhqdefault.jpg&key=7788cb384c9f4d5dbbdbeffd9fe4b92f&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/embed/uXRQuBl1r2U?si=SgPFtY2WWTETTr0f",
-  "title": "EP 01: Building Integrations",
-  "favicon": "https://www.youtube.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/uXRQuBl1r2U/hqdefault.jpg",
-  "provider": "youtube.com",
-  "href": "https://www.youtube.com/embed/uXRQuBl1r2U?si=SgPFtY2WWTETTr0f",
-  "typeOfEmbed": "youtube"
-}
-[/block]
-
+<Embed url="https://www.youtube.com/embed/uXRQuBl1r2U?si=SgPFtY2WWTETTr0f" title="EP 01: Building Integrations" favicon="https://www.youtube.com/favicon.ico" image="https://i.ytimg.com/vi/uXRQuBl1r2U/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/embed/uXRQuBl1r2U?si=SgPFtY2WWTETTr0f" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FuXRQuBl1r2U%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DuXRQuBl1r2U%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FuXRQuBl1r2U%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 <br />
 
@@ -368,19 +356,7 @@ In the first part of this series, we delve deep into the process of laying the g
 
 Join us in the second portion of our series as we delve deeper into the complexities of building an effective integration. Learn expert techniques on setting up webhooks, managing incoming messages from ClickUp, and priming your system for sending responses back to the platform.
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FQ-wV112_rOw%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DQ-wV112_rOw&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FQ-wV112_rOw%2Fhqdefault.jpg&key=7788cb384c9f4d5dbbdbeffd9fe4b92f&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/embed/Q-wV112_rOw?si=HbeJOP7Iom8tZCww",
-  "title": "EP 02: Continuing to build the ClickUp integration",
-  "favicon": "https://www.youtube.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/Q-wV112_rOw/hqdefault.jpg",
-  "provider": "youtube.com",
-  "href": "https://www.youtube.com/embed/Q-wV112_rOw?si=HbeJOP7Iom8tZCww",
-  "typeOfEmbed": "youtube"
-}
-[/block]
-
+<Embed url="https://www.youtube.com/embed/Q-wV112_rOw?si=HbeJOP7Iom8tZCww" title="EP 02: Continuing to build the ClickUp integration" favicon="https://www.youtube.com/favicon.ico" image="https://i.ytimg.com/vi/Q-wV112_rOw/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/embed/Q-wV112_rOw?si=HbeJOP7Iom8tZCww" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FQ-wV112_rOw%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DQ-wV112_rOw%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FQ-wV112_rOw%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 <br />
 
@@ -390,18 +366,6 @@ Join us in the second portion of our series as we delve deeper into the complexi
 
 In the concluding video of our three-part series, see how we tie everything together to finish building a seamless ClickUp integration. Gain insights on how to handle outgoing messages, create tasks, and set up listeners for events within ClickUp. This is an all-inclusive tutorial that offers a thorough exploration of building powerful integrations in Botpress.
 
-[block:embed]
-{
-  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F1D3aC_asXYA%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D1D3aC_asXYA&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F1D3aC_asXYA%2Fhqdefault.jpg&key=7788cb384c9f4d5dbbdbeffd9fe4b92f&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-  "url": "https://www.youtube.com/embed/1D3aC_asXYA?si=hpFdcIYnWVKEkgbT",
-  "title": "EP 03: Finishing the ClickUp integration",
-  "favicon": "https://www.youtube.com/favicon.ico",
-  "image": "https://i.ytimg.com/vi/1D3aC_asXYA/hqdefault.jpg",
-  "provider": "youtube.com",
-  "href": "https://www.youtube.com/embed/1D3aC_asXYA?si=hpFdcIYnWVKEkgbT",
-  "typeOfEmbed": "youtube"
-}
-[/block]
-
+<Embed url="https://www.youtube.com/embed/1D3aC_asXYA?si=hpFdcIYnWVKEkgbT" title="EP 03: Finishing the ClickUp integration" favicon="https://www.youtube.com/favicon.ico" image="https://i.ytimg.com/vi/1D3aC_asXYA/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/embed/1D3aC_asXYA?si=hpFdcIYnWVKEkgbT" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252F1D3aC_asXYA%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253D1D3aC_asXYA%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252F1D3aC_asXYA%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
 So, that's basically it folks! Happy integration-building!
