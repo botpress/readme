@@ -12,4 +12,4 @@ next:
 ---
 This section provides a resources for building your own integration with Botpress and a third-party service.
 
-Before building your own integration, make sure to check our available integrations in the Botpress Hub to see if the integration already exists.
+Before building your own integration, make sure to check our available integrations in the Botpress Hub (accessible from the Botpress Studio) to see if the integration already exists.
