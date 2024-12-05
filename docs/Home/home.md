@@ -16,7 +16,7 @@ next:
 ---
 Botpress enables teams of all sizes to build, deploy, and monitor AI-powered chatbots and agents. It allows you to reliably automate complex conversations, tasks, and workflows across a variety of communication channels.
 
-The building process is split into three phases: Build, Deploy, and Monitor. 
+The building process is split into three phases: Build, Deploy, and Monitor.
 
 ## Build
 
@@ -28,4 +28,4 @@ When you've finished building and testing your bot, Botpress makes it easy to pu
 
 ## Monitor
 
-Once your bot has been deployed, Botpress allows you to track its performance and understand if it's accomplishing its tasks correctly with a suite of analytics and logging tools.
+Once your bot has been deployed, Botpress allows you to track its performance and understand if it's accomplishing its tasks correctly with a suite of analytics and logging tools that are highly integrated with the bot building experience.
