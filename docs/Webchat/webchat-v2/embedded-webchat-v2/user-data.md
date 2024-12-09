@@ -2,7 +2,7 @@
 title: Sending User Data to your bot
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
@@ -16,7 +16,7 @@ The Embedded Webchat allows you to add custom data to the user. With this `user 
 
 ### Adding user data during initialization
 
-You might want to add user data during initialization so that your bot can deliver a more personalized conversation experience right from the start. 
+You might want to add user data during initialization so that your bot can deliver a more personalized conversation experience right from the start.
 
 This assumes you install the widget using the *Embed code* found in the Webchat Share section as shown below.
 
@@ -25,7 +25,7 @@ This assumes you install the widget using the *Embed code* found in the Webchat 
 To add data during initialization, you will need to remove and modify the second script:
 
 1. **Remove the Auto-Initialization Script**\
-   Locate and remove the second `<script>` tag that we added previously in your `.html` file. The script is responsible for calling `window.botpress.init`automatically, which we will now call manually.\
+   Locate and remove the second `<script>` tag that we added previously in your `.html` file. The script is responsible for calling `window.botpress.init`automatically, which we will now call manually.
    Example of the script to remove: `<script src="https://files.bpcontent.cloud/2024/11/29/21/23331129444466-WDDD1UHW.js"></script>`\ <br />
 2. **Copy the Content of the Script**\
    Visit the URL in the script tag we just removed and copy its contents. It should look like the following\ <br />
@@ -102,8 +102,4 @@ Important note, the user can't be updated until the webchat is opened. Use the `
 
 Once you have sent the data to Botpress, you can use the `Get User Data` card in the studio to retrieve the user data sent from your website.
 
-![User Data Studio](https://files.readme.io/d0f3cadea0c2191665b89c6f51d7ea9e268cc7ac62ea4fcdfba5242e60b99ea4-image.png)
-
-### User Data Demo
-
-<Embed url="https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-embed-user-data?embed=1&hideNavigation=1&view=both&file=index.html&ajs_aid=%24device%3A190bbf803c1598-009fa1707e1dbe8-42272e3d-384000-190bbf803c1598" title="iframe" provider="stackblitz.com" href="https://stackblitz.com/github/botpress/documentation-examples/tree/master/examples/webchat-embed-user-data?embed=1&hideNavigation=1&view=both&file=index.html&ajs_aid=%24device%3A190bbf803c1598-009fa1707e1dbe8-42272e3d-384000-190bbf803c1598" typeOfEmbed="iframe" height="500px" width="100%" iframe="true" />
+<Image align="center" width="75% " src="https://files.readme.io/d0f3cadea0c2191665b89c6f51d7ea9e268cc7ac62ea4fcdfba5242e60b99ea4-image.png" />
