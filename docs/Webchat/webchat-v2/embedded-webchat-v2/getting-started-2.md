@@ -4,6 +4,11 @@ deprecated: false
 hidden: true
 metadata:
   robots: index
+next:
+  pages:
+    - slug: how-to-style-your-webchat
+      title: How to style your Webchat
+      type: basic
 ---
 The Embedded Webchat allows you to integrate chatbot functionality directly into your web application. It supports message handling, event subscriptions, and customization, enabling a dynamic user experience within the browser.
 
