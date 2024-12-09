@@ -18,7 +18,7 @@ In addition to allowing the development of Chatbots, the developer experience al
 
 The developer experience is composed of the following parts:
 
-* the [public HTTP API](https://botpress.com/docs/api/)
+* the [Public HTTP API](https://botpress.com/reference/introduction)
 * the [TypeScript HTTP Client](https://npmjs.com/package/@botpress/client)
 * the [TypeScript SDK](https://npmjs.com/package/@botpress/sdk)
 * the [CLI](https://npmjs.com/package/@botpress/cli)
