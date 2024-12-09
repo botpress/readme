@@ -4,6 +4,11 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  pages:
+    - slug: how-to-send-custom-events-from-the-webchat-to-your-web-application
+      title: How to send custom events from the Webchat to your web application
+      type: basic
 ---
 With the webchat initialized on your web application, you can send custom events to your bot and programmatically send messages on behalf of the user.
 
