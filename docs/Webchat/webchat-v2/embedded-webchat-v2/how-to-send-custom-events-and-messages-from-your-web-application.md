@@ -1,7 +1,7 @@
 ---
 title: How to send custom events and messages from your web application.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 next:
