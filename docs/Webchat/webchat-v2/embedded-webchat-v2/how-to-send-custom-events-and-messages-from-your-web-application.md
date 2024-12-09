@@ -1,5 +1,5 @@
 ---
-title: How to send custom events and messages from your web application.
+title: How to send custom events and messages from your web app to webchat
 deprecated: false
 hidden: true
 metadata:
