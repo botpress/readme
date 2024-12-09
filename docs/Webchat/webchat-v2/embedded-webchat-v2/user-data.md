@@ -8,7 +8,10 @@ metadata:
   description: ''
   robots: index
 next:
-  description: ''
+  pages:
+    - slug: how-to-send-custom-events-and-messages-from-your-web-application
+      title: How to send custom events and messages from your web application.
+      type: basic
 ---
 The Embedded Webchat allows you to add custom data to the user. With this `user data` feature, you can include information like email or browser details, or any other useful data for your bot.
 
