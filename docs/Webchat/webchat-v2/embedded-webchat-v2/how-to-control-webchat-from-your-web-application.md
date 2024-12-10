@@ -5,3 +5,4 @@ hidden: true
 metadata:
   robots: index
 ---
+There are numerous ways you can control the webchat from your web application.
