@@ -5,4 +5,20 @@ hidden: true
 metadata:
   robots: index
 ---
-There are numerous ways you can control the webchat from your web application.
+### Open the webchat
+
+```javascript
+window.botpress.open()
+```
+
+### Close the webchat
+
+```
+window.botpress.close()
+```
+
+### Toggle the webchat
+
+```
+window.botpress.toggle()
+```
