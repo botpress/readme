@@ -1,5 +1,5 @@
 ---
-title: end custom events from the webchat to your web app
+title: Send custom events from the webchat to your web app
 deprecated: false
 hidden: true
 metadata:
