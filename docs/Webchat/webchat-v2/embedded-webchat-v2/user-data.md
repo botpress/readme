@@ -106,3 +106,15 @@ Important note, the user can't be updated until the webchat is opened. Use the `
 Once you have sent the data to Botpress, you can use the `Get User Data` card in the studio to retrieve the user data sent from your website.
 
 <Image align="center" width="75% " src="https://files.readme.io/d0f3cadea0c2191665b89c6f51d7ea9e268cc7ac62ea4fcdfba5242e60b99ea4-image.png" />
+
+<br />
+
+***
+
+### Retrieving User Data from the Bot
+
+Optionally, if you want to retrieve user data from the webchat, you can do so by calling the following code once Botpress is initialized:
+
+```
+window.botpress.getUser()
+```
