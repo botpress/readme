@@ -78,6 +78,4 @@ window.botpress.on('error', (error) => {
 });
 ```
 
-### Listen to webchat visibility
-
 ### Listen to custom event
