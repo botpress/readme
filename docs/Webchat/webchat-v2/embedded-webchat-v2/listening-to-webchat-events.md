@@ -79,3 +79,12 @@ window.botpress.on('error', (error) => {
 ```
 
 ### Listen to custom event
+
+This event is fired when a custom event is triggered from the bot
+
+```javascript
+window.botpress.on('customEvent', (event) => {
+  console.log(event);
+	// INSERT YOUR LOGIC HERE
+});
+```
