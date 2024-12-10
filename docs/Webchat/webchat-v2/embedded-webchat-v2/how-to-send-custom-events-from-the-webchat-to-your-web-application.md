@@ -4,6 +4,11 @@ deprecated: false
 hidden: true
 metadata:
   robots: index
+next:
+  pages:
+    - slug: how-to-control-webchat-from-your-web-application
+      title: Control webchat from your web application.
+      type: basic
 ---
 You can setup your Bot to send custom events for your web application. To set this up:
 
