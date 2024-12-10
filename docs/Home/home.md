@@ -20,7 +20,7 @@ The building process is split into three phases: Build, Deploy, and Monitor.
 
 ## Build
 
-Building on Botpress takes place primarily in the Botpress Studio, where you'll decide what kinds of conversations your bot will be able to handle, what information it knows, and what tools it has access to.
+Building on Botpress takes place primarily in the Botpress Studio, where you'll decide what kinds of conversations your bot will be able to handle, what information it can answer from, and what tools it has access to.
 
 ## Deploy
 
