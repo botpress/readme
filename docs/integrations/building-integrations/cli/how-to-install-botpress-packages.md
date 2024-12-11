@@ -45,7 +45,7 @@ npx bp add github
 
 ## Using Installed Packages
 
-After installation, packages are available in the **bp\_modules** folder. Here's how to import and use them:
+After installation, packages are available in the **bp\_modules** folder. Here's how to import and use installed packages:
 
 ```typescript
 // Import the package
