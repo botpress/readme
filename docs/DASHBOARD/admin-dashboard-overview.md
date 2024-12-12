@@ -44,4 +44,4 @@ The Delete Chatbot button allows you to delete your chatbot permanently. This op
 
 > ❗️ Delete Chatbot
 >
-> This action is irreversible, and all data associated with the chatbot will be erased.
+> Be careful. This action is irreversible, and all data associated with the chatbot will be erased.
