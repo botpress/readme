@@ -14,7 +14,9 @@ next:
 ---
 # Overview
 
-The Human-in-the-Loop (HITL) integration is designed to bring human oversight and intervention into AI-driven workflows. This integration allows human operators to step in and manage specific interactions, tasks, or decisions, enhancing your bot's ability to handle complex or sensitive scenarios. 
+The Human-in-the-Loop (HITL) integration is designed to bring human oversight and intervention into AI-driven workflows. This integration allows human operators to step in and manage specific interactions, tasks, or decisions, enhancing your bot's ability to handle complex or sensitive scenarios.
+
+Use live agent handoff to enable your service or support agents to interact directly with your end users.
 
 ## Key Features
 
@@ -50,7 +52,7 @@ Dragging this into a node will stop the flow of the conversation and escalate th
 
 Once the conversation appears in the HITL tab, it can be assigned to a user in the <Glossary>Workspace</Glossary>. You can also assign a conversation to yourself.
 
-<Image align="center" className="border" width="600px" border={true} src="https://files.readme.io/5780659b5819fd48cc3558e93721c525bc256bb98b240055297c7ea1cf76d3a6-Screenshot_2024-09-11_at_2.21.21_PM.png" />
+<Image align="center" className="border" border={true} width="600px" src="https://files.readme.io/5780659b5819fd48cc3558e93721c525bc256bb98b240055297c7ea1cf76d3a6-Screenshot_2024-09-11_at_2.21.21_PM.png" />
 
 From this tab, the agent can view the conversation history prior to the escalation, as well as participate in the conversation by using the 'Live Chat' tab.
 
