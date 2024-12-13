@@ -9,6 +9,12 @@ metadata:
 > 🚧 Early Beta
 >
 > The Knowledge Base Optimization feature is in beta and should not be used in production or critical workflows. We encourage testing in non-production environments and welcome your feedback to improve its stability and functionality.
+>
+> While in early beta, optimization is a manual process.
+>
+> Each optimization can cost up to 2x the total number of tokens present in each document and consumes a portion of your [AI Spend quota.](ai-spend)
+>
+> Optimization uses your default "Best Model", configured through your LLM settings in the Studio.
 
 You can use the Knowledge Base Optimization feature to improve your bot's ability to respond to questions with information contained in your knowledge base.
 
@@ -47,3 +53,9 @@ After optimizing the same example, the bot is able to take the same input and re
 > 🚧 Early Beta
 >
 > The Knowledge Base Optimization feature is in beta and should not be used in production or critical workflows. We encourage testing in non-production environments and welcome your feedback to improve its stability and functionality.
+>
+> While in early beta, optimization is a manual process.
+>
+> Each optimization can cost up to 2x the total number of tokens present in each document and consumes a portion of your [AI Spend quota.](ai-spend)
+>
+> Optimization uses your default "Best Model", configured through your LLM settings in the Studio.
