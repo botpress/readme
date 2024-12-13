@@ -12,7 +12,7 @@ metadata:
 >
 > While in early beta, optimization is a manual process.
 >
-> Each optimization can cost up to 2x the total number of tokens present in each document and consumes a portion of your [AI Spend quota.](ai-spend)
+> Each optimization can cost up to 2x the total number of tokens present in each document and consumes a portion of your [AI Spend quota.](usage-2)
 >
 > Optimization uses your default "Best Model", configured through your LLM settings in the Studio.
 
@@ -56,6 +56,6 @@ After optimizing the same example, the bot is able to take the same input and re
 >
 > While in early beta, optimization is a manual process.
 >
-> Each optimization can cost up to 2x the total number of tokens present in each document and consumes a portion of your [AI Spend quota.](ai-spend)
+> Each optimization can cost up to 2x the total number of tokens present in each document and consumes a portion of your [AI Spend quota.](usage-2)
 >
 > Optimization uses your default "Best Model", configured through your LLM settings in the Studio.
