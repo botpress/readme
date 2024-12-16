@@ -2,7 +2,7 @@
 title: Webchat v2
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: Webchat v2
   description: ''
