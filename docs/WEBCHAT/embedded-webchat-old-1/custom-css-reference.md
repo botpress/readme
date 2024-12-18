@@ -4,7 +4,7 @@ excerpt: >-
   If you want to modify the appearance of our built-in webchat, you can use CSS
   classes to style your bot.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
