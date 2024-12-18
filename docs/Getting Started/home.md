@@ -99,7 +99,7 @@ metadata:
 <body>
     <div class="container">
         <div class="header">
-            <h1>Botpress Documentation</h1>
+            <h1></h1>
         
         </div>
         <div class="columns">
