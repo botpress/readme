@@ -99,11 +99,11 @@ metadata:
             <div class="column">
                 <h2>Guides</h2>
                 <p>Explore Botpress features, tools, and best practices for building and deploying AI chatbots and agents.</p>
-              <a href="/guides" class="btn">Guides</a>
+              <a href="/docs/build" class="btn">Guides</a>
            <br>  <h2>Popular pages</h2>
-                <a href="https://botpress.com/docs/webchat" class="sub-btn">Place a bot on your website</a>
-           <br>     <a href="https://botpress.com/docs/variables" class="sub-btn">Use variables to store data</a>
-           <br>     <a href="https://botpress.com/docs/integrations-1" class="sub-btn">Install an integration</a>
+                <a href="/docs/embedded-webchat-getting-started" class="sub-btn">Place a bot on your website</a>
+           <br>     <a href="/docs/variables" class="sub-btn">Use variables to store data</a>
+           <br>     <a href="/docs/using-integrations" class="sub-btn">Install an integration</a>
             </div>
             <div class="column">
                 <h2>API Reference</h2>
