@@ -1,8 +1,8 @@
 ---
-title: Embedded Webchat
+title: Embedded Webchat - Old
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: Botpress Embedded Webchat
   description: >-
