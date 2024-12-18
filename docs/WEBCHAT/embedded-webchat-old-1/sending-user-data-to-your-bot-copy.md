@@ -1,7 +1,7 @@
 ---
 title: Sending User Data to your bot (COPY)
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
