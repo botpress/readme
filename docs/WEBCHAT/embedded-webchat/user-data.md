@@ -2,7 +2,7 @@
 title: Sending User Data to your bot
 excerpt: ''
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
