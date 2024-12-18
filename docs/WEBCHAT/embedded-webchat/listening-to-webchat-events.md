@@ -1,7 +1,7 @@
 ---
 title: Listening to webchat events
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
