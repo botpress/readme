@@ -124,5 +124,6 @@ metadata:
         </div>
     </div>
 </body>
+  
 </html>
 `}</HTMLBlock>
