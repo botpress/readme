@@ -113,7 +113,7 @@ metadata:
            <br>     <a href="/docs/using-integrations" class="sub-btn">Install an integration</a>
             </div>
             <div class="column">
-                <h2>API Reference</h2>
+                <h2>API REFERENCE</h2>
                 <p>Dive into technical insights about Botpress API endpoints to integrate and extend the platform effectively.</p>
                 <a href="/reference/introduction" class="btn">API Reference</a>
           <br>    <h2>Popular pages</h2>
