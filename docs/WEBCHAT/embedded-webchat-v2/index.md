@@ -1,7 +1,7 @@
 ---
-title: Embedded Webchat v2
+title: Embedded Webchat
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
