@@ -1,5 +1,5 @@
 ---
-title: Botpress docs
+title: Botpress Documentation
 deprecated: false
 hidden: false
 metadata:
