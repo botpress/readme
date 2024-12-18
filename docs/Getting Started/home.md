@@ -104,7 +104,7 @@ metadata:
         </div>
         <div class="columns">
             <div class="column">
-                <h2>Guidesz</h2>
+                <h2>GUIDES</h2>
                 <p>Explore Botpress features, tools, and best practices for building and deploying AI chatbots and agents.</p>
               <a href="/docs/build" class="btn">Guides</a>
            <br>  <h2>Popular pages</h2>
