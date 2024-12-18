@@ -2,7 +2,7 @@
 title: Embedding the webchat widget in an HTML element
 excerpt: This allows you to embed the webchat widget within any html element.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
