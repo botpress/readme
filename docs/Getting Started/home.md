@@ -55,6 +55,9 @@ metadata:
             margin-bottom: 20px;
             line-height: 1.5;
         }
+        .field-description a[href], .field-description a:not([href=""]), .markdown-body a[href], .markdown-body a:not([href=""]){
+            text-decoration: none;
+        }
         .btn {
             display: inline-block;
             padding: 10px 20px;
