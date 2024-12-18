@@ -62,6 +62,7 @@ metadata:
             display: inline-block;
             padding: 10px 20px;
             font-size: 1em;
+            font-weight: bold;
             color: #fff;
             background-color: #007BFF;
             text-decoration: none;
@@ -77,6 +78,7 @@ metadata:
             margin: 10px auto;
             padding: 8px 15px;
             font-size: 0.9em;
+            font-weight: bold;
             color: #fff;
             background-color: #6c757d;
             text-decoration: none;
