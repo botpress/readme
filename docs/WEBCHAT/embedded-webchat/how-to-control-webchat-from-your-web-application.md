@@ -1,7 +1,7 @@
 ---
 title: Control webchat from your web application.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
