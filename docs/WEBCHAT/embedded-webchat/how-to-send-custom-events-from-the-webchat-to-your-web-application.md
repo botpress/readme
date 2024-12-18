@@ -1,7 +1,7 @@
 ---
 title: Send custom events from the webchat to your web app
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 next:
