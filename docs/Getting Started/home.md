@@ -70,6 +70,7 @@ metadata:
         }
         .btn:hover {
             background-color: #0056b3;
+            color: #fff;
         }
         .sub-btn {
             display: block;
@@ -84,6 +85,7 @@ metadata:
         }
         .sub-btn:hover {
             background-color: #5a6268;
+            color: #fff;
         }
         @media (max-width: 768px) {
             .columns {
