@@ -17,7 +17,7 @@ With the webchat initialized on your web application, you can send custom events
 You can send custom events to your bot by calling the following code, where `customPayload` is a JSON object:
 
 ```javascript
-await window.botpress.customEvent(customPayload)
+await window.botpress.sendEvent(customPayload)
 ```
 
 These events can be captured using the **“Custom Trigger”** card in Botpress Studio, and the payload can be accessed via `event.payload`.
