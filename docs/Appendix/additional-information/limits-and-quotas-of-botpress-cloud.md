@@ -35,6 +35,9 @@ At Botpress, we have a set of limits and quotas to ensure the stability of our p
 | The maximum number of tag definitions per bot                                                                                       | 50                          | Tag Definitions                   |
 | The maximum number of columns per table                                                                                             | 20                          | Table columns                     |
 | End-user message / event max throughput                                                                                             | 600 requests / minute / bot | API limit                         |
+| Maximum size of deployed bot (excluding file storage)                                                                               | 100MB                       | Bot Size                          |
+
+<br />
 
 ## Quotas
 
