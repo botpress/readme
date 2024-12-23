@@ -12,9 +12,9 @@ next:
 ---
 # What are Botpress Integrations?
 
-<Embed url="https://www.youtube.com/embed/67Bzbqh4B0w" title="What are Botpress Integrations?" favicon="https://www.youtube.com/favicon.ico" image="https://i.ytimg.com/vi/67Bzbqh4B0w/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/embed/67Bzbqh4B0w" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252F67Bzbqh4B0w%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253D67Bzbqh4B0w%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252F67Bzbqh4B0w%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22640%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
+<Embed url="https://www.youtube.com/embed/67Bzbqh4B0w" href="https://www.youtube.com/embed/67Bzbqh4B0w" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252F67Bzbqh4B0w%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253D67Bzbqh4B0w%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252F67Bzbqh4B0w%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22640%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
-Integrations in Botpress are an easy and powerful way to extend Botpress channels, or improve the bot building experience. 
+Integrations in Botpress are an easy and powerful way to extend Botpress channels, or improve the bot building experience.
 
 Integrations have three main capabilities:
 
@@ -35,7 +35,7 @@ You can simply follow the instructions below.
 
 ## Installing the integration to your workspace
 
-Create a new integration project using the init command. This will create a new folder with the name you specified and generate a basic project structure. 
+Create a new integration project using the init command. This will create a new folder with the name you specified and generate a basic project structure.
 
 1. Change `my-integration` with the name of your integration (no spaces), and run the following command.
 
@@ -43,11 +43,11 @@ Create a new integration project using the init command. This will create a new 
 INTEGRATION_NAME=my-integration
 npx @botpress/cli init --name $INTEGRATION_NAME --type integration
 cd $INTEGRATION_NAME
-npm i --save-dev bp-integration-runner
+npm i --save-dev @growth-botpress/bp-integration-runner
 npm i
 ```
 
-bp-integration-runner allows you to easily run the integration locally, with hot-reloading and the ability to view logs locally. 
+bp-integration-runner allows you to easily run the integration locally, with hot-reloading and the ability to view logs locally.
 
 2. Now add this script to your package.json file:
 
@@ -70,7 +70,7 @@ BOTPRESS_PAT=YOUR_PERSONAL_ACCESS_TOKEN
 BOTPRESS_WORKSPACE_ID=YOUR_WORKSPACE_ID
 ```
 
-We're now done with setup. We suggest you commit your repo at this point. 
+We're now done with setup. We suggest you commit your repo at this point.
 
 4. Create a .gitignore file in the root folder with the following content:
 
@@ -79,7 +79,7 @@ We're now done with setup. We suggest you commit your repo at this point.
 node_modules/
 ```
 
-Now you can start developing your integration. 
+Now you can start developing your integration.
 
 5. You can run the following command to start developing your integration:
 
@@ -87,7 +87,7 @@ Now you can start developing your integration.
 npm run dev-local
 ```
 
-6. When your integration is fully developed and tested, you can use the `npx bp login`, then `npx bp deploy` and finally reset the *Self hosted integration's url* in the settings section of your integration. This will allow the integration to run on Botpress infrastructure. Once deployed you will be able to see logs in you workspace in Botpress Cloud, under the integration, then the **logs** tab. 
+6. When your integration is fully developed and tested, you can use the `npx bp login`, then `npx bp deploy` and finally reset the *Self hosted integration's url* in the settings section of your integration. This will allow the integration to run on Botpress infrastructure. Once deployed you will be able to see logs in you workspace in Botpress Cloud, under the integration, then the **logs** tab.
 
    The bp login command also asks you to select a workspace to deploy the integration to. Go to your workspaces and fetch the workspace\_id you'd like to deploy to.
 
@@ -97,8 +97,8 @@ npm run dev-local
 
 ## Adding the integration to your bot
 
-1. After which, open [your workspace](https://app.botpress.cloud/workspaces/) and click "Your Integrations". 
-2. Find your integration and click "Install". Select the bot from your list of bots. 
+1. After which, open [your workspace](https://app.botpress.cloud/workspaces/) and click "Your Integrations".
+2. Find your integration and click "Install". Select the bot from your list of bots.
 3. Once the integration is installed "Configure Integration"
 4. Click the "Enable integration" toggle on the top right, then hit "Save" to enable the integration.
 
@@ -106,7 +106,7 @@ In the bot's integration page, you will be able to add configuration variables a
 
 # Seeing your integration logs
 
-To see the logs of your integration, 
+To see the logs of your integration,
 
 1. Open [your workspace](https://app.botpress.cloud/workspaces/) and click "Your Integrations".
 2. Find your integration and click "Logs" to see the logs of your integration.
