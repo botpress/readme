@@ -1,8 +1,18 @@
 ---
 title: Botpress Documentation
+excerpt: >-
+  Botpress is an all-in-one platform for build AI agents powered by the latest
+  LLMs.
 deprecated: false
 hidden: false
 metadata:
+  title: Botpress Documentation
+  description: >-
+    Botpress is an all-in-one platform for build AI agents powered by the latest
+    LLMs.
+  keywords:
+    - botpress
+    - documentation
   robots: index
 ---
 <HTMLBlock>{`
