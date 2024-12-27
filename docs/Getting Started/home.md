@@ -89,6 +89,7 @@ metadata:
             transition: transform 0.2s ease, box-shadow 0.2s ease;
             position: relative;
             overflow: hidden;
+            isolation: isolate;
         }
 
         .card::before {
@@ -100,7 +101,8 @@ metadata:
             height: 4px;
             background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
             transform: translateY(-100%);
-            transition: transform 0.3s ease;
+            transition: transform 0.2s ease;
+            will-change: transform;
         }
 
         .card:hover::before {
