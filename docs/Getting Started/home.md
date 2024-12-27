@@ -158,6 +158,7 @@ metadata:
         .btn:hover {
             background-color: var(--hover-color);
             transform: translateY(-2px);
+            color: #fff;
         }
 
         .links-container {
