@@ -1,5 +1,5 @@
 ---
-title: Welcome
+title: Home
 deprecated: false
 hidden: false
 metadata:
