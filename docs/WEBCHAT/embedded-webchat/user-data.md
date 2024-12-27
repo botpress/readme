@@ -8,19 +8,19 @@ metadata:
   description: ''
   robots: index
 ---
-next:
-  pages:
-    - slug: how-to-send-custom-events-and-messages-from-your-web-application
-      title: How to send custom events and messages from your web application.
-      type: basic
----
 The Embedded Webchat allows you to add custom data to the user. With this `user data` feature, you can include information like email or browser details, or any other useful data for your bot.
+
 ***
+
 ### Adding user data during initialization
-You might want to add user data during initialization so that your bot can deliver a more personalized conversation experience right from the start.
+
+You might want to add user data during initialization so that your bot can deliver a more personalized conversation experience right from the start.\
 This assumes you install the widget using the *Embed code* found in the Webchat Share section as shown below.
+
 <Image align="center" width="400px" src="https://files.readme.io/9c32280b4d18ba913d93ad0487908eb5f307abda353faec4a4b715575561e1d5-image.png" />
+
 To add data during initialization, you will need to remove and modify the second script:
+
 1. **Remove the Auto-Initialization Script**\
    Locate and remove the second `<script>` tag that we added previously in your `.html` file. The script is responsible for calling `window.botpress.init`automatically, which we will now call manually.
    Example of the script to remove: `<script src="https://files.bpcontent.cloud/2024/11/29/21/23331129444466-WDDD1UHW.js"></script>`\ <br />
@@ -72,10 +72,14 @@ To add data during initialization, you will need to remove and modify the second
      }
    });
    ```
+
 ***
+
 ### Update the User Data
-First, use the [Embedded Webchat](/docs/embedded-webchat) on your site. This will give you access to the `window.botpress` object. You can use the `window.botpress.updateUser` function to send any data back to Botpress.
+
+First, use the [Embedded Webchat](/docs/embedded-webchat) on your site. This will give you access to the `window.botpress` object. You can use the `window.botpress.updateUser` function to send any data back to Botpress.\
 Here's an example of the `updateUser` function:
+
 ```javascript
 window.botpress.updateUser({
   "data": {
@@ -85,15 +89,25 @@ window.botpress.updateUser({
   }
 })
 ```
+
 Important note, the user can't be updated until the webchat is opened. Use the `window.botpress.on('webchat:opened', () => {})` event to confirm the user exists and can be updated.
+
 ***
+
 ### Retrieve the User Data in your Studio
+
 Once you have sent the data to Botpress, you can use the `Get User Data` card in the studio to retrieve the user data sent from your website.
+
 <Image align="center" width="75% " src="https://files.readme.io/d0f3cadea0c2191665b89c6f51d7ea9e268cc7ac62ea4fcdfba5242e60b99ea4-image.png" />
+
 <br />
+
 ***
+
 ### Retrieving User Data from the Bot
+
 Optionally, if you want to retrieve user data from the webchat, you can do so by calling the following code once Botpress is initialized:
+
 ```
 window.botpress.getUser()
 ```
