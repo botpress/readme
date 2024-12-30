@@ -33,7 +33,7 @@ The bot setup is straightforward. First, the user is prompted to log in by click
 
 The integration has a couple of responsibilities:
 
-1. Generating the OAuth link that users will click on
+1. Generating the OAuth link that users will click on.
 2. Capturing a successful authentication which then emits an event containing the conversation ID and data about the authenticated user.
 
 This is achieved using an action ( here called “Generate OAuth2 URL” ) and the integration’s Botpress webhook handler. The webhook captures successful authentication and emits a Botpress event ( in this case, “User Authenticated” ).
@@ -56,7 +56,7 @@ export default new IntegrationDefinition({
     schema: z.object({
       clientId: z.string(),
       clientSecret: z.string(),
-      state: z.string().default("secure_random_string"),
+      state: z.string().default("secure_random_string").hidden(), // This is used for the authentication handshake, you can change it to a random string.
     })
   },
   events: {
@@ -262,3 +262,13 @@ export class Store {
 }
 
 ```
+
+<br />
+
+After adding this code, deploy it to the bot you want to work on, and configure it using Github parameters (or whatever platform you'd like to port this to) and hit "Save Configuration".
+
+If you'd like to try out the Github example above, you can use this link to create the credentials :
+
+[https://github.com/settings/developers#oauth-apps](https://github.com/settings/developers#oauth-apps)
+
+The "Authorization callback URL" should be your webhook URL, located in the configuration page of the integration. There is no need to enable the device flow.
