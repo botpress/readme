@@ -1,7 +1,7 @@
 ---
 title: How to setup OAuth with Github in Botpress using Integrations.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
@@ -38,7 +38,9 @@ The integration has a couple of responsibilities:
 
 This is achieved using an action ( here called “Generate OAuth2 URL” ) and the integration’s Botpress webhook handler. The webhook captures successful authentication and emits a Botpress event ( in this case, “User Authenticated” ).
 
-You can use the following code as a starting point to achieve the above result:
+### Writing this integration
+
+You can use the [Building](doc:building-integrations) to bootstrap an integration, then add the following code as a starting point to achieve the above result. Once you get it working, we suggest you modify the integration to fit your purposes.
 
 In `integration.definition.ts` we define the events (which bot builders can hook onto in the Studio), and actions which allow for generating the URL that should be displayed to the end user.
 
@@ -272,3 +274,5 @@ If you'd like to try out the Github example above, you can use this link to crea
 [https://github.com/settings/developers#oauth-apps](https://github.com/settings/developers#oauth-apps)
 
 The "Authorization callback URL" should be your webhook URL, located in the configuration page of the integration. There is no need to enable the device flow.
+
+That's it, now you can publish your bot, and try it out. Once that works, feel free to use this code as a starting point for your Oauth Integration.
