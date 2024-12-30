@@ -31,11 +31,16 @@ The bot setup is straightforward. First, the user is prompted to log in by click
 
 ## Integration
 
-The integration has a couple of responsibilities: generating the OAuth link that users will click on and capturing a successful authentication which then emits an event containing the conversation ID and data about the authenticated user.
+The integration has a couple of responsibilities:
+
+1. Generating the OAuth link that users will click on
+2. Capturing a successful authentication which then emits an event containing the conversation ID and data about the authenticated user.
 
 This is achieved using an action ( here called “Generate OAuth2 URL” ) and the integration’s Botpress webhook handler. The webhook captures successful authentication and emits a Botpress event ( in this case, “User Authenticated” ).
 
-This is achieved by the following code:
+You can use the following code as a starting point to achieve the above result:
+
+In `integration.definition.ts` we define the events (which bot builders can hook onto in the Studio), and actions which allow for generating the URL that should be displayed to the end user.
 
 ```typescript integration.definition.ts
 import { conversation, IntegrationDefinition, z } from '@botpress/sdk'
@@ -91,6 +96,8 @@ export default new IntegrationDefinition({
   }
 })
 ```
+
+In src/index.ts we have the main logic for generating a shareable sign-up url for Oauth, and a handler method to handle the Oauth response.
 
 ```typescript index.ts
 import * as sdk from "@botpress/sdk";
@@ -180,6 +187,8 @@ export default new bp.Integration({
   },
 });
 ```
+
+In src/store.ts we add some logic to be able to save authentication parameters which will help us know who is who when getting a callback request from Oauth.
 
 ```typescript store.ts
 import * as sdk from "@botpress/sdk";
