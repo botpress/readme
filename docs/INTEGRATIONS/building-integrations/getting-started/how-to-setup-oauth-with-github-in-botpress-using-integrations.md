@@ -1,5 +1,5 @@
 ---
-title: How to setup OAuth with Github in Botpress using Integrations.
+title: Adding user authentication to your bot via OAuth
 deprecated: false
 hidden: false
 metadata:
