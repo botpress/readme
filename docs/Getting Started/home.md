@@ -1,5 +1,8 @@
 ---
 title: Home
+excerpt: >-
+  Botpress is an all-in-one platform for building AI agents powered by the
+  latest LLMs.
 deprecated: false
 hidden: false
 metadata:
