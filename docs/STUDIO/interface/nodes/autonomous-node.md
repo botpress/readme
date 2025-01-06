@@ -46,7 +46,7 @@ Ensuring your Autonomous Node's instructions are cogent and precise is the key t
 
 Provide clear guidelines in this section. The more specific the instructions, the better the agent’s decision-making. Avoid using lengthy, convoluted descriptions with jargon and redundant terms.
 
-Example: “You are a helpful assistant who always answers questions using the ‘knowledgeAgent.knowledgequery’ tool. If the user says ‘search,’ use the ‘browser.webSearch’ tool.”
+Example: “You are a helpful assistant who always answers questions using the \`global.search’ tool. If the user says ‘search,’ use the ‘browser.webSearch’ tool.”
 
 ### Allow Conversation
 
@@ -62,19 +62,18 @@ Each tool performs a specific action – understanding when and how to use these
 
 * global.think: Allows the node to process or pause briefly.
 * browser.webSearch: Enables the agent to search the web for answers.
-* knowledgeAgent.knowledgequery: Queries an internal knowledge base for relevant information.
+* global.search: Queries an internal knowledge base for relevant information.
 * clock.setReminder: Sets a reminder for future tasks or responses.
 * workflow\.transition: Executes a workflow transition, moving from one part of the conversation to another based on user input.
-* chat.sendText: Sends a text message to the user as a response.
-* chat.waitForUserInput: Pauses execution and waits for further input from the user.
+* global.Message: Sends a text message to the user as a response.
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXd3jgdaZY9mCCkRvE54JYgLYZ2_oTbM7KG1LONpL_xsOyZOMSxMUxPrks7LYLMhV0ckjcbOEdCzoKcnT7fs-SpHJuQb7biJdCB_UHnev4mwIVkodN4SleGARFqGXR_W_S1LsHbEaxJmScnKp5EYMb7b1To?key=tcM6xVfTehWnyG265C5blA)
+![](https://files.readme.io/ee040946620bd0886d50957e94db076d097d9ebd74c38346012335be0db9e743-image.png)
 
 By specifying which tool to use in response to user actions, you can control the flow and outcomes of the conversation.
 
 For example, you can instruct the LLM to always perform certain actions when specific conditions are met: “When the user says ‘1’, use the ‘workflow\.transition’ tool to move to the next step.”
 
-Or: “If the user asks a question, first try to answer it using the ‘knowledgeAgent.knowledgequery’ tool.”
+Or: “If the user asks a question, first try to answer it using the ‘global.search’ tool.”
 
 ## Example Workflow
 
@@ -86,7 +85,7 @@ The user types a question about the company’s product.
 
 2. Instruction Execution
 
-The Autonomous Node follows the prompt and uses the knowledgeAgent.knowledgequery tool to search the internal knowledge base.
+The Autonomous Node follows the prompt and uses the global.search tool to search the internal knowledge base.
 
 3. LLM Decision
 
@@ -94,11 +93,11 @@ If the knowledge base doesn’t have a satisfactory answer, the node may then us
 
 4. Send Message
 
-Once the response is ready, the node uses chat.sendText to reply to the user with the relevant information.
+Once the response is ready, the node uses global.search to reply to the user with the relevant information.
 
 5. Wait for Input
 
-After responding, the node uses chat.waitForUserInput to await further queries or interaction from the user.
+After responding, the node uses waitForUserInput to await further queries or interaction from the user.
 
 ## Writing Instructions
 
@@ -112,13 +111,13 @@ Here are 3 best practices for writing instructions for your Autonomous Node:
 
 Instead of vague commands, use explicit language that guides the agent clearly.
 
-Example: “If the user says ‘help’, send them a predefined list of support options using ‘chat.sendText’.”
+Example: “If the user says ‘help’, send them a predefined list of support options using ‘global.search’.”
 
 ### Define tool usage
 
 Explicitly state which tool should be used under which circumstances.
 
-Example: “Always use ‘knowledgeAgent.knowledgequery’ for answering product-related questions.”
+Example: “Always use ‘global.search’ for answering product-related questions.”
 
 ### Guide the flow
 
@@ -150,7 +149,7 @@ To ensure the Autonomous Node differentiates between support questions and other
 
 **IMPORTANT General Process**
 
-* `The knowledgeAgent.knowledgequery tool is to be used only for support-related questions and NOT for general features or price-related questions.`
+* `The global.search tool is to be used only for support-related questions and NOT for general features or price-related questions.`
 
 * `The browser.websearch tool is to be used only for support questions, and it should not be used for general features or price-related questions.`
 
@@ -219,7 +218,9 @@ The Tools section displays all available tools that the Autonomous Node has acce
 * Ensure that the tools listed match what you expect to be available in the node’s decision-making process.
 * Ensure that the tool names are spelled correctly in your prompt to ensure the node can correctly execute the specified action.
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfGugnCTJCAGcwPf6RDoevJ_eS-6v0VFSzWy8rhTCFK5RlTTjkDMGuQk--qZ4FbPg5LbAMMzzSJh2mlXLUShyOg-a5q6NjvBTcWa1Y_6WIQhaOh9syL-XcklW6GpnyJixSO1SvzBUtJa1pC_zAc1l9D2WGh?key=tcM6xVfTehWnyG265C5blA)
+![](https://files.readme.io/d82b7401826f547215e2670f465522e65753c01f008982611e3bbf1698e66303-image.png)
+
+<br />
 
 The Autonomous Node typically tries to execute all instructions within one or two iterations. The number of iterations depends on the complexity of the prompt and how the Node analyzes it.
 
@@ -228,7 +229,7 @@ For more complex tasks, the node might take multiple iterations to gather data, 
 By reviewing the Iterations tab , you can understand:
 
 * How many iterations were required for the node to reach its final decision
-* What caused the node to take multiple steps (e.g., fetching additional data from tools like knowledgeAgent.knowledgequery or browser.webSearch)
+* What caused the node to take multiple steps (e.g., fetching additional data from tools like global.search or browser.webSearch)
 * Why a particular outcome was achieved
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXe2l1awCb4v2G3CM67G01E7ZhArQ6n-mFT-KgrFnVhc1FVw4rV2AIptxwu7OWAkN2RDDdA_8Zz7DxKLOFT7B0xX7kUUgSOmBKBzB0II75I3l-tfa5dIKc8ptkPr_eXJ5ex7hXuE2ik-zsUEz-IW9T7ujVRo?key=tcM6xVfTehWnyG265C5blA)
@@ -306,7 +307,7 @@ You are an AI-powered troubleshooting agent named XYZ Assistant’, focused on p
 
 \*Video Link Example
 
-\-If the user is asking for a video link, the link to the video is provided below. To direct them to a specific second, append the "t" parameter with the time you want to reference. For example, to link to the 15-second mark, it should look like this: "t=15":
+-If the user is asking for a video link, the link to the video is provided below. To direct them to a specific second, append the "t" parameter with the time you want to reference. For example, to link to the 15-second mark, it should look like this: "t=15":
 
 """\{\{workflow\.contentLinks}}"""
 
@@ -373,7 +374,7 @@ This guides the bot on how to wrap up interactions politely, asking if further h
 
 ### 5. Extra Instructions
 
-\-If the user is asking for a video link, the link to the video is provided below. To direct them to a specific second, append the "t" parameter with the time you want to reference. For example, to link to the 15-second mark, it should look like this: "t=15":
+-If the user is asking for a video link, the link to the video is provided below. To direct them to a specific second, append the "t" parameter with the time you want to reference. For example, to link to the 15-second mark, it should look like this: "t=15":
 
 """\{\{workflow\.contentLinks}}"""
 
