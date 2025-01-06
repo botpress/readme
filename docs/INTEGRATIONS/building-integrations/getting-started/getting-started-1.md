@@ -33,6 +33,12 @@ You can simply follow the instructions below.
 * a workspace with a bot in Botpress Cloud
 * your workspace handle must be set. You can do so by going to your [your workspace](https://app.botpress.cloud/workspaces/), clicking "Settings", and setting your workspace handle.
 
+> 🚧 Windows users
+>
+> We recommend you use WSL2 for building your integration. You will encounter issues on non-unix based systems.
+
+<br />
+
 ## Installing the integration to your workspace
 
 Create a new integration project using the init command. This will create a new folder with the name you specified and generate a basic project structure.
