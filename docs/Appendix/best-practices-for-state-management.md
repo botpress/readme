@@ -1,7 +1,7 @@
 ---
 title: Best Practices for State Management
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
