@@ -12,6 +12,10 @@ next:
 ---
 ![](https://files.readme.io/44272e9-image.png)
 
+> 🚧 Message Ordering
+>
+> Messages may occasionally be delivered out of order when sending multiple messages in sequence because of cellular carrier dependencies.
+
 # Prerequisites
 
 * A [Twilio](https://www.twilio.com/) account
