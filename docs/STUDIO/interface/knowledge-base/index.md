@@ -1,6 +1,6 @@
 ---
 title: Knowledge Base
-excerpt: ''
+excerpt: Centralized repository of your agent's available information, files, and data.
 deprecated: false
 hidden: false
 metadata:
