@@ -12,51 +12,45 @@ metadata:
 next:
   description: ''
 ---
-The Autonomous Node allows you to create AI agents that make decisions, like what to say and which tools to call, based on the context available to them.
+The Autonomous Node allows you to create AI agents that make decisions, like what to say and which tools to call, based on the context available to them. It is designed to handle both decision-making and execution by understanding user inputs, responding with the right data, and leveraging the tools you make available to it.
 
-By providing clear instructions and integrating tools, you can use the Autonomous Node to quickly design flexible, performant conversations.
+# Key Features
 
-The Autonomous Node is designed to handle both decision-making and execution by understanding user inputs, responding with the right data, and leveraging the tools you make available to it.
+## LLM-Driven
 
-## Key Features
+An Autonomous Node uses an LLM to make intelligent decisions instead of relying on hard-coded logic. This includes executing specific tools, calling functions, writing and executing custom code, and deciding on the direction of a conversations.
 
-1. LLM Decision-Driven
-
-An Autonomous Node uses the capabilities of an LLM to make intelligent decisions instead of relying on hard-coded logic. This includes executing specific tools, calling functions, writing and executing custom code, and deciding on the direction of a conversations.
-
-2. Toolset Integration
+## Toolset Integration
 
 The Autonomous Node understands and utilizes the tools that you explicitly make available to it. For example, it can query knowledge bases, perform web searches, and execute workflow transitions.
 
-3. Prompt Customization
+## Prompt Customization
 
 By configuring an Autonomous Node with a persona and instructions, you can ensure that it behaves on-brand and within scope during conversations.
 
-4. Autonomous Behaviour
+## Autonomous Behaviour
 
 An Autonomous Node can execute actions without manual intervention based on instructions and user input.
 
-## Configuration
+# Configuration
 
 Ensuring your Autonomous Node's instructions are cogent and precise is the key to a performant AI agent. The prompt helps the agent understand its persona and guides its decision-making.
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcW_BFE75vwUVOeS0vzhECNdBPYsoiQJVwA9NWGeW8eI_QGlNVGFXxVyG1tSeuQQxyT3Fnt3WGj-5m_rHyjn2yNfuKEjyYFi1y1dX4aCI3WpFoodTi27BjQk11ficYaDa6upnfNHX1d1GD6BB8_Pok5wJfY?key=tcM6xVfTehWnyG265C5blA)
 
-### Instructions
+## Instructions
 
 Provide clear guidelines in this section. The more specific the instructions, the better the agent’s decision-making. Avoid using lengthy, convoluted descriptions with jargon and redundant terms.
 
 Example: “You are a helpful assistant who always answers questions using the \`global.search’ tool. If the user says ‘search,’ use the ‘browser.webSearch’ tool.”
 
-### Allow Conversation
+## Allow Conversation
 
 The Allow Conversation toggle enables the Autonomous Node to communicate with users directly. If turned off, the Node only processes commands and executes its internal logic without sending messages to users.
 
 ## Tool Calling
 
-Based on the instructions you give it, an Autonomous Node is equipped with several tools it can call.
-
-Each tool performs a specific action – understanding when and how to use these tools is critical for driving the Node’s decisions.
+An Autonomous Node is equipped with several tools and will call them at various points in a conversation based on the instructions it is given. You can also add new tools by installing and configuring integrations.
 
 ### Commonly-used Tools
 
@@ -75,35 +69,9 @@ For example, you can instruct the LLM to always perform certain actions when spe
 
 Or: “If the user asks a question, first try to answer it using the ‘global.search’ tool.”
 
-## Example Workflow
-
-Here is a step-by-step example of how the Autonomous Node might be configured and function during a conversation:
-
-1. User Input
-
-The user types a question about the company’s product.
-
-2. Instruction Execution
-
-The Autonomous Node follows the prompt and uses the global.search tool to search the internal knowledge base.
-
-3. LLM Decision
-
-If the knowledge base doesn’t have a satisfactory answer, the node may then use the browser.webSearch tool to search the web for additional information.
-
-4. Send Message
-
-Once the response is ready, the node uses global.search to reply to the user with the relevant information.
-
-5. Wait for Input
-
-After responding, the node uses waitForUserInput to await further queries or interaction from the user.
-
 ## Writing Instructions
 
-As shown in the example above, clear instructions are vital to ensuring the Autonomous Node behaves correctly.
-
-An LLM’s ability to make decisions is heavily influenced by the way the instructions are structured.
+Clear instructions ensure the Autonomous Node behaves as expected.
 
 Here are 3 best practices for writing instructions for your Autonomous Node:
 
@@ -155,9 +123,9 @@ To ensure the Autonomous Node differentiates between support questions and other
 
 This prompt ensures the LLM will stick to using specific tools only in the context of support-related queries, maintaining control over the kind of information it retrieves.
 
-### Transition to a Subflow
+### Transition to Other Workflows
 
-Sometimes, you want the bot to move out of the Autonomous Node into a sub-flow.
+Sometimes, you want the bot to move out of the Autonomous Node into a sub-workflow.
 
 Let’s say that you want your bot to collect a user email, then look for more info about that email from other systems to enrich the associated contact information.
 
@@ -167,7 +135,7 @@ In that case, you might need the bot to move out of the Autonomous Node loop and
 
 This instruction tells the node to invoke the workflow\.transition tool whenever the user asks for more details about emails, directing the conversation flow accordingly.
 
-### Filling a Variable and Performing an Action
+### Fill a Variable and Perform an Action
 
 For scenarios where you want the node to both capture input and trigger an action simultaneously, you can prompt it as such:
 
@@ -175,7 +143,7 @@ For scenarios where you want the node to both capture input and trigger an actio
 
 Here, you guide the Autonomous Node to not only trigger the transition but also to extract and store the user’s email in a variable, enabling dynamic behavior later in the conversation.
 
-### Manipulating the Response Based on a Condition
+### Manipulate the Response Based on a Condition
 
 Sometimes, you’ll want the node to perform additional logic based on conditions. Here’s an example prompt related to providing video links:
 
@@ -183,7 +151,7 @@ Sometimes, you’ll want the node to perform additional logic based on condition
 
 This prompt helps the node understand the expected structure of a video link and how to modify it when the user asks to refer to a specific point in the video.
 
-### Dynamically Generated Video Links
+### Dynamically Generate Video Links
 
 You can further clarify the prompt by providing an actual example of how the system should behave when responding to a user request for video links:
 
@@ -217,8 +185,6 @@ The Tools section displays all available tools that the Autonomous Node has acce
 
 * Ensure that the tools listed match what you expect to be available in the node’s decision-making process.
 * Ensure that the tool names are spelled correctly in your prompt to ensure the node can correctly execute the specified action.
-
-![](https://files.readme.io/d82b7401826f547215e2670f465522e65753c01f008982611e3bbf1698e66303-image.png)
 
 <br />
 
