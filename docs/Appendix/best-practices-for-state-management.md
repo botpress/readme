@@ -1,5 +1,8 @@
 ---
-title: Best Practices for State Management
+title: State Management
+excerpt: >-
+  Manage the 128 KB state size limit in Botpress by optimizing workflows,
+  clearing unused variables, and minimizing large data usage.
 deprecated: false
 hidden: false
 metadata:
