@@ -4,7 +4,7 @@ excerpt: >-
   The Autonomous node uses an LLM to determine when, and in what order, to
   execute the cards it contains.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: ''
   description: ''
