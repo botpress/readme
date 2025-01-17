@@ -30,11 +30,9 @@ Prepare your bot content, triggers, and conversation flow so that when the chat 
 
 Ensure your implementation does not rely solely on user scripting (like JavaScript) and that the experience remains accessible for all users.
 
-<br />
-
 # Setup
 
-```
+```Text html
 <!DOCTYPE html>
 <html>
 <head>
