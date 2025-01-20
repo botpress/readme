@@ -30,8 +30,12 @@ You can simply follow the instructions below.
 
 ## Prerequisites
 
-* a workspace with a bot in Botpress Cloud
-* your workspace handle must be set. You can do so by going to your [your workspace](https://app.botpress.cloud/workspaces/), clicking "Settings", and setting your workspace handle.
+* A workspace with a bot in Botpress Cloud
+* Your workspace handle must be set. You can do so by going to your [your workspace](https://app.botpress.cloud/workspaces/), clicking "Settings", and setting your workspace handle.
+* A valid ngrok authentication token. Please see the following steps to obtain one:
+  * 1. Create an account on [https://ngrok.com](https://ngrok.com)
+    2. Get your auth token from [https://dashboard.ngrok.com/get-started/setup](https://dashboard.ngrok.com/get-started/setup)
+    3. Run in your terminal: npx ngrok config add-authtoken YOUR\_TOKEN
 
 > 🚧 Windows users
 >
