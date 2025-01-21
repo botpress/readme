@@ -39,18 +39,22 @@ metadata:
             :root {
                 --text-color: #e5e7eb;
                 --bg-color: #111827;
-                --card-bg: #1f2937;
-                --sublink-bg: #374151;
-                --sublink-hover-bg: #4b5563;
+                --card-bg: #1e293b;
+                --sublink-bg: #2d3748;
+                --sublink-hover-bg: #3f4758;
                 --description-color: #9ca3af;
             }
 
             .card {
-                box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2),
+                            0 2px 4px -2px rgba(0, 0, 0, 0.2),
+                            0 0 0 1px rgba(255, 255, 255, 0.05);
             }
 
             .card:hover {
-                box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.25),
+                            0 4px 6px -4px rgba(0, 0, 0, 0.25),
+                            0 0 0 1px rgba(255, 255, 255, 0.1);
             }
         }
 
