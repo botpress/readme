@@ -30,17 +30,6 @@ metadata:
             --bg-color: #f8fafc;
             --card-bg: #ffffff;
             --hover-color: #1d4ed8;
-            --muted-text: #4b5563;
-        }
-
-        :is(html[class~='dark']) {
-            --primary-color: #3b82f6;
-            --secondary-color: #60a5fa;
-            --text-color: #f3f4f6;
-            --bg-color: #111827;
-            --card-bg: #1f2937;
-            --hover-color: #2563eb;
-            --muted-text: #9ca3af;
         }
 
         body {
@@ -137,7 +126,7 @@ metadata:
         }
 
         .card p {
-            color: var(--muted-text);
+            color: #4b5563;
             margin-bottom: 25px;
         }
 
@@ -189,11 +178,11 @@ metadata:
             text-decoration: none !important;
             border-radius: 8px;
             transition: all 0.2s ease;
-            background-color: color-mix(in srgb, var(--bg-color) 70%, var(--text-color) 30%);
+            background-color: #f1f5f9;
         }
 
         .sub-link:hover {
-            background-color: color-mix(in srgb, var(--bg-color) 85%, var(--text-color) 15%);
+            background-color: #e2e8f0;
             color: var(--primary-color);
             padding-left: 20px;
         }
@@ -219,7 +208,7 @@ metadata:
 
         .header-description p {
             font-size: 1.2em;
-            color: var(--muted-text);
+            color: #4b5563;
             max-width: 600px;
             margin: 0 auto;
         }
