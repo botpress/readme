@@ -30,6 +30,20 @@ metadata:
             --bg-color: #f8fafc;
             --card-bg: #ffffff;
             --hover-color: #1d4ed8;
+            --muted-text: #4b5563;
+            --card-hover-bg: #e2e8f0;
+            --sub-link-bg: #f1f5f9;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text-color: #e5e7eb;
+                --bg-color: #111827;
+                --card-bg: #1f2937;
+                --muted-text: #9ca3af;
+                --card-hover-bg: #374151;
+                --sub-link-bg: #374151;
+            }
         }
 
         body {
@@ -126,7 +140,7 @@ metadata:
         }
 
         .card p {
-            color: #4b5563;
+            color: var(--muted-text);
             margin-bottom: 25px;
         }
 
@@ -178,11 +192,11 @@ metadata:
             text-decoration: none !important;
             border-radius: 8px;
             transition: all 0.2s ease;
-            background-color: #f1f5f9;
+            background-color: var(--sub-link-bg);
         }
 
         .sub-link:hover {
-            background-color: #e2e8f0;
+            background-color: var(--card-hover-bg);
             color: var(--primary-color);
             padding-left: 20px;
         }
@@ -208,7 +222,7 @@ metadata:
 
         .header-description p {
             font-size: 1.2em;
-            color: #4b5563;
+            color: var(--muted-text);
             max-width: 600px;
             margin: 0 auto;
         }
