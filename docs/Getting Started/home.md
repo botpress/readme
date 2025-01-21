@@ -137,7 +137,7 @@ metadata:
             font-weight: 600;
             color: #fff;
             background-color: var(--primary-color);
-            text-decoration: none;
+            text-decoration: none !important;
             border-radius: 8px;
             transition: all 0.2s ease;
             position: relative;
@@ -175,7 +175,7 @@ metadata:
             padding: 12px 16px;
             margin: 10px 0;
             color: var(--text-color);
-            text-decoration: none;
+            text-decoration: none !important;
             border-radius: 8px;
             transition: all 0.2s ease;
             background-color: #f1f5f9;
