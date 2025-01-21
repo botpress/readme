@@ -30,6 +30,28 @@ metadata:
             --bg-color: #f8fafc;
             --card-bg: #ffffff;
             --hover-color: #1d4ed8;
+            --sublink-bg: #f1f5f9;
+            --sublink-hover-bg: #e2e8f0;
+            --description-color: #4b5563;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text-color: #e5e7eb;
+                --bg-color: #111827;
+                --card-bg: #1f2937;
+                --sublink-bg: #374151;
+                --sublink-hover-bg: #4b5563;
+                --description-color: #9ca3af;
+            }
+
+            .card {
+                box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+            }
+
+            .card:hover {
+                box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+            }
         }
 
         body {
@@ -126,7 +148,7 @@ metadata:
         }
 
         .card p {
-            color: #4b5563;
+            color: var(--description-color);
             margin-bottom: 25px;
         }
 
@@ -178,11 +200,11 @@ metadata:
             text-decoration: none;
             border-radius: 8px;
             transition: all 0.2s ease;
-            background-color: #f1f5f9;
+            background-color: var(--sublink-bg);
         }
 
         .sub-link:hover {
-            background-color: #e2e8f0;
+            background-color: var(--sublink-hover-bg);
             color: var(--primary-color);
             padding-left: 20px;
         }
@@ -208,7 +230,7 @@ metadata:
 
         .header-description p {
             font-size: 1.2em;
-            color: #4b5563;
+            color: var(--description-color);
             max-width: 600px;
             margin: 0 auto;
         }
