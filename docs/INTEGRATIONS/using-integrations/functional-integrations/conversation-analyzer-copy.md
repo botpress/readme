@@ -1,8 +1,6 @@
 ---
 title: Improvement
-excerpt: >-
-  Provide feedback on specific LLMz iterations in a reinforcement learning-style
-  workflow.
+excerpt: Provide feedback on specific LLMz iterations to improve future conversations.
 deprecated: false
 hidden: false
 metadata:
@@ -18,38 +16,38 @@ metadata:
 
 ## Install
 
-Start by installing the Conversation Analyzer integration from the integration hub.
+Start by installing the Improvement integration from the integration hub.
 
-[Link to integration](https://studio.botpress.cloud?exploreHub=1\&hubItemId=intver_01JFQPN3KKAX01TM7JQX171C58)
+[Link to integration](https://studio.botpress.cloud?exploreHub=1\&hubItemId=intver_01JDTX5RMZGB170E630HS62GAR)
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/f809cffc7b21d2fe9b33b6889a603656e2c3e97b588edcc5347d5018ee01d116-Screenshot_2024-12-23_at_2.22.42_PM.png" />
+<Image align="center" className="border" border={true} src="https://files.readme.io/34580f93384f4cf1c30342e133594909942497bb5d01fb5cdb663882e4038439-Screenshot_2025-01-22_at_2.45.42_PM.png" />
 
-## Analyze
+## Store iterations
 
-After installing the integration, all of your bot's production conversations will be stored in the automatically created "Conversations" table.
+After installing the integration, all of the iterations produced by LLMz via an Autonomous Node will be stored in the automatically-created "LLMz iterations" Table. Iterations are produced at the message level, meaning a single conversation will typically have multiple iterations.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/a84190d28f4db643a8c3e3c152b69ce1a8d82a27a1bfba06c39642248f2ed83d-Screenshot_2024-12-23_at_2.24.27_PM.png" />
+<Image align="center" className="border" border={true} src="https://files.readme.io/770d7ff0ceb1fbe2606247dbddf3e0f5d014e0ec2d83fa5a1e79329866bf6acc-Screenshot_2025-01-22_at_2.48.58_PM.png" />
 
-This table is automatically populated every time a conversation ends. Each conversation takes up its own record, and stores information like sentiment analysis, topics covered, and an AI-generated summary of the conversation.
+This table is automatically populated every time an iteration ends. Each iteration takes up its own record, and stores specific data like the conversation or event ID, along with the iteration itself.
 
-## Reinforcement Learning
+## Provide Feedback
 
-Botpress tables include built-in reinforcement learning mechanisms designed to continuously improve the accuracy and effectiveness of your bots. When you use the Conversation Analyzer, the computed columns in the Conversations table enable feedback loops that refine your bot's understanding of conversation patterns over time.
+Once you've installed the Improvement integration, you can access the "Improvement" window through the "Views" button on the top-right corner of the Studio.
 
-### How It Works
+<Image align="center" className="border" border={true} src="https://files.readme.io/bbd9fa247fe15a216c2017bf6a978e052da6f4bb61e519ab6af980577eb4aa36-Screenshot_2025-01-22_at_2.54.24_PM.png" />
 
-The "Conversations" table contains computed columns that analyze and interpret key aspects of each conversation, such as sentiment, topics, and AI-generated summaries. These columns act as the foundation for reinforcement learning by creating structured data that can be evaluated and improved.
+You can access the Improvements UI from this menu.
 
-You can manually review and adjust the computed data (e.g., correct a misidentified topic or adjust the sentiment). These adjustments provide feedback that the system uses to update its underlying models. The more corrections you make, the better the bot becomes at accurately interpreting similar conversations in the future.
+<Image align="center" src="https://files.readme.io/0b7cbcd48bed41418333c7b39252eab15ee772b41e32fe407cdf99a7cd95b0e3-Screenshot_2025-01-22_at_2.55.25_PM.png" />
 
-Based on the feedback provided, Botpress dynamically retrains the relevant models. For example:
+The Improvements UI shows all of your bot's conversations, along with each individual LLMz iteration. This iteration is the code your bot generated to take an action and/or respond to the user.
 
-**Topic Classification:** Retrains the model to better associate keywords, phrases, or intents with specific topics.
+Hovering over a specific iteration will let you access the Feedback window, in which you can suggest improvements to future iterations of similar tasks.
 
-**Sentiment Analysis:** Adjusts the sentiment detection algorithms to align more closely with your specific use case.
+<Image align="center" src="https://files.readme.io/d26773428dd5db744eedbd80793b5107e37b8fef88a43495483fc87aa19d1923-Screenshot_2025-01-22_at_2.56.57_PM.png" />
 
-**Summarization:** Enhances the AI's ability to create concise, accurate summaries by learning from your manual edits.
+Clicking "Re-generate" will produce a new iteration for your review. Once you're satisfied with the new iteration, clicking "Save" will store this to your bot's "Feedback" Table.
 
-### Continuous Improvement
+Your bot uses the information stored in its "Feedback" Table to inform future LLMz iterations.
 
-Over time, this process leads to a self-improving system. As the volume of analyzed conversations grows, the bot becomes more adept at handling various conversation scenarios, understanding user inputs, and producing meaningful insights.
+<Image align="center" className="border" border={true} src="https://files.readme.io/dab272936c19dc0bc907a525ae0cbe8add937747b8ad08e0a9e76dd100ff5cc5-Screenshot_2025-01-22_at_3.00.39_PM.png" />
