@@ -1,8 +1,8 @@
 ---
-title: Conversation Analyzer (COPY)
+title: Improvement
 excerpt: >-
-  This functional integration automatically stores all of your bot's
-  conversations and provides AI-generated analysis.
+  Provide feedback on specific LLMz iterations in a reinforcement learning-style
+  workflow.
 deprecated: false
 hidden: false
 metadata:
@@ -10,9 +10,9 @@ metadata:
 ---
 > 🚧 Early Beta
 >
-> The Conversation Analyzer is in beta and should not be used in production or critical workflows. We encourage testing in non-production environments and welcome your feedback to improve its stability and functionality.
+> The Improvement integration is in beta and should not be used in production or critical workflows. We encourage testing in non-production environments and welcome your feedback to improve its stability and functionality.
 >
-> Each stored conversation uses your Workspace's Table Rows quota, and may demonstrate increased usage.
+> Each stored iteration uses your Workspace's Table Rows quota, and may demonstrate increased usage.
 
 # How to use
 
