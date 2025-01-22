@@ -22,7 +22,7 @@ Start by installing the Improvement integration from the integration hub.
 
 <Image align="center" className="border" border={true} src="https://files.readme.io/34580f93384f4cf1c30342e133594909942497bb5d01fb5cdb663882e4038439-Screenshot_2025-01-22_at_2.45.42_PM.png" />
 
-## Store iterations
+## Store Iterations
 
 After installing the integration, all of the iterations produced by LLMz via an Autonomous Node will be stored in the automatically-created "LLMz iterations" Table. Iterations are produced at the message level, meaning a single conversation will typically have multiple iterations.
 
