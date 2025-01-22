@@ -1,0 +1,11 @@
+---
+title: Functional Integrations
+excerpt: Extend or enhance your bot's performance with these prebuilt integrations.
+deprecated: false
+hidden: false
+metadata:
+  robots: index
+---
+In Botpress, **functional integrations** are designed to enhance your bot's performance and user experience without directly connecting to external services or tools. These integrations focus on internal processes, like analyzing past conversations, refining knowledge base content, and incorporating user feedback to improve future interactions.
+
+Functional integrations are installed to your bot as normal through the integrations hub. By focusing on internal enhancements, functional integrations contribute to a more robust and effective AI agent.
