@@ -14,7 +14,9 @@ The Files API allows you to upload, download, and manage files and searchable do
 
 Files can be in any text or binary format, and documents (such as PDF, Microsoft Office, HTML, CSV, etc.) can be indexed to be used for semantic search in RAG (Retrieval Augmented Generation) implementations. Files are private by default but can be made publicly accessible through a permanent URL that's unique for each file.
 
-<br />
+> 🚧 WARNING:
+>
+> When uploading a file and linking it to a knowledge base, you **must** index the file or else you will get an infinite loading loop when trying to open the file from the knowledge base.
 
 # Getting Started
 
