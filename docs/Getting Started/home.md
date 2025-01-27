@@ -24,44 +24,25 @@ metadata:
     <title>Botpress Documentation</title>
     <style>
         :root {
-            /* Light mode defaults */
+            /* Using dark mode colors as default */
             --primary-color: #2563eb;
             --secondary-color: #3b82f6;
-            --text-color: #1f2937;
-            --bg-color: #f8fafc;
-            --card-bg: #ffffff;
-            --hover-color: #1d4ed8;
-            --sublink-bg: #f1f5f9;
-            --sublink-hover-bg: #e2e8f0;
-            --description-color: #000000;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                /* Dark mode overrides */
-                --primary-color: #2563eb;
-                --secondary-color: #3b82f6;
-                --text-color: #f8fafc;
-                --bg-color: #111827;
-                --card-bg: #1f2937;
-                --hover-color: #3b82f6;
-                --sublink-bg: #374151;
-                --sublink-hover-bg: #4b5563;
-                --description-color: #e2e8f0;
-            }
+            --text-color: #f8fafc;
+            --card-bg: #1f2937;
+            --hover-color: #3b82f6;
+            --sublink-bg: #374151;
+            --sublink-hover-bg: #4b5563;
+            --description-color: #e2e8f0;
         }
 
         body {
+            /* Remove background-color and background-image since readme.io will handle it */
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: var(--bg-color);
             color: var(--text-color);
             line-height: 1.6;
-            background-image: 
-                radial-gradient(circle at 100% 100%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.05) 0%, transparent 50%);
-            background-attachment: fixed;
+            background: none;
         }
 
         .container {
