@@ -202,7 +202,6 @@ metadata:
 
         .sub-link:hover {
             background-color: var(--sublink-hover-bg);
-            color: var(--primary-color);
             padding-left: 20px;
         }
 
