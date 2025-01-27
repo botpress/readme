@@ -39,15 +39,15 @@ metadata:
         @media (prefers-color-scheme: dark) {
             :root {
                 /* Dark mode overrides */
-                --primary-color: #60a5fa;
-                --secondary-color: #93c5fd;
+                --primary-color: #2563eb;
+                --secondary-color: #3b82f6;
                 --text-color: #f8fafc;
                 --bg-color: #111827;
                 --card-bg: #1f2937;
                 --hover-color: #3b82f6;
                 --sublink-bg: #374151;
                 --sublink-hover-bg: #4b5563;
-                --description-color: #9ca3af;
+                --description-color: #e2e8f0;
             }
         }
 
