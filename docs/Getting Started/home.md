@@ -251,9 +251,6 @@ metadata:
             </svg>
             <h1>Botpress Documentation</h1>
         </div>
-        <div class="header-description">
-            <p>Botpress is an all-in-one platform for building AI agents powered by the latest LLMs.</p>
-        </div>
         <div class="grid">
             <div class="card">
                 <h2>
