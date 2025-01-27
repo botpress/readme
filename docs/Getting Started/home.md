@@ -236,6 +236,10 @@ metadata:
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+
+        .links-container h3 {
+            color: #3b82f6;
+        }
     </style>
 </head>
 <body>
