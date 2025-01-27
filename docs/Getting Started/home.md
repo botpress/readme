@@ -24,20 +24,39 @@ metadata:
     <title>Botpress Documentation</title>
     <style>
         :root {
+            /* Light mode defaults */
             --primary-color: #2563eb;
             --secondary-color: #3b82f6;
             --text-color: #1f2937;
             --bg-color: #f8fafc;
             --card-bg: #ffffff;
             --hover-color: #1d4ed8;
+            --sublink-bg: #f1f5f9;
+            --sublink-hover-bg: #e2e8f0;
+            --description-color: #4b5563;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                /* Dark mode overrides */
+                --primary-color: #60a5fa;
+                --secondary-color: #93c5fd;
+                --text-color: #f8fafc;
+                --bg-color: #111827;
+                --card-bg: #1f2937;
+                --hover-color: #3b82f6;
+                --sublink-bg: #374151;
+                --sublink-hover-bg: #4b5563;
+                --description-color: #9ca3af;
+            }
         }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             margin: 0;
             padding: 0;
-           /* background-color: var(--bg-color);
-            color: var(--text-color); */
+            background-color: var(--bg-color);
+            color: var(--text-color);
             line-height: 1.6;
             background-image: 
                 radial-gradient(circle at 100% 100%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
@@ -126,7 +145,7 @@ metadata:
         }
 
         .card p {
-            color: #4b5563;
+            color: var(--description-color);
             margin-bottom: 25px;
         }
 
@@ -178,11 +197,11 @@ metadata:
             text-decoration: none !important;
             border-radius: 8px;
             transition: all 0.2s ease;
-            background-color: #f1f5f9;
+            background-color: var(--sublink-bg);
         }
 
         .sub-link:hover {
-            background-color: #e2e8f0;
+            background-color: var(--sublink-hover-bg);
             color: var(--primary-color);
             padding-left: 20px;
         }
@@ -208,7 +227,7 @@ metadata:
 
         .header-description p {
             font-size: 1.2em;
-            color: #4b5563;
+            color: var(--description-color);
             max-width: 600px;
             margin: 0 auto;
         }
