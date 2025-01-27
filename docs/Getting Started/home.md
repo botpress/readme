@@ -33,7 +33,7 @@ metadata:
             --hover-color: #1d4ed8;
             --sublink-bg: #f1f5f9;
             --sublink-hover-bg: #e2e8f0;
-            --description-color: #4b5563;
+            --description-color: #e2e8f0;
         }
 
         @media (prefers-color-scheme: dark) {
