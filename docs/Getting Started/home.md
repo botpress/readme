@@ -36,8 +36,8 @@ metadata:
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: var(--bg-color);
-            color: var(--text-color);
+           /* background-color: var(--bg-color);
+            color: var(--text-color); */
             line-height: 1.6;
             background-image: 
                 radial-gradient(circle at 100% 100%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
