@@ -17,6 +17,31 @@ metadata:
 ---
 <HTMLBlock>{`
 <style>
+  :root {
+    /* We'll define a single palette that looks good on both white or dark backgrounds. /
+    --primary-color: #2563eb;
+    --secondary-color: #3b82f6;
+
+    / Text, cards, and sub-links are styled "dark-ish," but we won't override the overall page BG. /
+    --text-color: #f8fafc;        / Light text (if the ReadMe background is white, this is obviously lower contrast. See note below) /
+    --card-bg: #1f2937;           / Dark card background /
+    --hover-color: #3b82f6;
+    --sublink-bg: #374151;
+    --sublink-hover-bg: #4b5563;
+    --description-color: #e2e8f0;
+  }
+
+  / A wrapper so we don't style the entire page. 
+     We'll call it .botpress-landing, but name it anything you like. */
+  .botpress-landing {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+    
   .botpress-landing .header {
     text-align: center;
     margin-bottom: 60px;
