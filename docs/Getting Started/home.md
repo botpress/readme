@@ -17,198 +17,183 @@ metadata:
 ---
 <HTMLBlock>{`
 <style>
-  :root {
-    /* We'll define a single palette that looks good on both white or dark backgrounds. */
-    --primary-color: #2563eb;
-    --secondary-color: #3b82f6;
+  /* Preload fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-    /* Text, cards, and sub-links are styled "dark-ish," but we won't override the overall page BG. */
-    --text-color: #f8fafc;        /* Light text (if the ReadMe background is white, this is obviously lower contrast. See note below) */
-    --card-bg: #1f2937;           /* Dark card background */
-    --hover-color: #3b82f6;
-    --sublink-bg: #374151;
-    --sublink-hover-bg: #4b5563;
-    --description-color: #e2e8f0;
-  }
+:root {
+  --primary: #2563eb;
+  --secondary: #3b82f6;
+  --text: #f8fafc;
+  --card: #1f2937;
+  --hover: #3b82f6;
+  --sublink: #374151;
+  --sublink-hover: #4b5563;
+  --desc: #e2e8f0;
+}
 
-  /* A wrapper so we don't style the entire page. 
-     We'll call it .botpress-landing, but name it anything you like. */
+.botpress-landing {
+  font-family: Inter, system-ui, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3.75rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.header svg {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1.2rem;
+}
+
+.header h1 {
+  font-size: 3.5rem;
+  margin: 0 0 1.25rem;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.875rem;
+  margin-top: 2.5rem;
+  animation: fadeIn .6s ease-out;
+  content-visibility: auto;
+}
+
+.card {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  transition: transform .2s, box-shadow .2s;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  transform: translateY(-100%);
+  transition: transform .2s;
+  will-change: transform;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+.card:hover::before {
+  transform: translateY(0);
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.25rem;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+}
+
+.card p {
+  color: var(--desc);
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: .75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--primary);
+  text-decoration: none;
+  border-radius: .5rem;
+  transition: .2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgb(255 255 255 / .1);
+  transform: translateX(-100%);
+  transition: transform .3s;
+}
+
+.btn:hover {
+  background-color: var(--hover);
+  transform: translateY(-2px);
+}
+
+.btn:hover::after {
+  transform: translateX(0);
+}
+
+.links-container {
+  margin-top: 1.875rem;
+}
+
+.sub-link {
+  display: block;
+  padding: .75rem 1rem;
+  margin: .625rem 0;
+  color: var(--text);
+  text-decoration: none;
+  border-radius: .5rem;
+  transition: .2s;
+  background-color: var(--sublink);
+}
+
+.sub-link:hover {
+  background-color: var(--sublink-hover);
+  color: var(--primary);
+  padding-left: 1.25rem;
+}
+
+.links-container h3 {
+  color: var(--secondary);
+}
+
+@media (max-width: 768px) {
   .botpress-landing {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    color: var(--text-color);
-    line-height: 1.6;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    padding: 1.25rem;
   }
-  .botpress-landing .header {
-    text-align: center;
-    margin-bottom: 60px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 16px;
+  
+  .header h1 {
+    font-size: 3rem;
   }
+  
+  .card {
+    padding: 1.5rem;
+  }
+}
 
-  .botpress-landing .header svg {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 19px;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-
-  .botpress-landing .header h1 {
-    font-size: 3.5em;
-    margin: 0;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 20px;
-    line-height: 1;
-  }
-
-  .botpress-landing .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-    animation: fadeIn 0.6s ease-out;
-  }
-
-  .botpress-landing .card {
-    background: var(--card-bg);
-    padding: 32px;
-    border-radius: 16px;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    position: relative;
-    overflow: hidden;
-    isolation: isolate;
-  }
-
-  .botpress-landing .card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-    transform: translateY(-100%);
-    transition: transform 0.2s ease;
-    will-change: transform;
-  }
-
-  .botpress-landing .card:hover::before {
-    transform: translateY(0);
-  }
-
-  .botpress-landing .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  }
-
-  .botpress-landing .card h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    color: var(--primary-color);
-    display: flex;
-    align-items: center;
-  }
-
-  .botpress-landing .card p {
-    color: var(--description-color);
-    margin-bottom: 25px;
-  }
-
-  .botpress-landing .btn {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 1em;
-    font-weight: 600;
-    color: #fff;
-    background-color: var(--primary-color);
-    text-decoration: none !important;
-    border-radius: 8px;
-    transition: all 0.2s ease;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .botpress-landing .btn::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, 0.1);
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-  }
-
-  .botpress-landing .btn:hover::after {
-    transform: translateX(0);
-  }
-
-  .botpress-landing .btn:hover {
-    background-color: var(--hover-color);
-    transform: translateY(-2px);
-    color: #fff;
-  }
-
-  .botpress-landing .links-container {
-    margin-top: 30px;
-  }
-
-  .botpress-landing .sub-link {
-    display: block;
-    padding: 12px 16px;
-    margin: 10px 0;
-    color: var(--text-color);
-    text-decoration: none !important;
-    border-radius: 8px;
-    transition: all 0.2s ease;
-    background-color: var(--sublink-bg);
-  }
-
-  .botpress-landing .sub-link:hover {
-    background-color: var(--sublink-hover-bg);
-    color: var(--primary-color);
-    padding-left: 20px;
-  }
-
-  .botpress-landing .header-description {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .botpress-landing .header-description p {
-    font-size: 1.2em;
-    color: var(--description-color);
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  @media (max-width: 768px) {
-    .botpress-landing {
-      padding: 20px;
-    }
-    .botpress-landing .header h1 {
-      font-size: 3em;
-    }
-    .botpress-landing .card {
-      padding: 24px;
-    }
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .botpress-landing .links-container h3 {
-    color: var(--secondary-color);
-  }
+}
 </style>
 
 <div class="botpress-landing">
