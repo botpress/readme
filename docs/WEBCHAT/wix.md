@@ -62,49 +62,59 @@ Here is a video demonstration on how to build a custom chatbot for Wix. Towards 
 5. Afterwards, place the following code under **Add your code here (HTTPS only)**. Replace the "botId" and "clientId" with your values:
 
 ```Text HTML
-<div class="webchat" style="height: 600px; width: 400px;">
-  <iframe
-    style="height: 100%; width: 100%; border: none;"
-    srcdoc='
-    <!doctype html>
-    <html lang="en">
-      <head></head>
-      <body>
-        <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
-        <script defer>
-          window.botpress.on("webchat:ready", (conversationId) => {
-            botpress.open();
-          });
-          <!-- REPLACE THE CONTENT BELOW WITH THE JAVASCRIPT CODE YOU COPIED EARILER -->
-          window.botpress.init({
-              "botId": "YOUR_BOT_ID",
-            "configuration": {
-              "website": {},
-              "email": {},
-              "phone": {},
-              "termsOfService": {},
-              "privacyPolicy": {},
-              "color": "#3B82F6",
-              "variant": "solid",
-              "themeMode": "light",
-              "fontFamily": "inter",
-              "radius": 1
-            },
-            "clientId": "YOUR_CLIENT_ID"
-          });
-          <!-- REPLACE THE CONTENT ABOVE -->
-        </script>
-      </body>
-    </html>'
-  ></iframe>
+<div id="webchat-container" style="position: relative; width: 100%; height: 100%;">
+  <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+  <script>
+    window.botpress.on("webchat:ready", () => {
+      window.botpress.open();
+    });
+
+    window.botpress.init({
+      "botId": "YOUR_BOT_ID",
+      "configuration": {
+        "botName": "Mr. Botpress Bot",
+        "botAvatar": "https://cdn.prod.website-files.com/637e5037f3ef83b76dcfc8f9/65b02372899b558fa6d650b8_Pricing%20Changes.webp",
+        "website": {},
+        "email": {},
+        "phone": {},
+        "termsOfService": {},
+        "privacyPolicy": {},
+        "color": "#3bf5a1",
+        "variant": "solid",
+        "themeMode": "light",
+        "fontFamily": "inter",
+        "radius": 1
+      },
+      "clientId": "YOUR_CLIENT_ID"
+    });
+  </script>
+  <style>
+    #webchat-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .bpFab {
+      display: none;
+    }
+    .bpWebchat {
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+  </style>
 </div>
 ```
 
 6. **Note:** See [Here](https://botpress.com/docs/webchat-client) for a guide on finding your Botpress clientId. Your Botpress botId can be found in the url of your studio or the **Webchat** tab. For example, while getting your clientId from the **Webchat** tab in the left sidebar of the workspace dashboard, you will notice your url look something like this: [https://app.botpress.cloud/workspaces/THIS\_IS\_YOUR\_WORKSPACE\_ID/bots/THIS\_IS\_YOUR\_BOT\_ID/webchat/v2/general](https://app.botpress.cloud/workspaces/THIS_IS_YOUR_WORKSPACE_ID/bots/THIS_IS_YOUR_BOT_ID/webchat/v2/general).\
    Grab the part after "bots/" that corresponds to the "THIS\_IS\_YOUR\_BOT\_ID" section and paste that in the HTML code from above!
-7. This is what it should look like in the end: (\*\*Note:\*\* If the custom styles from your Webchat styling page aren't appearing here, it is because you must modify the content of the HTML code to not have those default values. i.e "color" and "themeMode". See the code above the "\<!-- REPLACE THE CONTENT ABOVE -->" comment within the init fields).
+7. This is what it should look like in the end: (**Note:** Modify the code in the "configuration" section within "window\.botpress.init" to configure your bot's name, avatar, color, font, etc...).
 
-   ![](https://files.readme.io/374e7310b4c29e67e5995e25d67abad93572db8c9e41b61d631693175d8c679c-image.png)
+   ![](https://files.readme.io/8836ec224a7f54381271a70db6b64ab879418b01639ced4434e88304f5fcbc95-image.png)
 
 ## Embedding the Botpress Web Chat in a Website div
 
