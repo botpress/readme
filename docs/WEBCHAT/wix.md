@@ -106,7 +106,7 @@ Here is a video demonstration on how to build a custom chatbot for Wix. Towards 
 
    ![](https://files.readme.io/0f53b0bd1f190d499d3d04e586b0de3267f0c9e772c41b16a304464488376f7e-image.png)
 5. From there, head over to **Share** tab and copy the **Shareable Link**.
-6. Go back to Wix and paste the link under "What's the website address?"
+6. Go back to Wix and paste the link under "What's the website address?" and click **Apply**.
 
    Your embed should look like this: **Note:** The name of the bot and the image comes from the changes you've made in the **Theme** tab of the Webchat.
 
