@@ -102,7 +102,7 @@ Here is a video demonstration on how to build a custom chatbot for Wix. Towards 
 
 6. **Note:** See [Here](https://botpress.com/docs/webchat-client) for a guide on finding your Botpress clientId. Your Botpress botId can be found in the url of your studio or the **Webchat** tab. For example, while getting your clientId from the **Webchat** tab in the left sidebar of the workspace dashboard, you will notice your url look something like this: [https://app.botpress.cloud/workspaces/THIS\_IS\_YOUR\_WORKSPACE\_ID/bots/THIS\_IS\_YOUR\_BOT\_ID/webchat/v2/general](https://app.botpress.cloud/workspaces/THIS_IS_YOUR_WORKSPACE_ID/bots/THIS_IS_YOUR_BOT_ID/webchat/v2/general).\
    Grab the part after "bots/" that corresponds to the "THIS\_IS\_YOUR\_BOT\_ID" section and paste that in the HTML code from above!
-7. This is what it should look like in the end: (**Note:** custom styles from the Webchat styling page may not appear here. They would have to be added programmatically on Wix)
+7. This is what it should look like in the end: (\*\*Note:\*\* If the custom styles from your Webchat styling page aren't appearing here, it is because you must modify the content of the HTML code to not have those default values. i.e "color" and "themeMode". See the code above the "\<!-- REPLACE THE CONTENT ABOVE -->" comment)
 
    ![](https://files.readme.io/374e7310b4c29e67e5995e25d67abad93572db8c9e41b61d631693175d8c679c-image.png)
 
