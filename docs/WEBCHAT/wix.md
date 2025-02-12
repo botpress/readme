@@ -58,7 +58,7 @@ Here is a video demonstration on how to build a custom chatbot for Wix. Towards 
 1. Log in to your [**Wix**](https://www.wix.com) dashboard and click on **Edit Site** on the top right of the dashboard.
 2. While in the Studio Editor, click on the **Add Elements** button from the left sidebar.
 3. Scroll until you see **Embed Code**. Click on it and click on **Embed HTML**.
-4. Place and modify the HTML div wherever you'd like. **Note:** If the width of the div is greater than 767, then the web chat will no longer fill the screen and place itself to the right-hand side of the div.
+4. Place and modify the length/width of the HTML div wherever/however you'd like.
 5. Afterwards, place the following code under **Add your code here (HTTPS only)**. Replace the "botId" and "clientId" with your values:
 
 ```Text HTML
