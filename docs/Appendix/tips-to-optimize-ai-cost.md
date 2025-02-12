@@ -71,7 +71,7 @@ Therefore, our recommendation is to use the AI Task card when you want to use AI
 **Translations**\
 If your bot is going to be handling a high amount of multilingual conversations, consider integrating hooks with external translation services for a more cost-effective option.
 
-### How to Prevent Caching
+## How to Prevent Caching
 
 If you want to overcome caching to always get live results, you can do either of the following options:
 
