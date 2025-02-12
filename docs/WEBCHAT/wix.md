@@ -104,7 +104,7 @@ Here is a video demonstration on how to build a custom chatbot for Wix. Towards 
    Grab the part after "bots/" that corresponds to the "THIS\_IS\_YOUR\_BOT\_ID" section and paste that in the HTML code from above!
 7. This is what it should look like in the end: (**Note:** custom styles from the Webchat styling page may not appear here. They would have to be added programmatically on Wix)
 
-   ![](https://files.readme.io/61aad3dc871f6d828f4aae70edf89cb1c8ef16ffde6e338ae63948f4275bc64e-image.png)
+   ![](https://files.readme.io/374e7310b4c29e67e5995e25d67abad93572db8c9e41b61d631693175d8c679c-image.png)
 
 ## Embedding the Botpress Web Chat in a Website div
 
