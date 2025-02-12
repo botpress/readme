@@ -102,7 +102,7 @@ Here is a video demonstration on how to build a custom chatbot for Wix. Towards 
 1. Log in to your [**Wix**](https://www.wix.com) dashboard and click on **Edit Site** on the top right of the dashboard.
 2. While in the Studio Editor, click on the **Add Elements** button from the left sidebar.
 3. Scroll until you see **Embed Code**. Click on it and click on **Embed a site**.
-4. Head over to your Botpress dashboard and click on **Webchat** in the left sidebar.
+4. Head over to your Botpress dashboard and click on **Webchat** in the left sidebar. Please make sure you are editing the Webchat of the correct bot by checking the name of the dropdown.
 
    ![](https://files.readme.io/0f53b0bd1f190d499d3d04e586b0de3267f0c9e772c41b16a304464488376f7e-image.png)
 5. From there, head over to **Share** tab and copy the **Shareable Link**.
