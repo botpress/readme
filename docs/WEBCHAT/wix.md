@@ -62,32 +62,41 @@ Here is a video demonstration on how to build a custom chatbot for Wix. Towards 
 5. Afterwards, place the following code under **Add your code here (HTTPS only)**. Replace the "botId" and "clientId" with your values:
 
 ```Text HTML
-<div id="webchat-container" style="width: 300px; height: 500px;">
-  <script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
-  <script>
-    window.botpress.on("webchat:ready", () => {
-      window.botpress.open();
-    });
-
-    window.botpress.init({
-      "botId": "YOUR_BOT_ID",
-      "clientId": "YOUR_CLIENT_ID",
-      "configuration": {
-        "hideWidget": true,
-        "showCloseButton": false,
-        "disableAnimations": true
-      }
-    });
-  </script>
-  <style>
-    .bpFab {
-      display: none;
-    }
-    .bpWebchat {
-      width: 100% !important;
-      height: 100% !important;
-    }
-  </style>
+<div class="webchat" style="height: 600px; width: 400px;">
+  <iframe
+    style="height: 100%; width: 100%; border: none;"
+    srcdoc='
+    <!doctype html>
+    <html lang="en">
+      <head></head>
+      <body>
+        <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+        <script defer>
+          window.botpress.on("webchat:ready", (conversationId) => {
+            botpress.open();
+          });
+          <!-- REPLACE THE CONTENT BELOW WITH THE JAVASCRIPT CODE YOU COPIED EARILER -->
+          window.botpress.init({
+              "botId": "YOUR_BOT_ID",
+            "configuration": {
+              "website": {},
+              "email": {},
+              "phone": {},
+              "termsOfService": {},
+              "privacyPolicy": {},
+              "color": "#3B82F6",
+              "variant": "solid",
+              "themeMode": "light",
+              "fontFamily": "inter",
+              "radius": 1
+            },
+            "clientId": "YOUR_CLIENT_ID"
+          });
+          <!-- REPLACE THE CONTENT ABOVE -->
+        </script>
+      </body>
+    </html>'
+  ></iframe>
 </div>
 ```
 
