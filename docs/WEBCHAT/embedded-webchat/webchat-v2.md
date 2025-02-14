@@ -6,13 +6,18 @@ metadata:
   robots: index
 ---
 The Embedded Webchat allows you to integrate chatbot functionality directly into your web application. It supports message handling, event subscriptions, and customization, enabling a dynamic user experience within the browser.
+
 ## Setup
+
 The simplest way to get started with Webchat for your web application is by embedding a couple of script tags into your HTML. Follow the steps below:
+
 1. Open your bot in the **Botpress Workspace**.
 2. Navigate to the **Webchat** tab in your bot’s dashboard.
 3. Click **Advanced Settings**.
 4. Copy the provided Embed Code.
+
 <Image align="center" width="90% " src="https://files.readme.io/820dc883bb2d56b0668729c2b17b7584ea4916e6b38b0826ae1fe24f34ca3ec7-image.png" />
+
 5. Paste the copied code into your HTML:
    ```html index.html
    <!DOCTYPE html>
@@ -27,9 +32,13 @@ The simplest way to get started with Webchat for your web application is by embe
    </body>
    </html>
    ```
+
 <br />
+
 ## Setup Webchat as a component in your web application.
+
 Webchat can also be set up as part of your web application to give it a more unique look and feel. To do this:
+
 * Follow steps 1 to 4 from above to get the embed code scripts.
 * Instead of adding the scripts directly to your HTML body, open the src link in the second script and copy the code snippet. It should look like this:
   ```javascript
@@ -96,3 +105,7 @@ Webchat can also be set up as part of your web application to give it a more uni
     ... 
   </div>
   ```
+
+## Embedding the Webchat Directly in a HTML div.
+
+Webchat can also be embedded directly into a HTML div of a site. For example, [Wix](https://botpress-docs.readme.io/docs/wix#/embedding-the-botpress-web-chat-in-a-html-div)
