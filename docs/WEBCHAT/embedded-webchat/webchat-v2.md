@@ -108,4 +108,53 @@ Webchat can also be set up as part of your web application to give it a more uni
 
 ## Embedding the Webchat Directly in a HTML div.
 
-Webchat can also be embedded directly into a HTML div of a site. For example, [Wix](https://botpress-docs.readme.io/docs/wix#/embedding-the-botpress-web-chat-in-a-html-div)
+Webchat can also be embedded directly into a HTML div of a site. For instance, this can be done on [Wix](https://botpress-docs.readme.io/docs/wix#/embedding-the-botpress-web-chat-in-a-html-div). The code for doing such an embedding is found below:
+
+```html
+<div id="webchat-container" style="position: relative; width: 100%; height: 100%;">
+  <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+  <script>
+    window.botpress.on("webchat:ready", () => {
+      window.botpress.open();
+    });
+
+    window.botpress.init({
+      "botId": "YOUR_BOT_ID",
+      "configuration": {
+        "botName": "Mr. Botpress Bot",
+        "botAvatar": "https://cdn.prod.website-files.com/637e5037f3ef83b76dcfc8f9/65b02372899b558fa6d650b8_Pricing%20Changes.webp",
+        "website": {},
+        "email": {},
+        "phone": {},
+        "termsOfService": {},
+        "privacyPolicy": {},
+        "color": "#3bf5a1",
+        "variant": "solid",
+        "themeMode": "light",
+        "fontFamily": "inter",
+        "radius": 1
+      },
+      "clientId": "YOUR_CLIENT_ID"
+    });
+  </script>
+  <style>
+    #webchat-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .bpFab {
+      display: none;
+    }
+    .bpWebchat {
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+  </style>
+</div>
+```
