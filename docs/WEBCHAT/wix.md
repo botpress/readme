@@ -61,7 +61,7 @@ Here is a video demonstration on how to build a custom chatbot for Wix. Towards 
 4. Place and modify the length/width of the HTML div wherever/however you'd like.
 5. Afterwards, place the following code under **Add your code here (HTTPS only)**. Replace the "botId" and "clientId" with your values:
 
-```Text HTML
+```html HTML
 <div id="webchat-container" style="position: relative; width: 100%; height: 100%;">
   <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
   <script>
