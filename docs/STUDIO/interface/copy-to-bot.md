@@ -5,11 +5,11 @@ hidden: false
 metadata:
   robots: index
 ---
-The Copy to Bot feature allows you to duplicate the configuration of a source bot into another target bot.
+The Copy to Bot feature allows you to duplicate the configuration of a bot into another bot.
 
 ### Use Cases
 
-This feature is useful in several scenarios:
+This feature is useful in couple scenarios:
 
 **Development, Staging, and Production Environments**:
 
