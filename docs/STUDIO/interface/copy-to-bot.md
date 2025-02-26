@@ -41,9 +41,9 @@ This feature is useful in several scenarios:
 
 When a user requests to copy a bot to another bot, the following actions are performed:
 
-**Workflows and Variables are copied**
+**Workflows, Variables and Hooks are copied**
 
-* All workflows and variables from the source bot will be copied to the target bot.
+* All workflows, variables and hooks from the source bot will be copied to the target bot.
 * Existing workflows and variables in the target bot will be overwritten.
 
 **Integrations are synced**
