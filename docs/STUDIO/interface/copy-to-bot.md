@@ -7,8 +7,6 @@ metadata:
 ---
 The Copy to Bot feature allows you to duplicate the configuration of a source bot into another target bot.
 
-***
-
 ### Use Cases
 
 This feature is useful in several scenarios:
