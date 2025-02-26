@@ -9,36 +9,6 @@ The Copy to Bot feature allows you to duplicate the configuration of a source bo
 
 ***
 
-### How it works
-
-When a user requests to copy a bot to another bot, the following actions are performed:
-
-**Workflows and Variables are copied**
-
-* All workflows and variables from the source bot will be copied to the target bot.
-* Existing workflows and variables in the target bot will be overwritten.
-
-**Integrations are synced**
-
-* New or outdated integrations from the source bot will be installed in the target bot. These will need to be configured in the target bot’s studio.
-* Existing integrations in the target bot will be preserved with their configuration.
-* Integrations that exist only in the target bot will remain unchanged.
-
-**Tables are synced**
-
-* New tables from the source bot will be added to the target bot.
-* New columns in existing tables will be added to the corresponding tables in the target bot. If there was existing data, the new column will be null for each entry.
-* Deleted columns in existing tables will be removed from the target bot’s equivalent tables. If there was existing data, only the data for that column will be lost—other data remains intact.
-* Tables that exist only in the target bot will remain unchanged.
-
-**Knowledge Base (KB) Files are synced**
-
-* New files from the source bot will be duplicated in the target bot.
-* If a file is updated in the source bot, the corresponding file in the target bot will be overwritten.
-* Files that exist only in the target bot will remain unchanged.
-
-***
-
 ### Use Cases
 
 This feature is useful in several scenarios:
@@ -68,3 +38,31 @@ This feature is useful in several scenarios:
 <br />
 
 ***
+
+### How it works
+
+When a user requests to copy a bot to another bot, the following actions are performed:
+
+**Workflows and Variables are copied**
+
+* All workflows and variables from the source bot will be copied to the target bot.
+* Existing workflows and variables in the target bot will be overwritten.
+
+**Integrations are synced**
+
+* New or outdated integrations from the source bot will be installed in the target bot. These will need to be configured in the target bot’s studio.
+* Existing integrations in the target bot will be preserved with their configuration.
+* Integrations that exist only in the target bot will remain unchanged.
+
+**Tables are synced**
+
+* New tables from the source bot will be added to the target bot.
+* New columns in existing tables will be added to the corresponding tables in the target bot. If there was existing data, the new column will be null for each entry.
+* Deleted columns in existing tables will be removed from the target bot’s equivalent tables. If there was existing data, only the data for that column will be lost—other data remains intact.
+* Tables that exist only in the target bot will remain unchanged.
+
+**Knowledge Base (KB) Files are synced**
+
+* New files from the source bot will be duplicated in the target bot.
+* If a file is updated in the source bot, the corresponding file in the target bot will be overwritten.
+* Files that exist only in the target bot will remain unchanged.
