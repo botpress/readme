@@ -1,7 +1,7 @@
 ---
 title: Copy to bot
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
