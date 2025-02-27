@@ -45,7 +45,7 @@ Whether you are new to Botpress or looking to explore our features, this templat
    <br />
 6. **Querying Knowledge Base and Saving Search Results**
    * Question and answer tracking
-   * Prevent the AI from hallucinating by telling the user that no answer was found if the information does not exist within the knowledge base. This bot covers fallback handling for unanswered questions.
+   * Prevent AI hallucinations by telling the user that no answer was found if the information does not exist within the knowledge base. This bot covers fallback handling for unanswered questions.
    * Track the exact chunk, knowledge base, and citation for where the information came from within your knowledge base.
    <br />
 7. **Live Agent Handoff**
