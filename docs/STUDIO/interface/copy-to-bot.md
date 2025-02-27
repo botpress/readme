@@ -1,12 +1,11 @@
 ---
 title: Copy to bot
+excerpt: Duplicate the configuration of a bot into another bot.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-The Copy to Bot feature allows you to duplicate the configuration of a bot into another bot.
-
 ### Use Cases
 
 This feature is useful in couple scenarios:
