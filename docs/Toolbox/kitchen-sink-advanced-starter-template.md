@@ -1,5 +1,5 @@
 ---
-title: Kitchen Sink - Advanced Starter Template
+title: Advanced Starter Template
 deprecated: false
 hidden: false
 metadata:
