@@ -30,7 +30,7 @@ This feature is useful in couple scenarios:
 
 <br />
 
-<Image align="center" border={false} caption="Botpress &#x22;Copy to bot&#x22; Menu Option" src="https://files.readme.io/2fad0e8741dd74acc3c99a191ac4ecd069c30994d7b2c28a84ae4e77f7bf6d3c-image.png" width="50% " />
+<Image align="center" border={true} caption="Botpress &#x22;Copy to bot&#x22; Menu Option" src="https://files.readme.io/2fad0e8741dd74acc3c99a191ac4ecd069c30994d7b2c28a84ae4e77f7bf6d3c-image.png" width="50% " />
 
 <br />
 
