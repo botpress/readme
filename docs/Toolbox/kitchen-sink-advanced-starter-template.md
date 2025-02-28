@@ -7,7 +7,11 @@ metadata:
 ---
 ## Import Guide
 
-Follow the instructions for downloading and importing the bot template on the Botpress Growth Team's Github! Link to the instructions found [here!!](https://github.com/botpress/growth/tree/master/advanced-starter-bot-template)
+1. Go to the [Advanced Starter Template](https://github.com/botpress/growth/tree/master/advanced-starter-bot-template) located on the Botpress Growth Team's Github!
+2. Scroll down to the "How to use" section and click the download link for the [kitchen-sink.bpz](https://github.com/botpress/growth/blob/master/advanced-starter-bot-template/kitchen-sink.bpz) file.
+3. Click on the download icon on the right side of the screen (see screenshot below).
+
+<Image align="center" src="https://files.readme.io/3eb6872ba0d4670d8c0618113f0389ab0226b488862a1553196f9bb3c398eac0-Screenshot_2025-02-28_at_9.45.48_AM.jpg" />
 
 ## Overview
 
