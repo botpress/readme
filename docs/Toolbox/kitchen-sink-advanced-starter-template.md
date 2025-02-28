@@ -19,7 +19,8 @@ metadata:
 
 <Image align="center" src="https://files.readme.io/1d47fc992365e4c71a563b16594d1b3120ffa80f8d650c41aa3fc3cba0ba4827-Screenshot_2025-02-28_at_9.54.52_AM.png" />
 
-7. <br />
+7. Select this template!
+8. Enjoy!!! Please make sure to read the rest of this documentation and watch the video below!
 
 ## Overview
 
