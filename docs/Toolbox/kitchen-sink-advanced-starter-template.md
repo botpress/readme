@@ -22,7 +22,7 @@ metadata:
 7. Select this template!
 8. Enjoy!!! Please make sure to read the rest of this documentation and watch the video below!
 
-## Overview
+## Purpose
 
 This comprehensive template covers the core features and capabilities of Botpress, serving as both a learning resource and a foundation for your chatbot projects.
 
