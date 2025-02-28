@@ -7,7 +7,7 @@ metadata:
 ---
 ## Import Guide
 
-Follow the instructions for downloading and importing the bot template on the Botpress Growth Team's Github! Link to the intructions found [here!!](https://github.com/botpress/growth/blob/master/advanced-starter-bot-template/README.md?ajs_aid=%24device%3A194657d0e46d2c-09f7f8d41c2d72-1e525636-1fa400-194657d0e46d2c)
+Follow the instructions for downloading and importing the bot template on the Botpress Growth Team's Github! Link to the intructions found [here!!](https://github.com/botpress/growth/tree/master/advanced-starter-bot-template)
 
 ## Overview
 
