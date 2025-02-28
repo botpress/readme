@@ -13,6 +13,14 @@ metadata:
 
 <Image align="center" src="https://files.readme.io/3eb6872ba0d4670d8c0618113f0389ab0226b488862a1553196f9bb3c398eac0-Screenshot_2025-02-28_at_9.45.48_AM.jpg" />
 
+4. Go to your [Botpress studio](https://studio.botpress.cloud)
+5. Click on the Botpress icon at the top left of your screen
+6. Click "Import / Export" and then click on "Import from file" (see screenshot below).
+
+<Image align="center" src="https://files.readme.io/1d47fc992365e4c71a563b16594d1b3120ffa80f8d650c41aa3fc3cba0ba4827-Screenshot_2025-02-28_at_9.54.52_AM.png" />
+
+7. <br />
+
 ## Overview
 
 This comprehensive template covers the core features and capabilities of Botpress, serving as both a learning resource and a foundation for your chatbot projects.
