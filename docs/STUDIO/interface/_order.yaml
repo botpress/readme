@@ -3,6 +3,7 @@
 - studio-interface-flows
 - knowledge-base
 - tables
+- actions-1
 - agents
 - library
 - hooks
@@ -21,4 +22,3 @@
 - studio-preferences
 - import-export-bots
 - copy-to-bot
-- actions-1
