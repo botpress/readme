@@ -26,7 +26,7 @@ The Botpress SDK supports three types of packages:
 npx bp add [--package-type <type>] <package-name>[@version]
 ```
 
-The `\--package-type` argument is optional but necessary when resolving name collisions between an integration, an interface, or a plugin. For example, there is an actual interface, integration, and plugin named `hitl`. In such cases, specifying the package type ensures the correct one is used. When in doubt, always include the `\--package-type` argument.
+The `--package-type` argument is optional but necessary when resolving name collisions between an integration, an interface, or a plugin. For example, there is an actual interface, integration, and plugin named `hitl`. In such cases, specifying the package type ensures the correct one is used. When in doubt, always include the `--package-type` argument.
 
 ### Installing Interface Packages
 
