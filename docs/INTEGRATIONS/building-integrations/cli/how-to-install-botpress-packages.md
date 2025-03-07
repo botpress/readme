@@ -30,7 +30,7 @@ The `--package-type` argument is optional but necessary when resolving name coll
 
 ### Installing Interface Packages
 
-Installing interface packages is useful for integration development. It allows an integration developer to implement an interface. Check out [this page](\[https://botpress.com/docs/llm-interfaces]\(https://botpress.com/docs/llm-interfaces\)) to learn how to use an interface package.
+Installing interface packages is useful for integration development. It allows an integration developer to implement an interface. Check out [this page](https://botpress.com/docs/llm-interfaces) to learn how to use an interface package.
 
 ```bash
 # Install LLM interface with latest version
