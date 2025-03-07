@@ -12,10 +12,11 @@ next:
 ---
 ## Package Types in Botpress SDK
 
-The Botpress SDK supports two types of packages:
+The Botpress SDK supports three types of packages:
 
 * **Integration Packages**
 * **Interface Packages**
+* **Plugin Packages** (Coming Soon)
 
 ## Installing Packages
 
@@ -25,34 +26,73 @@ The Botpress SDK supports two types of packages:
 npx bp add [--package-type <type>] <package-name>[@version]
 ```
 
+The `\--package-type` argument is optional but necessary when resolving name collisions between an integration, an interface, or a plugin. For example, there is an actual interface, integration, and plugin named `hitl`. In such cases, specifying the package type ensures the correct one is used. When in doubt, always include the `\--package-type` argument.
+
 ### Installing Interface Packages
 
-To install an interface package, use the **--package-type** interface flag:
+Installing interface packages is useful for integration development. It allows an integration developer to implement an interface. Check out [this page](\[https://botpress.com/docs/llm-interfaces]\(https://botpress.com/docs/llm-interfaces\)) to learn how to use an interface package.
 
 ```bash
+# Install LLM interface with latest version
+npx bp add llm
 # Install HITL interface version 0.0.1
 npx bp add --package-type interface hitl@0.0.1
+# Install an interface using its ID
+npx bp add b759e577-2ce7-451a-abff-68085b224985
 ```
 
 ### Installing Integration Packages
 
-Integration packages can be installed directly from the Botpress Hub:
+Installing integration packages is mostly useful for *as-code* bot development (using the SDK). It serves no purpose for bots developed in the studio.
 
 ```bash
-# Install Github integration
+# Install Github with latest integration
 npx bp add github
+# Insatll HITL integration version 1.0.2
+npx bp add --package-type integration hitl@1.0.2
+# Install an integration using its ID
+npx bp add intver_01JCKSRFAZ7SKBYRM330PBAG88
 ```
 
-## Using Installed Packages
+### Committing Botpress Dependencies to Your Git Repository
 
-After installation, packages are available in the **bp\_modules** folder. Here's how to import and use installed packages:
+To ensure that your project's Botpress dependencies are included in your Git repository, define them in your package.json under the `bpDependencies` field:
 
-```typescript
-// Import the package
-import hitl from './bp_modules/hitl'
-
-// Use it in your integration definition
-export default new IntegrationDefinition({
-  // Your integration configuration
-}).extend(hitl, () => ({}))
+```json json
+{
+  "name": "...",
+	"version": "...",
+  "description": "...",
+  "scripts": {},
+  "dependencies": {},
+  "bpDependencies": {
+    "hitl": "interface:hitl@0.4.0",
+    "hitl_integration": "integration:hitl",
+    "llm_latest": "llm",
+		"llm_7": "llm@7.0.0",
+    "github": "github@1.1.5",
+    "notion": "intver_01JN9P95XVFF3CNGD248M1WSVK",
+    "myIntegration": "../../myIntegration"
+  }
+}
 ```
+
+Once defined, you can install all listed integrations at once by running:
+
+```shell sh
+bp add -y
+```
+
+<br />
+
+The `bpDependencies` object maps keys to package references. The key determines the name of the directory where the package is installed locally. The corresponding values can be one of the following:
+
+* A package ID
+* A file path (e.g., a local integration or interface)
+* A formatted package reference:
+  * name → The package name (defaults to the latest version)
+  * \[packageType]name\[@version] → Specifies a package type and version
+    * packageType (optional) can be integration, interface, or other relevant types
+    * version (optional, defaults to latest) can specify a specific version
+
+This setup ensures consistent dependency management across different environments while keeping locally developed integrations easy to reference.
