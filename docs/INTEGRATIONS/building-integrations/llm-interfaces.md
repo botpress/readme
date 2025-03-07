@@ -64,7 +64,7 @@ There are three steps to use your own LLM: creating and configuring an integrati
 
 Start by [creating an integration](doc:getting-started-1). Once you've done that, you must [install **llm interface**](https://botpress.com/docs/how-to-install-botpress-packages) and adjust the integration definition using the `.extend()` method.
 
-```javascript integration.definition.ts
+```typescript integration.definition.ts
 import { z, IntegrationDefinition } from "@botpress/sdk";
 import llm from './bp_modules/llm'
 
@@ -78,10 +78,9 @@ export default new IntegrationDefinition({
       }),
     },
   },
-})
-.extend(llm, ({ modelRef }) => ({
-  modelRef,
-}));
+}).extend(llm, ({ entities: { modelRef } }) => ({ 
+  entities: { modelRef } 
+}))
 
 ```
 
@@ -89,13 +88,13 @@ In the above example, lines 14 - 16 were added. Once you are done with that, it'
 
 ### 2. Add the LLM invocation logic
 
-When you use the `llm interfaces`, you must implement two actions: `generateContent` and `listModels`. These actions define the core functionality of your LLM integration. 
+When you use the `llm interfaces`, you must implement two actions: `generateContent` and `listModels`. These actions define the core functionality of your LLM integration.
 
 **The listModels method**
 
-Whenever a user chooses an LLM model in the Botpress Studio, all listModels actions are invoked on installed integrations to list all available models. 
+Whenever a user chooses an LLM model in the Botpress Studio, all listModels actions are invoked on installed integrations to list all available models.
 
-Should you wish to act as an LLM provider for Botpress and have users pay for tokens through Botpress, you can use the costPer1MTokens to charge users for using your LLM. For all other use cases, the costPer1MTokens should be set to 0, and billing handled by yourself.  
+Should you wish to act as an LLM provider for Botpress and have users pay for tokens through Botpress, you can use the costPer1MTokens to charge users for using your LLM. For all other use cases, the costPer1MTokens should be set to 0, and billing handled by yourself.
 
 **The generateContent method**
 
@@ -155,7 +154,7 @@ Once you are done with the above, simply deploy the integration, and install it 
 
 ### 3. Select your LLM in Botpress Studio
 
-Now you can choose your LLM when configuring AI-related tasks. It will show up in the LLM selectors in the Botpress Studio. 
+Now you can choose your LLM when configuring AI-related tasks. It will show up in the LLM selectors in the Botpress Studio.
 
 In the above example, **My LLM 1** and **My LLM 2** appear with the corresponding tags.
 
@@ -167,4 +166,4 @@ By integrating your own LLM with Botpress, you gain full control over AI outputs
 
 # Having difficulties with LLM Interfaces?
 
-Contact us at [llm-help@botpress.com](mailto:llm-help@botpress.com) with as much details as possible about your company and your use case.
+Contact us at [llm-help@botpress.com](mailto:llm-help@botpress.com) with as much detail as possible about your company and your use case.
