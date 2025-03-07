@@ -69,7 +69,7 @@ To ensure that your project's Botpress dependencies are included in your Git rep
     "hitl": "interface:hitl@0.4.0",
     "hitl_integration": "integration:hitl",
     "llm_latest": "llm",
-		"llm_7": "llm@7.0.0",
+    "llm_7": "llm@7.0.0",
     "github": "github@1.1.5",
     "notion": "intver_01JN9P95XVFF3CNGD248M1WSVK",
     "myIntegration": "../../myIntegration"
