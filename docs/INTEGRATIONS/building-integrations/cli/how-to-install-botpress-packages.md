@@ -61,7 +61,7 @@ To ensure that your project's Botpress dependencies are included in your Git rep
 ```json json
 {
   "name": "...",
-	"version": "...",
+  "version": "...",
   "description": "...",
   "scripts": {},
   "dependencies": {},
