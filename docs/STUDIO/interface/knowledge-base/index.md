@@ -66,7 +66,8 @@ For instance, if a user searches for **"How to calibrate the XYZ device,"** Botp
 
 > 📘 File Limits
 >
-> You can upload upto **100** documents to the Knowledge Base, with a size limit of **50MB** per document. This feature is designed for optimal utilization.
+> You can upload documents to the Knowledge Base with a size limit of **50MB** per document. The total number of documents you can upload depends on your plan's vector storage quota and any additional\
+> add-ons.
 
 <br />
 
