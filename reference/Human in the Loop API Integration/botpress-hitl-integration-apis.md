@@ -42,5 +42,5 @@ The  ([Human in the Loop API integration](https://app.botpress.cloud/hub/integra
 </Image>
 
 <Image alt="This is the no-code integration that allows Botpress users to act as live agents" align="center" src="https://files.readme.io/6894784c708ced81502a31fa0e368c36a2a640ee43d0b2a8e5aefd4ecf2afb29-image.png">
-  This is the no-code integration that allows Botpress users to act as live agents
+  This is the no-code integration that allows Botpress users to act as live agents.
 </Image>
