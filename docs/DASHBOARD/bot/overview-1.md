@@ -18,7 +18,7 @@ This window shows basic statistics about your bot so you can quickly grasp any c
 
 > 📘 Note
 >
-> More detailed analytics can be found in the [Analytics tab](https://botpress.com/docs/analytics-1).
+> You can view more detailed analytics about your bot in the [Analytics tab](https://botpress.com/docs/analytics-1).
 
 ## Recent issues
 
