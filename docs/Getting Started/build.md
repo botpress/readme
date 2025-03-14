@@ -15,7 +15,7 @@ Creating a chatbot with Botpress is a simple and intuitive process that can be a
 ## Creating a bot
 
 1. Log in to [Botpress Cloud](https://app.botpress.cloud)
-2. Click **+ New bot** and enter the Studio
+2. Click **+ Create bot** and enter the Studio
 3. Get creative.
 
 In Botpress, each bot belongs to a <Glossary>Workspace</Glossary>. When you connect to Botpress Cloud for the first time, a default Workspace will be automatically created for you.
