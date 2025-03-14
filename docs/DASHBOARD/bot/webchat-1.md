@@ -16,6 +16,8 @@ next:
 ---
 Webchat is the native integration that allows you to deploy your bot on a website.
 
-From this menu, you can test your webchat, make adjustments to its appearance and settings, and generate the code needed to embedded it on your website.
+From this menu, you can test your Webchat, make adjustments to its appearance and settings, and generate the code needed to embedded it on your website.
 
-For a more detailed guide on using the webchat, [refer to its official documentation](doc:webchat-v2).
+> 📘 Note
+>
+> For a more detailed guide on using the Webchat, [consult the Webchat documentation](doc:webchat-v2).
