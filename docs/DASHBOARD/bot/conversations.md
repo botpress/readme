@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-The Conversations tab helps you track your bot's behavior and user interactions. Once you [publish and share your bot](https://botpress.com/docs/deploy), you can use the Conversations tab to view your bot's performance in real time. This means you can:
+Once you [publish and share your bot](https://botpress.com/docs/deploy), you can use the Conversations tab to view and manage your bot's interactions with users. This means you can:
 
 * View user messages and replies
 * Identify and fix issues with your bot
