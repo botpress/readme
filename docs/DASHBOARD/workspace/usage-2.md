@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-The Usage tab provides a view of the computational resources used by all of the bots in your Workspace. Having this information is useful to understand the performance of each chatbot in your Workspace and to plan for future growth. The resources are grouped by the following categories:
+The Usage tab provides a view of the computational resources used by all of the bots in your Workspace. This helps you understand the performance of each chatbot in your Workspace and plan for future growth. The resources are grouped by the following categories:
 
 ## AI Spend
 
