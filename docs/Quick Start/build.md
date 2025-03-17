@@ -1,6 +1,6 @@
 ---
 title: Build
-excerpt: Planning your bot project, setting goals, and testing your conversations.
+excerpt: Plan your bot project, set goals, and test your conversations.
 deprecated: false
 hidden: false
 metadata:
@@ -14,13 +14,11 @@ Creating a chatbot with Botpress is a simple and intuitive process that can be a
 
 ## Creating a bot
 
-1. Log in to [Botpress Cloud](https://app.botpress.cloud)
-2. Click **+ Create bot** and enter the Studio
-3. Get creative.
+1. Login to [Botpress Cloud](https://app.botpress.cloud)
+2. Click **+ New bot** and enter the [Studio](https://botpress.com/docs/interface).
+3. Get creative!
 
 In Botpress, each bot belongs to a <Glossary>Workspace</Glossary>. When you connect to Botpress Cloud for the first time, a default Workspace will be automatically created for you.
-
-<br />
 
 ## Bot templates
 
@@ -42,8 +40,6 @@ To access templates on an existing bot:
 > 🚧 Warning: Overriding Template
 >
 > If you override an existing bot with a bot template, all the previous content and configurations of your bot will be erased and replaced with the new template.
-
-<br />
 
 ## Testing your bot
 
