@@ -33,13 +33,26 @@ It's easy to build a bot with Botpress, even if you don't have a technical backg
 >
 > To learn more about Workspaces, check out the [Workspace guide](tbc).
 
-## Customize your bot's behaviour
+## Configure your bot's behaviour
 
-In Botpress, you customize your bot's behavior using Workflows Every bot has a few helpful default Workflows, but you can create custom Workflows to organize your project more easily. For more information, check out the [Workflows](tbc) page.
+In Botpress, you configure your bot's behavior using Workflows. A Workflow is a visual representation of the series of steps your bot follows when a user starts a conversation.
 
-For now, let's take a look at the **Main** workflow:
+> 📘 Custom Workflows
+>
+> Every bot comes with a few helpful default Workflows, but you can create custom Workflows to organize your project more easily. For more information, check out the [Workflows](tbc) page.
+
+For now, let's take a look at the **Main** Workflow:
 
 1. In Studio, select ![Workflows](https://files.readme.io/f71ca6c253bf9be22d54f9a436282c1dfd9b08296e058564badaab29be40b3c9-Screen_Shot_2025-03-17_at_14.30.48.png)**Workflows**  from the left navigation bar.
+2. Select your **Main** Workflow.
+
+### Main Workflow
+
+This **Main** Workflow contains the main logic for your bot. By default, it contains:
+
+* A **Start** Node
+* An **Autonomous** Node
+* An **End** Node
 
 ## Test your bot
 
