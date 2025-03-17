@@ -39,7 +39,7 @@ In Botpress, you customize your bot's behavior using Workflows Every bot has a f
 
 For now, let's take a look at the **Main** workflow:
 
-1. In Studio, select **Workflows**  from the left navigation bar.
+1. In Studio, select ![Workflows](https://files.readme.io/f71ca6c253bf9be22d54f9a436282c1dfd9b08296e058564badaab29be40b3c9-Screen_Shot_2025-03-17_at_14.30.48.png)**Workflows**  from the left navigation bar.
 
 ## Test your bot
 
