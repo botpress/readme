@@ -1,6 +1,8 @@
 ---
-title: Build
-excerpt: Plan your bot project, set goals, and test your conversations.
+title: Create a Bot
+excerpt: >-
+  This quick start guide will help you build, deploy, and monitor your first
+  bot.
 deprecated: false
 hidden: false
 metadata:
@@ -10,38 +12,36 @@ metadata:
 next:
   description: ''
 ---
-Creating a chatbot with Botpress is a simple and intuitive process that can be accomplished by both technical and non-technical users. With a few straightforward steps, you can quickly set up an AI agent or chatbot.
+It's easy to build a bot with Botpress, even if you don't have a technical background. This guide will show you how to create a simple bot from start to finish. Your bot will:
 
-## Creating a bot
+* Use AI to respond to messages
+* Follow custom instructions
+* Have a unique, shareable link
 
-1. Login to [Botpress Cloud](https://app.botpress.cloud)
-2. Click **+ New bot** and enter the [Studio](https://botpress.com/docs/interface).
-3. Get creative!
+# Step 1: Build your bot
 
-In Botpress, each bot belongs to a <Glossary>Workspace</Glossary>. When you connect to Botpress Cloud for the first time, a default Workspace will be automatically created for you.
+## Add a new bot
 
-## Bot templates
+1. Login to [Botpress Cloud](https://app.botpress.cloud).
+2. Select **+ New bot** and choose a name for the bot (or randomly generate one).
+3. Select **Open in** [Studio](https://botpress.com/docs/interface).
+4. Start building!
 
-Templates are pre-configured projects that contain predefined conversational flows, Knowledge Bases, and responses.
-
-They serve as a starting point for building bots and can be customized to suit specific use cases. Botpress provides a collection of built-in templates that cover various scenarios and use cases, like customer support, sales, or an easy setup wizard.
-
-These templates can be used as-is or modified according to the specific requirements of your chatbot.
-
-### Using bot templates
-
-When you enter Botpress Studio after creating a new bot, you'll be prompted to select from a Template or start building from scratch.
-
-To access templates on an existing bot:
-
-* In Botpress Studio, click on the Botpress icon located at the top-left corner, and select **Explore Bot Templates**.
-* Choose the template you would like to use.
-
-> 🚧 Warning: Overriding Template
+> 📘 Workspaces
 >
-> If you override an existing bot with a bot template, all the previous content and configurations of your bot will be erased and replaced with the new template.
+> In Botpress, each bot belongs to a <Glossary>Workspace</Glossary>. When you login for the first time, we create a default Workspace for you, but you can create others depending on your needs.
+>
+> To learn more about Workspaces, check out the [Workspace guide](tbc).
 
-## Testing your bot
+## Customize your bot's behaviour
+
+In Botpress, you customize your bot's behavior using Workflows Every bot has a few helpful default Workflows, but you can create custom Workflows to organize your project more easily. For more information, check out the [Workflows](tbc) page.
+
+For now, let's take a look at the **Main** workflow:
+
+1. In Studio, select **Workflows**  from the left navigation bar.
+
+## Test your bot
 
 Regularly testing the kinds of conversations end users will have with your bot is a crucial part of the building process.
 
@@ -50,3 +50,7 @@ There is a chat emulator built in the studio with which you can test your bot. I
 You can get additional information from the Event Debugger to understand why your bot generated a specific answer or took a certain action.
 
 The Event Debugger includes all sorts of useful information: the dialogue engine's elected suggestion, nodes flowed through, and natural language intents or questions. You can also view the raw JSON Payload that contains all details if you need further data. Additionally, your bot's logs record all events in the **Logs** tab of the bottom panel.
+
+# 2. Deploy your bot
+
+# 3. Monitor your bot
