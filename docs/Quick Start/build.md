@@ -37,9 +37,13 @@ It's easy to build a bot with Botpress, even if you don't have a technical backg
 
 In Botpress, you configure your bot's behavior using Workflows. A Workflow is a visual representation of the series of steps your bot follows when a user starts a conversation.
 
+The steps in a Workflow are represented by Nodes. You can draw a path between any two Nodes to create a Transition between them.
+
 > 📘 Custom Workflows
 >
 > Every bot comes with a few helpful default Workflows, but you can create custom Workflows to organize your project more easily. For more information, check out the [Workflows](tbc) page.
+
+### Main Workflow
 
 For now, let's take a look at the **Main** Workflow:
 
@@ -47,6 +51,13 @@ For now, let's take a look at the **Main** Workflow:
 2. Select your **Main** Workflow.
 
 The **Main** Workflow contains the main logic for your bot. By default, it contains a <Glossary>Start Node</Glossary>, an <Glossary>Autonomous Node</Glossary>, and an <Glossary>End Node</Glossary>.
+
+### Autonomous Node
+
+You can add custom instructions to the Autonomous Node:
+
+1. Select **Instructions**
+2. <br />
 
 ## Test your bot
 
