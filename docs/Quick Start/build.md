@@ -1,6 +1,6 @@
 ---
 title: Quick Start
-excerpt: This quick start guide will help you build, test, and deploy your first bot.
+excerpt: Build, test, and deploy your first bot.
 deprecated: false
 hidden: false
 metadata:
@@ -10,7 +10,7 @@ metadata:
 next:
   description: 'Congratulations on building your first bot with Botpress! '
 ---
-It's easy to build a bot with Botpress, even if you don't have a technical background. This guide will show you how to create a simple bot from start to finish. Your bot will:
+It's easy to build a bot with Botpress, even if you don't have a technical background. This guide will teach you to create a simple bot from start to finish. Your bot will:
 
 * Display a custom greeting
 * Use AI to respond to messages
@@ -53,37 +53,43 @@ Notice the path connecting the Start Node and the Autonomous Node:
 
 <Image align="center" src="https://files.readme.io/50ce2e6c6a41d9d25c90a238a045ce7d1414dc0cab8d422c5a5296549b7f7ec6-Screenshot_2025-03-18_at_1.56.53_PM.png" />
 
-This is a transition. When someone starts a conversation with your bot, it will first execute the Start Node, then transition to the Autonomous Node.
+This is a transition. When someone starts a conversation with your bot, it first executes the Start Node, then transitions to the Autonomous Node.
 
 ### Display a custom greeting
 
-Let's create a new Node to add a custom greeting to your bot. First, we need to create a new <Glossary>Standard Node</Glossary>:
+Let's create a new Node to add a custom greeting to your bot.
 
-1. Click and hold the right edge of the Start Node.
+First, we need to create a new <Glossary>Standard Node</Glossary>:
+
+1. Select and hold the **right edge** of the Start Node.
 2. Drag outwards to create a new transition.
 3. Release anywhere on the canvas. You'll see a list of Node types to choose from — select **Standard Node**.
 
-You just created a new Node! Notice that since you dragged out from the edge of the Start Node, it automatically transitioned to the new Node.
+You just created a new Node! Notice that because you dragged out from the edge of the Start Node, it automatically transitioned to the new Node:
 
-Now, let's add the greeting. To do this, we need to add a <Glossary>Card</Glossary> to the new Node:
+<Image align="center" src="https://files.readme.io/36f337ad98b4d45ff0f0a24a3dc6b1e8f525a2fa6120013a7f67afb1c200db34-Screenshot_2025-03-18_at_3.33.18_PM.png" />
 
-3. In your new Node, select **Add Card**. This will open the Cards menu.
-4. Select the **Text** Card.
-5. In the **Message to send** field, enter "Hello! I'm a helpful bot!".
+Next, let's add the greeting. To do this, we need to add a <Glossary>Card</Glossary> to the new Node:
 
-Your bot will now display this message at the start of each new conversation. All that's left to do now is connect your new Node to the Autonomous Node:
+1. In the new Node, select **Add Card**. This opens the Cards menu.
+2. Select the **Text** Card.
+3. In the **Message to send** field, enter a custom greeting. For this guide, we'll enter "Hello! I'm a helpful bot!":
 
-6. Click and hold the right edge of the new Node.
-7. Drag outwards to create a new transition.
-8. Release on the left edge of the Autonomous Node. This will create a transition from the new Node to the Autonomous Node.
+Now your bot has a custom greeting! Before wrapping up, let's connect your the Node to the Autonomous Node:
 
-This ensures that after displaying the greeting, your bot uses the Autonomous Node to continue chatting with the user.
+1. Select and hold the **right edge** of the new Node.
+2. Drag outwards to create a new transition.
+3. Release on the **left edge** of the Autonomous Node.
+
+This creates a transition from the new Node to the Autonomous Node and ensures your bot continues the conversation after displaying the greeting:
+
+<Image align="center" src="https://files.readme.io/b5c63aa4a460fc9c0fedea00177efc4b9c0138da8ac2c99bc43e2c0f1cafd50f-Screenshot_2025-03-18_at_3.56.05_PM.png" />
 
 ### Add custom instructions
 
-Now that your bot has a greeting, let's add some custom instructions for when it's interacting with a user.
+Now that your bot has a greeting, let's add some custom instructions for when it's interacting with a user:
 
-We can do this using the
+1. In the Autonomous Node, select **Instructions**.
 
 # Step 2: Test your bot
 
