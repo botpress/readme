@@ -1,8 +1,6 @@
 ---
 title: Quick Start
-excerpt: >-
-  This quick start guide will help you build, deploy, and monitor your first
-  bot.
+excerpt: This quick start guide will help you build, test, and deploy your first bot.
 deprecated: false
 hidden: false
 metadata:
@@ -22,6 +20,8 @@ It's easy to build a bot with Botpress, even if you don't have a technical backg
 > 📘 Keep learning!
 >
 > This guide is designed to teach a total beginner how to deploy their first bot. If you have more questions and want to get creative with bot-building, check out the[ Learn section](tbc) for detailed how-to guides.
+>
+> For detailed explanations of any of the concepts introduced on this page, check out our [Concepts](tbc) guide.
 
 # Step 1: Build your bot
 
@@ -34,7 +34,7 @@ It's easy to build a bot with Botpress, even if you don't have a technical backg
 
 ## Configure your bot's behavior
 
-Let's add some custom behavior to our bot. In Botpress, you configure your bot's behavior using Workflows. A Workflow is a visual, drag-and-drop representation of the steps your bot follows during a conversation with a user.
+Let's add some custom behavior to your bot. In Botpress, you configure your bot's behavior using Workflows. A Workflow is a drag-and-drop canvas that represents the steps your bot follows during a conversation with a user.
 
 Each step in a Workflow is represented by a Node. Let's open the **Main** Workflow and take a look at its Nodes:
 
@@ -57,13 +57,36 @@ This is a transition. When someone starts a conversation with your bot, it will 
 
 ### Add a custom greeting
 
-Let's create a new Node to add a custom greeting to our bot:
+Let's create a new Node to add a custom greeting to your bot. First, we need to create a new Standard Node.
 
-1. Click and hold the right edge of the Start Node. Then, drag outwards to create a new transition.
-2. Release anywhere on the canvas. You will see a list of Node types to choose from — select **Standard Node**.
+#### Create a new Standard Node
 
-You just created a new Node! Notice that since you dragged out from the edge of the Start Node, it automatically transitions to the Start Node.
+1. Click and hold the right edge of the Start Node.
+2. Drag outwards to create a new transition.
+3. Release anywhere on the canvas. You'll see a list of Node types to choose from — select **Standard Node**.
 
-# Step 2: Deploy your bot
+You just created a new Node! Notice that since you dragged out from the edge of the Start Node, it automatically transitioned to the new Node.
 
-# Step 3: Monitor your bot
+Now, let's add the greeting. To do this, we need to add a Card to the new Node.
+
+#### Add a Card
+
+1. In your new Node, select **Add Card**. This will open the Cards menu.
+2. Select the **Text** Card.
+3. In the **Message to send** field, enter "Hello! I'm a helpful bot!".
+
+Done! Your bot will now display this message at the start of each new conversation.
+
+All that's left to do now is connect your new Node to the Autonomous Node.
+
+#### Connect your Nodes
+
+1. Click and hold the right edge of the new Node.
+2. Drag outwards to create a new transition.
+3. Release on the left edge of the Autonomous Node. This will create a transition from the new Node to the Autonomous Node.
+
+This ensures that after displaying the greeting, your bot continues to chat with the user.
+
+# Step 2: Test your bot
+
+# Step 3: Deploy your bot
