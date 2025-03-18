@@ -1,7 +1,7 @@
 ---
 title: Quick Start
 excerpt: >-
-  This quick start guide will help you create, deploy, and monitor your first
+  This quick start guide will help you build, deploy, and monitor your first
   bot.
 deprecated: false
 hidden: false
@@ -17,6 +17,8 @@ It's easy to build a bot with Botpress, even if you don't have a technical backg
 * Use AI to respond to messages
 * Follow custom instructions
 * Have a unique, shareable link
+
+Let's start building!
 
 # Step 1: Build your bot
 
@@ -35,9 +37,7 @@ It's easy to build a bot with Botpress, even if you don't have a technical backg
 
 ## Configure your bot's behaviour
 
-In Botpress, you configure your bot's behavior using Workflows. A Workflow is a visual representation of the series of steps your bot follows when a user starts a conversation.
-
-The steps in a Workflow are represented by Nodes. You can draw a path between any two Nodes to create a Transition between them.
+In Botpress, you configure your bot's behavior using Workflows. A Workflow is a visual, drag-and-drop representation of the steps your bot follows when a user starts a new conversation.
 
 > 📘 Custom Workflows
 >
@@ -48,26 +48,18 @@ The steps in a Workflow are represented by Nodes. You can draw a path between an
 For now, let's take a look at the **Main** Workflow:
 
 1. In Studio, select ![Workflows](https://files.readme.io/f71ca6c253bf9be22d54f9a436282c1dfd9b08296e058564badaab29be40b3c9-Screen_Shot_2025-03-17_at_14.30.48.png)**Workflows**  from the left navigation bar.
-2. Select your **Main** Workflow.
+2. Select your **Main** Workflow. It should look something like this:
 
-The **Main** Workflow contains the main logic for your bot. By default, it contains a <Glossary>Start Node</Glossary>, an <Glossary>Autonomous Node</Glossary>, and an <Glossary>End Node</Glossary>.
+<Image align="center" src="https://files.readme.io/08eed5c2bec051bae8472a56d88ec73296b1deb7163cb9fb9f508ffb219541ec-Screen_Shot_2025-03-18_at_10.14.01.png" />
 
-### Autonomous Node
+The **Main** Workflow contains the main logic for your bot. Each step your bot follows is represented by a Node.
 
-You can add custom instructions to the Autonomous Node:
+By default, the **Main** Workflow contains:
 
-1. Select **Instructions**
+* A <Glossary>Start Node</Glossary>
+* An <Glossary>Autonomous Node</Glossary>
+* An <Glossary>End Node</Glossary>
 
-## Test your bot
+# Step 2: Deploy your bot
 
-Regularly testing the kinds of conversations end users will have with your bot is a crucial part of the building process.
-
-There is a chat emulator built in the studio with which you can test your bot. It represents what your visitors will experience when they speak with your bot. You can reset the conversation by clicking the three dots at the top and selecting **New conversation** or **start as a new user**. **New conversation** will only remove temporary variables and start a new conversation while **start as a new user** will remove any variable saved with the user, starting the entire conversation from scratch.
-
-You can get additional information from the Event Debugger to understand why your bot generated a specific answer or took a certain action.
-
-The Event Debugger includes all sorts of useful information: the dialogue engine's elected suggestion, nodes flowed through, and natural language intents or questions. You can also view the raw JSON Payload that contains all details if you need further data. Additionally, your bot's logs record all events in the **Logs** tab of the bottom panel.
-
-# 2. Deploy your bot
-
-# 3. Monitor your bot
+# Step 3: Monitor your bot
