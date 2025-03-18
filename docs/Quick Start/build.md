@@ -10,17 +10,18 @@ metadata:
   description: ''
   robots: index
 next:
-  description: ''
+  description: 'Congratulations on building your first bot with Botpress! '
 ---
 It's easy to build a bot with Botpress, even if you don't have a technical background. This guide will show you how to create a simple bot from start to finish. Your bot will:
 
+* Display a custom greeting
 * Use AI to respond to messages
-* Follow custom instructions
+* Follow specific instructions
 * Have a unique, shareable link
 
 > 📘 Keep learning!
 >
-> This guide is designed to teach the basics of Botpress to a total beginner. If you have more questions and want to get creative with bot-building, check out the[ Learn section](tbc) for in-depth tutorials and troubleshooting guides.
+> This guide is designed to teach a total beginner how to deploy their first bot. If you have more questions and want to get creative with bot-building, check out the[ Learn section](tbc) for detailed how-to guides.
 
 # Step 1: Build your bot
 
@@ -31,17 +32,11 @@ It's easy to build a bot with Botpress, even if you don't have a technical backg
 3. Select **Open in** [Studio](https://botpress.com/docs/interface).
 4. Start building!
 
-## Configure your bot's behaviour
+## Configure your bot's behavior
 
-In Botpress, you configure your bot's behavior using Workflows. A Workflow is a visual, drag-and-drop representation of the steps your bot follows during a conversation with a user.
+Let's add some custom behavior to our bot. In Botpress, you configure your bot's behavior using Workflows. A Workflow is a visual, drag-and-drop representation of the steps your bot follows during a conversation with a user.
 
-> 📘 Custom Workflows
->
-> Every bot comes with a few helpful default Workflows, but you can create custom Workflows to organize your project more easily. For more information, check out the [Workflows](tbc) page.
-
-Each step in a Workflow is represented by a Node. Let's open the **Main** Workflow and take a look at some common Nodes.
-
-### Main Workflow
+Each step in a Workflow is represented by a Node. Let's open the **Main** Workflow and take a look at its Nodes:
 
 1. In Studio, select![Workflows](https://files.readme.io/f71ca6c253bf9be22d54f9a436282c1dfd9b08296e058564badaab29be40b3c9-Screen_Shot_2025-03-17_at_14.30.48.png)**Workflows**  from the left navigation bar.
 2. Select your **Main** Workflow. It should look something like this:
@@ -54,14 +49,20 @@ The **Main** Workflow contains the main logic for your bot — it executes as so
 * An <Glossary>Autonomous Node</Glossary>
 * An <Glossary>End Node</Glossary>
 
-Notice the path drawn between the Start Node and the Autonomous Node. This means that when a user starts the conversation, the Start Node transitions to the Autonomous Node.
+Notice the path connecting the Start Node and the Autonomous Node:
 
-### Autonomous Node
+<Image align="center" src="https://files.readme.io/50ce2e6c6a41d9d25c90a238a045ce7d1414dc0cab8d422c5a5296549b7f7ec6-Screenshot_2025-03-18_at_1.56.53_PM.png" />
 
-You can give the Autonomous Node natural language instructions to modify its behavior. Let's give it a name:
+This is a transition. When someone starts a conversation with your bot, it will first execute the Start Node, then transition to the Autonomous Node.
 
-1. Select `Instructions` from the Autonomous Node.
-2. By default, the field contains some generic instructions. You can use these, or replace them with anything you like.
+### Add a custom greeting
+
+Let's create a new Node to add a custom greeting to our bot:
+
+1. Click and hold the right edge of the Start Node. Then, drag outwards to create a new transition.
+2. Release anywhere on the canvas. You will see a list of Node types to choose from — select **Standard Node**.
+
+You just created a new Node! Notice that since you dragged out from the edge of the Start Node, it automatically transitions to the Start Node.
 
 # Step 2: Deploy your bot
 
