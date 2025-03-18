@@ -20,7 +20,7 @@ We believe the best way to learn Botpress is to *start using it*. Once you've fi
 >
 > Botpress is a powerful, customizable platform — this means no single user will have exactly the same needs when building a bot.
 >
-> Our how-to guides are great for learning common use-cases and troubleshooting issues. However, they won't necessarily walk you through every step of *your own process* — and that's okay! We want to help you build confidence to experiment, so you can build bots that behave exactly how you want them to.
+> Our how-to guides are great for learning common use-cases and troubleshooting issues. However, they won't necessarily walk you through every step of *your own process* — and that's okay! We want to help you build confidence to experiment, so you can build bots that behave exactly how you want.
 
 # Reference
 
