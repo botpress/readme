@@ -73,23 +73,27 @@ Next, let's add the greeting. To do this, we need to add a <Glossary>Card</Gloss
 
 1. In the new Node, select **Add Card**. This opens the Cards menu.
 2. Select the **Text** Card.
-3. In the **Message to send** field, enter a custom greeting. For this guide, we'll enter "Hello! I'm a helpful bot!":
+3. In the **Message to send** field, enter a custom greeting. For this guide, we'll enter "Hello! I'm Teddy, the helpful bot!":
 
-Now your bot has a custom greeting! Before wrapping up, let's connect your the Node to the Autonomous Node:
+Now your bot has a custom greeting! Before wrapping up, let's connect the new Node to the Autonomous Node:
 
 1. Select and hold the **right edge** of the new Node.
 2. Drag outwards to create a new transition.
 3. Release on the **left edge** of the Autonomous Node.
 
-This creates a transition from the new Node to the Autonomous Node and ensures your bot continues the conversation after displaying the greeting:
+This creates a transition from the new Node to the Autonomous Node, so your bot continues the conversation after displaying the greeting:
 
-<Image align="center" src="https://files.readme.io/b5c63aa4a460fc9c0fedea00177efc4b9c0138da8ac2c99bc43e2c0f1cafd50f-Screenshot_2025-03-18_at_3.56.05_PM.png" />
+<Image align="center" src="https://files.readme.io/c5c8820baf0c7c4823bf5fdb48e5218c1cfec1f87dc76b983ada2181587a8824-Screenshot_2025-03-18_at_4.39.44_PM.png" />
 
 ### Add custom instructions
 
-Now that your bot has a greeting, let's add some custom instructions for when it's interacting with a user:
+Now that your bot has a greeting, let's add some custom instructions for when it's interacting with a user. From the Autonomous Node, open the **Instructions** section.
 
-1. In the Autonomous Node, select **Instructions**.
+By default, this field contains a detailed list of natural-language instructions for your bot. You can modify these, or start from scratch with your own instructions.
+
+For now, let's just tell your bot its name. Erase everything in the **Instructions** section, and enter "You are Teddy, a helpful bot":
+
+<Image align="center" src="https://files.readme.io/acd51c4db5dfd71ab17953f747e7e821353d5634acd63cfe1822e306f7fa329f-Screenshot_2025-03-18_at_5.00.27_PM.png" />
 
 # Step 2: Test your bot
 
