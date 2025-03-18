@@ -1,7 +1,7 @@
 ---
-title: Create a Bot
+title: Quick Start
 excerpt: >-
-  This quick start guide will help you build, deploy, and monitor your first
+  This quick start guide will help you create, deploy, and monitor your first
   bot.
 deprecated: false
 hidden: false
@@ -20,7 +20,7 @@ It's easy to build a bot with Botpress, even if you don't have a technical backg
 
 # Step 1: Build your bot
 
-## Add a new bot
+## Create a new bot
 
 1. Login to [Botpress Cloud](https://app.botpress.cloud).
 2. Select **+ New bot** and choose a name for the bot (or randomly generate one).
