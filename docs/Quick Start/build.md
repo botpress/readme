@@ -57,7 +57,6 @@ The **Main** Workflow contains the main logic for your bot. By default, it conta
 You can add custom instructions to the Autonomous Node:
 
 1. Select **Instructions**
-2. <br />
 
 ## Test your bot
 
