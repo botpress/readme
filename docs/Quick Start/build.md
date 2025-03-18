@@ -55,11 +55,9 @@ Notice the path connecting the Start Node and the Autonomous Node:
 
 This is a transition. When someone starts a conversation with your bot, it will first execute the Start Node, then transition to the Autonomous Node.
 
-### Add a custom greeting
+### Display a custom greeting
 
-Let's create a new Node to add a custom greeting to your bot. First, we need to create a new Standard Node.
-
-#### Create a new Standard Node
+Let's create a new Node to add a custom greeting to your bot. First, we need to create a new <Glossary>Standard Node</Glossary>:
 
 1. Click and hold the right edge of the Start Node.
 2. Drag outwards to create a new transition.
@@ -67,25 +65,25 @@ Let's create a new Node to add a custom greeting to your bot. First, we need to 
 
 You just created a new Node! Notice that since you dragged out from the edge of the Start Node, it automatically transitioned to the new Node.
 
-Now, let's add the greeting. To do this, we need to add a Card to the new Node.
+Now, let's add the greeting. To do this, we need to add a <Glossary>Card</Glossary> to the new Node:
 
-#### Add a Card
+3. In your new Node, select **Add Card**. This will open the Cards menu.
+4. Select the **Text** Card.
+5. In the **Message to send** field, enter "Hello! I'm a helpful bot!".
 
-1. In your new Node, select **Add Card**. This will open the Cards menu.
-2. Select the **Text** Card.
-3. In the **Message to send** field, enter "Hello! I'm a helpful bot!".
+Your bot will now display this message at the start of each new conversation. All that's left to do now is connect your new Node to the Autonomous Node:
 
-Done! Your bot will now display this message at the start of each new conversation.
+6. Click and hold the right edge of the new Node.
+7. Drag outwards to create a new transition.
+8. Release on the left edge of the Autonomous Node. This will create a transition from the new Node to the Autonomous Node.
 
-All that's left to do now is connect your new Node to the Autonomous Node.
+This ensures that after displaying the greeting, your bot uses the Autonomous Node to continue chatting with the user.
 
-#### Connect your Nodes
+### Add custom instructions
 
-1. Click and hold the right edge of the new Node.
-2. Drag outwards to create a new transition.
-3. Release on the left edge of the Autonomous Node. This will create a transition from the new Node to the Autonomous Node.
+Now that your bot has a greeting, let's add some custom instructions for when it's interacting with a user.
 
-This ensures that after displaying the greeting, your bot continues to chat with the user.
+We can do this using the
 
 # Step 2: Test your bot
 
