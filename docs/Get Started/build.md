@@ -142,7 +142,7 @@ Webchat preview displays your bot the way it appears to an actual user, regardle
 >
 > You just built, tested and deployed your first bot with Botpress!
 
-## Next steps
+# Next steps
 
 Now that you know the basics of Botpress, you can start getting creative. See the [Learn]() for guides on how to:
 
