@@ -263,7 +263,7 @@ export default new bp.Integration({
  
 ```
 
-We suggest starting with the text message type and adding more as needed. 
+We suggest starting with the text message type and adding more as needed.
 
 > 🚧 Watch out!
 >
@@ -538,9 +538,3 @@ export default new bp.Integration({
 # Production Example
 
 For a production-grade implementation, you can refer to the Zendesk integration maintained by the Botpress team.  Check it out [here](https://github.com/botpress/botpress/tree/master/integrations/zendesk).
-
-<br />
-
-# Having difficulties with HITL Interfaces?
-
-Contact us at [hitl-help@botpress.com](mailto:hitl-help@botpress.com) with as much details as possible about your company and your use case.
