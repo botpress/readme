@@ -13,7 +13,9 @@ next:
       title: How to add a bot to your website
       type: basic
 ---
-It's easy to build a bot with Botpress, even if you don't have a technical background. This guide will teach you to create a simple bot from start to finish. Your bot will:
+It's easy to build a bot an AI agent on Botpress, regardless of your level of development experience.
+
+By the end of this guide, you'll have a bot that will:
 
 * Display a custom greeting
 * Use AI to respond to messages
@@ -35,11 +37,11 @@ It's easy to build a bot with Botpress, even if you don't have a technical backg
 3. Select **Open in** [Studio](https://botpress.com/docs/interface).
 4. Start building!
 
-## Configure your bot's behavior
+## Configure your bot's behaviour
 
-Let's add some custom behavior to your bot.
+Let's add some custom behaviour to your bot.
 
-In Botpress, you configure your bot's behavior using Workflows. A Workflow is a drag-and-drop canvas that represents the steps your bot follows during a conversation with a user.
+In Botpress, you configure your bot's behaviour using Workflows. A Workflow is a drag-and-drop canvas that represents the steps your bot follows during a conversation with a user.
 
 Each step in a Workflow is represented by a Node. Let's open the **Main** Workflow and take a look at its Nodes:
 
@@ -60,7 +62,7 @@ Notice the path connecting the Start Node and the Autonomous Node:
 
 This is a transition. When someone starts a conversation with your bot, it first executes the Start Node, then transitions to the Autonomous Node.
 
-> 📘 TIp: Drag Nodes
+> 📘 Tip: Drag Nodes
 >
 > You can drag a Node to move it anywhere in your Workflow. Just select and hold the Node, then drag and release wherever you want to move it.
 >
