@@ -113,21 +113,25 @@ You can chat with a preview of your bot using the Emulator on the right side of 
 
 <Image align="center" src="https://files.readme.io/4e69484d0730f7adc249abbc3747eaae36733429c8a84b85939ebb78e1241a1c-Screen_Shot_2025-03-19_at_11.00.00.png" />
 
-The bot followed your instructions! Notice that the Emulator provides an update whenever your bot transitions to a new Node, or whenever the bot is waiting for more input.
+The bot followed your instructions! Notice that the Emulator provides an update whenever your bot transitions to a new Node, or whenever it's waiting for user input.
 
 Let's ask it a question about dogs:
 
 <Image align="center" src="https://files.readme.io/5baea4d917c920035f27f27caee4e6473f1165c8a2936158fe24bc1aa8d4d616-Screen_Shot_2025-03-19_at_11.13.29.png" />
 
-Great! Since the bot transitioned to the Autonomous Node, it was able to use an LLM (Large Language Model) to answer our question. You can keep chatting with the bot, and the Autonomous Node will generate AI responses based on the context of the conversation.
+Great! Since the bot transitioned to the Autonomous Node, it was able to use an LLM (Large Language Model) to answer the question. You can keep chatting with the bot, and the Autonomous Node will generate AI responses based on the context of the conversation.
+
+# Step 3: Deploy your bot
+
+Now that you've confirmed your bot is working properly, it's time to deploy it!
 
 ## Preview and share your bot
 
-You can also generate a preview of your bot. Unlike the Emulator, the preview displays your bot as it would appear to an actual user. The preview also has a shareable link, so you can send your bot to other team members for testing.
+The easiest way to deploy your bot is with Webchat Preview. This generates a unique, shareable link for your bot, so your team can start testing it immediately.
 
-To preview your bot:
+To deploy with Webchat preview:
 
-1. Select **Share** in the upper-right corner.
-2. Select **Preview Bot**, or copy
+1. Select **Publish** in the upper-right corner. This updates the deployed bot to reflect our recent changes.
+2. Select **Share,** then **Preview Bot** (or copy the **Shareable link**).
 
-# Step 3: Deploy your bot
+Your Webchat Preview will open in a new tab! Unlike the Emulator, the preview displays your bot as it would appear to an actual user, regardless of where you've deployed it.
