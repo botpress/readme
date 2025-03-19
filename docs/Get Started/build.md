@@ -8,7 +8,7 @@ metadata:
   description: ''
   robots: index
 next:
-  description: 'Congratulations on building your first bot with Botpress! '
+  description: Test
 ---
 It's easy to build a bot with Botpress, even if you don't have a technical background. This guide will teach you to create a simple bot from start to finish. Your bot will:
 
@@ -127,11 +127,15 @@ Now that you've confirmed your bot is working properly, it's time to deploy it!
 
 ## Preview and share your bot
 
-The easiest way to deploy your bot is with Webchat Preview. This generates a unique, shareable link for your bot, so your team can start testing it immediately.
+The easiest way to deploy your bot is with a <Glossary>Webchat</Glossary> preview. This generates a unique, shareable link for your bot, so your team can start testing it immediately.
 
 To deploy with Webchat preview:
 
 1. Select **Publish** in the upper-right corner. This updates the deployed bot to reflect our recent changes.
 2. Select **Share,** then **Preview Bot** (or copy the **Shareable link**).
 
-Your Webchat Preview will open in a new tab! Unlike the Emulator, the preview displays your bot as it would appear to an actual user, regardless of where you've deployed it.
+Your preview will open in a new tab! Webchat preview displays your bot the way it appears to an actual user, regardless of where you've deployed it. This makes it great for quickly evaluating your user experience.
+
+> ✅ Congratulations!
+>
+> You just built, tested and deployed your first bot with Botpress!
