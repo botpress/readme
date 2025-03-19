@@ -7,8 +7,6 @@ metadata:
   title: ''
   description: ''
   robots: index
-next:
-  description: Test
 ---
 It's easy to build a bot with Botpress, even if you don't have a technical background. This guide will teach you to create a simple bot from start to finish. Your bot will:
 
@@ -134,8 +132,20 @@ To deploy with Webchat preview:
 1. Select **Publish** in the upper-right corner. This updates the deployed bot to reflect our recent changes.
 2. Select **Share,** then **Preview Bot** (or copy the **Shareable link**).
 
-Your preview will open in a new tab! Webchat preview displays your bot the way it appears to an actual user, regardless of where you've deployed it. This makes it great for quickly evaluating your user experience.
+Your preview will open in a new tab. Try sending a message:
+
+<Image align="center" src="https://files.readme.io/bb7acb8098a74802cfbd004966b6b15f1fd12920a2b2c067b470c1c621fbdc8a-Screen_Shot_2025-03-19_at_13.56.06.png" />
+
+Webchat preview displays your bot the way it appears to an actual user, regardless of where you've deployed it. This makes it great for quickly evaluating your user experience.
 
 > ✅ Congratulations!
 >
 > You just built, tested and deployed your first bot with Botpress!
+
+## Next steps
+
+Now that you know the basics of Botpress, you can start getting creative. See the [Learn]() for guides on how to:
+
+* [Build specific bots]()
+* [Deploy bots to your app or website]()
+* [Monitor your bot's performance]()
