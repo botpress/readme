@@ -19,7 +19,7 @@ It's easy to build a bot with Botpress, even if you don't have a technical backg
 
 > 📘 Keep learning!
 >
-> This guide is designed to teach a total beginner how to deploy their first bot. If you have more questions and want to get creative with bot-building, check out the[ Learn section](tbc) for detailed how-to guides.
+> This guide is designed to teach a total beginner how to deploy their first bot. If you have more questions and want to get creative with bot-building, check out the [Learn section](tbc) for detailed how-to guides.
 >
 > For detailed explanations of any of the concepts introduced on this page, check out our [Concepts](tbc) guide.
 
@@ -99,10 +99,26 @@ Now that your bot has a greeting, let's add some custom instructions for when it
 
 By default, this field contains a detailed list of natural language instructions for your bot. You can modify these, or start from scratch with your own instructions.
 
-For now, let's just tell your bot its name. Erase everything in the **Instructions** section, and enter "You are Teddy, a helpful bot":
+For now, let's just tell your bot its name. Erase everything in the **Instructions** section, and enter "You are Teddy, a helpful bot. You can answer any questions the user has about dogs".
 
-<Image align="center" src="https://files.readme.io/acd51c4db5dfd71ab17953f747e7e821353d5634acd63cfe1822e306f7fa329f-Screenshot_2025-03-18_at_5.00.27_PM.png" />
+<Image align="center" src="https://files.readme.io/3633e59b4ed734f438aaad77371f09c14d71f1eb9cc67f82016c7a8c6b3f49c7-Screenshot_2025-03-19_at_10.56.26_AM.png" />
 
 # Step 2: Test your bot
+
+Congratulations! You now have a bot with a custom greeting and instructions. Next, let's test it out to make sure it's working properly.
+
+## Chat with your bot
+
+You can chat with a preview of your bot using the Studio's Emulator on the right side of the screen. To start a conversation, just select **Test your bot**, or type a message into the text field:
+
+<Image align="center" src="https://files.readme.io/4e69484d0730f7adc249abbc3747eaae36733429c8a84b85939ebb78e1241a1c-Screen_Shot_2025-03-19_at_11.00.00.png" />
+
+The bot followed your instructions! Notice that the Emulator provides an update whenever your bot transitions to a new Node, or whenever the bot is waiting for more input.
+
+Let's ask it a question about dogs:
+
+<Image align="center" src="https://files.readme.io/5baea4d917c920035f27f27caee4e6473f1165c8a2936158fe24bc1aa8d4d616-Screen_Shot_2025-03-19_at_11.13.29.png" />
+
+Since the bot transitioned to the Autonomous Node, it used an LLM (Large Language Model) to answer our question.
 
 # Step 3: Deploy your bot
