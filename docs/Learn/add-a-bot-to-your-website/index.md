@@ -6,4 +6,18 @@ hidden: false
 metadata:
   robots: index
 ---
-Test
+# Step 1
+
+<Tabs>
+  <Tab title="First Tab">
+    Test 1
+  </Tab>
+
+  <Tab title="Second Tab">
+    Test 2
+  </Tab>
+
+  <Tab title="Third Tab">
+    Test 3
+  </Tab>
+</Tabs>
