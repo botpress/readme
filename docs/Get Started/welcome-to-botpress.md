@@ -1,5 +1,5 @@
 ---
-title: Welcome to Botpress!
+title: Welcome to Botpress
 excerpt: Understand the Botpress documentation and start building.
 deprecated: false
 hidden: false
