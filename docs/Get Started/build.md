@@ -55,6 +55,12 @@ Notice the path connecting the Start Node and the Autonomous Node:
 
 This is a transition. When someone starts a conversation with your bot, it first executes the Start Node, then transitions to the Autonomous Node.
 
+> 📘 TIp: Drag Nodes
+>
+> You can drag a Node to move it anywhere in your Workflow. Just select and hold the Node, then drag and release wherever you want to move it.
+>
+> Moving a Node doesn't affect your bot's behavior — it just helps keep your Workflow organized.
+
 ### Display a custom greeting
 
 Let's create a new Node to add a custom greeting to your bot.
@@ -75,6 +81,8 @@ Next, let's add the greeting. To do this, we need to add a <Glossary>Card</Gloss
 2. Select the **Text** Card.
 3. In the **Message to send** field, enter a custom greeting. For this guide, we'll enter "Hello! I'm Teddy, the helpful bot!":
 
+<Image align="center" src="https://files.readme.io/49ceb15c84e25ab38083ad13de261dcd02521046a1d1818dbc9038aa0df4f074-Screenshot_2025-03-19_at_9.33.40_AM.png" />
+
 Now your bot has a custom greeting! Before wrapping up, let's connect the new Node to the Autonomous Node:
 
 1. Select and hold the **right edge** of the new Node.
@@ -89,7 +97,7 @@ This creates a transition from the new Node to the Autonomous Node, so your bot 
 
 Now that your bot has a greeting, let's add some custom instructions for when it's interacting with a user. From the Autonomous Node, open the **Instructions** section.
 
-By default, this field contains a detailed list of natural-language instructions for your bot. You can modify these, or start from scratch with your own instructions.
+By default, this field contains a detailed list of natural language instructions for your bot. You can modify these, or start from scratch with your own instructions.
 
 For now, let's just tell your bot its name. Erase everything in the **Instructions** section, and enter "You are Teddy, a helpful bot":
 
