@@ -7,6 +7,11 @@ metadata:
   title: ''
   description: ''
   robots: index
+next:
+  pages:
+    - slug: add-a-bot-to-your-website
+      title: How to add a bot to your website
+      type: basic
 ---
 It's easy to build a bot with Botpress, even if you don't have a technical background. This guide will teach you to create a simple bot from start to finish. Your bot will:
 
