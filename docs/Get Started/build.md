@@ -99,7 +99,7 @@ Now that your bot has a greeting, let's add some custom instructions for when it
 
 By default, this field contains a detailed list of natural language instructions for your bot. You can modify these, or start from scratch with your own instructions.
 
-For now, let's just tell your bot its name. Erase everything in the **Instructions** section, and enter "You are Teddy, a helpful bot. You can answer any questions the user has about dogs".
+For now, let's just tell your bot its name and give it a simple task. Erase everything in the **Instructions** section, and enter "You are Teddy, a helpful bot. You can answer any questions the user has about dogs".
 
 <Image align="center" src="https://files.readme.io/3633e59b4ed734f438aaad77371f09c14d71f1eb9cc67f82016c7a8c6b3f49c7-Screenshot_2025-03-19_at_10.56.26_AM.png" />
 
@@ -109,7 +109,7 @@ Congratulations! You now have a bot with a custom greeting and instructions. Nex
 
 ## Chat with your bot
 
-You can chat with a preview of your bot using the Studio's Emulator on the right side of the screen. To start a conversation, just select **Test your bot**, or type a message into the text field:
+You can chat with a preview of your bot using the Emulator on the right side of the Studio. To start a conversation, just select **Test your bot**, or type a message into the text field:
 
 <Image align="center" src="https://files.readme.io/4e69484d0730f7adc249abbc3747eaae36733429c8a84b85939ebb78e1241a1c-Screen_Shot_2025-03-19_at_11.00.00.png" />
 
@@ -119,6 +119,15 @@ Let's ask it a question about dogs:
 
 <Image align="center" src="https://files.readme.io/5baea4d917c920035f27f27caee4e6473f1165c8a2936158fe24bc1aa8d4d616-Screen_Shot_2025-03-19_at_11.13.29.png" />
 
-Since the bot transitioned to the Autonomous Node, it used an LLM (Large Language Model) to answer our question.
+Great! Since the bot transitioned to the Autonomous Node, it was able to use an LLM (Large Language Model) to answer our question. You can keep chatting with the bot, and the Autonomous Node will generate AI responses based on the context of the conversation.
+
+## Preview and share your bot
+
+You can also generate a preview of your bot. Unlike the Emulator, the preview displays your bot as it would appear to an actual user. The preview also has a shareable link, so you can send your bot to other team members for testing.
+
+To preview your bot:
+
+1. Select **Share** in the upper-right corner.
+2. Select **Preview Bot**, or copy
 
 # Step 3: Deploy your bot
