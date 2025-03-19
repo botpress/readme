@@ -32,7 +32,9 @@ It's easy to build a bot with Botpress, even if you don't have a technical backg
 
 ## Configure your bot's behavior
 
-Let's add some custom behavior to your bot. In Botpress, you configure your bot's behavior using Workflows. A Workflow is a drag-and-drop canvas that represents the steps your bot follows during a conversation with a user.
+Let's add some custom behavior to your bot.
+
+In Botpress, you configure your bot's behavior using Workflows. A Workflow is a drag-and-drop canvas that represents the steps your bot follows during a conversation with a user.
 
 Each step in a Workflow is represented by a Node. Let's open the **Main** Workflow and take a look at its Nodes:
 
