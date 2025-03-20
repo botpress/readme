@@ -37,7 +37,7 @@ To embed a bot a bot on your website, you need the bot's Webchat embed code. You
 
 <Image align="center" src="https://files.readme.io/fea6f348f871ea1e244d12f9b447f8c792da55e09064eebad83570d1666fa552-Screen_Shot_2025-03-20_at_10.45.28.png" />
 
-# Step 2: Add the embed code to your website
+# Step 2: Add to your website
 
 Next, add the Webchat embed code to the `head` section of your website's HTML. For example:
 
