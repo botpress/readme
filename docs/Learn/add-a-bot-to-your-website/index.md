@@ -10,7 +10,7 @@ Botpress makes it easy to embed a bot on your website using [Webchat](). If you 
 
 > 📘 Website builders
 >
-> If you use a website-building tool like [Wordpress](), [Wix]() or [Webflow](), see the other pages in this section for instructions on how to add your bot.
+> If you use a website-building tool like [Wordpress](), [Wix](https://botpress-docs.readme.io/v1.5/docs/wix-1#/) or [Webflow](), see the other pages in this section for instructions on how to add your bot.
 
 > 🧩 Low-code
 >
