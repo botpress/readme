@@ -14,8 +14,6 @@ This guide will teach you how to embed a bot directly on your website.
 >
 > * HTML
 
-<br />
-
 # Step 1: Get your embed code
 
 To embed a bot a bot on your website, you need the bot's Webchat embed code. You can get the embed code from either the Studio or the Dashboard.
