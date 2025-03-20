@@ -42,6 +42,6 @@ Next, add the Webchat embed code to your Wix website:
 3. Select **+ Add Custom Code**. Then, paste the Webchat embed code in code snippet field.
 4. Check the **All pages** option, then select **Load code once** from the drop-down menu.
 5. Check the **Body - start** option.
-6. Select **Apply**
+6. Select **Apply**.
 
 # Step 3:
