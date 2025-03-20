@@ -27,4 +27,4 @@ If you want to customize your bot's appearance further, you can modify the built
 
 > 📘 CSS Classes
 >
-> For a full list of the Webchat CSS classes, check out the [Webchat guide]().
+> For a full list of Webchat CSS classes, check out the [Webchat guide]().
