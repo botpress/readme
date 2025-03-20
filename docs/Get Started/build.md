@@ -153,7 +153,7 @@ Webchat preview displays your bot the way it appears to an actual user, regardle
 
 # Next steps
 
-Now that you know the basics of Botpress, you can start getting creative. See the [Learn]() for guides on how to:
+Now that you know the basics of Botpress, you can start getting creative. See the [Learn]() section for guides on how to:
 
 * [Build specific bots]()
 * [Deploy bots to your app or website]()
