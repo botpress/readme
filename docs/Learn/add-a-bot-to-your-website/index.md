@@ -6,7 +6,7 @@ hidden: false
 metadata:
   robots: index
 ---
-Botpress makes it easy to embed a bot on your website using Webchat. If you self-host your website, just follow the instructions on this page.
+Botpress makes it easy to embed a bot on your website using [Webchat](). If you self-host your website, just follow the instructions on this page.
 
 > 📘 Website builders
 >
