@@ -8,9 +8,15 @@ metadata:
 ---
 This guide will teach you how to embed a bot directly on your website.
 
+> 🧩 Low-code
+>
+> This guide requires basic knowledge of:
+>
+> * HTML
+
 # Step 1: Get your embed code
 
-To embed a bot a bot on your website, you need to add the bot's Webchat embed code. You can get the embed code from either the Studio or the Dashboard.
+To embed a bot a bot on your website, you need the bot's Webchat embed code. You can get the embed code from either the Studio or the Dashboard.
 
 ## From the Studio
 
@@ -26,3 +32,24 @@ To embed a bot a bot on your website, you need to add the bot's Webchat embed co
 3. Copy the **Embed code**:
 
 <Image align="center" src="https://files.readme.io/fea6f348f871ea1e244d12f9b447f8c792da55e09064eebad83570d1666fa552-Screen_Shot_2025-03-20_at_10.45.28.png" />
+
+# Step 2: Add the embed code to your website
+
+Next, add the Webchat embed code to the `head` section of your website's HTML. For example:
+
+```Text index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
+  <script src="https://files.bpcontent.cloud/2025/03/18/14/20250318141028-30WRMG85.js"></script>
+</head>
+<body>
+  <!-- Website content -->
+</body>
+</html>
+```
+
+> ✅ Done!
+>
+> Your bot will now be available in the corner of your website.
