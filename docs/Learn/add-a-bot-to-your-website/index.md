@@ -8,11 +8,9 @@ metadata:
 ---
 This guide will teach you how to embed a bot directly on your website.
 
-> 🧩 Low-code
->
-> This guide requires basic knowledge of:
->
-> * HTML
+<Lowcode />
+
+<br />
 
 # Step 1: Get your embed code
 
