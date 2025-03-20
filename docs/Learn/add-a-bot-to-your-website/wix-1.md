@@ -34,3 +34,14 @@ To embed a bot a bot on your Wix website, you need the bot's Webchat embed code.
 3. Copy the **Embed code**:
 
 # Step 2: Add to your Wix website
+
+Next, add the Webchat embed code to your Wix website:
+
+1. Log into your [Wix](https://www.wix.com) dashboard and select **Settings** in the left navigation bar.
+2. Scroll to **Advanced Settings**, then select **Custom Code**.
+3. Select **+ Add Custom Code**. Then, paste the Webchat embed code in code snippet field.
+4. Check the **All pages** option, then select **Load code once** from the drop-down menu.
+5. Check the **Body - start** option.
+6. Select **Apply**
+
+# Step 3:
