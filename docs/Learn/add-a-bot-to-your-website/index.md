@@ -5,6 +5,11 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  pages:
+    - slug: how-to-style-your-bot
+      title: How to style your bot
+      type: basic
 ---
 Botpress makes it easy to embed a bot on your website using [Webchat](). If you self-host your website, just follow the instructions on this page.
 
@@ -59,4 +64,4 @@ Next, add the Webchat embed code to the `head` section of your website's HTML. F
 
 # Next steps
 
-Now that your bot is live, try [styling]() it to match the rest of your website.
+Now that your bot is live, try [styling](https://botpress-docs.readme.io/v1.5/docs/how-to-style-your-bot#/) it to match the rest of your website.
