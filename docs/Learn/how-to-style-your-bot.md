@@ -21,7 +21,7 @@ To style your bot using the built-in Webchat theme styler:
 
 You can view your changes in the Webchat preview on the right side of the screen.
 
-## Use custom styles
+# Use custom styles
 
 If you want to customize your bot's appearance further, you can modify the built-in CSS classes. Just add your styles to the **Styles** field.
 
