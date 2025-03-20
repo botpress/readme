@@ -6,7 +6,11 @@ hidden: false
 metadata:
   robots: index
 ---
-This guide will teach you how to embed a bot directly on your website.
+Botpress makes it easy to embed a bot on your website using Webchat. If you self-host your website, just follow the instructions on this page.
+
+> 📘 Website builders
+>
+> If you're using a website-building tool like [Wordpress](), [Wix]() or [Webflow](), see the other pages in this section for instructions on how to add your bot.
 
 > 🧩 Low-code
 >
@@ -52,4 +56,4 @@ Next, add the Webchat embed code to the `head` section of your website's HTML. F
 
 > ✅ Done!
 >
-> Your bot will now be available in the corner of your website.
+> Your bot will now be available from your website.
