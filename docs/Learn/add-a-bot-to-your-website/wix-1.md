@@ -6,7 +6,7 @@ hidden: false
 metadata:
   robots: index
 ---
-> 🧩 /Prerequisites
+> 🧩 Prerequisites
 >
 > * A [published bot](https://botpress-docs.readme.io/v1.5/docs/build#/)
 > * A Wix website with a [plan that allows adding custom scripts](https://www.wix.com/plans)
