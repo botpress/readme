@@ -9,7 +9,7 @@ metadata:
 > 🧩 Prerequisites
 >
 > * A [published bot](https://botpress-docs.readme.io/v1.5/docs/build#/)
-> * Familiarity with CSS (if you want to add custom styles)
+> * Familiarity with CSS (if you want to [use custom styles](#use-custom-styles))
 
 # Use the theme styler
 
