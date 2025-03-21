@@ -136,3 +136,52 @@ Next, use your credentials to embed the Webchat in an HTML div on your website.
 2. Replace `YOUR_BOT_ID` and `YOUR_CLIENT_ID` with your actual credentials.
 
 # Embed as a website
+
+```html HTML
+<div id="webchat-container" style="position: relative; width: 100%; height: 100%;">
+  <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+  <script>
+    window.botpress.on("webchat:ready", () => {
+      window.botpress.open();
+    });
+
+    window.botpress.init({
+      "botId": "YOUR_BOT_ID", // Replace with your actual Bot ID
+      "configuration": {
+        "botName": {},
+        "botAvatar": {},
+        "website": {},
+        "email": {},
+        "phone": {},
+        "termsOfService": {},
+        "privacyPolicy": {},
+        "color": "#3bf5a1",
+        "variant": "solid",
+        "themeMode": "light",
+        "fontFamily": "inter",
+        "radius": 1
+      },
+      "clientId": "YOUR_CLIENT_ID" // Replace with your actual Client ID
+    });
+  </script>
+  <style>
+    #webchat-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .bpFab {
+      display: none;
+    }
+    .bpWebchat {
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+  </style>
+</div>
+```
