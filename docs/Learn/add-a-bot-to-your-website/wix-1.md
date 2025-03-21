@@ -53,23 +53,24 @@ You can also embed your bot in an HTML div. This is useful if you want more cont
 
 ## Step 1: Get your Botpress credentials
 
-To embed a bot in an HTML div, you need:
+To embed a bot in an HTML div, you need your Botpress Client ID and Bot ID.
 
-* Your Botpress `clientId`
-* Your Botpress `botId`
-
-### Get your `clientId`
+### Get your Client ID
 
 1. Open your bot's Workspace. In the left navigation bar, find the bot you want to embed.
 2. Select **Webchat**, then open the **Advanced Settings** tab.
-3. Copy the string under **Client ID**.
+3. Copy your **Client ID**.
 
-### Get your `botId`
+### Get your Bot ID
 
 1. Open your bot's Studio.
 2. Check the page's URL. It should look something like this:
 
-   [https://studio.botpress.cloud/`botId`/flows/wf-main]()
-3. Copy your `botId`.
+   [https://studio.botpress.cloud/THIS\_IS\_YOUR\_BOT\_ID/flows/wf-main]()
+3. Copy your **Bot ID**.
+
+## Step 2: Add to your Wix website
+
+<br />
 
 # Embed as a website
