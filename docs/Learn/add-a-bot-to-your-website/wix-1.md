@@ -135,6 +135,6 @@ Next, use your credentials to embed the Webchat in an HTML div on your website.
   ```
 </Accordion>
 
-Replace `YOUR_BOT_ID` and `YOUR_CLIENT_ID` with your actual credentials.
+2. Replace `YOUR_BOT_ID` and `YOUR_CLIENT_ID` with your actual credentials.
 
 # Embed as a website
