@@ -84,7 +84,8 @@ Next, use your credentials to embed the Webchat in an HTML div on your website.
 
 1. Under **Add your code here (HTTPS only)**, add the following code:
 
-```html HTML
+<Accordion title="My Accordion Title" icon="fa-info-circle">
+  ```html HTML
 <div id="webchat-container" style="position: relative; width: 100%; height: 100%;">
   <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
   <script>
@@ -132,8 +133,9 @@ Next, use your credentials to embed the Webchat in an HTML div on your website.
   </style>
 </div>
 ```
+</Accordion>
 
-2. Replace `YOUR_BOT_ID` and `YOUR_CLIENT_ID` with your actual credentials.
+Replace `YOUR_BOT_ID` and `YOUR_CLIENT_ID` with your actual credentials.
 
 # Embed as a website
 
