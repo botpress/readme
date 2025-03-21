@@ -6,7 +6,7 @@ hidden: false
 metadata:
   robots: index
 ---
-> 🧩 Prerequisites
+> 🧩 /Prerequisites
 >
 > * A [published bot](https://botpress-docs.readme.io/v1.5/docs/build#/)
 > * A Wix website with a [plan that allows adding custom scripts](https://www.wix.com/plans)
@@ -71,6 +71,68 @@ To embed a bot in an HTML div, you need your Botpress Client ID and Bot ID.
 
 ## Step 2: Add to your Wix website
 
-<br />
+Next, use your credentials to embed the Webchat in an HTML div on your website.
+
+### Add an HTML div
+
+1. Log into your [Wix](https://www.wix.com) dashboard and select **Edit Site** in the upper-right corner.
+2. Select **Add Elements** from the left sidebar.
+3. Select **Embed Code**, then select **Embed HTML**.
+4. Adjust your HTML div as you'd like.
+
+### Embed the Webchat in your HTML div
+
+1. Under **Add your code here (HTTPS only)**, add the following code:
+
+```html HTML
+<div id="webchat-container" style="position: relative; width: 100%; height: 100%;">
+  <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+  <script>
+    window.botpress.on("webchat:ready", () => {
+      window.botpress.open();
+    });
+
+    window.botpress.init({
+      "botId": "YOUR_BOT_ID", // Replace with your actual Bot ID
+      "configuration": {
+        "botName": {},
+        "botAvatar": {},
+        "website": {},
+        "email": {},
+        "phone": {},
+        "termsOfService": {},
+        "privacyPolicy": {},
+        "color": "#3bf5a1",
+        "variant": "solid",
+        "themeMode": "light",
+        "fontFamily": "inter",
+        "radius": 1
+      },
+      "clientId": "YOUR_CLIENT_ID" // Replace with your actual Client ID
+    });
+  </script>
+  <style>
+    #webchat-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .bpFab {
+      display: none;
+    }
+    .bpWebchat {
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+  </style>
+</div>
+```
+
+2. Replace `YOUR_BOT_ID` and `YOUR_CLIENT_ID` with your actual credentials.
 
 # Embed as a website
