@@ -65,7 +65,7 @@ To embed a bot in an HTML div, you need your Botpress Client ID and Bot ID.
 
 1. Open your bot's Studio.
 2. Check the page's URL. It should look something like this:
-
+   
    [https://studio.botpress.cloud/THIS\_IS\_YOUR\_BOT\_ID/flows/wf-main]()
 3. Copy your **Bot ID**.
 
@@ -138,3 +138,5 @@ Next, use your credentials to embed the Webchat in an HTML div on your website.
 2. Replace `YOUR_BOT_ID` and `YOUR_CLIENT_ID` with your actual credentials.
 
 # Embed as a website
+
+Test
