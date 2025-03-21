@@ -40,7 +40,7 @@ To embed a bot a bot on your Wix website, you need the bot's Webchat embed code.
 
 Next, add the Webchat embed code to your Wix website:
 
-1. Log into your [Wix](https://www.wix.com) dashboard and select **Settings** in the left navigation bar.
+1. Login to your [Wix](https://www.wix.com) dashboard and select **Settings** in the left navigation bar.
 2. Scroll to **Advanced Settings**, then select **Custom Code**.
 3. Select **+ Add Custom Code**. Then, paste the Webchat embed code in code snippet field.
 4. Check the **All pages** option, then select **Load code once** from the drop-down menu.
@@ -65,7 +65,7 @@ To embed a bot in an HTML div, you need your Botpress Client ID and Bot ID.
 
 1. Open your bot's Studio.
 2. Check the page's URL. It should look something like this:
-   
+
    [https://studio.botpress.cloud/THIS\_IS\_YOUR\_BOT\_ID/flows/wf-main]()
 3. Copy your **Bot ID**.
 
@@ -75,7 +75,7 @@ Next, use your credentials to embed the Webchat in an HTML div on your website.
 
 ### Add an HTML div
 
-1. Log into your [Wix](https://www.wix.com) dashboard and select **Edit Site** in the upper-right corner.
+1. Login to your [Wix](https://www.wix.com) dashboard and select **Edit Site** in the upper-right corner.
 2. Select **Add Elements** from the left sidebar.
 3. Select **Embed Code**, then select **Embed HTML**.
 4. Adjust your HTML div as you'd like.
@@ -137,4 +137,16 @@ Next, use your credentials to embed the Webchat in an HTML div on your website.
 
 # Embed as a website
 
-Test
+You can also embed your bot as a website via Webchat preview.
+
+## Step 1: Get your shareable link
+
+1. In Studio, select **Share** in the upper-right corner.
+2. Copy your bot's shareable link.
+
+## Step 2: Add to your Wix website
+
+1. Login to your [Wix](https://www.wix.com) dashboard and select **Edit Site** in the upper-right corner.
+2. Select **Add Elements** from the left sidebar.
+3. Select **Embed Code**, then select **Embed a site**.
+4. In the **What's the website address** field, paste your bot's link, then select **Apply.**
