@@ -4,15 +4,15 @@ fullscreen: false
 hidden: true
 ---
 <Tabs>
-  <Tab title="Embed as a chat bubble">
+  <Tab title="As a chat bubble">
     Hey
   </Tab>
 
-  <Tab title="Embed in an HTML div">
+  <Tab title="In an HTML div">
     Hey 2
   </Tab>
 
-  <Tab title="Embed as a website">
+  <Tab title="As a website">
     Hey 3
   </Tab>
 </Tabs>
