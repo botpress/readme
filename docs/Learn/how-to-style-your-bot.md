@@ -9,7 +9,7 @@ metadata:
 > 🧩 Prerequisites
 >
 > * A [published bot](https://botpress-docs.readme.io/v1.5/docs/build#/)
-> * Knowledge of CSS (if you want to add custom styles)
+> * Familiarity with CSS (if you want to add custom styles)
 
 # Use the theme styler
 
@@ -17,7 +17,9 @@ To style your bot using the built-in Webchat theme styler:
 
 1. Navigate to the Dashboard and open your bot's Workspace.
 2. In the left navigation bar, find the bot you want to style and select **Webchat**.
-3. Select the **Theme** tab.
+3. Select the **Theme** tab to open the theme styler:
+
+<Image align="center" src="https://files.readme.io/30a3159e6a8ba8dd5766afc42c62e8b7359ff22b036ebccc09cfe0f563ca7582-Screenshot_2025-03-20_at_5.08.10_PM.png" />
 
 You can view your changes in the Webchat preview on the right side of the screen.
 
