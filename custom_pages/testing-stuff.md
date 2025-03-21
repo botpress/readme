@@ -35,10 +35,110 @@ hidden: true
   </Tab>
 
   <Tab title="In an HTML div">
-    Hey 2
+    # Embed in an HTML div
+
+    You can also embed your bot in an HTML div. This is useful if you want more control over where your bot appears on your Wix site.
+
+    ## Step 1: Get your Botpress credentials
+
+    To embed a bot in an HTML div, you need your Botpress Client ID and Bot ID.
+
+    ### Get your Client ID
+
+    1. Open your bot's Workspace. In the left navigation bar, find the bot you want to embed.
+    2. Select **Webchat**, then open the **Advanced Settings** tab.
+    3. Copy your **Client ID**.
+
+    ### Get your Bot ID
+
+    1. Open your bot's Studio.
+    2. Check the page's URL. It should look something like this:
+
+       [https://studio.botpress.cloud/THIS\_IS\_YOUR\_BOT\_ID/flows/wf-main]()
+    3. Copy your **Bot ID**.
+
+    ## Step 2: Add to your Wix website
+
+    Next, use your credentials to embed the Webchat in an HTML div on your website.
+
+    ### Add an HTML div
+
+    1. Login to your [Wix](https://www.wix.com) dashboard and select **Edit Site** in the upper-right corner.
+    2. Select **Add Elements** from the left sidebar.
+    3. Select **Embed Code**, then select **Embed HTML**.
+    4. Adjust your HTML div as you'd like.
+
+    ### Embed the Webchat in your HTML div
+
+    1. Under **Add your code here (HTTPS only)**, add the following code:
+
+    ```html HTML
+    <div id="webchat-container" style="position: relative; width: 100%; height: 100%;">
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script>
+      window.botpress.on("webchat:ready", () => {
+        window.botpress.open();
+      });
+
+      window.botpress.init({
+        "botId": "YOUR_BOT_ID", // Replace with your actual Bot ID
+        "configuration": {
+          "botName": {},
+          "botAvatar": {},
+          "website": {},
+          "email": {},
+          "phone": {},
+          "termsOfService": {},
+          "privacyPolicy": {},
+          "color": "#3bf5a1",
+          "variant": "solid",
+          "themeMode": "light",
+          "fontFamily": "inter",
+          "radius": 1
+        },
+        "clientId": "YOUR_CLIENT_ID" // Replace with your actual Client ID
+      });
+    </script>
+    <style>
+      #webchat-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      .bpFab {
+        display: none;
+      }
+      .bpWebchat {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+      }
+    </style>
+    </div>
+    ```
+
+    2. Replace `YOUR_BOT_ID` and `YOUR_CLIENT_ID` with your actual credentials.
   </Tab>
 
   <Tab title="As a website">
-    Hey 3
+    # Embed as a website
+
+    You can also embed your bot as a website via Webchat preview.
+
+    ## Step 1: Get your shareable link
+
+    1. In Studio, select **Share** in the upper-right corner.
+    2. Copy your bot's shareable link.
+
+    ## Step 2: Add to your Wix website
+
+    1. Login to your [Wix](https://www.wix.com) dashboard and select **Edit Site** in the upper-right corner.
+    2. Select **Add Elements** from the left sidebar.
+    3. Select **Embed Code**, then select **Embed a site**.
+    4. In the **What's the website address** field, paste your bot's link, then select **Apply.**
   </Tab>
 </Tabs>
