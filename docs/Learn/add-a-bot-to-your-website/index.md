@@ -20,7 +20,7 @@ Botpress makes it easy to embed a bot on your website using [Webchat](). If you 
 > 🧩 Prerequisites
 >
 > * A [published bot](https://botpress-docs.readme.io/v1.5/docs/build#/)
-> * Basic knowledge of HTML
+> * Basic familiarity with HTML
 
 # Step 1: Get your embed code
 
