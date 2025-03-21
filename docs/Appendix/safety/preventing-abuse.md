@@ -18,6 +18,10 @@ Rate limits serve as a fundamental safeguard for your bot's resources. Each bot 
 
 Rate limiting prevents the excessive influx of messages, ensuring that your bot operates efficiently and consistently. This is an essential component of our abuse prevention strategy.
 
+### Allowed Origins
+
+Allowed Origins is a feature that lets you explicitly control where your bot is allowed to run by specifying a whitelist of approved domains. When deploying your bot on a website, you include only the domains that you trust, and the system automatically blocks any attempts to embed the bot from unapproved sources. This straightforward, security-first approach not only minimizes the risk of unauthorized use but also aligns with best practices for maintaining a secure, controlled deployment environment.
+
 ### Web Application Firewall (WAF)
 
 Our Web Application Firewall, often referred to as WAF, is a powerful layer of defense against various cyber threats. WAF can protect your bot from Distributed Denial of Service (DDoS) attacks, SQL injection, cross-site scripting, and many other malicious activities.
