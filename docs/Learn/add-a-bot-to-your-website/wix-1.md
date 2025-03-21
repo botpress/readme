@@ -147,7 +147,7 @@ metadata:
 
     ## Step 1: Get your shareable link
 
-    1. In Studio, select **Share** in the upper-right corner.
+    1. In Botpress  Studio, select **Share** in the upper-right corner.
     2. Copy your bot's shareable link.
 
     ## Step 2: Add to your Wix website
