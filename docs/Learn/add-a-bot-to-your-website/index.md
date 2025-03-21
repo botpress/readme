@@ -64,4 +64,4 @@ Next, add the Webchat embed code to the `head` section of your website's HTML. F
 
 # Next steps
 
-Now that your bot is live, try [styling](https://botpress-docs.readme.io/v1.5/docs/how-to-style-your-bot#/) it to match the rest of your website.
+Now that you've added your bot, try [styling](https://botpress-docs.readme.io/v1.5/docs/how-to-style-your-bot#/) it to match the rest of your website's user interface.
