@@ -1,0 +1,77 @@
+---
+title: WordPress
+excerpt: Add a bot to your WordPress website using Webchat.
+deprecated: false
+hidden: false
+metadata:
+  robots: index
+---
+> 🧩 You will need:
+>
+> * A [published bot](https://botpress-docs.readme.io/v1.5/docs/build#/)
+> * A WordPress website. Your website could be:
+>   * Managed ([WordPress.org](WordPress.org)) or
+>   * Self-hosted ([WordPress.com](WordPress.com))
+> * If you're self-hosting: a WordPress [plan that allows installing plugins](https://wordpress.com/pricing/)
+
+> 📺 Visual learner?
+>
+> Check out our [WordPress guide](https://www.youtube.com/watch?v=PzGFVqOzDsk) on YouTube, which teaches you how to build and embed a bot on your WordPress website.
+
+# Embed in a WordPress.org website
+
+## Step 1: Get your embed code
+
+To embed a bot on your WordPress website, you need the bot's Webchat embed code. You can get the embed code from either the [Studio]() or your [Webchat settings]().
+
+### From the Studio
+
+1. Select **Share** in the upper-right corner.
+2. Select **Configure**, then copy the `script` tags:
+
+<Image align="center" src="https://files.readme.io/fde8fb684e105e7dc3e04994924e40e5d2832cc3e1c5ca74efad7ce70fcbde4d-Screen_Shot_2025-03-20_at_10.16.22.png" />
+
+### From your Webchat settings
+
+1. Open your bot's Workspace. In the left navigation bar, find the bot you want to embed.
+2. Select **Webchat**, then open the **Share** tab.
+3. Copy the **Embed code**:
+
+## Step 2: Install the WPCode Plugin in WordPress
+
+1. Login to your [WordPress dashboard](https://login.wordpress.org).
+2. From the left navigation bar, select **Plugins**.
+3. Search for the [WPCode plugin](https://wordpress.org/plugins/insert-headers-and-footers/#description) and select **Install Now**.
+
+## Step 3: Add the bot to your WordPress website
+
+1. From the left navigation bar, select **Code Snippets**.
+2. Select **Add New**. Then, select **Add Your Custom Code (New Snippet)**.
+3. Select **HTML Snippet**. Then, paste your [Webchat embed code](#get-your-embed-code) into the **Code Preview** field.
+4. Scroll to the **Insertion** section, then open the **Location** drop-down menu. Select **Side Wide Body**.
+5. In the upper-right corner, set the snippet to **Active**, then select **Save Snippet**.
+
+# Embed in a WordPress.com website
+
+## Step 1: Get your embed code
+
+To embed a bot on your WordPress website, you need the bot's Webchat embed code. You can get the embed code from either the [Studio]() or your [Webchat settings]().
+
+### From the Studio
+
+1. Select **Share** in the upper-right corner.
+2. Select **Configure**, then copy the `script` tags:
+
+<Image align="center" src="https://files.readme.io/fde8fb684e105e7dc3e04994924e40e5d2832cc3e1c5ca74efad7ce70fcbde4d-Screen_Shot_2025-03-20_at_10.16.22.png" />
+
+### From your Webchat settings
+
+1. Open your bot's Workspace. In the left navigation bar, find the bot you want to embed.
+2. Select **Webchat**, then open the **Share** tab.
+3. Copy the **Embed code**:
+
+## Step 2: Install the WPCode Plugin in WordPress
+
+1. Login to your [WordPress dashboard.](https://wordpress.com/log-in/)
+2. Install the [WPCode plugin](https://wordpress.org/plugins/insert-headers-and-footers/#description).
+3. <br />
