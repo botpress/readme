@@ -9,9 +9,7 @@ metadata:
 > 🧩 You will need:
 >
 > * A [published bot](https://botpress-docs.readme.io/v1.5/docs/build#/)
-> * A WordPress website. Your website could be:
->   * Managed ([WordPress.org](WordPress.org)) or
->   * Self-hosted ([WordPress.com](WordPress.com))
+> * A WordPress website. Your website could be managed ([WordPress.org](WordPress.org)) or self-hosted ([WordPress.com](WordPress.com))
 > * If you're self-hosting: a WordPress [plan that allows installing plugins](https://wordpress.com/pricing/)
 
 > 📺 Visual learner?
