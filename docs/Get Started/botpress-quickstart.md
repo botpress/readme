@@ -13,7 +13,7 @@ next:
       title: How to add a bot to your website
       type: basic
 ---
-It's easy to build a bot an AI agent on Botpress, regardless of your level of development experience.
+It's easy to build an AI agent on Botpress, regardless of your level of development experience.
 
 By the end of this guide, you'll have a bot that will:
 
