@@ -1,6 +1,6 @@
 ---
 title: Quick Start
-excerpt: Build, test, and deploy your first bot.
+excerpt: Build, test, and deploy your first AI agent.
 deprecated: false
 hidden: false
 metadata:
