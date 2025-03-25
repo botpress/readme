@@ -24,4 +24,4 @@ Our how-to guides are great for learning common use-cases and troubleshooting is
 
 # Cross-reference
 
-As you become more familiar with Botpress, you may have ideas or questions that aren't covered in this section. We recommend cross-referencing with our [Concepts]() section
+As you become more familiar with Botpress, you may have ideas or questions that aren't covered in this section. We recommend cross-referencing with the [Reference]() section to gain a better understanding of the platform.
