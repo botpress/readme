@@ -10,7 +10,7 @@ Botpress is an all-in-one platform for building AI agents powered by the latest 
 
 # Quick Start
 
-The [Quick Start guide](tbc) teaches you to build, test, and deploy your first bot. This section is great for beginners who aren't yet familiar with the Botpress interface, and want to learn to create a bot from A to Z.
+The [Quick Start guide](https://botpress-docs.readme.io/v1.5/docs/botpress-quickstart#/) teaches you to build, test, and deploy your first bot. This section is great for beginners who aren't yet familiar with the Botpress interface, and want to learn to create a bot from A to Z.
 
 # Learn by Doing
 
