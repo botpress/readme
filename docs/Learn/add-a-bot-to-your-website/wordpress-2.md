@@ -18,7 +18,7 @@ metadata:
 
 <Tabs>
   <Tab title="Managed (WordPress.org)">
-    # Embed in a Managed (WordPress.org) website
+    # Embed in a managed (WordPress.org) website
 
     ## Step 1: Get your embed code
 
