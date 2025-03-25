@@ -16,6 +16,7 @@ metadata:
 ---
 Botpress React components provide a flexible way to build and customize chatbot interfaces in React applications. They enable conversation management, user input handling, and event subscriptions for a seamless chat experience.
 # Quickstart
+## Prerequisites
 ## Install the packages
 Install the necessary packages from the npm public registry.
 ```javascript npm
