@@ -18,7 +18,7 @@ metadata:
 
 <Tabs>
   <Tab title="Managed (WordPress.org)">
-    # Embed in a Managed ( WordPress.org) website
+    # Embed in a Managed (WordPress.org) website
 
     ## Step 1: Get your embed code
 
@@ -53,7 +53,7 @@ metadata:
   </Tab>
 
   <Tab title="Self-hosted (WordPress.com)">
-    # Embed in a self-hosted ( WordPress.com) website
+    # Embed in a self-hosted (WordPress.com) website
 
     ## Step 1: Get your embed code
 
