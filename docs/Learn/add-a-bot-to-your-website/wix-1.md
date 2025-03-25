@@ -160,3 +160,7 @@ You have several options for embedding a bot on your Wix website:
     4. In the **What's the website address** field, paste your bot's link, then select **Apply.**
   </Tab>
 </Tabs>
+
+> ✅ Done!
+>
+> Your bot is now live on your Wix site.
