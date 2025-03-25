@@ -18,4 +18,4 @@ From this menu, you can uninstall existing integrations, or navigate to the Botp
 >
 > Integration configuration has been moved to the Studio.
 >
-> To set up integrations you've installed, or to install new integrations, you can navigate to the integrations menu found directly in the Studio.
+> To set up integrations you've installed, or to install new integrations, you can navigate to the [integrations menu](https://botpress.com/docs/integrations-3) found directly in the Studio.

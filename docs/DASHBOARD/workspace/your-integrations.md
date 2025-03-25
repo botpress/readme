@@ -20,7 +20,7 @@ This tab lists integrations your Workspace has contributed to the Botpress Hub.
 >
 > It is open to the public, so you can make contributions to it, share integrations with colleagues or bot builders across the world, and download integrations developed by Botpress and other builders.
 >
-> Learn more here.
+> Consult the [Botpress Hub documentation](https://botpress.com/docs/card-hub) to learn more.
 
 <br />
 

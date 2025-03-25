@@ -10,11 +10,11 @@ metadata:
 next:
   description: ''
 ---
-The Conversations tab is a key feature in Botpress Cloud for tracking your bot's behavior and user interaction. Once you publish and share your chatbot you can use the Conversations tab to test its ensure that it is working as intended.
+Once you [publish and share your bot](https://botpress.com/docs/deploy), you can use the Conversations tab to view and manage your bot's interactions with users. This means you can:
 
-One of the benefits of using the Conversations tab is that you can see how your bot is performing in real-time. This means that you can see how users are interacting with your bot - the messages they send and the replies they get. This can help you identify any issues with your bot and fix them before they become a problem for other users. It's also very useful for looking for possible improvements to the user experience and constantly refining your bot's performance and functionality.
-
-<br />
+* View user messages and replies
+* Identify and fix issues with your bot
+* Improve your user experience
 
 ## Features
 
@@ -25,8 +25,6 @@ This menu lists each conversation your bot has had, sorted by the conversation's
 You can click the conversation ID to navigate to the specific conversation and view it in greater detail.
 
 When viewing a conversation, you can click on any message to inspect its properties, like the time at which it was sent, a unique message ID, and the JSON for that specific message.
-
-<br />
 
 ### Filtering conversations
 

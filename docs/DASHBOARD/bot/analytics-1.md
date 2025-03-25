@@ -18,8 +18,6 @@ Using the Analytics tab in your bot's dashboard, you can visualize your bot's re
 >
 > Some features in the Analytics tab, like selecting custom time periods or creating and saving additional custom displays, are only available to Team plan subscribers. [Learn more](https://botpress.com/pricing)
 
-<br />
-
 # Default Layout
 
 By default, each bot in your Workspace comes with pre-configured analytics charts. These cover last month's users, new or returning users, how many messages users send per session, how many sessions your bot had over the last month, how many messages were sent to your bot over the last month, and a general overview of the previous 3 months.
@@ -28,13 +26,9 @@ By default, each bot in your Workspace comes with pre-configured analytics chart
 
 You can create custom boards, which visualize data related to your bot, by either editing an existing board from your default layout or creating a new chart altogether.
 
-<br />
-
 # Time Period
 
 When customizing a board, you can select from a list of pre-configured time periods to determine which time period's data gets visualized in your Analytics tab. Each of the boards in this tab can display information from different time periods.
-
-<br />
 
 # Event Types
 
@@ -47,13 +41,10 @@ When choosing what data your Analytics tab will display, you can choose from a l
 * average messages sent by users per session
 * average number of sessions per user
 * the custom botready, botpulished, state\_expired, and conversationStarted events.
-* <br />
 
 # Chart Types
 
 You can visualize data in the analytics tab with the following charts: area, donut, bar, pie, metric, spark bar, and spark area.
-
-<br />
 
 # Analytics Agent
 
@@ -62,8 +53,6 @@ You can visualize data in the analytics tab with the following charts: area, don
 > The Analytics Agent is only available to Team Plan subscribers.
 
 Once you've enabled the Analytics Agent from your bot's Agents menu, you can designate custom events that your bot will track. These events can be selected from the list of trackable events, or "Event Types."
-
-<br />
 
 # Tracking custom events
 
