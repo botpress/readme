@@ -18,7 +18,7 @@ metadata:
 
 <Tabs>
   <Tab title="Managed (WordPress.org)">
-    # Embed in a WordPress.org website
+    # Embed in a Managed ( WordPress.org) website
 
     ## Step 1: Get your embed code
 
@@ -52,8 +52,8 @@ metadata:
     5. In the upper-right corner, set the snippet to **Active**, then select **Save Snippet**.
   </Tab>
 
-  <Tab title="Self-hosted (WordPress.com">
-    # Embed in a WordPress.com website
+  <Tab title="Self-hosted (WordPress.com)">
+    # Embed in a self-hosted ( WordPress.com) website
 
     ## Step 1: Get your embed code
 
