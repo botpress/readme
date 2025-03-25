@@ -39,3 +39,5 @@ We believe the best way to learn Botpress is to *start using it*. Once you've fi
 # Reference
 
 Once you've gained some familiarity with Botpress, you'll likely have questions about the interface and specific features. For detailed explanations on everything Botpress, check out the [Reference](tbc) section.
+
+Have fun building bots!
