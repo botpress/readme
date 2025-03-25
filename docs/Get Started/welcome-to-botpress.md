@@ -18,7 +18,9 @@ Botpress is an all-in-one platform for building AI agents powered by the latest 
 
 > 🚧 Under construction
 >
-> We're currently re-building the Botpress documentation from the ground up, so it's even easier to find the help you need! Be sure to check in regularly for updates, new guides, and improved content. You can also leave feedback at the bottom of any page.
+> We're currently re-building the Botpress documentation from the ground up, so it's even easier to find the help you need!
+>
+> Be sure to check in regularly for updates, new guides, and improved content. You can also leave us feedback at the bottom of any page.
 
 # Quick Start
 
