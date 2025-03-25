@@ -106,9 +106,9 @@ Now that your bot has a greeting, let's add some custom instructions for when it
 
 By default, this field contains a detailed list of natural language instructions for your bot. You can modify these, or start from scratch with your own instructions.
 
-For now, let's just tell your bot its name and give it a simple task. Erase everything in the **Instructions** section, and enter "You are Teddy, a helpful bot. You can answer any questions the user has about dogs".
+For now, let's just tell your bot its name and give it a simple task. Erase everything in the **Instructions** section, and enter "Ask the user if they have any questions about dogs, then assist them".
 
-<Image align="center" src="https://files.readme.io/3633e59b4ed734f438aaad77371f09c14d71f1eb9cc67f82016c7a8c6b3f49c7-Screenshot_2025-03-19_at_10.56.26_AM.png" />
+<Image align="center" src="https://files.readme.io/b416f1a62ca35e0eb33cb6b0ead25b1f5ca9ff00adf2a3f2cb3b8256e817a624-Screenshot_2025-03-25_at_2.27.32_PM.png" />
 
 # Step 2: Test your bot
 
@@ -118,7 +118,7 @@ Congratulations! You now have a bot with a custom greeting and instructions. Nex
 
 You can chat with a preview of your bot using the Emulator on the right side of the Studio. To start a conversation, just select **Test your bot**, or type a message into the text field:
 
-<Image align="center" src="https://files.readme.io/4e69484d0730f7adc249abbc3747eaae36733429c8a84b85939ebb78e1241a1c-Screen_Shot_2025-03-19_at_11.00.00.png" />
+<Image align="center" src="https://files.readme.io/c4981d056e8ec6272d14d16a3bd5751ab4c0afd03e15cf113e8586672d56cd2a-Screen_Shot_2025-03-25_at_14.29.59.png" />
 
 The bot followed your instructions! Notice that the Emulator provides an update whenever your bot transitions to a new Node, or whenever it's waiting for user input.
 
@@ -143,7 +143,7 @@ To deploy with Webchat preview:
 
 Your preview will open in a new tab. Try sending a message:
 
-<Image align="center" src="https://files.readme.io/bb7acb8098a74802cfbd004966b6b15f1fd12920a2b2c067b470c1c621fbdc8a-Screen_Shot_2025-03-19_at_13.56.06.png" />
+<Image align="center" src="https://files.readme.io/814b28c711abf61e223371b70934c8857a373877c5a4b7179a3e3ea212ea3fbf-Screen_Shot_2025-03-25_at_14.32.40.png" />
 
 Webchat preview displays your bot the way it appears to an actual user, regardless of where you've deployed it. This makes it great for quickly evaluating your user experience.
 
