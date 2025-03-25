@@ -1,2 +1,8 @@
 # Global Owners
 * @adkah
+
+# API Documentation
+/reference/Botpress API/ @botpress/engineering
+/reference/Chat API/ @botpress/engineering
+/reference/Human in the Loop API Integration/ @botpress/engineering
+/docs/Botpress APIs/ @botpress/engineering
