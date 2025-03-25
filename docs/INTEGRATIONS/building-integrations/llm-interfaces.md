@@ -161,9 +161,3 @@ In the above example, **My LLM 1** and **My LLM 2** appear with the correspondin
 <Image align="center" width="200px" src="https://files.readme.io/6311471c2d53aa45e62cec732ec1a0b1a2961bc87c06fbfcdbe4bdc9fa5680d0-Screenshot_2024-08-30_at_9.44.34_AM.png" />
 
 By integrating your own LLM with Botpress, you gain full control over AI outputs, privacy, and security, while also opening up potential monetization opportunities. Follow the outlined steps to configure your integration, implement the LLM logic, and seamlessly deploy it in Botpress Studio for a customized AI experience.
-
-<br />
-
-# Having difficulties with LLM Interfaces?
-
-Contact us at [llm-help@botpress.com](mailto:llm-help@botpress.com) with as much detail as possible about your company and your use case.
