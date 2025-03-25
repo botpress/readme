@@ -9,8 +9,8 @@ metadata:
   robots: index
 next:
   pages:
-    - slug: add-a-bot-to-your-website
-      title: How to add a bot to your website
+    - slug: learn-by-doing
+      title: Learn by Doing
       type: basic
 ---
 It's easy to build an AI agent on Botpress, regardless of your level of development experience.
@@ -24,7 +24,7 @@ By the end of this guide, you'll have a bot that will:
 
 > 📘 Keep learning!
 >
-> This guide is designed to teach a total beginner how to deploy their first bot. If you have more questions and want to get creative with bot-building, check out the [Learn section](tbc) for detailed how-to guides.
+> This guide is designed to teach a total beginner how to deploy their first bot. If you have more questions and want to get creative with bot-building, check out the [Learn section](https://botpress-docs.readme.io/v1.5/docs/learn-by-doing#/) for detailed how-to guides.
 >
 > For detailed explanations of any of the concepts introduced on this page, check out our [Concepts](tbc) guide.
 
@@ -153,8 +153,8 @@ Webchat preview displays your bot the way it appears to an actual user, regardle
 
 # Next steps
 
-Now that you know the basics of Botpress, you can start getting creative. See the [Learn]() section for guides on how to:
+Now that you know the basics of Botpress, you can start getting creative. See the [Learn](https://botpress-docs.readme.io/v1.5/docs/learn-by-doing#/) section for guides on how to:
 
 * [Build specific bots]()
-* [Deploy bots to your app or website]()
+* [Deploy bots to your app or website](https://botpress-docs.readme.io/v1.5/docs/add-a-bot-to-your-website#/)
 * [Monitor your bot's performance]()
