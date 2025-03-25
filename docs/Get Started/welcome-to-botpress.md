@@ -5,6 +5,14 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  pages:
+    - slug: botpress-quickstart
+      title: Quick Start
+      type: basic
+    - slug: learn-by-doing
+      title: Learn by Doing
+      type: basic
 ---
 Botpress is an all-in-one platform for building AI agents powered by the latest LLMs. Whether you're just getting started or need help with a specific issue, the Botpress documentation is the best place to learn the platform.
 
@@ -14,7 +22,7 @@ The [Quick Start guide](https://botpress-docs.readme.io/v1.5/docs/botpress-quick
 
 # Learn by Doing
 
-We believe the best way to learn Botpress is to *start using it*. Once you've finished Quick Start and deployed your first bot, check out the [Learn](tbc) section and follow our detailed how-to guides.
+We believe the best way to learn Botpress is to *start using it*. Once you've finished Quick Start and deployed your first bot, check out the [Learn](https://botpress-docs.readme.io/v1.5/docs/learn-by-doing#/) section and follow our detailed how-to guides.
 
 > 📘 Build confidence
 >
