@@ -16,6 +16,10 @@ next:
 ---
 Botpress is an all-in-one platform for building AI agents powered by the latest LLMs. Whether you're just getting started or need help with a specific issue, the Botpress documentation is the best place to learn the platform.
 
+> 🚧 Under construction
+>
+> We're currently re-building the Botpress documentation from the ground up, so it's even easier to find the help you need! Be sure to check in regularly for updates, new guides, and improved content. You can also leave feedback at the bottom of any page.
+
 # Quick Start
 
 The [Quick Start guide](https://botpress-docs.readme.io/v1.5/docs/botpress-quickstart#/) teaches you to build, test, and deploy your first bot. This section is great for beginners who aren't yet familiar with the Botpress interface, and want to learn to create a bot from A to Z.
