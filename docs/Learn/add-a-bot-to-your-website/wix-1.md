@@ -5,6 +5,11 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
+next:
+  pages:
+    - slug: how-to-style-your-bot
+      title: How to style your bot
+      type: basic
 ---
 > 🧩 You will need:
 >
@@ -164,3 +169,7 @@ You have several options for embedding a bot on your Wix website:
 > ✅ Done!
 >
 > Your bot is now live on your Wix site.
+
+# Next steps
+
+Now that you've added your bot, try [styling](https://botpress-docs.readme.io/v1.5/docs/how-to-style-your-bot#/) it to match the rest of your website's user interface.
