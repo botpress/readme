@@ -11,20 +11,20 @@ next:
       title: How to style your bot
       type: basic
 ---
-Botpress makes it easy to embed a bot on your website using [Webchat](). If you self-host your website, just follow the instructions on this page.
+Botpress makes it easy to embed a bot on your website using [Webchat](https://botpress.com/docs/webchat-v2). If you self-host your website, just follow the instructions on this page.
 
 > 📘 Website builders
 >
-> If you use a website-building tool like [Wordpress](), [Wix](https://botpress-docs.readme.io/v1.5/docs/wix-1#/) or [Webflow](), see the other pages in this section for instructions on how to add your bot.
+> If you use a website-building tool like [Wordpress](https://botpress.com/docs/wordpress-2), [Wix](https://botpress.com/docs/wix-1) or [Webflow](https://botpress.com/docs/webflow-1), see the other pages in this section for instructions on how to add your bot.
 
 > 🧩 You will need:
 >
-> * A [published bot](https://botpress-docs.readme.io/v1.5/docs/build#/)
+> * A [published bot](https://botpress.com/docs/botpress-quickstart)
 > * Basic familiarity with HTML
 
 # Step 1: Get your embed code
 
-To embed a bot a bot on your website, you need the bot's Webchat embed code. You can get the embed code from either the [Studio]() or the [Dashboard]().
+To embed a bot a bot on your website, you need the bot's Webchat embed code. You can get the embed code from either the [Studio](https://botpress.com/docs/interface) or the [Dashboard](https://botpress.com/docs/workspace).
 
 ## From the Studio
 
@@ -64,4 +64,4 @@ Next, add the Webchat embed code to the `head` section of your website's HTML. F
 
 # Next steps
 
-Now that you've added your bot, try [styling](https://botpress-docs.readme.io/v1.5/docs/how-to-style-your-bot#/) it to match the rest of your website's user interface.
+Now that you've added your bot, try [styling](https://botpress.com/docs/how-to-style-your-bot) it to match the rest of your website's user interface.
