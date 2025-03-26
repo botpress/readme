@@ -24,11 +24,11 @@ Botpress is an all-in-one platform for building AI agents powered by the latest 
 
 # Quick Start
 
-The [Quick Start guide](https://botpress-docs.readme.io/v1.5/docs/botpress-quickstart#/) teaches you to build, test, and deploy your first bot. This section is great for beginners who aren't yet familiar with the Botpress interface, and want to learn to create a bot from A to Z.
+The [Quick Start guide](https://botpress.com/docs/botpress-quickstart) teaches you to build, test, and deploy your first bot. This section is great for beginners who aren't yet familiar with the Botpress interface, and want to learn to create a bot from A to Z.
 
 # Learn by Doing
 
-We believe the best way to learn Botpress is to *start using it*. Once you've finished Quick Start and deployed your first bot, check out the [Learn](https://botpress-docs.readme.io/v1.5/docs/learn-by-doing#/) section and follow our detailed how-to guides.
+We believe the best way to learn Botpress is to *start using it*. Once you've finished Quick Start and deployed your first bot, check out the [Learn](https://botpress.com/docs/learn-by-doing) section and follow our detailed how-to guides.
 
 > 📘 Build confidence
 >
@@ -38,6 +38,4 @@ We believe the best way to learn Botpress is to *start using it*. Once you've fi
 
 # Reference
 
-Once you've gained some familiarity with Botpress, you'll likely have questions about the interface and specific features. For detailed explanations on everything Botpress, check out the [Reference](tbc) section.
-
-Have fun building bots!
+Once you've gained some familiarity with Botpress, you'll likely have questions about the interface and specific features. For detailed explanations on everything Botpress, check out the [Dashboard](https://botpress.com/docs/workspace) or [Studio](https://botpress.com/docs/interface) sections.
