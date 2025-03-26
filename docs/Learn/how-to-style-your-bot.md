@@ -8,7 +8,7 @@ metadata:
 ---
 > 🧩 You will need:
 >
-> * A [published bot](https://botpress-docs.readme.io/v1.5/docs/build#/)
+> * A [published bot](https://botpress.com/docs/botpress-quickstart)
 > * Familiarity with CSS (if you want to [use custom styles](#use-custom-styles))
 
 # Use the theme styler
@@ -29,4 +29,4 @@ If you want to customize your bot's appearance further, you can modify the built
 
 > 📘 CSS Classes
 >
-> For a full list of Webchat CSS classes, check out the [Webchat guide]().
+> For a full list of Webchat CSS classes, check out the [Webchat guide](https://botpress.com/docs/how-to-style-your-webchat).
