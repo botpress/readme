@@ -25,6 +25,6 @@ Before adding your Botpress bot, you need to create a bot in Telegram using BotF
 
 # Step 2: Set up the Telegram integration in Botpress
 
-1. In the
+1. In the Botpress dashboard,
 
 # Step 3:
