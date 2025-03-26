@@ -16,7 +16,7 @@ next:
 > * A [published bot](https://botpress-docs.readme.io/v1.5/docs/build#/)
 > * A Wix website with a [plan that allows adding custom scripts](https://www.wix.com/plans)
 > * A [domain connected to your Wix website](https://support.wix.com/en/article/connecting-a-domain-to-the-wix-name-servers)
-> * Familiarity with HTML (if you want to [embed in an HTML div](#embed-in-an-html-div))
+> * Familiarity with HTML (if you want to embed in an HTML div)
 
 > 📺 Visual learner?
 >
@@ -30,7 +30,7 @@ You have several options for embedding a bot on your Wix website:
 
     ## Step 1: Get your embed code
 
-    To embed a bot on your Wix website, you need the bot's Webchat embed code. You can get the embed code from either the [Studio]() or your [Webchat settings]().
+    To embed a bot on your Wix website, you need the bot's Webchat embed code. You can get the embed code from either the [Studio](https://botpress.com/docs/interface) or your [Webchat settings](https://botpress.com/docs/webchat-v2).
 
     ### From the Studio
 
@@ -172,4 +172,4 @@ You have several options for embedding a bot on your Wix website:
 
 # Next steps
 
-Now that you've added your bot, try [styling](https://botpress-docs.readme.io/v1.5/docs/how-to-style-your-bot#/) it to match the rest of your website's user interface.
+Now that you've added your bot, try [styling](https://botpress.com/docs/how-to-style-your-bot) it to match the rest of your website's user interface.
