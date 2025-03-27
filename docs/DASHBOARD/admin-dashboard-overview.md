@@ -16,7 +16,7 @@ next:
 
 This is the internal name of the chatbot in this workspace, to be displayed for administrative purposes only. The end user will never see this name.
 
-If you want to change the name, you can click on the **Edit** button next to it and enter a new name.
+If you want to change the name, you can click on the **Edit** button next to it and enter a new name. Hey Robert!
 
 <br />
 
