@@ -2,7 +2,7 @@
 title: Telegram
 excerpt: Add a bot to Telegram using the official integration.
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
