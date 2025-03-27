@@ -2,7 +2,7 @@
 title: Telegram
 excerpt: Add a bot to Telegram using the official integration.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
@@ -17,14 +17,30 @@ metadata:
 
 # Step 1: Create a bot in Telegram
 
-Before adding your Botpress bot, you need to create a bot in Telegram using BotFather.:
+To add your bot, you need to create a corresponding bot in Telegram. You can do this using Telegram's BotFather:
 
 1. Log into [Telegram](https://web.telegram.org/a/).
 2. Start a conversation with [BotFather](https://telegram.me/BotFather) and follow the prompts to create your bot.
 3. Copy your bot's access token.
 
-# Step 2: Set up the Telegram integration in Botpress
+# Step 2: Install the Telegram integration in Botpress
 
-1. In the Botpress dashboard, blah blah third blah fourth blah fifth blah sixth blah SEVENTH blah
+Next, install the Telegram integration for your Botpress bot.
 
-# Step 3:
+1. In Botpress Studio, select **Explore Hub** in the upper-right corner.
+2. Search for the Telegram integration, then select **Install Integration**.
+
+The **Configuration** menu should open:
+
+![Telegram Integration Settings](https://files.readme.io/389e2cdeb228518b14486ca782d8ad9523eb3c3cf808de63144349d8e6863d72-Screen_Shot_2025-03-27_at_16.46.40.png)
+
+# Step 3: Configure your integration
+
+Now, you can connect your Botpress bot and your Telegram bot.
+
+1. Paste your Telegram bot's access token into the **Bot Token** field.
+2. Select **Save Configuration.**
+
+> ✅ Done!
+>
+> You can now chat with your Botpress bot on Telegram.
