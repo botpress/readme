@@ -1,11 +1,11 @@
-📘 **Docs Update**:
+📘 **Docs Update:**
 
-- ✍️ Edits
+- 📝 Edits
 - ✨ New content
 - ❌ Remove content
 - 🏗️ Refactor
 
-**Summary**:
+**Summary:**
 
 (Write a short summary of the change)
 
@@ -14,6 +14,6 @@
 - [Link to the pages]()
 - [Use bullets]()
 
-**Other notes**
+**Other notes:**
 
 (Write any additional notes here)
