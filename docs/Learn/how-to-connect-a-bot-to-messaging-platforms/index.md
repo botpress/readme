@@ -2,7 +2,7 @@
 title: How to connect a bot to messaging platforms
 excerpt: Use integrations to connect a bot to your messaging platform.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
