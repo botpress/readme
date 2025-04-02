@@ -15,205 +15,73 @@ next:
 > To deploy a chatbot on WhatsApp, your business must first undergo a verification process by Meta, the parent company of WhatsApp. This verification, typically conducted through the Facebook Business Manager, confirms the identity and eligibility of your business to use Meta's platforms. Checking the official Meta for Developers website or WhatsApp Business API documentation is advisable.
 
 # Setup
+# Optional: Manual Configuration
+
+For more complex use cases, you can use your own Meta app with our integration.
 
 ## Prerequisites
 
-* A [WhatsApp Business Platform Account](https://business.whatsapp.com/products/business-platform) to be your bot's interface on WhatsApp
-* A [Botpress Cloud account](https://sso.botpress.cloud) and a [Botpress Bot](https://botpress.com/docs/cloud/getting-started/create-and-publish-your-chatbot/)
+* A [Meta developer app](https://developers.facebook.com/apps/create/). Check out [this article](https://developers.facebook.com/docs/whatsapp/cloud-api/get-started#set-up-developer-assets) to learn more about the setup.
 
-## Installing the integration
+<Embed url="https://www.youtube.com/watch?v=LQd1iGJLj58" title="How to Connect your Chatbot to WhatsApp" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/LQd1iGJLj58/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=LQd1iGJLj58" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FLQd1iGJLj58%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DLQd1iGJLj58%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FLQd1iGJLj58%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22854%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
-1. Navigate to the [Integration Hub](https://app.botpress.cloud/hub) in Botpress Cloud
-2. Install the WhatsApp integration
-3. Click "Enable Integration" and then "Save Configuration"
-4. Click "Sign in to link your account"
-5. Follow the steps of the wizard to connect your bot to WhatsApp
+## Enable Manual Configuration
 
-<br />
+1. Go to the [Integration Hub](https://app.botpress.cloud/hub) in Botpress Cloud (if you don't have the integration installed yet).
+2. Find and open the WhatsApp integration then click on the "Install to Bot" button, now go back to your bot.
+3. Enable "Use Manual Configuration"
 
-# Content Type Mapping
+The WhatsApp integration will have the following settings:
 
-## From Botpress to WhatsApp
+### 1. Verify Token
 
-* Text is mapped to [Text Object](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#text-object)
-* Text with Markdown is mapped to [Text Object](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#text-object)
-* Image is mapped to [Media Image Object](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#media-object)
-* Audio is mapped to [Media Audio Object](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#media-object)
-* Video is mapped to [Media Video Object](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#media-object)
-* File is mapped to [Media File Object](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#media-object)
-* Location is mapped to [Location Object](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#location-object)
+The **Verify Token** is used by Meta to verify that you are the real owner of the provided webhook.\
+You can generate any random alphanumeric string for this configuration. Paste it in your **Verify Token** channel configuration.
 
-## Special behaviors to consider
+### 2. Phone Number ID
 
-Choices (buttons), dropdowns, cards, and carousels are all mapped to [Interactive List Objects.](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#interactive-object)
+1. In your Meta App's left sidebar, expand the **WhatsApp** menu and select **Getting Started**
+2. In the **Send and receive messages** section, beside the label **Phone Number ID** click **Copy** then paste it in the **Phone Number ID** field in Botpress
 
-This comes with a few restrictions and behaviors specific to WhatsApp:
+### 3. Client Secret
 
-### Choices (buttons) and Dropdowns
+1. In your Meta App's left sidebar, expand the **Settings** menu and select **Basic**
+2. In the **App Secret** field,  click **Show** then copy and paste it in the **Client Secret** field in Botpress
 
-* When there are 3 or fewer choices as buttons or in a dropdown, they will be rendered as buttons.
-* When there are more than 3 choices as buttons or in a dropdown, they will be rendered as a dropdown.
-* If there are more than 10 choices in a dropdown, the multiple dropdown messages will be sent with up to 10 choices in each messsage.
-  * For example, if your bot has a dropdown with 10 choices, the user will receive two messages: the first message will have a dropdown with 10 choices, and the second messge will have a dropdown with two choices.
-* Each dropdown requires a label but the Studio currently doesn’t support specifying one, so the label *“Choose…”* is used for all dropdowns by default.
-* Button labels are limited to 20 characters, and dropdown labels are limited to 24 characters.
-  * Labels exceeding these limits are automatically truncated. For example, the label "This button label is very long" would become "This button label i…" on a button and "This button label is ve…" on a dropdown.
+### 4. Access Token
 
-### Cards and Carousels
+The **Phone Number ID** and **Access Token** are used to send and receive messages to/from the WhatsApp API.
 
-* WhatsApp only supports one link (label and URL) on a card, so multiple links will be split into separate empty cards.
-* WhatsApp imposes a limit of 3 "reply" action buttons on a card, so if a card has more than these, the buttons will be split into multiple cards.
-* WhatsApp doesn't natively support carousels, so each card in a carousel will be sent individually.
+1. In your Meta App's left sidebar, expand the **WhatsApp** menu and select **Getting Started**
+2. In the **Temporary access token** section, click **Copy** and then paste it in the **Access Token** field in Botpress
 
-### Files
+### 5. (Optional): Permanent Access Token
 
-* When files are sent over Whatsapp, the Studio doesn't store the original filename (for security reasons) but only the file extension, so the file will be sent with a generic filename ("file") followed by the extension of the file. For example, if you send a PNG file, it will be sent as "file.png".
+**Permanent Access Token** can be used to send and receive messages to/from the WhatsApp API without the need to refresh the token every 24 hours.
 
-## From WhatsApp to Botpress
+1. Navigate to [Business Settings](https://business.facebook.com/settings).
+2. Choose the business account associated with your app.
+3. Click on `Add` under `System Users`.
+4. Enter a name for the system user, assign the `Admin` role, and click `Create System User`.
+5. Click on `Create Asset` and select `Apps` from the asset type Tab.
+6. Select your app and toggle `Manage App (full control)`.
+7. Click `Generate New Token` and select `whatsapp_business_messaging` and `whatsapp_business_management` permission.
+8. Copy and save your token.
 
-### Text
+> 📘 Fix for Unexpected Messaging Behavior
+>
+> Experiencing replies from the wrong numbers? **Disable** the advanced permission for `whatsapp_business_management`. This adjustment is crucial because advanced permissions can interfere with how messages are routed, leading to responses from multiple numbers instead of the intended one. Reverting to basic permission settings ensures messages are directed correctly, solving this issue.
 
-Text messages are directly mapped to Botpress text messages, and readable through `event.preview`.
+## Finalizing Channel Configuration
 
-### Location
+The next step is to Enable the channel from the top of the screen and then copy the webhook URL from the button below the webhook URL.
 
-Use a “Wait for User Input” card on your bot, check that `event.type` equals `"location"`, and then read `event.payload` which will contain the following properties:
+In the last step, click **Save**.
 
-* `latitude`
-* `longitude`
-* `address` (not always provided)
-* `title` (not always provided)
+Now we can go back to Step (3) & Step (4) in this [article](https://developers.facebook.com/docs/whatsapp/cloud-api/get-started#set-up-developer-assets).
 
-### Media (images, audio, documents)
+## Webhook Fields
 
-Use a “Wait for User Input” card on your bot, check that `event.type` equals `"image"`, `"audio"` or `"document"`, and then read `event.payload` which will have the following structure depending on the event type:
+#### We need to subscribe to the webhook fields below
 
-* For an image: `{"imageUrl": "https://lookaside.fbsbx.com/...."}`
-* For audio: `{"audioUrl": "https://lookaside.fbsbx.com/...."}`
-* For a document: `{"documentUrl": "https://lookaside.fbsbx.com/....", "filename": "the-filename.pdf"}`
-
-Then, you can retrieve the raw file content from WhatsApp by making a `GET` HTTP request to the URL provided in the payload while passing your WhatsApp access token as a `Bearer` token in the `Authorization` HTTP header.
-
-For example:
-
-```js
-/* INSTRUCTIONS:
-1. Create a Configuration Variable named "WHATSAPP_ACCESS_TOKEN" in the Bot Settings section of Botpress Studio.
-2. Go to the "Configuration Variables" section of your bot in Botpress Cloud and set its value to your WhatsApp access token.
-*/
-const whatsappAccessToken = env.WHATSAPP_ACCESS_TOKEN
-
-const res = await axios.get(event.payload.imageUrl, {
-  headers: {
-    Authorization: `Bearer ${whatsappAccessToken}`,
-  },
-})
-
-// This will be a JavaScript Buffer (https://nodejs.org/api/buffer.html) containing the raw binary content of the media file.
-const rawFileContent = res.data
-
-// This will indicate the file type, see:
-// https://developers.facebook.com/docs/whatsapp/cloud-api/reference/media/#supported-media-types
-const mimeType = res.headers['content-type']
-```
-
-For further information, please check the [WhatsApp documentation](https://developers.facebook.com/docs/whatsapp/cloud-api/reference/media/#download-media) on downloading media files and the [Botpress documentation](../docs/configuration-variables) on using Configuration Variables.
-
-## Other message types
-
-* Buttons and interactive replies from a list or button are mapped to a plain text response from the user, so you can use `event.preview` to get the value.
-* Botpress does not currently support other Whatsapp message types.
-
-<br />
-
-# Tips
-
-* To get the phone number of the user you can read the following variable:
-
-  `{{ event.tags.conversation['whatsapp:userPhone'] }}`.
-
-  This number also contains the country code and has no spaces, dashes or signs.
-
-* To get the Whatsapp Phone Number ID of your bot that the user is interacting with *(useful when pointing multiple Phone Number IDs to the same bot)*:
-
-  `{{ event.tags.conversation['whatsapp:phoneNumberId'] }}`
-
-## Example:
-
-* [Text card]\: `Where are you? Please use Whatsapp's "Send Location" feature.`
-* [Wait for Message card]
-* [Text card]\: `Thank you! You are located at {{event.payload.title}}, {{event.payload.address}} with longitude {{event.payload.longitude}} and latitude {{event.payload.latitude}}.`
-
-<br />
-
-# Starting a Conversation Proactively
-
-As required by WhatsApp, a conversation with a user can be proactively initiated only by using [Message Templates](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/), which need to be created in your [WhatsApp Manager](https://business.facebook.com/wa/manage/message-templates/) dashboard first and then reviewed and approved by WhatsApp in order to use them.
-
-Once you have a message template approved by WhatsApp, it's very easy to have your bot start a conversation with a user by just using the Whatsapp "**Start Conversation**" card:
-
-![](https://files.readme.io/f7109ed-image.png)
-
-Then you just need to pass the following fields to proactively start a Whatsapp conversation with a user:
-
-1. **User Phone**: The phone number of the user, including the country code (e.g. `+1 123 456 7890`).
-2. **Template Name**: The name of your WhatsApp message template to use for the first message of the conversation. The template should be already approved by WhatsApp in order to use it.
-3. **Template Language** *(optional)*: The language code of your WhatsApp message template ([see below](../docs/whatsapp#template-language) for more details).
-4. **Template Variables JSON** *(optional)*: The values of the variables for your WhatsApp message template, specified as a JSON array representing the list of values ([see below](../docs/whatsapp#template-variables) for more details).
-5. **Sender Phone Number ID** *(optional)*: The Whatsapp Phone Number ID you want to use as sender of the message if you have multiple phone numbers available in your Meta Developers dashboard. If you don't specify this field, the Default Phone Number ID specified in the Whatsapp configuration of your bot in your Botpress Cloud dashboard will be used by default.
-
-![](https://files.readme.io/5f52ceb-image.png)
-
-Once the conversation is created, if the user replies back it will be processed by your bot as a normal incoming message, so nothing else needs to be done.
-
-## Template Language
-
-If the language you selected for your template in the Whatsapp Manager dashboard has a country qualifier, then the value for "Template Language" needs to be specified in the `language_COUNTRY` format where `language` is the 2-letter lowercase [ISO code for the language](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes), and `COUNTRY` is the 2-letter uppercase [ISO code for the country](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). On the other hand, if the language in Whatsapp Manager doesn't specify a country then you can enter just the 2-letter lowercase ISO code for the language.
-
-For example:
-
-* If you selected the "English (US)" option for the language of your Message Template in Whatsapp Manager, then the value you need to enter for "Template Language" in Botpress is `en_US`.
-* If you selected the "English (UK)" option, then the value you need to enter is `en_GB`.
-* If you selected the "French" option, which doesn't have a country qualifier, then the value you need to enter is just `fr`.
-
-## Template Variables
-
-Template variables need to be passed as a JSON array of string or numeric values representing the list of variable values, as Whatsapp only allows referring to them by their position in your message template (e.g. `{{1}}` for the first variable, `{{2}}` for the second variable, and so on).
-
-For example, if your Message Template expects a first variable (*referred to as`{{1}}` in the template*) with the person's first name and then a second variable ( *`{{2}}`in the template*) with an account number, then you would pass the following JSON array as the value for the "Template Variables" field:
-
-```json
-["John", "12345"]
-```
-
-#### Accessing the Botpress Conversation ID
-
-If you need to access the ID of the conversation created in Botpress Cloud by this action, you can choose to store the output value of this action in a variable. The output value of this action will be an object with the following structure:
-
-```js
-{
-  conversationId: 'ffa09762-6c37-4ebd-a82f-307048929c97'
-}
-```
-
-So for example, if you choose to store the output value of this action in a variable named `bpWhatsappAction`, you can use `{{ workflow.bpWhatsappAction.conversationId }}` in input fields of the Studio (where supported) to insert the conversation ID, or use `workflow.bpWhatsappAction.conversationId` to access it in code.
-
-## Creating the conversation using the Botpress Client
-
-Note: This only works for bots created from code only.
-
-If you're building a bot as code (instead of using Botpress Studio), you can use the Botpress Client instance provided to your bot's handlers to call this action programmatically as shown in the following example:
-
-```ts
-const result = await client.callAction({
-  type: 'whatsapp:startConversation',
-  input: {
-    userPhone: '+1 123 456 7890', // The full phone number of the Whatsapp user you want to initiate the conversation with.
-    templateName: 'test_message', // This is the name (identifier) of your WhatsApp message template.
-    templateLanguage: 'en_US', // Optional (defaults to `en_US`)
-    templateVariablesJson: JSON.stringify(['John', '12345']), // Optional (only needed if your message template uses variables)
-  },
-})
-
-console.log('Botpress conversation ID: ' + result.conversationId)
-```
+* Messages: For the chat to work properly, you need to subscribe to the **messages** webhook field.
