@@ -1,6 +1,6 @@
 ---
 title: WhatsApp
-excerpt: Simply and easily connect your chatbot to WhatsApp with this integration.
+excerpt: Add a bot to WhatsApp using the official integration
 deprecated: false
 hidden: false
 metadata:
@@ -10,11 +10,34 @@ metadata:
 next:
   description: ''
 ---
-> ❗️ Business Verification
->
-> To deploy a chatbot on WhatsApp, your business must first undergo a verification process by Meta, the parent company of WhatsApp. This verification, typically conducted through the Facebook Business Manager, confirms the identity and eligibility of your business to use Meta's platforms. Checking the official Meta for Developers website or WhatsApp Business API documentation is advisable.
+
+The official WhatsApp integration allows your users to chat with your bot by messaging a WhatsApp number.
 
 # Setup
+
+> 🧩 You will need:
+>
+> - A [published bot](https://botpress.com/docs/botpress-quickstart)
+> - A [Facebook account](https://www.facebook.com/signup)
+
+> 📺 Visual learner?
+>
+> Check out our [WhatsApp guide](https://www.youtube.com/watch?v=Kt4Ay_q-WKI) on YouTube for a step-by-step video guide.
+
+1. In Botpress Studio, select **Explore Hub** in the upper-right corner.
+2. Search for the **WhatsApp** integration, then select **Install Integration**.
+3. In the **Configuration** menu, select **Authorize WhatsApp**.
+4. Follow the instructions to connect Botpress to your WhatsApp account.
+
+> 📘 Additional requirements
+>
+> - While setting up your WhatsApp integration, we will ask you to create or select:
+>
+>   - A [Facebook business page](https://www.facebook.com/business/help/1968057156746246?id=939256796236247)
+>   - A [WhatsApp business account](https://business.whatsapp.com)
+>
+> - After setup is complete, your business will undergo a [verification process by Meta](https://www.facebook.com/business/help/1095661473946872?id=180505742745347), the parent company of WhatsApp. This verification confirms the identity and eligibility of your business to use Meta's platforms.
+
 # Optional: Manual Configuration
 
 For more complex use cases, you can use your own Meta app with our integration.
