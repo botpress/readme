@@ -104,7 +104,7 @@ Double click on a a table cell or press click it and press `Enter` to see an inp
 
 # Operations on Tables - via Cards
 
-Check out the [Table Cards documentation](../docs/table-cards) to learn more about operations with cards.
+Check out the [Table Cards documentation](../docs/execute#table-cards) to learn more about operations with cards.
 
 <br />
 
