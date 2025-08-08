@@ -958,4 +958,4 @@ Click on the `Export Table` button to export the table. This will download the t
 
 > 📘 Note
 >
-> When you export a bot the tables are exported as well so there is no need to export them separately unless you want to use them in another bot.
+> When you export a bot, tables are exported as well so there is no need to export them separately unless you want to use them in another bot.
