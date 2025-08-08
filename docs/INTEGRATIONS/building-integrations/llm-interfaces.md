@@ -98,7 +98,7 @@ Should you wish to act as an LLM provider for Botpress and have users pay for to
 
 **The generateContent method**
 
-This method, whos input is a standard input for invoking a create chat completion, must convert the format to a format compatible with your llm, invoke your LLM via api or a client library, and convert the format back to the Botpress format. See a [working example](https://github.com/botpress/botpress/blob/master/integrations/anthropic/src/actions/generate-content.ts). For the format types, we suggest using IntelliSense to guide you.
+This method, whose input is a standard input for invoking a create chat completion, must convert the format to a format compatible with your llm, invoke your LLM via api or a client library, and convert the format back to the Botpress format. See a [working example](https://github.com/botpress/botpress/blob/master/integrations/anthropic/src/actions/generate-content.ts). For the format types, we suggest using IntelliSense to guide you.
 
 ```javascript index.ts
 export default new bp.Integration({
