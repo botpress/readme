@@ -24,7 +24,7 @@ Botpress makes it easy to embed a bot on your website using [Webchat](https://bo
 
 # Step 1: Get your embed code
 
-To embed a bot a bot on your website, you need the bot's Webchat embed code. You can get the embed code from either the [Studio](https://botpress.com/docs/interface) or the [Dashboard](https://botpress.com/docs/workspace).
+To embed a bot on your website, you need the bot's Webchat embed code. You can get the embed code from either the [Studio](https://botpress.com/docs/interface) or the [Dashboard](https://botpress.com/docs/workspace).
 
 ## From the Studio
 

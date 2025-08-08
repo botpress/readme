@@ -131,7 +131,7 @@ export default new bp.Integration({
 });
 ```
 
-The webhookUrl provided in the parameters points is unique to an bot integration installation. It's refreshed when an integration is installed/re-installed. There are three webhooks that you should implement in the handler method: handling agent messages, assign a conversation to an agent, and stopping HITL. If you can set up webhooks programmatically, this is the right place to do it.
+The webhookUrl provided in the parameters points is unique to a bot integration installation. It's refreshed when an integration is installed/re-installed. There are three webhooks that you should implement in the handler method: handling agent messages, assign a conversation to an agent, and stopping HITL. If you can set up webhooks programmatically, this is the right place to do it.
 
 ## 2. Implement Actions
 

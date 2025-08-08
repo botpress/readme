@@ -9,7 +9,7 @@ hidden: true
 
     ## Step 1: Get your embed code
 
-    To embed a bot a bot on your Wix website, you need the bot's Webchat embed code. You can get the embed code from either the [Studio]() or your [Webchat settings]().
+    To embed a bot on your Wix website, you need the bot's Webchat embed code. You can get the embed code from either the [Studio]() or your [Webchat settings]().
 
     ### From the Studio
 
