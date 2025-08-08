@@ -44,7 +44,7 @@ For example, if you have an Execute Code card with invalid Javascript code like 
 
 > 📘 Info
 >
-> To improve the user experience, you can add a Capture card of type Confirmation that asks the user if they want to resume the conversation. If the user says yes, you can redirect them to the Main flow (remember to reset the state to avoid entering an error loop), otherwise you can flow to the End node which will end the conversation.
+> To improve the user experience, you can add a Capture card of type Confirmation that asks the user if they want to resume the conversation. If the user says yes, you can redirect them to the Main flow (remember to reset the state to avoid entering an error loop); otherwise, you can flow to the End node which will end the conversation.
 >
 > It's also recommended to save these occurrences somehow so you can troubleshoot them later. You could use [Tables](../docs/tables) to create a database of these occurrences, containing the conversation history provided by the [Summary Agent](../docs/agents#summary-agent) and other relevant information.
 
@@ -58,7 +58,7 @@ The Timeout Flow is important because it helps prevent the chatbot from appearin
 
 > 📘 Info
 >
-> To improve the user experience, you can add a Text card in this flow that lets the user know the conversation is ending, alternatively add a Confirmation card asking if the user wants to continue the conversation. The timeout will then be reset and start counting down again. If the user says yes, you can redirect them to the Main flow (there is no way to know the previous flow), otherwise you can flow to the End node which will end the conversation.
+> To improve the user experience, you can add a Text card in this flow that lets the user know the conversation is ending, alternatively add a Confirmation card asking if the user wants to continue the conversation. The timeout will then be reset and start counting down again. If the user says yes, you can redirect them to the Main flow (there is no way to know the previous flow); otherwise, you can flow to the End node which will end the conversation.
 
 > 📘 Note
 >

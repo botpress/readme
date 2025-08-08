@@ -34,7 +34,7 @@ The exported file will be a `.bpz` file (which is a special archive format for B
 
 > 🚧 Warning
 >
-> Do not attempt to extract the file or modify its content, otherwise you may not be able to import your bot again!
+> Do not attempt to extract the file or modify its content; otherwise, you may not be able to import your bot again!
 
 The exported file contains your whole bot, including:
 

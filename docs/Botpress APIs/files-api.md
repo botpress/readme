@@ -34,7 +34,7 @@ Files can be in any text or binary format, and documents (such as PDF, Microsoft
 
 The following code snippet can be put in an Execute Card in your bot to create and upload a file that can be accessed by anyone with the file URL and that will be indexed for semantic search:
 
-> Note: Make sure you have enabled the "Use the Botpress Client" setting in your bot's settings in Botpress Studio in order to have access to the `client` global variable, otherwise it will not be accessible and you'll get an error.
+> Note: Make sure you have enabled the "Use the Botpress Client" setting in your bot's settings in Botpress Studio in order to have access to the `client` global variable; otherwise, it will not be accessible and you'll get an error.
 
 ```javascript
 const file = await client.uploadFile({

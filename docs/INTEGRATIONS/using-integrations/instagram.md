@@ -84,7 +84,7 @@ You can generate any random alphanumerical string for this configuration. Paste 
 
 ### Save Configuration
 
-Channel configuration is completed, you can now click **Save**. It is important to save your configuration in Botpress before updating the webhook in the Meta app settings, otherwise Meta will be unable to validate the webhook URL.
+Channel configuration is completed, you can now click **Save**. It is important to save your configuration in Botpress before updating the webhook in the Meta app settings; otherwise, Meta will be unable to validate the webhook URL.
 
 <br />
 
@@ -97,7 +97,7 @@ To receive messages from Instagram in your Botpress bot, you will need to setup 
 3. In the **Webhooks** section, click **Add Callback URL**.
 4. Copy and paste the **Webhook URL** provided in the integration configuration page in Botpress.
 5. Copy and paste the **Verify Token** that you generated earlier in the integration configuration page in Botpress.
-6. Click on Verify and Save. Make sure your channel configuration was saved before doing this step, otherwise the webhook validation will fail.
+6. Click on Verify and Save. Make sure your channel configuration was saved before doing this step; otherwise, the webhook validation will fail.
 7. Now you will select subscriptions for your webhook. Click on **Add Subscriptions**, then select `instagram_manage_messages` (if app has been [reviewed by Meta](../docs/instagram#submit-your-app-for-meta-review)), `messages` and `messaging_postbacks`. Then click **Save**.
 
 **Note**: If you can't find the `instagram_manage_messages` subscription in the list above, that's because your app has not been reviewed by Meta yet (see [this section](../docs/instagram#submit-your-app-for-meta-review)). But don't worry, this is not mandatory to test your bot. You can still test it with the `messages` and `messaging_postbacks` subscriptions.

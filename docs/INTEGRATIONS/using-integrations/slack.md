@@ -64,7 +64,7 @@ The signing secret is used to verify webhook requests
 
 ## Save Configuration
 
-Channel configuration is complete, you can now click **Save**. It is important you save your configuration before configuring the webhooks, otherwise Slack will be unable to validate the webhook url
+Channel configuration is complete, you can now click **Save**. It is important you save your configuration before configuring the webhooks; otherwise, Slack will be unable to validate the webhook url
 
 Important: Do not activate the toggle or authorize Slack before saving. After saving, the toggle can be activated, but do not synchronize yet.
 
@@ -78,7 +78,7 @@ Slack sends regular events such as messages to the event webhook
 2. Turn on events by click the On/Off button
 3. Copy paste the webhook url provided in the channel configuration UI to the **Request URL** field
 4. Under **Subscribe to bot event**, add `message.im` and `message.channels`
-5. Click the **Save Changes** button. Make sure your Slack channel configuration is saved before doing this step, otherwise webhook validation will fail
+5. Click the **Save Changes** button. Make sure your Slack channel configuration is saved before doing this step; otherwise, webhook validation will fail
 6. A yellow banner will be displayed at the top of the screen. Click the **reinstall your app** link
 7. In the next screen, your app will request access to your Slack workspace. Click **Allow**.
 
