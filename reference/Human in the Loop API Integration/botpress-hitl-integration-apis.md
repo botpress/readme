@@ -27,7 +27,7 @@ The  ([Human in the Loop API integration](https://app.botpress.cloud/hub/integra
 2. Set up an endpoint service and make it publicly available. 
 3. Add the endpoint base url to the integration configuration in the Botpress Studio and hit save. You should get an error, this is likely because you haven't implemented a "/ping" route yet.
 4. Go through each of [Endpoints to implement](ref:endpoints-to-implement) and implement a route on your server that returns the correct response and takes the payload. The endpoints handle requests from Botpress to your live agent platform. All five endpoints must return a http 200 header. Aside from that, two endpoints ( creating a conversation, and creating a user) require you to return the id of the resource that was created. This allows Botpress to route the messages to / from the right users & tickets. 
-5. In your service, you should call the endpoints listed in [Calling the API](ref:calling-the-api) to interact with with user. These handle requests from your live agent platform to Botpress.
+5. In your service, you should call the endpoints listed in [Calling the API](ref:calling-the-api) to interact with user. These handle requests from your live agent platform to Botpress.
 6. Once that's done, hit "save" again to make sure the ping route is accessed.
 7. Make sure the "HITL Agent" is on, and the HITL-API agent is selected.
 8. In your conversation flow, add the "Escalate to a human" card, and configure its fields.
