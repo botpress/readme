@@ -107,7 +107,7 @@ The `on` method on the `botpress` object is used to register event listeners for
 
 ### Markdown support
 
-We use the react-markdown to display markdown in the front-end. You can find their documentation [here](https://github.com/remarkjs/react-markdown).
+We use the [react-markdown](https://github.com/remarkjs/react-markdown) to display markdown in the front-end.
 
 ### Saving User Information
 
