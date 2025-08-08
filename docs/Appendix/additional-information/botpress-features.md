@@ -104,7 +104,7 @@ next:
       </td>
 
       <td style={{ textAlign: "left" }}>
-        <ul><li>Supported Languages: you can use Botpress to make bots in 100+ languages. However during the early preview of the new Botpress, only English is supported for natural language understanding.</li><li>Learn more about languages: [here](https://botpress.com/docs/cloud/getting-started/languages)</li></ul>
+        <ul><li>Supported Languages: you can use Botpress to make bots in 100+ languages. However during the early preview of the new Botpress, only English is supported for natural language understanding.</li><li>Learn more about [languages](https://botpress.com/docs/cloud/getting-started/languages)</li></ul>
       </td>
     </tr>
 
