@@ -24,7 +24,7 @@ The maximum value is 1440 minutes, or 24 hours.
 
 # Node Repetition Limit
 
-This is the maximum amount of times a conversation can go through any specific node. When the user repeats a node the number of times indicated by this limit, an error will be triggered.
+This is the maximum amount of times a conversation can go through any specific node. When the user repeats this node repetition limit, an error will be triggered.
 
 The maximum value is 10.
 
