@@ -110,7 +110,7 @@ Here is a video demonstration on how to build a custom chatbot for Wix. Towards 
 </div>
 ```
 
-6. **Note:** See [Here](https://botpress.com/docs/webchat-client) for a guide on finding your Botpress clientId. Your Botpress botId can be found in the url of your studio or the **Webchat** tab. For example, while getting your clientId from the **Webchat** tab in the left sidebar of the workspace dashboard, you will notice your url look something like this: [https://app.botpress.cloud/workspaces/THIS\_IS\_YOUR\_WORKSPACE\_ID/bots/THIS\_IS\_YOUR\_BOT\_ID/webchat/v2/general](https://app.botpress.cloud/workspaces/THIS_IS_YOUR_WORKSPACE_ID/bots/THIS_IS_YOUR_BOT_ID/webchat/v2/general).\
+6. **Note:** See [webchat-client docs](https://botpress.com/docs/webchat-client) for a guide on finding your Botpress clientId. Your Botpress botId can be found in the url of your studio or the **Webchat** tab. For example, while getting your clientId from the **Webchat** tab in the left sidebar of the workspace dashboard, you will notice your url look something like this: [https://app.botpress.cloud/workspaces/THIS\_IS\_YOUR\_WORKSPACE\_ID/bots/THIS\_IS\_YOUR\_BOT\_ID/webchat/v2/general](https://app.botpress.cloud/workspaces/THIS_IS_YOUR_WORKSPACE_ID/bots/THIS_IS_YOUR_BOT_ID/webchat/v2/general).\
    Grab the part after "bots/" that corresponds to the "THIS\_IS\_YOUR\_BOT\_ID" section and paste that in the HTML code from above!
 7. This is what it should look like in the end: (**Note:** Modify the code in the "configuration" section within "window\.botpress.init" to configure your bot's name, avatar, color, font, etc...).
 
