@@ -39,8 +39,6 @@ window.botpressWebChat.init({
 })
 ```
 
-You can find information on the configuration parameters [here](#configurable-script-parameters).
-
 ***
 
 # Changing the Widget's Configuration
@@ -50,8 +48,6 @@ After initializing the widget, if you want to update it, send a configuration ob
 ```js
 window.botpressWebChat.mergeConfig({ showTimestamp: false })
 ```
-
-You can find information on the configuration parameters [here](#configurable-script-parameters).
 
 ***
 
