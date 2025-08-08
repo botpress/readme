@@ -108,7 +108,7 @@ You can use the `sendPayload` function to send a specific message (or instructio
 window.botpressWebChat.sendPayload({ type: 'text', text: 'I am a message sent through code' })
 ```
 
-You can see examples of all of the message types you can send to the chatbot [here](https://github.com/botpress/messaging/blob/master/packages/channels/example/payloads.json).
+See [examples of all of the message types](https://github.com/botpress/messaging/blob/master/packages/channels/example/payloads.json) you can send to the chatbot.
 
 ***
 
