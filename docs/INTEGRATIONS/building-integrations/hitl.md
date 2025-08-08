@@ -537,4 +537,4 @@ export default new bp.Integration({
 
 # Production Example
 
-For a production-grade implementation, you can refer to the Zendesk integration maintained by the Botpress team.  Check it out [here](https://github.com/botpress/botpress/tree/master/integrations/zendesk).
+For a production-grade implementation, you can refer to the [Zendesk integration](https://github.com/botpress/botpress/tree/master/integrations/zendesk) maintained by the Botpress team.
