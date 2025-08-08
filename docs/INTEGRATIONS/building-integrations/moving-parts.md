@@ -23,7 +23,7 @@ The developer experience is composed of the following parts:
 * the [TypeScript SDK](https://npmjs.com/package/@botpress/sdk)
 * the [CLI](https://npmjs.com/package/@botpress/cli)
 
-The public HTTP API of Botpress Cloud is already documented [here](https://botpress.io/docs/cloud/api).
+The [public HTTP API of Botpress Cloud is documented](https://botpress.io/docs/cloud/api).
 
 The TypeScript HTTP Client, on the other hand, only exposes the API in an npm package to facilitate requests to the API in JavaScript and TypeScript. It contains all the types of requests and responses of the API.
 
