@@ -14,7 +14,7 @@ Botpress lets you send multiple types of messages to your users.
 
 The various chat clients support rich message types, and content types like text, images, and audio may look different depending on which channel you're using.
 
-Your bot's messages can be as straightforward or as complex as you want. For instance, a content type could be simple piece text or an image or carousel.
+Your bot's messages can be as straightforward or as complex as you want. For instance, a content type could be simple piece text, an image, or a carousel.
 
 # Sending Messages
 
