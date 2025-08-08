@@ -114,8 +114,7 @@ See [examples of all of the message types](https://github.com/botpress/messaging
 
 # Listening to Widget Events
 
-This function lets you listen for certain events happening in the chat and then do something when they happen. It's like setting up a watch for specific actions.\
-You can find the list of events [here](../docs/events-1#webchat-lifecycle-and-events).
+This function lets you listen for [certain events happening in the chat](../docs/events-1#webchat-lifecycle-and-events) and then do something when they happen. It's like setting up a watch for specific actions.
 
 ```js
 window.botpressWebChat.onEvent(
