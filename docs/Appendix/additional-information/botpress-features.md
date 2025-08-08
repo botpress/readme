@@ -34,7 +34,7 @@ next:
       </td>
 
       <td style={{ textAlign: "left" }}>
-        The utility functions that can be used as arguments in user custom code. See the [NPM package](https://www.npmjs.com/package/@botpress/sdk), and API documentation [here](https://botpress.com/docs/api/)
+        The utility functions that can be used as arguments in user custom code. See the [NPM package](https://www.npmjs.com/package/@botpress/sdk), and [API documentation](https://botpress.com/docs/api/)
       </td>
     </tr>
 
