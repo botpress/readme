@@ -111,4 +111,4 @@ We use the [react-markdown](https://github.com/remarkjs/react-markdown) to displ
 
 ### Saving User Information
 
-With the Embedded Webchat, you can send information to Botpress and use it in your Studio. Look [here](/docs/user-data) for more information.
+With the Embedded Webchat, you can [send information](/docs/user-data) to Botpress and use it in your Studio.
