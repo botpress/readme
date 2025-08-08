@@ -54,6 +54,4 @@ The version of LLMz that your bot uses. We recommend staying updated to the late
 
 # Variables
 
-In these sections, you can identify variables that exist above the scope of workflow variables, like user and bot variables.
-
-You can learn more about variables [here](https://botpress.com/docs/variables).
+In these sections, you can identify [variables](/learn/reference/variables) that exist above the scope of work flow variables, like user and bot variables.
