@@ -82,11 +82,11 @@ allConversations.push(getConversations.conversations)
 
 # 2. Getting all Conversations from the API
 
-Now that you know the methods of getting the first conversations from the API, let's see how to get them. You can get them gradually or all at once, but you need to use the pagination token regardless. 
+Now that you know the methods of getting the first conversations from the API, let's see how to get them. You can get them gradually or all at once, but you need to use the [pagination](https://botpress.com/docs/api-documentation/#pagination) token regardless. 
 
 ## Getting conversations gradually
 
-Create a function that will fetch the next batch of conversations when called. You could use a button to trigger it or trigger it automatically with infinite scroll. Pass the `nextToken` property retrieved from the first request as a parameter to the function, then update it on subsequent calls. More about pagination [here](https://botpress.com/docs/api-documentation/#pagination).
+Create a function that will fetch the next batch of conversations when called. You could use a button to trigger it or trigger it automatically with infinite scroll. Pass the `nextToken` property retrieved from the first request as a parameter to the function, then update it on subsequent calls.
 
 ```js
 async function loadConversations(paginationToken) {
