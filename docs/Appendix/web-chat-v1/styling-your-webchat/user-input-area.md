@@ -126,7 +126,7 @@ You can Customize the User Input(text-area and send button) using below CSS
   ); /* Make the corners of the button slightly rounded */
   background-color: var(
     --theme-primary
-  ); /* Give the button a primary color background */
+  ); /* Use the primary color for the button background */
   padding: 20px; /* Add some extra space around the button's content */
   width: 24px; /* Set the button's width to be 24 pixels */
   height: 24px; /* Set the button's height to be 24 pixels */
