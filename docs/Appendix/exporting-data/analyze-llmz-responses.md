@@ -19,7 +19,7 @@ next:
 ---
 > 📘 Note
 >
-> If you are looking to simply understand a response in the emulator, you can use the inspect button to get information about the Autonomous nodes thinking. But for other use cases, Botpress allows you to create a javascript hook that allows you do something with the data programatically.
+> If you are looking to simply understand a response in the emulator, you can use the inspect button to get information about the Autonomous nodes thinking. But for other use cases, Botpress allows you to create a javascript hook that allows you do something with the data programmatically.
 
 # Using LLMz hooks
 
