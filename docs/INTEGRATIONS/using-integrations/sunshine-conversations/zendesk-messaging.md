@@ -55,7 +55,7 @@ The Sunshine Conversations integration has the following settings:
    ![](https://files.readme.io/5234889a672d4f9867c17f1106257f22e5776a0e45df3a8f73b5af1963722ba3-image.png)
 4. Also select **Conversation message** and **Postbacks** in **Webhook subscriptions**.
 5. Click **Save** in the bottom right corner.
-6. Copy the **Shared Secret** and past in the Botpress Integration Configuration page at **Webhook Secret**
+6. Copy the **Shared Secret** and paste in the Botpress Integration Configuration page at **Webhook Secret**
 
    ![](https://files.readme.io/ba2cd16a9ac0a82b3801dd8ae20a1f873b0ddf9a49c530c92e826e3fa39aea04-image.png)
 
