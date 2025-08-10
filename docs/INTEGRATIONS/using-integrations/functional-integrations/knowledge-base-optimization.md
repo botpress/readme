@@ -22,9 +22,7 @@ You can use the Knowledge Base Optimization feature to improve your bot's abilit
 
 ## Install
 
-Start by installing the Knowledge Base Optimizer integration from the integration hub.
-
-[Link to integration](https://studio.botpress.cloud?exploreHub=1\&hubItemId=intver_01JEZ0DVQSVVFHKVK5V5XQE7KX)
+Start by installing the [Knowledge Base Optimizer integration](https://studio.botpress.cloud/home?exploreHub=1&hubItemId=intver_01JSPMN283VH8Y25171DMMGYGS&search=Knowledge+Base+Optimizer)
 
 <Image align="center" src="https://files.readme.io/a186e6f91fc798e1de45d7a8de46b944304850c37b8a931c73bad40231fa3552-Screenshot_2024-12-13_at_11.28.52_AM.png" />
 
