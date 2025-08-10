@@ -175,7 +175,7 @@ bot.stateExpired("profile", async ({ state, client, ctx }) => {
 
 ## Integration Development
 
-Integrations are developped in a similar fashion to Bots. The only difference is that there is 2 classes to instantiate: `IntegrationDefinition` and `Integration` wich stands for the Integration's implementation.
+Integrations are developed in a similar fashion to Bots. The only difference is that there is 2 classes to instantiate: `IntegrationDefinition` and `Integration` wich stands for the Integration's implementation.
 
 This means that a typical Integration's code would require at least 2 files. Here's an example:
 
