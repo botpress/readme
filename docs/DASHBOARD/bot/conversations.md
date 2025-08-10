@@ -24,7 +24,7 @@ This menu lists each conversation your bot has had, sorted by the conversation's
 
 You can click the conversation ID to navigate to the specific conversation and view it in greater detail.
 
-When viewing a conversation, you can click on any message to inspect its properties, like the time at which it was sent, a unique message ID, and the JSON for that specific message.
+When viewing a conversation, you can click on any message to inspect its properties, like the time at which it was sent, a unique Message ID, and the JSON for that specific message.
 
 ### Filtering conversations
 
@@ -36,7 +36,7 @@ Search for a conversation by entering a specific conversation ID.
 
 #### Message
 
-Search for a conversation by entering a specific message ID.
+Search for a conversation by entering a specific Message ID.
 
 #### Participant
 

@@ -63,7 +63,7 @@ export const register: RegisterFunction = async ({ client, ctx, logger, webhookU
 
     logger
       .forBot()
-      .info(`Shopify New Order Webhook Created ${response.data.webhook.id.toString()} for Bot with Id ${ctx.botId}`)
+      .info(`Shopify New Order Webhook Created ${response.data.webhook.id.toString()} for Bot with ID ${ctx.botId}`)
   } catch (e) {
     logger.forBot().error(`'Shopify New Order Webhook Creation' exception ${JSON.stringify(e)}`)
   }

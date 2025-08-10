@@ -31,8 +31,8 @@ The Sunshine Conversations integration has the following settings:
 
 * **Enabled**: Whether Botpress will communicate with this channel
 * **Webhook URL**: The URL for receiving data in Botpress (Copy this)
-* **App Id**: The App Id of your Zendesk Conversation API Credentials
-* **Key Id**: The Key Id of your Zendesk Conversation API Credentials
+* **App ID**: The App ID of your Zendesk Conversation API Credentials
+* **Key ID**: The Key ID of your Zendesk Conversation API Credentials
 * **Key Secret**: The Key Secret of your Zendesk Conversation API Credentials
 * **Webhook Secret**: The Webhook Secret of your Zendesk Conversation Integration Webhook
 
@@ -69,7 +69,7 @@ The Sunshine Conversations integration has the following settings:
 
    ![](https://files.readme.io/ed50f2a0574b20ce5bb7b2520a877aeeaeff6494a8a5a14460cdd0d17c9abee3-image.png)
 2. Click on **Create API key** and give it any name, then **Next**.
-3. Copy **App Id**, **Key ID**, **Secret key** and put them on the associated field on the integration configuration.
+3. Copy **App ID**, **Key ID**, **Secret key** and put them on the associated field on the integration configuration.
 
    ![](https://files.readme.io/fc96ee0c391eb6a41fdebc1c74168f96a085b7eabdaca5a4ef0dda05acf97a6c-image.png)
 

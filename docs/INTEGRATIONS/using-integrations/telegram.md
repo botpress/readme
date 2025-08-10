@@ -66,5 +66,5 @@ That's it, you may now start chatting with your bot on Telegram!
 * To get the Telegram user ID, you can read the following variable:\
   `{{ event.tags.user["telegram:id"] }}`.
 
-* To get the Telegram message ID, you can read the following variable:\
+* To get the Telegram Message ID, you can read the following variable:\
   `{{ event.tags.message["telegram:id"] }}`.

@@ -114,7 +114,7 @@ That's it, you may now start chatting with your bot on Slack!
 * To get the Slack user ID, you can read the following variable:\
   `{{ event.tags.user["slack:id"] }}`.
 
-* To get the Slack message ID, you can read the following variable:\
+* To get the Slack Message ID, you can read the following variable:\
   `{{ event.tags.message["slack:id"] }}`.
 
 # Slack actions in Botpress Studio
@@ -124,7 +124,7 @@ That's it, you may now start chatting with your bot on Slack!
 To start a conversation with a user proactively, you need to know the user's Slack ID.
 
 1. In Studio, add the **Start DM Conversation** card to your flow.
-2. Pass the user's Slack ID in the `Slack User Id` input.
+2. Pass the user's Slack ID in the `Slack User ID` input.
 3. You can store the result of the action in a variable.
 
 ## Retrieve a Message
@@ -138,10 +138,10 @@ To retrieve a message from Slack, you need to know the `timestamp` and the `chan
 
 ## Add Reaction to message
 
-To add a reaction on a Slack message, you need to know the `message Id` and the `reaction name`.
+To add a reaction on a Slack message, you need to know the `Message ID` and the `reaction name`.
 
 1. In Studio, add the **Add Reaction** card to your flow.
-2. Pass the message Id in the `Message Id` input.
+2. Pass the Message ID in the `Message ID` input.
 3. Pass the reaction name in the `Reaction Name` input. (see [Slack documentation](https://slack.com/help/articles/202931348-Use-emoji-and-reactions) for more informations on emojis/reactions)
 
 ## Synchronize Members

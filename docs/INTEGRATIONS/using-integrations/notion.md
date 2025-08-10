@@ -54,7 +54,7 @@ The Notion integration has the following settings:
 
 > 📘 Info
 >
-> To execute certain actions, identification of Notion entities like pages or databases is essential. These IDs can be derived from the URL while viewing the entity or by choosing "Copy Link" from the options menu. For more details, refer to [Get a Database Id - NotionDevelopers](https://developers.notion.com/docs/create-a-notion-integration#step-3-save-the-database-id)  .
+> To execute certain actions, identification of Notion entities like pages or databases is essential. These IDs can be derived from the URL while viewing the entity or by choosing "Copy Link" from the options menu. For more details, refer to [Get a Database ID - NotionDevelopers](https://developers.notion.com/docs/create-a-notion-integration#step-3-save-the-database-id)  .
 
 <br />
 

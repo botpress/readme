@@ -1,6 +1,6 @@
 ---
-title: Get Public Integration By Id
-excerpt: Get public integration by Id
+title: Get Public Integration By ID
+excerpt: Get public integration by ID
 api:
   file: botpress-api.json
   operationId: getPublicIntegrationById

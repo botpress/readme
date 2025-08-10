@@ -23,7 +23,7 @@ The Events page allows you to filter events by the following criteria:
 * **Event**: The type of event that occurred.
 * **Conversation**: The conversation to which the event belongs. You can filter by conversation ID.
 * **User**: The user who triggered the event. You can filter by user ID.
-* **Message**: The message content. You can filter by message ID.
+* **Message**: The message content. You can filter by Message ID.
 
 Each event in Botpress has a specific type and status. These characteristics provide detailed information about what the event represents and the state of its processing.
 

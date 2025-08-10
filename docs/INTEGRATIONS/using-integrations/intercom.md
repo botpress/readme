@@ -35,7 +35,7 @@ The Intercom integration has the following settings:
 * **Enabled**: Whether Botpress will communicate with Intercom
 * **Webhook URL**: The URL for receiving data in Botpress
 * **Access Token**: The access token for the Intercom app
-* **Admin Id**: The admin id for the Intercom app
+* **Admin ID**: The admin ID for the Intercom app
 
 <br />
 
@@ -57,10 +57,10 @@ In order to communicate with Botpress, you need to create a developer app in Int
 2. Click "New App", give it a name like `Botpress connector`, then select the desired workspace and click "Create App"
 3. You will be redirected to the app's Authentication settings page. Copy the Access Token and paste it in the Botpress integration settings.
 
-## Getting the Admin Id
+## Getting the Admin ID
 
 1. Open Intercom and hover over your avatar in the bottom left corner, then click your avatar again to see your profile
-2. Copy the last number in the URL (as shown below), this is your Admin Id. Paste it in the Botpress integration settings
+2. Copy the last number in the URL (as shown below), this is your Admin ID. Paste it in the Botpress integration settings
 
 <Image align="left" src="https://files.readme.io/428e56f-image.png" />
 
@@ -78,7 +78,7 @@ In order to communicate with Botpress, you need to create a developer app in Int
 
 1. Go back to the Intercom app settings and open the "Inbox" tab
 2. Click "Inbox settings" then "Workload management"
-3. In the "Default assignee" section select yourself or another user to receive the conversations from the bot (it needs to be the same user as the Admin Id)
+3. In the "Default assignee" section select yourself or another user to receive the conversations from the bot (it needs to be the same user as the Admin ID)
 
 [For more information](https://www.intercom.com/help/en/articles/6561699-assign-conversations-to-teammates-and-teams) 
 

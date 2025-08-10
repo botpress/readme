@@ -67,7 +67,7 @@ Botpress can interact with the version 15.0 or higher of the Instagram API. It i
 ### App ID and Secret
 
 1. In the left sidebar, expand the **Settings** menu and select **Basic**. Here you can find the App ID and App Secret.
-2. Click on the **Show** button in the **App Secret** text box. Copy the App Id and App Secret to your channel configuration.
+2. Click on the **Show** button in the **App Secret** text box. Copy the App ID and App Secret to your channel configuration.
 
 ### Page ID and Access Token
 

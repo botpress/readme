@@ -169,7 +169,7 @@ export default new Integration({
 })
 ```
 
-The `handler` function processes incoming requests from Telegram. It extracts the conversation ID, user ID, and message ID, then creates or retrieves the conversation, user, and message using the client parameter. Finally, it creates a message in the conversation, which will be sent to the bot as an incoming message from Telegram.
+The `handler` function processes incoming requests from Telegram. It extracts the conversation ID, user ID, and Message ID, then creates or retrieves the conversation, user, and message using the client parameter. Finally, it creates a message in the conversation, which will be sent to the bot as an incoming message from Telegram.
 
 ## Step 5: Send Messages to Telegram
 
