@@ -12,7 +12,7 @@ next:
 ---
 ![](https://files.readme.io/00252fb-image.png)
 
-Turn Botpress chats into Zendesk tickets, with a handy link added to the conversation notes. A Zendesk agent can communicate directly with the user on the same conversation initially handled by the bot on any channels supported by Botpress (e.g. web chat, Whatsapp, Messenger, etc.)
+Turn Botpress chats into Zendesk tickets, with a handy link added to the conversation notes. A Zendesk agent can communicate directly with the user on the same conversation initially handled by the bot on any channels supported by Botpress (e.g. web chat, WhatsApp, Messenger, etc.)
 
 # Getting Started
 

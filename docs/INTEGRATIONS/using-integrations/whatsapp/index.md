@@ -67,7 +67,7 @@ This comes with a few restrictions and behaviors specific to WhatsApp:
 
 ### Files
 
-* When files are sent over Whatsapp, the Studio doesn't store the original filename (for security reasons) but only the file extension, so the file will be sent with a generic filename ("file") followed by the extension of the file. For example, if you send a PNG file, it will be sent as "file.png".
+* When files are sent over WhatsApp, the Studio doesn't store the original filename (for security reasons) but only the file extension, so the file will be sent with a generic filename ("file") followed by the extension of the file. For example, if you send a PNG file, it will be sent as "file.png".
 
 ## From WhatsApp to Botpress
 
@@ -122,7 +122,7 @@ For further information, please check the [WhatsApp documentation](https://devel
 ## Other message types
 
 * Buttons and interactive replies from a list or button are mapped to a plain text response from the user, so you can use `event.preview` to get the value.
-* Botpress does not currently support other Whatsapp message types.
+* Botpress does not currently support other WhatsApp message types.
 
 <br />
 
@@ -134,13 +134,13 @@ For further information, please check the [WhatsApp documentation](https://devel
 
   This number also contains the country code and has no spaces, dashes or signs.
 
-* To get the Whatsapp Phone Number ID of your bot that the user is interacting with *(useful when pointing multiple Phone Number IDs to the same bot)*:
+* To get the WhatsApp Phone Number ID of your bot that the user is interacting with *(useful when pointing multiple Phone Number IDs to the same bot)*:
 
   `{{ event.tags.conversation['whatsapp:phoneNumberId'] }}`
 
 ## Example:
 
-* [Text card]\: `Where are you? Please use Whatsapp's "Send Location" feature.`
+* [Text card]\: `Where are you? Please use WhatsApp's "Send Location" feature.`
 * [Wait for Message card]
 * [Text card]\: `Thank you! You are located at {{event.payload.title}}, {{event.payload.address}} with longitude {{event.payload.longitude}} and latitude {{event.payload.latitude}}.`
 
@@ -150,17 +150,17 @@ For further information, please check the [WhatsApp documentation](https://devel
 
 As required by WhatsApp, a conversation with a user can be proactively initiated only by using [Message Templates](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/), which need to be created in your [WhatsApp Manager](https://business.facebook.com/wa/manage/message-templates/) dashboard first and then reviewed and approved by WhatsApp in order to use them.
 
-Once you have a message template approved by WhatsApp, it's very easy to have your bot start a conversation with a user by just using the Whatsapp "**Start Conversation**" card:
+Once you have a message template approved by WhatsApp, it's very easy to have your bot start a conversation with a user by just using the WhatsApp "**Start Conversation**" card:
 
 ![](https://files.readme.io/f7109ed-image.png)
 
-Then you just need to pass the following fields to proactively start a Whatsapp conversation with a user:
+Then you just need to pass the following fields to proactively start a WhatsApp conversation with a user:
 
 1. **User Phone**: The phone number of the user, including the country code (e.g. `+1 123 456 7890`).
 2. **Template Name**: The name of your WhatsApp message template to use for the first message of the conversation. The template should be already approved by WhatsApp in order to use it.
 3. **Template Language** *(optional)*: The language code of your WhatsApp message template ([see below](../docs/whatsapp#template-language) for more details).
 4. **Template Variables JSON** *(optional)*: The values of the variables for your WhatsApp message template, specified as a JSON array representing the list of values ([see below](../docs/whatsapp#template-variables) for more details).
-5. **Sender Phone Number ID** *(optional)*: The Whatsapp Phone Number ID you want to use as sender of the message if you have multiple phone numbers available in your Meta Developers dashboard. If you don't specify this field, the Default Phone Number ID specified in the Whatsapp configuration of your bot in your Botpress Cloud dashboard will be used by default.
+5. **Sender Phone Number ID** *(optional)*: The WhatsApp Phone Number ID you want to use as sender of the message if you have multiple phone numbers available in your Meta Developers dashboard. If you don't specify this field, the Default Phone Number ID specified in the WhatsApp configuration of your bot in your Botpress Cloud dashboard will be used by default.
 
 ![](https://files.readme.io/5f52ceb-image.png)
 
@@ -168,17 +168,17 @@ Once the conversation is created, if the user replies back it will be processed 
 
 ## Template Language
 
-If the language you selected for your template in the Whatsapp Manager dashboard has a country qualifier, then the value for "Template Language" needs to be specified in the `language_COUNTRY` format where `language` is the 2-letter lowercase [ISO code for the language](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes), and `COUNTRY` is the 2-letter uppercase [ISO code for the country](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). On the other hand, if the language in Whatsapp Manager doesn't specify a country then you can enter just the 2-letter lowercase ISO code for the language.
+If the language you selected for your template in the WhatsApp Manager dashboard has a country qualifier, then the value for "Template Language" needs to be specified in the `language_COUNTRY` format where `language` is the 2-letter lowercase [ISO code for the language](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes), and `COUNTRY` is the 2-letter uppercase [ISO code for the country](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). On the other hand, if the language in WhatsApp Manager doesn't specify a country then you can enter just the 2-letter lowercase ISO code for the language.
 
 For example:
 
-* If you selected the "English (US)" option for the language of your Message Template in Whatsapp Manager, then the value you need to enter for "Template Language" in Botpress is `en_US`.
+* If you selected the "English (US)" option for the language of your Message Template in WhatsApp Manager, then the value you need to enter for "Template Language" in Botpress is `en_US`.
 * If you selected the "English (UK)" option, then the value you need to enter is `en_GB`.
 * If you selected the "French" option, which doesn't have a country qualifier, then the value you need to enter is just `fr`.
 
 ## Template Variables
 
-Template variables need to be passed as a JSON array of string or numeric values representing the list of variable values, as Whatsapp only allows referring to them by their position in your message template (e.g. `{{1}}` for the first variable, `{{2}}` for the second variable, and so on).
+Template variables need to be passed as a JSON array of string or numeric values representing the list of variable values, as WhatsApp only allows referring to them by their position in your message template (e.g. `{{1}}` for the first variable, `{{2}}` for the second variable, and so on).
 
 For example, if your Message Template expects a first variable (*referred to as`{{1}}` in the template*) with the person's first name and then a second variable ( *`{{2}}`in the template*) with an account number, then you would pass the following JSON array as the value for the "Template Variables" field:
 
@@ -196,7 +196,7 @@ If you need to access the ID of the conversation created in Botpress Cloud by th
 }
 ```
 
-So for example, if you choose to store the output value of this action in a variable named `bpWhatsappAction`, you can use `{{ workflow.bpWhatsappAction.conversationId }}` in input fields of the Studio (where supported) to insert the conversation ID, or use `workflow.bpWhatsappAction.conversationId` to access it in code.
+So for example, if you choose to store the output value of this action in a variable named `bpWhatsAppAction`, you can use `{{ workflow.bpWhatsAppAction.conversationId }}` in input fields of the Studio (where supported) to insert the conversation ID, or use `workflow.bpWhatsAppAction.conversationId` to access it in code.
 
 ## Creating the conversation using the Botpress Client
 
@@ -208,7 +208,7 @@ If you're building a bot as code (instead of using Botpress Studio), you can use
 const result = await client.callAction({
   type: 'whatsapp:startConversation',
   input: {
-    userPhone: '+1 123 456 7890', // The full phone number of the Whatsapp user you want to initiate the conversation with.
+    userPhone: '+1 123 456 7890', // The full phone number of the WhatsApp user you want to initiate the conversation with.
     templateName: 'test_message', // This is the name (identifier) of your WhatsApp message template.
     templateLanguage: 'en_US', // Optional (defaults to `en_US`)
     templateVariablesJson: JSON.stringify(['John', '12345']), // Optional (only needed if your message template uses variables)
