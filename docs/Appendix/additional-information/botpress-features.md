@@ -231,7 +231,7 @@ next:
   <tr>
     <td>Single-Sign On (SSO)</td>
     <td>
-      Seamlessly link Botpress to your identity provider, OAuth2 for Google, Github, Azure
+      Seamlessly link Botpress to your identity provider, OAuth2 for Google, GitHub, Azure
       <br />
       Talk to sales for more information
     </td>

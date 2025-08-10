@@ -46,7 +46,7 @@ npx bp add b759e577-2ce7-451a-abff-68085b224985
 Installing integration packages is mostly useful for *as-code* bot development (using the SDK). It serves no purpose for bots developed in the studio.
 
 ```bash
-# Install Github with latest integration
+# Install GitHub with latest integration
 npx bp add github
 # Insatll HITL integration version 1.0.2
 npx bp add --package-type integration hitl@1.0.2
