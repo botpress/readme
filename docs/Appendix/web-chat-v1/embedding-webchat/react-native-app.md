@@ -74,7 +74,7 @@ In your application, you can use these components as follows:
 
 ```jsx
 import BpWidget from './src/BpWidget'
-import BpIncommingMessagesListener from './src/BpIncommingMessagesListener'
+import BpIncomingMessagesListener from './src/BpIncomingMessagesListener'
 
 const botConfig = {
   botId: 'your-bot-id',
@@ -86,7 +86,7 @@ const botConfig = {
 function App() {
   return (
     <View>
-      <BpIncommingMessagesListener
+      <BpIncomingMessagesListener
         botConfig={botConfig}
         onMessage={(message) => console.log('Received message:', message)}
       />
