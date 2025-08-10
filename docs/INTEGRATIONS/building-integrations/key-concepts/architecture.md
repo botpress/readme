@@ -101,7 +101,7 @@ This flowchart describes the steps taken when a message is passed from a user to
 
 * The bot generates a response which is then sent back to the Botpress platform.
 
-  6.0 This output is transformed by the integration code into a format the external systems can understand.
+  6.0 This output is transformed by the integration code into a format that external systems can understand.
 
 * The response is translated back into a format that the external system can understand.
 
