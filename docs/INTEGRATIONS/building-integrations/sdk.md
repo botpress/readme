@@ -401,4 +401,4 @@ The Integration's definition is described by the following fields:
 
   Allows the Integration to proactively create a user. This is usefull if the Integration needs to send a message to a user that has not yet interacted with the Bot.
 
-The Integration's implementation must implement handlers for the defition's actions and channels as well as a handler for the external service's requests. The first two handlers are called by the Bot when an action or a message is triggered. The last handler is called by the external service when an event is triggered.
+The Integration's implementation must implement handlers for the definition's actions and channels as well as a handler for the external service's requests. The first two handlers are called by the Bot when an action or a message is triggered. The last handler is called by the external service when an event is triggered.
