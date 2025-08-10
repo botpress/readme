@@ -74,7 +74,7 @@ Webchat can also be set up as part of your web application to give it a more uni
             window.botpress.on("webchat:ready", (conversationId) => {
               botpress.open();
             });
-            <!-- REPLACE THE CONTENT BELOW WITH THE JAVASCRIPT CODE YOU COPIED EARILER -->
+            <!-- REPLACE THE CONTENT BELOW WITH THE JAVASCRIPT CODE YOU COPIED EARLIER -->
             window.botpress.init({
               "botId": "d3aea06d-0f04-4701-bec3-b457caf79902",
               "configuration": {
