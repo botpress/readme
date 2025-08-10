@@ -53,8 +53,8 @@ This comes with a few restrictions and behaviors specific to WhatsApp:
 
 * When there are 3 or fewer choices as buttons or in a dropdown, they will be rendered as buttons.
 * When there are more than 3 choices as buttons or in a dropdown, they will be rendered as a dropdown.
-* If there are more than 10 choices in a dropdown, the multiple dropdown messages will be sent with up to 10 choices in each messsage.
-  * For example, if your bot has a dropdown with 10 choices, the user will receive two messages: the first message will have a dropdown with 10 choices, and the second messge will have a dropdown with two choices.
+* If there are more than 10 choices in a dropdown, the multiple dropdown messages will be sent with up to 10 choices in each message.
+  * For example, if your bot has a dropdown with 10 choices, the user will receive two messages: the first message will have a dropdown with 10 choices, and the second message will have a dropdown with two choices.
 * Each dropdown requires a label but the Studio currently doesn’t support specifying one, so the label *“Choose…”* is used for all dropdowns by default.
 * Button labels are limited to 20 characters, and dropdown labels are limited to 24 characters.
   * Labels exceeding these limits are automatically truncated. For example, the label "This button label is very long" would become "This button label i…" on a button and "This button label is ve…" on a dropdown.
