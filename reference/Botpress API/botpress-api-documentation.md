@@ -93,7 +93,7 @@ If an error occurs when calling an API endpoint, the response will return the ap
 #### Forbidden
 
 ```
- {  "type": "Forbidden",  "description": "The requested action can't be peform by this resource.",  "status": 403}
+ {  "type": "Forbidden",  "description": "The requested action can't be perform by this resource.",  "status": 403}
 ```
 
 #### Payload Too Large
