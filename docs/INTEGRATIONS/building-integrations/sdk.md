@@ -345,11 +345,11 @@ The Integration's definition is described by the following fields:
 
 * `name`
 
-  The name of the Integration. It must be unique accross all Integrations.
+  The name of the Integration. It must be unique across all Integrations.
 
 * `version`
 
-  The version of the Integration. It must be unique accross all versions of the same Integration.
+  The version of the Integration. It must be unique across all versions of the same Integration.
 
   Currently, only the version `0.2.0` is allowed for public Integrations and `0.0.1` for private Integrations. This is a temporary limitation that will be lifted in a near future.
 
