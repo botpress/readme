@@ -24,7 +24,7 @@ Configuration Variables are containers that store essential information such as 
 
 In the Studio, navigate to the Variables menu in Chatbot settings. Here, you can add configuration variables.
 
-You can create a new key and add the value you'd like to use in yoru development environment. This value should only be used for testing purposes in the emulator.
+You can create a new key and add the value you'd like to use in your development environment. This value should only be used for testing purposes in the emulator.
 
 Save and publish your chatbot to enable these changes.
 
