@@ -58,7 +58,7 @@ Your integration's integration.definition.ts file should contain:
 Make sure to have these two files in the root of your integration folder:
 
 * [ ] icon.svg :  Use a pertinent icon related to the problem you are solving. Do not use the Botpress Icon.
-* [ ] hub.md :  It should contain an explanation of what the integration is, and how to use it. Self-promotion is not allowed here. Please also add a link to git repo if your integration is open source, this drastically increase your chances of getting approved.
+* [ ] hub.md :  It should contain an explanation of what the integration is, and how to use it. Self-promotion is not allowed here. Please include a link to git repo if your integration is open source, this drastically increase your chances of getting approved.
 
 ## Your integration's logic
 
