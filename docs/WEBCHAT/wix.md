@@ -51,7 +51,7 @@ Here is a video demonstration on how to build a custom chatbot for Wix. Towards 
 ## Testing the Integration
 
 1. Publish your Wix website and navigate to your live Wix website.
-2. You should see the Botpress Web Chat widget on the bottom right corner of your website.
+2. You should see the Botpress Web Chat widget in the bottom right corner of your website.
 
 ## Embedding the Botpress Web Chat in a HTML div
 
@@ -118,7 +118,7 @@ Here is a video demonstration on how to build a custom chatbot for Wix. Towards 
 
 ## Embedding the Botpress Web Chat in a Website div
 
-1. Log in to your [**Wix**](https://www.wix.com) dashboard and click on **Edit Site** on the top right of the dashboard.
+1. Log in to your [**Wix**](https://www.wix.com) dashboard and click **Edit Site** in the top right of the dashboard.
 2. While in the Studio Editor, click on the **Add Elements** button from the left sidebar.
 3. Scroll until you see **Embed Code**. Click on it and click on **Embed a site**.
 4. Head over to your Botpress dashboard and click on **Webchat** in the left sidebar. Please make sure you are editing the Webchat of the correct bot by checking the title of the dropdown.
