@@ -83,8 +83,8 @@ const config = {
   botDescription:
     "Hi! 👋  Welcome to webchat this is some description talking about what it is. This might be a bit longer when expanded.",
   email: {
-    title: "randomEmail@boptress.com",
-    link: "mailto:randomEmail@boptress.com",
+    title: "randomEmail@botpress.com",
+    link: "mailto:randomEmail@botpress.com",
   },
   phone: {
     title: "555-555-5555",
