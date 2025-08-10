@@ -90,7 +90,7 @@ Channel configuration is completed, you can now click **Save**. It is important 
 
 ## Webhook Configuration
 
-To receive messages from Instagram in your Botpress bot, you will need to setup a webhook.
+To receive messages from Instagram in your Botpress bot, you will need to set up a webhook.
 
 1. Go to your Meta App.
 2. In the left sidebar, expand the **Messenger** menu and select **Instagram Settings**.
