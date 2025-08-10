@@ -1,6 +1,6 @@
 ---
-title: Wordpress
-excerpt: Embedding the Web Chat in a Wordpress website
+title: WordPress
+excerpt: Embedding the Web Chat in a WordPress website
 deprecated: false
 hidden: false
 metadata:
@@ -14,18 +14,18 @@ next:
 
 # Prerequisites
 
-1. A [**Wordpress**](https://wordpress.com) website with a **Business Plan** upgrade for accessing [**WPCode**](https://wordpress.com/plugins/insert-headers-and-footers) plugin to add custom scripts.
+1. A [**WordPress**](https://wordpress.com) website with a **Business Plan** upgrade for accessing [**WPCode**](https://wordpress.com/plugins/insert-headers-and-footers) plugin to add custom scripts.
 2. A [**Botpress**](https://sso.botpress.cloud) account with an active bot.
 
 <br />
 
-# Installing WPCode Plugin in Wordpress
+# Installing WPCode Plugin in WordPress
 
 ![](https://files.readme.io/08e2904-image.png)
 
 <br />
 
-1. Log in to your [**Wordpress**](https://wordpress.com) dashboard.
+1. Log in to your [**WordPress**](https://wordpress.com) dashboard.
 2. Go to [**WPCode**](https://wordpress.com/plugins/insert-headers-and-footers) and click **Install and activate**.
 3. Once activated, you'll notice a new menu item labeled **Code Snippets** on your WordPress dashboard's left-hand sidebar.
 
@@ -46,5 +46,5 @@ next:
 
 <br />
 
-1. Navigate to your Wordpress website and refresh the page.
+1. Navigate to your WordPress website and refresh the page.
 2. You should see the Botpress Web Chat widget at the bottom right corner of your website.
