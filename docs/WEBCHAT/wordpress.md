@@ -47,4 +47,4 @@ next:
 <br />
 
 1. Navigate to your Wordpress website and refresh the page.
-2. You should see the Botpress Web Chat widget on the bottom right corner of your website.
+2. You should see the Botpress Web Chat widget at the bottom right corner of your website.
