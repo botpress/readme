@@ -16,18 +16,18 @@ next:
 
 Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. It is a simple way to add formatting to your text. You can use Markdown in Botpress to format your text in the following ways:
 
-| Markdown Syntax | Example                                                                |
-| --------------- | ---------------------------------------------------------------------- |
-| Bold            | `**Bold**`                                                             |
-| Italic          | `*Italic*`                                                             |
-| Strikethrough   | `~~Strikethrough~~`                                                    |
-| Code            | `Code`                                                                 |
-| Code Block      | `Code Block`                                                           |
-| Link            | `[botpress.com](https://www.botpress.com)`                             |
-| Image           | `![Image](https://avatars.githubusercontent.com/u/23510677?s=200&v=4)` |
-| Unordered List  | `- Item 1`                                                             |
-| Ordered List    | `1. Item 1`                                                            |
-| Horizontal line | `---`                                                                  |
+| Markdown Syntax | Example                                                                        |
+| --------------- | ------------------------------------------------------------------------------ |
+| Bold            | `**Bold**`                                                                     |
+| Italic          | `*Italic*`                                                                     |
+| Strikethrough   | `~~Strikethrough~~`                                                            |
+| Code            | `Code`                                                                         |
+| Code Block      | `Code Block`                                                                   |
+| Link            | `[botpress.com](https://www.botpress.com)`                                     |
+| Image           | `![Botpress logo](https://avatars.githubusercontent.com/u/23510677?s=200&v=4)` |
+| Unordered List  | `- Item 1`                                                                     |
+| Ordered List    | `1. Item 1`                                                                    |
+| Horizontal line | `---`                                                                          |
 
 > 📘 Info: **Supported Integrations**
 >
