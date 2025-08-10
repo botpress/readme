@@ -32,7 +32,7 @@ Configuration Variables are containers that store essential information such as 
 
 You can use **`{{env.key}}`** to get the value of the Configuration Variable Key that you've created in step 1.
 
-To use it in an Execute Code Card, you can write **`env.key`** to access it's value.
+To use it in an Execute Code Card, you can write **`env.key`** to access its value.
 
 ### 3. Env keys in Production
 
