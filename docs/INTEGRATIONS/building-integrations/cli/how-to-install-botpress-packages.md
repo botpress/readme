@@ -48,7 +48,7 @@ Installing integration packages is mostly useful for *as-code* bot development (
 ```bash
 # Install GitHub with latest integration
 npx bp add github
-# Insatll HITL integration version 1.0.2
+# Install HITL integration version 1.0.2
 npx bp add --package-type integration hitl@1.0.2
 # Install an integration using its ID
 npx bp add intver_01JCKSRFAZ7SKBYRM330PBAG88
