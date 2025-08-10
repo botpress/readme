@@ -37,7 +37,7 @@ import type { WebhookEvent } from '@octokit/webhooks-types'
 import { GITHUB_SIGNATURE_HEADER } from './const'
 import { fireIssueOpened } from './events/issue-opened'
 import { firePullRequestCommentCreated } from './events/pull-request-comment-created'
-import { firePullRequesMerged } from './events/pull-request-merged'
+import { firePullRequestMerged } from './events/pull-request-merged'
 import { firePullRequestOpened } from './events/pull-request-opened'
 import {
   isIssueOpenedEvent,
@@ -77,7 +77,7 @@ export const handler: botpress.IntegrationProps['handler'] = async ({ req, clien
   if (isPullRequestOpenedEvent(event)) {
     return firePullRequestOpened({ githubEvent: event, client })
   } else if (isPullRequestMergedEvent(event)) {
-    return firePullRequesMerged({ githubEvent: event, client })
+    return firePullRequestMerged({ githubEvent: event, client })
   } else if (isIssueOpenedEvent(event)) {
     return fireIssueOpened({ githubEvent: event, client })
   }
