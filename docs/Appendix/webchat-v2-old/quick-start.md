@@ -24,9 +24,9 @@ Add your style to the Webchat. Customize the colors, fonts, and more to match yo
 
   Use the React library to build your own Webchat using the building blocks provided by Botpress.
 
-# 4. [Javascript Client](../docs/javascript-client)
+# 4. [JavaScript Client](../docs/javascript-client)
 
-Use the Webchat Javascript Client to interact with messages, users and conversations without the need of the Webchat UI.
+Use the Webchat JavaScript Client to interact with messages, users and conversations without the need of the Webchat UI.
 
 # 5. [Webchat API](/docs/webchat-api)
 

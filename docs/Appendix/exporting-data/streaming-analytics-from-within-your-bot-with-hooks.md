@@ -29,7 +29,7 @@ In this tutorial we are going to use Mixpanel as an example, but you can use any
 
 1. Open Botpress Studio, go to the Hooks tab and click on the `+` button next to **Before Incoming Message** to create a new hook.
 2. Name it `send-user-analytics` for example
-3. Add the following Javascript code:
+3. Add the following JavaScript code:
 
 ```js
 const userAnalyticsData = {
@@ -65,7 +65,7 @@ await axios.post(
 
 4. Click on the `+` button next to **Before Outgoing Message** to create a new hook.
 5. Name it `send-bot-analytics` for example
-6. Add the following Javascript code:
+6. Add the following JavaScript code:
 
 ```js
 const botAnalyticsData = {

@@ -595,7 +595,7 @@ To create multiple records in a table, use the `createRecords` function. You can
 
 <Embed url="https://www.youtube.com/watch?v=AAUO9p6zniw" title="createrecords" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/AAUO9p6zniw/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=AAUO9p6zniw" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FAAUO9p6zniw%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DAAUO9p6zniw%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FAAUO9p6zniw%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22640%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
-```Text Javascript
+```Text JavaScript
 // Creating two records in the table  
 await Data1Table.createRecords([  
   { Name: 'Tom', Age: 25, Occupation: 'Student', 'Is Friendly': true },  
@@ -622,7 +622,7 @@ To delete multiple records in a table, use the `deleteRecords` function. You nee
 
 <Embed url="https://www.youtube.com/watch?v=TsUPf2FwrFY" title="deleterecords" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/TsUPf2FwrFY/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=TsUPf2FwrFY" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FTsUPf2FwrFY%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DTsUPf2FwrFY%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FTsUPf2FwrFY%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22640%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
-```Text Javascript
+```Text JavaScript
  // Delete records in the table at record IDs 7, 8, 9  
 await Data1Table.deleteRecords([7, 8, 9])
 ```
@@ -841,7 +841,7 @@ You can use the `getRecord` function to retrieve a specific record from a table 
 
 <Embed url="https://www.youtube.com/watch?v=zbcTGK8T1PQ" title="getrecord" favicon="https://www.google.com/favicon.ico" image="https://i.ytimg.com/vi/zbcTGK8T1PQ/hqdefault.jpg" provider="youtube.com" href="https://www.youtube.com/watch?v=zbcTGK8T1PQ" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FzbcTGK8T1PQ%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DzbcTGK8T1PQ%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FzbcTGK8T1PQ%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22640%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
 
-```Text Javascript
+```Text JavaScript
 // 1 is the record ID and User is the variable name
 workflow.User = data 
 ```

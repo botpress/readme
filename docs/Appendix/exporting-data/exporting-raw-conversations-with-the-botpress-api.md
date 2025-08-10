@@ -28,7 +28,7 @@ The Botpress API allows you to access your bot's conversations from an external 
 
 Send a `GET` request to `https://api.botpress.cloud/v1/chat/conversations` adding the following headers: `Authorization: Bearer <your-personal-access-token>` and `x-bot-id: <your-bot-id>`.
 
-This is how the request would look like using Axios in a Javascript application (e.g in a Execute Code in Botpress):
+This is how the request would look like using Axios in a JavaScript application (e.g in a Execute Code in Botpress):
 
 ```coffeescript
 const requestConfig = {

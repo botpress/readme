@@ -40,7 +40,7 @@ The **Main Flow** is typically the most detailed and complex flow in the chatbot
 
 The **Error Flow** is designed to handle unexpected failures that may occur during the conversation. It will be triggered when there's technical issues including irrecoverable errors in the bot.
 
-For example, if you have an Execute Code card with invalid Javascript code like `workflow. = 'some value'`, or custom choices for Captures or Carousels in the wrong format, the Error flow shall be triggered.'
+For example, if you have an Execute Code card with invalid JavaScript code like `workflow. = 'some value'`, or custom choices for Captures or Carousels in the wrong format, the Error flow shall be triggered.'
 
 > 📘 Info
 >

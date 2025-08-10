@@ -190,7 +190,7 @@ next:
 
     <tr>
       <td style={{ textAlign: "left" }}>
-        Javascript IDE
+        JavaScript IDE
       </td>
 
       <td style={{ textAlign: "left" }}>

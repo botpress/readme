@@ -1,5 +1,5 @@
 ---
-title: Javascript Client
+title: JavaScript Client
 excerpt: ''
 deprecated: false
 hidden: true
@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-The Javascript client gives you the ability to interact with the Webchat API from your web application. This client is designed to be used in the browser.
+The JavaScript client gives you the ability to interact with the Webchat API from your web application. This client is designed to be used in the browser.
 
 The Webchat client can be used to send and receive messages from the bot. It can also be used to subscribe to events such as new messages.
 

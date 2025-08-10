@@ -1,5 +1,5 @@
 ---
-title: Using Javascript with Embedded
+title: Using JavaScript with Embedded
 excerpt: ''
 deprecated: false
 hidden: true

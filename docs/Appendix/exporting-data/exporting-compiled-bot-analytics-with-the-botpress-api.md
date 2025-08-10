@@ -22,7 +22,7 @@ Send a `GET` request to `https://api.botpress.cloud/v1/admin/bots/<your-bot-id>/
 >
 > You can find your personal access token in your [Botpress Dashboard](https://app.botpress.cloud/). Click your avatar and select "Personal Access Tokens". Generate a new one and copy it.
 
-This is how the request would look like using Axios in a Javascript application:
+This is how the request would look like using Axios in a JavaScript application:
 
 ```js
 const requestConfig = {

@@ -35,9 +35,9 @@ That's it! Now the Webhook integration is operational and ready for use within y
 
 <br />
 
-# Sending data to your Webhook from Javascript
+# Sending data to your Webhook from JavaScript
 
-You can make requests to your webhook from any environment that supports HTTP requests, such as a Node.js app, a React app, a Javascript script running in the browser, a Zapier zap, a curl script, etc.
+You can make requests to your webhook from any environment that supports HTTP requests, such as a Node.js app, a React app, a JavaScript script running in the browser, a Zapier zap, a curl script, etc.
 
 This code example uses the Axios library to make a POST request to the Webhook URL, in a simulated Node.js app.
 

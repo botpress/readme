@@ -13,7 +13,7 @@ next:
 > 📘 Read this first!
 >
 > * If you are looking to use the built-in agent-handoff feature, read the [HITL](doc:hitl-1) guides.
-> * Otherwise, if you are comfortable with Javascript or typescript, you should use Botpress's HITL Interface: [Connect a live agent platform with Botpress](doc:revised-hitl). 
+> * Otherwise, if you are comfortable with JavaScript or typescript, you should use Botpress's HITL Interface: [Connect a live agent platform with Botpress](doc:revised-hitl). 
 > * This is for developers who want to use an external platform, and who do not wish to use javascript or typescript to build a connector.
 
 The  ([Human in the Loop API integration](https://app.botpress.cloud/hub/integrations/intver_01J804C5W78Y5FWHHNVWMR5VM3)) serves two purposes.
